@@ -1,0 +1,38 @@
+[
+ {
+  "value": "bogus",
+  "ok": false,
+  "error": "invalid deepseek provider options",
+  "warnings": [],
+  "provider": null,
+  "generationId": null,
+  "reasoningTokens": null,
+  "outputTokens": null,
+  "latencyMs": 493,
+  "cost": null
+ },
+ {
+  "value": "bogus",
+  "ok": false,
+  "error": "invalid deepseek provider options",
+  "warnings": [],
+  "provider": null,
+  "generationId": null,
+  "reasoningTokens": null,
+  "outputTokens": null,
+  "latencyMs": 154,
+  "cost": null
+ },
+ {
+  "value": "medium",
+  "ok": true,
+  "error": null,
+  "warnings": [],
+  "provider": "deepseek",
+  "generationId": "gen_01M1QC85NPXK8RDT7P3KA0XSKY",
+  "reasoningTokens": 417,
+  "outputTokens": 483,
+  "latencyMs": 3707,
+  "cost": 0.00032796
+ }
+]

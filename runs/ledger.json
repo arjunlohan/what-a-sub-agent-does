@@ -261,7 +261,85 @@
    "inTok": 2806137,
    "outTok": 5350512,
    "reasonTok": 4800128
+  },
+  {
+   "run": "effort-levels-deepseek-low",
+   "model": "deepseek",
+   "modelId": "deepseek/deepseek-v4-flash-0731",
+   "ts": "2026-09-04T23:35:00.994Z",
+   "calls": 246,
+   "errors": 13,
+   "unpinned": 0,
+   "cost": 0.18572385599999996,
+   "inTok": 360099,
+   "outTok": 258691,
+   "reasonTok": 163363
+  },
+  {
+   "run": "effort-levels-deepseek-nothink",
+   "model": "deepseek",
+   "modelId": "deepseek/deepseek-v4-flash-0731",
+   "ts": "2026-09-04T23:35:55.168Z",
+   "calls": 600,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.22548074399999984,
+   "inTok": 922794,
+   "outTok": 235380,
+   "reasonTok": 0
+  },
+  {
+   "run": "effort-levels-deepseek-low",
+   "model": "deepseek",
+   "modelId": "deepseek/deepseek-v4-flash-0731",
+   "ts": "2026-09-04T23:36:50.903Z",
+   "calls": 61,
+   "errors": 61,
+   "unpinned": 0,
+   "cost": 0,
+   "inTok": 0,
+   "outTok": 0,
+   "reasonTok": 0
+  },
+  {
+   "run": "effort-levels-deepseek-high",
+   "model": "deepseek",
+   "modelId": "deepseek/deepseek-v4-flash-0731",
+   "ts": "2026-09-04T23:37:02.559Z",
+   "calls": 62,
+   "errors": 3,
+   "unpinned": 0,
+   "cost": 0.20976607200000005,
+   "inTok": 99024,
+   "outTok": 287174,
+   "reasonTok": 241315
+  },
+  {
+   "run": "effort-levels-deepseek-low",
+   "model": "deepseek",
+   "modelId": "deepseek/deepseek-v4-flash-0731",
+   "ts": "2026-09-04T23:45:45.722Z",
+   "calls": 367,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.2008069199999998,
+   "inTok": 562695,
+   "outTok": 289773,
+   "reasonTok": 206955
+  },
+  {
+   "run": "effort-levels-deepseek-high",
+   "model": "deepseek",
+   "modelId": "deepseek/deepseek-v4-flash-0731",
+   "ts": "2026-09-04T23:53:29.401Z",
+   "calls": 541,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.7989653159999992,
+   "inTok": 871170,
+   "outTok": 1123239,
+   "reasonTok": 982415
   }
  ],
- "total": 30.359346448000053
+ "total": 31.980089356000054
 }

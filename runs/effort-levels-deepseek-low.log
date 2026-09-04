@@ -1,0 +1,120 @@
+run=effort-levels-deepseek-low models=deepseek conds=V4 draws=3 items=200 pending=600 done=0 cap=$3
+  20/600 done, $0.0223 spent, 16s
+  40/600 done, $0.0427 spent, 28s
+  60/600 done, $0.0505 spent, 36s
+  80/600 done, $0.0594 spent, 46s
+  100/600 done, $0.0741 spent, 57s
+  120/600 done, $0.0808 spent, 64s
+  140/600 done, $0.0939 spent, 73s
+  160/600 done, $0.1101 spent, 79s
+  180/600 done, $0.1190 spent, 87s
+  200/600 done, $0.1307 spent, 101s
+  220/600 done, $0.1538 spent, 118s
+RUN_ABORT: deepseek error rate 5.1% after 235 calls
+RUN_ABORT: deepseek error rate 5.5% after 236 calls
+RUN_ABORT: deepseek error rate 5.5% after 237 calls
+RUN_ABORT: deepseek error rate 5.5% after 238 calls
+RUN_ABORT: deepseek error rate 5.4% after 239 calls
+  240/600 done, $0.1648 spent, 125s
+RUN_ABORT: deepseek error rate 5.4% after 240 calls
+RUN_ABORT: deepseek error rate 5.4% after 241 calls
+RUN_ABORT: deepseek error rate 5.4% after 242 calls
+RUN_ABORT: deepseek error rate 5.3% after 243 calls
+RUN_ABORT: deepseek error rate 5.3% after 244 calls
+RUN_ABORT: deepseek error rate 5.3% after 245 calls
+RUN_ABORT: deepseek error rate 5.3% after 246 calls
+{
+ "run": "effort-levels-deepseek-low",
+ "completed": 246,
+ "pending": 354,
+ "spent": 0.1857,
+ "stats": {
+  "deepseek": {
+   "calls": 246,
+   "errors": 13,
+   "unpinned": 0,
+   "cost": 0.18572385599999996,
+   "inTok": 360099,
+   "outTok": 258691,
+   "reasonTok": 163363
+  }
+ },
+ "wallSeconds": 157,
+ "ledgerTotal": 30.5451
+}
+RUN_STOPPED
+run=effort-levels-deepseek-low models=deepseek conds=V4 draws=3 items=200 pending=367 done=233 cap=$3
+  20/367 done, $0.0000 spent, 0s
+  40/367 done, $0.0000 spent, 1s
+RUN_ABORT: deepseek error rate 100.0% after 50 calls
+RUN_ABORT: deepseek error rate 100.0% after 51 calls
+RUN_ABORT: deepseek error rate 100.0% after 52 calls
+RUN_ABORT: deepseek error rate 100.0% after 53 calls
+RUN_ABORT: deepseek error rate 100.0% after 54 calls
+RUN_ABORT: deepseek error rate 100.0% after 55 calls
+RUN_ABORT: deepseek error rate 100.0% after 56 calls
+RUN_ABORT: deepseek error rate 100.0% after 57 calls
+RUN_ABORT: deepseek error rate 100.0% after 58 calls
+RUN_ABORT: deepseek error rate 100.0% after 59 calls
+  60/367 done, $0.0000 spent, 1s
+RUN_ABORT: deepseek error rate 100.0% after 60 calls
+RUN_ABORT: deepseek error rate 100.0% after 61 calls
+{
+ "run": "effort-levels-deepseek-low",
+ "completed": 61,
+ "pending": 306,
+ "spent": 0,
+ "stats": {
+  "deepseek": {
+   "calls": 61,
+   "errors": 61,
+   "unpinned": 0,
+   "cost": 0,
+   "inTok": 0,
+   "outTok": 0,
+   "reasonTok": 0
+  }
+ },
+ "wallSeconds": 1,
+ "ledgerTotal": 30.7706
+}
+RUN_STOPPED
+run=effort-levels-deepseek-low models=deepseek conds=V4 draws=3 items=200 pending=367 done=233 cap=$3
+  20/367 done, $0.0064 spent, 9s
+  40/367 done, $0.0125 spent, 15s
+  60/367 done, $0.0223 spent, 24s
+  80/367 done, $0.0388 spent, 32s
+  100/367 done, $0.0448 spent, 38s
+  120/367 done, $0.0540 spent, 46s
+  140/367 done, $0.0620 spent, 54s
+  160/367 done, $0.0730 spent, 65s
+  180/367 done, $0.1000 spent, 82s
+  200/367 done, $0.1186 spent, 98s
+  220/367 done, $0.1298 spent, 105s
+  240/367 done, $0.1410 spent, 110s
+  260/367 done, $0.1481 spent, 118s
+  280/367 done, $0.1583 spent, 125s
+  300/367 done, $0.1668 spent, 131s
+  320/367 done, $0.1728 spent, 136s
+  340/367 done, $0.1783 spent, 143s
+  360/367 done, $0.1890 spent, 155s
+{
+ "run": "effort-levels-deepseek-low",
+ "completed": 367,
+ "pending": 0,
+ "spent": 0.2008,
+ "stats": {
+  "deepseek": {
+   "calls": 367,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.2008069199999998,
+   "inTok": 562695,
+   "outTok": 289773,
+   "reasonTok": 206955
+  }
+ },
+ "wallSeconds": 195,
+ "ledgerTotal": 31.1811
+}
+RUN_DONE

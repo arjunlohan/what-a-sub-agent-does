@@ -49,6 +49,8 @@ const TEMPERATURE: number | null = process.env.RUN_TEMPERATURE === "default" ? n
 const REASONING: string | null | undefined = process.env.RUN_REASONING === "default" ? null : process.env.RUN_REASONING;
 /** RUN_PROVIDER_REASONING=max sends a provider-level effort (DeepSeek: low, high, max) in addition to, or instead of, the SDK option. */
 const PROVIDER_REASONING: string | null = process.env.RUN_PROVIDER_REASONING ?? null;
+/** RUN_PROVIDER_THINKING=disabled switches DeepSeek thinking off at the provider level (the SDK reasoning option is then omitted). */
+const PROVIDER_THINKING: "enabled" | "disabled" | null = (process.env.RUN_PROVIDER_THINKING as any) ?? null;
 
 function selectItems(all: Item[]): Item[] {
   if (ITEMS === "all") return all;
@@ -110,13 +112,13 @@ async function main() {
     const mine = tasks.filter((t) => t.model === mk);
     await mapLimit(mine, spec.concurrency, async (t) => {
       const p = buildPrompt(t.item, t.cond, indexOf.get(t.item.id)!, all);
-      const res = await callWorker(spec, p.system, p.user, { temperature: TEMPERATURE, reasoning: PROVIDER_REASONING ? null : REASONING, providerReasoning: PROVIDER_REASONING });
+      const res = await callWorker(spec, p.system, p.user, { temperature: TEMPERATURE, reasoning: PROVIDER_REASONING || PROVIDER_THINKING ? null : REASONING, providerReasoning: PROVIDER_REASONING, providerThinking: PROVIDER_THINKING });
       const chk = res.ok ? check(t.item, res.text, { finishReason: res.finishReason }) : null;
       const pinned = res.ok && res.provider === spec.only[0];
       const rec: RunRecord = {
         run: RUN, key: t.key, model: mk, modelId: spec.id, condition: t.cond, item: t.item.id, domain: t.item.domain, salience: t.item.salience, draw: t.draw,
         ts: new Date().toISOString(), promptHash: sha16(p.user), systemHash: sha16(p.system), contextChars: p.contextChars, promptChars: p.user.length,
-        temperature: TEMPERATURE === null ? -1 : TEMPERATURE, reasoningSetting: PROVIDER_REASONING ? `provider-${PROVIDER_REASONING}` : REASONING === null ? "provider-default" : (REASONING ?? spec.reasoning),
+        temperature: TEMPERATURE === null ? -1 : TEMPERATURE, reasoningSetting: PROVIDER_THINKING ? `provider-thinking-${PROVIDER_THINKING}` : PROVIDER_REASONING ? `provider-${PROVIDER_REASONING}` : REASONING === null ? "provider-default" : (REASONING ?? spec.reasoning),
         ok: res.ok, error: res.error, provider: res.provider, pinned,
         latencyMs: res.latencyMs, inputTokens: res.inputTokens, outputTokens: res.outputTokens, reasoningTokens: res.reasoningTokens, cacheReadTokens: res.cacheReadTokens, cost: res.cost,
         generationId: res.generationId, finishReason: res.finishReason, warnings: res.warnings,

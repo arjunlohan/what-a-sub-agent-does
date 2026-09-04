@@ -1,0 +1,51 @@
+run=effort-levels-deepseek-nothink models=deepseek conds=V4 draws=3 items=200 pending=600 done=0 cap=$3
+  20/600 done, $0.0117 spent, 10s
+  40/600 done, $0.0285 spent, 16s
+  60/600 done, $0.0414 spent, 19s
+  80/600 done, $0.0508 spent, 22s
+  100/600 done, $0.0548 spent, 24s
+  120/600 done, $0.0586 spent, 26s
+  140/600 done, $0.0710 spent, 28s
+  160/600 done, $0.0852 spent, 31s
+  180/600 done, $0.0915 spent, 34s
+  200/600 done, $0.0967 spent, 37s
+  220/600 done, $0.1094 spent, 47s
+  240/600 done, $0.1219 spent, 54s
+  260/600 done, $0.1269 spent, 57s
+  280/600 done, $0.1296 spent, 59s
+  300/600 done, $0.1315 spent, 62s
+  320/600 done, $0.1330 spent, 64s
+  340/600 done, $0.1346 spent, 66s
+  360/600 done, $0.1362 spent, 68s
+  380/600 done, $0.1378 spent, 71s
+  400/600 done, $0.1399 spent, 74s
+  420/600 done, $0.1526 spent, 83s
+  440/600 done, $0.1650 spent, 90s
+  460/600 done, $0.1702 spent, 93s
+  480/600 done, $0.1727 spent, 96s
+  500/600 done, $0.1746 spent, 98s
+  520/600 done, $0.1760 spent, 100s
+  540/600 done, $0.1776 spent, 103s
+  560/600 done, $0.1791 spent, 106s
+  580/600 done, $0.1809 spent, 108s
+  600/600 done, $0.2255 spent, 206s
+{
+ "run": "effort-levels-deepseek-nothink",
+ "completed": 600,
+ "pending": 0,
+ "spent": 0.2255,
+ "stats": {
+  "deepseek": {
+   "calls": 600,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.22548074399999984,
+   "inTok": 922794,
+   "outTok": 235380,
+   "reasonTok": 0
+  }
+ },
+ "wallSeconds": 206,
+ "ledgerTotal": 30.7706
+}
+RUN_DONE

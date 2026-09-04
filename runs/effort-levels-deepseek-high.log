@@ -1,0 +1,81 @@
+run=effort-levels-deepseek-high models=deepseek conds=V4 draws=3 items=200 pending=600 done=0 cap=$3
+  20/600 done, $0.0329 spent, 48s
+  40/600 done, $0.0880 spent, 114s
+RUN_ABORT: deepseek error rate 5.9% after 51 calls
+RUN_ABORT: deepseek error rate 5.8% after 52 calls
+RUN_ABORT: deepseek error rate 5.7% after 53 calls
+RUN_ABORT: deepseek error rate 5.6% after 54 calls
+RUN_ABORT: deepseek error rate 5.5% after 55 calls
+RUN_ABORT: deepseek error rate 5.4% after 56 calls
+RUN_ABORT: deepseek error rate 5.3% after 57 calls
+RUN_ABORT: deepseek error rate 5.2% after 58 calls
+RUN_ABORT: deepseek error rate 5.1% after 59 calls
+  60/600 done, $0.1708 spent, 144s
+{
+ "run": "effort-levels-deepseek-high",
+ "completed": 62,
+ "pending": 538,
+ "spent": 0.2098,
+ "stats": {
+  "deepseek": {
+   "calls": 62,
+   "errors": 3,
+   "unpinned": 0,
+   "cost": 0.20976607200000005,
+   "inTok": 99024,
+   "outTok": 287174,
+   "reasonTok": 241315
+  }
+ },
+ "wallSeconds": 277,
+ "ledgerTotal": 30.9803
+}
+RUN_STOPPED
+run=effort-levels-deepseek-high models=deepseek conds=V4 draws=3 items=200 pending=541 done=59 cap=$4
+  20/541 done, $0.0112 spent, 5s
+  40/541 done, $0.0224 spent, 20s
+  60/541 done, $0.0437 spent, 44s
+  80/541 done, $0.0669 spent, 52s
+  100/541 done, $0.0845 spent, 62s
+  120/541 done, $0.1038 spent, 72s
+  140/541 done, $0.1207 spent, 88s
+  160/541 done, $0.1649 spent, 151s
+  180/541 done, $0.2145 spent, 208s
+  200/541 done, $0.2301 spent, 221s
+  220/541 done, $0.2483 spent, 240s
+  240/541 done, $0.3270 spent, 277s
+  260/541 done, $0.3799 spent, 306s
+  280/541 done, $0.3928 spent, 315s
+  300/541 done, $0.4187 spent, 327s
+  320/541 done, $0.4243 spent, 339s
+  340/541 done, $0.4534 spent, 367s
+  360/541 done, $0.5077 spent, 417s
+  380/541 done, $0.5357 spent, 458s
+  400/541 done, $0.5541 spent, 473s
+  420/541 done, $0.5799 spent, 495s
+  440/541 done, $0.6358 spent, 531s
+  460/541 done, $0.6903 spent, 559s
+  480/541 done, $0.7006 spent, 577s
+  500/541 done, $0.7059 spent, 589s
+  520/541 done, $0.7356 spent, 609s
+  540/541 done, $0.7901 spent, 659s
+{
+ "run": "effort-levels-deepseek-high",
+ "completed": 541,
+ "pending": 0,
+ "spent": 0.799,
+ "stats": {
+  "deepseek": {
+   "calls": 541,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.7989653159999992,
+   "inTok": 871170,
+   "outTok": 1123239,
+   "reasonTok": 982415
+  }
+ },
+ "wallSeconds": 661,
+ "ledgerTotal": 31.9801
+}
+RUN_DONE

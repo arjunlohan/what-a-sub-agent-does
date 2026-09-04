@@ -31,7 +31,7 @@ export async function callWorker(
   spec: ModelSpec,
   system: string,
   prompt: string,
-  opts: { temperature?: number | null; maxRetries?: number; maxOutputTokens?: number; reasoning?: string | null; providerReasoning?: string | null } = {},
+  opts: { temperature?: number | null; maxRetries?: number; maxOutputTokens?: number; reasoning?: string | null; providerReasoning?: string | null; providerThinking?: "enabled" | "disabled" | null } = {},
 ): Promise<CallResult> {
   const started = Date.now();
   try {
@@ -44,7 +44,13 @@ export async function callWorker(
       maxOutputTokens: opts.maxOutputTokens ?? 32000,
       ...(opts.reasoning === null ? {} : { reasoning: opts.reasoning ?? spec.reasoning }),
       // provider-level effort (for example DeepSeek's max, above what the SDK's xhigh maps to); passed through the gateway under the provider slug
-      providerOptions: { gateway: { only: spec.only, tags: ["visibility-paper"] }, ...(opts.providerReasoning ? { [spec.only[0]]: { reasoningEffort: opts.providerReasoning } } : {}) },
+      providerOptions: {
+        gateway: { only: spec.only, tags: ["visibility-paper"] },
+        // provider-level thinking switch (DeepSeek: thinking.type enabled or disabled), same pass-through path as the effort
+        ...(opts.providerReasoning || opts.providerThinking
+          ? { [spec.only[0]]: { ...(opts.providerReasoning ? { reasoningEffort: opts.providerReasoning } : {}), ...(opts.providerThinking ? { thinking: { type: opts.providerThinking } } : {}) } }
+          : {}),
+      },
     } as any);
     const u: any = res.usage ?? {};
     const g: any = (res.providerMetadata as any)?.gateway ?? {};

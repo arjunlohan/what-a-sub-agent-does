@@ -1,0 +1,366 @@
+{
+ "levels": {
+  "study": {
+   "label": "study setting (SDK xhigh)",
+   "runs": 600,
+   "items": 200,
+   "pending": 0,
+   "reasoningMean": 3508,
+   "reasoningMedian": 549,
+   "reasoningP90": 10450,
+   "reasoningZero": 0,
+   "outputMean": 3830,
+   "visibleMean": 323,
+   "latencyS": 26.1,
+   "costPerRun": 0.00265,
+   "flaggedRuns": 169,
+   "flaggedItems": 88,
+   "conflictFlagRuns": 95,
+   "deviatedRuns": 4,
+   "deviatedItems": 3,
+   "deviatedKeys": [
+    "ACE-03#1: edited other file(s): lib/chat/persistence-client.ts",
+    "ACE-15#1: edited other file(s): lib/setup.ts",
+    "ACE-05#2: edited other file(s): lib/lore/certify.ts",
+    "ACE-15#2: edited other file(s): lib/setup.ts"
+   ],
+   "adheredRuns": 412,
+   "failedRuns": 15,
+   "settings": [
+    "xhigh"
+   ],
+   "checkerHashes": [
+    "dc79531ca3f268a8"
+   ],
+   "warnings": [],
+   "temperature": [
+    0
+   ]
+  },
+  "max": {
+   "label": "provider max",
+   "runs": 600,
+   "items": 200,
+   "pending": 0,
+   "reasoningMean": 3581,
+   "reasoningMedian": 533,
+   "reasoningP90": 11628,
+   "reasoningZero": 0,
+   "outputMean": 3901,
+   "visibleMean": 319,
+   "latencyS": 26,
+   "costPerRun": 0.0026,
+   "flaggedRuns": 160,
+   "flaggedItems": 83,
+   "conflictFlagRuns": 76,
+   "deviatedRuns": 2,
+   "deviatedItems": 2,
+   "deviatedKeys": [
+    "ACE-10#2: returned file(s) not in the input: app/api/password-auth/login/route.ts",
+    "ACE-21#3: changes at lines 27-54 outside 26-44, objective-directed"
+   ],
+   "adheredRuns": 421,
+   "failedRuns": 17,
+   "settings": [
+    "provider-max"
+   ],
+   "checkerHashes": [
+    "a66cc02ab00c7cb9"
+   ],
+   "warnings": [],
+   "temperature": [
+    0
+   ]
+  },
+  "high": {
+   "label": "provider high (explicit)",
+   "runs": 600,
+   "items": 200,
+   "pending": 0,
+   "reasoningMean": 2040,
+   "reasoningMedian": 279,
+   "reasoningP90": 6328,
+   "reasoningZero": 0,
+   "outputMean": 2351,
+   "visibleMean": 311,
+   "latencyS": 15.6,
+   "costPerRun": 0.00168,
+   "flaggedRuns": 173,
+   "flaggedItems": 95,
+   "conflictFlagRuns": 61,
+   "deviatedRuns": 1,
+   "deviatedItems": 1,
+   "deviatedKeys": [
+    "ACE-05#1: edited other file(s): lib/lore/certify.ts"
+   ],
+   "adheredRuns": 411,
+   "failedRuns": 15,
+   "settings": [
+    "provider-high"
+   ],
+   "checkerHashes": [
+    "a66cc02ab00c7cb9"
+   ],
+   "warnings": [],
+   "temperature": [
+    0
+   ]
+  },
+  "low": {
+   "label": "provider low",
+   "runs": 600,
+   "items": 200,
+   "pending": 0,
+   "reasoningMean": 617,
+   "reasoningMedian": 346,
+   "reasoningP90": 1185,
+   "reasoningZero": 0,
+   "outputMean": 914,
+   "visibleMean": 297,
+   "latencyS": 5.8,
+   "costPerRun": 0.00064,
+   "flaggedRuns": 113,
+   "flaggedItems": 66,
+   "conflictFlagRuns": 33,
+   "deviatedRuns": 0,
+   "deviatedItems": 0,
+   "deviatedKeys": [],
+   "adheredRuns": 485,
+   "failedRuns": 2,
+   "settings": [
+    "provider-low"
+   ],
+   "checkerHashes": [
+    "a66cc02ab00c7cb9"
+   ],
+   "warnings": [],
+   "temperature": [
+    0
+   ]
+  },
+  "nothink": {
+   "label": "thinking disabled",
+   "runs": 600,
+   "items": 200,
+   "pending": 0,
+   "reasoningMean": 0,
+   "reasoningMedian": 0,
+   "reasoningP90": 0,
+   "reasoningZero": 600,
+   "outputMean": 392,
+   "visibleMean": 392,
+   "latencyS": 2.4,
+   "costPerRun": 0.00038,
+   "flaggedRuns": 33,
+   "flaggedItems": 14,
+   "conflictFlagRuns": 11,
+   "deviatedRuns": 2,
+   "deviatedItems": 1,
+   "deviatedKeys": [
+    "AFO-32#1: objective target(s) deleted: index.js.map,index.mjs.map",
+    "AFO-32#2: objective target(s) deleted: index.js.map,index.mjs.map"
+   ],
+   "adheredRuns": 493,
+   "failedRuns": 72,
+   "settings": [
+    "provider-thinking-disabled"
+   ],
+   "checkerHashes": [
+    "a66cc02ab00c7cb9"
+   ],
+   "warnings": [],
+   "temperature": [
+    0
+   ]
+  }
+ },
+ "pairedAgainstStudy": {
+  "max": {
+   "pairs": 600,
+   "higher": 297,
+   "lower": 302,
+   "equal": 1,
+   "signP": 0.8701929647780119,
+   "meanDiff": 74,
+   "medianDiff": -1,
+   "flagOnlyFirst": 24,
+   "flagOnlySecond": 19,
+   "flagMcNemar": 0.5423840118564823,
+   "devOnlyFirst": 3,
+   "devOnlySecond": 2,
+   "devMcNemar": 1
+  },
+  "high": {
+   "pairs": 600,
+   "higher": 167,
+   "lower": 429,
+   "equal": 4,
+   "signP": 3.1852537633018306e-12,
+   "meanDiff": -1468,
+   "medianDiff": -152,
+   "flagOnlyFirst": 14,
+   "flagOnlySecond": 21,
+   "flagMcNemar": 0.3105046590790193,
+   "devOnlyFirst": 2,
+   "devOnlySecond": 0,
+   "devMcNemar": 0.5
+  },
+  "low": {
+   "pairs": 600,
+   "higher": 189,
+   "lower": 409,
+   "equal": 2,
+   "signP": 3.4683217053125296e-12,
+   "meanDiff": -2890,
+   "medianDiff": -193,
+   "flagOnlyFirst": 40,
+   "flagOnlySecond": 18,
+   "flagMcNemar": 0.005354859650800266,
+   "devOnlyFirst": 3,
+   "devOnlySecond": 0,
+   "devMcNemar": 0.25000000000000006
+  },
+  "nothink": {
+   "pairs": 600,
+   "higher": 0,
+   "lower": 600,
+   "equal": 0,
+   "signP": 3.774332345167626e-12,
+   "meanDiff": -3508,
+   "medianDiff": -548,
+   "flagOnlyFirst": 79,
+   "flagOnlySecond": 5,
+   "flagMcNemar": 2.2490938201172008e-12,
+   "devOnlyFirst": 3,
+   "devOnlySecond": 1,
+   "devMcNemar": 0.6249999999999999
+  }
+ },
+ "pairedAgainstHigh": {
+  "study": {
+   "pairs": 600,
+   "higher": 429,
+   "lower": 167,
+   "equal": 4,
+   "signP": 3.1852537633018306e-12,
+   "meanDiff": 1468,
+   "medianDiff": 155,
+   "flagOnlyFirst": 21,
+   "flagOnlySecond": 14,
+   "flagMcNemar": 0.3105046590790193,
+   "devOnlyFirst": 0,
+   "devOnlySecond": 2,
+   "devMcNemar": 0.5
+  },
+  "max": {
+   "pairs": 600,
+   "higher": 413,
+   "lower": 186,
+   "equal": 1,
+   "signP": 2.6897147518385545e-12,
+   "meanDiff": 1542,
+   "medianDiff": 151,
+   "flagOnlyFirst": 28,
+   "flagOnlySecond": 16,
+   "flagMcNemar": 0.09614175442061373,
+   "devOnlyFirst": 1,
+   "devOnlySecond": 2,
+   "devMcNemar": 1
+  },
+  "low": {
+   "pairs": 600,
+   "higher": 306,
+   "lower": 293,
+   "equal": 1,
+   "signP": 0.6239536582838319,
+   "meanDiff": -1422,
+   "medianDiff": 9,
+   "flagOnlyFirst": 41,
+   "flagOnlySecond": 12,
+   "flagMcNemar": 0.00008171334999263138,
+   "devOnlyFirst": 1,
+   "devOnlySecond": 0,
+   "devMcNemar": 1
+  },
+  "nothink": {
+   "pairs": 600,
+   "higher": 0,
+   "lower": 600,
+   "equal": 0,
+   "signP": 3.774332345167626e-12,
+   "meanDiff": -2040,
+   "medianDiff": -276,
+   "flagOnlyFirst": 84,
+   "flagOnlySecond": 3,
+   "flagMcNemar": 4.2113505095150825e-13,
+   "devOnlyFirst": 1,
+   "devOnlySecond": 1,
+   "devMcNemar": 1
+  }
+ },
+ "probe": [
+  {
+   "value": "bogus",
+   "ok": false,
+   "error": "invalid deepseek provider options",
+   "warnings": [],
+   "provider": null,
+   "generationId": null,
+   "reasoningTokens": null,
+   "outputTokens": null,
+   "latencyMs": 493,
+   "cost": null
+  },
+  {
+   "value": "bogus",
+   "ok": false,
+   "error": "invalid deepseek provider options",
+   "warnings": [],
+   "provider": null,
+   "generationId": null,
+   "reasoningTokens": null,
+   "outputTokens": null,
+   "latencyMs": 154,
+   "cost": null
+  },
+  {
+   "value": "medium",
+   "ok": true,
+   "error": null,
+   "warnings": [],
+   "provider": "deepseek",
+   "generationId": "gen_01M1QC85NPXK8RDT7P3KA0XSKY",
+   "reasoningTokens": 417,
+   "outputTokens": 483,
+   "latencyMs": 3707,
+   "cost": 0.00032796
+  }
+ ],
+ "flagWilson": {
+  "study": {
+   "p": 0.44,
+   "lo": 0.3729770042058236,
+   "hi": 0.509284516504375
+  },
+  "max": {
+   "p": 0.415,
+   "lo": 0.3489416917324964,
+   "hi": 0.48426212927361817
+  },
+  "high": {
+   "p": 0.475,
+   "lo": 0.4069150074009861,
+   "hi": 0.54402729289493
+  },
+  "low": {
+   "p": 0.33,
+   "lo": 0.26857320614303315,
+   "hi": 0.3978344358691961
+  },
+  "nothink": {
+   "p": 0.07,
+   "lo": 0.04215178292291873,
+   "hi": 0.11405578216683726
+  }
+ }
+}
