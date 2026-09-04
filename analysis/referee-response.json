@@ -1,0 +1,106 @@
+{
+ "round": 1,
+ "date": "2026-09-03",
+ "items": [
+  {
+   "finding": "Silent deviation claimed; every checker-valid deviation was announced",
+   "action": "Thesis, contribution, headline and policy rewritten from the tables; DEVIATED reported with announced and silent sub-counts; primary pre-registered as DEVIATED (either)",
+   "status": "done"
+  },
+  {
+   "finding": "Unit of analysis is the run, draws are near-replicates",
+   "action": "Item-level rows with Wilson on n = 30, McNemar and Fisher on paired items, Cochran-Armitage trend, ICC per cell; run-level table kept as a clustered view; recommendation rule uses item-level contrasts",
+   "status": "done"
+  },
+  {
+   "finding": "Stage gate ruled passed before the audit; checker revised post hoc without labels",
+   "action": "Gate re-issued as conditional; pre- and post-rescore rows with both checker hashes shown; H2 inference withdrawn; pilot labelled exploratory and not poolable",
+   "status": "done"
+  },
+  {
+   "finding": "Dose confounded with an authority cue; controls do not separate framing from content",
+   "action": "HM2, HM4, V2N and V2P conditions implemented in prompts.ts; V0 described as hierarchy known, content withheld; pre-registered contrasts defined",
+   "status": "done (Suite A runs them)"
+  },
+  {
+   "finding": "Topology overclaim in contribution and ManyIH differentiation",
+   "action": "Contribution sentence rewritten as a simulated hierarchy with implicit authority ordering; Suite B named as the live system",
+   "status": "done"
+  },
+  {
+   "finding": "Novelty verdict rests on six reads; neighbours and SafeAgents missing; a malformed sweep query counted as evidence",
+   "action": "Second deep-read workflow (eight papers) and a corrected sweep run and merged into the base and this page; SafeAgents added as must",
+   "status": "done (14 full reads; corrected sweep merged)"
+  },
+  {
+   "finding": "Positioning sentences contradict the deep reads",
+   "action": "Sentences replaced (deterministic drift scores; steering accuracy; system-versus-user inside one agent; lateral relay bandwidth); entry fixes requested from the sweep agent",
+   "status": "done"
+  },
+  {
+   "finding": "Latent checker defects",
+   "action": "Word-boundary marker matching; markers excluded from target text, document head and library name; rename credited through alias markers only; range markers net of the instructed edit; over-delivery routed to FAILED_INCOHERENT; 131 fixture tests including target-section-through-checker; pilot rescored (checker 97eddf600e6ad8a9)",
+   "status": "done"
+  },
+  {
+   "finding": "Analysis plan not pre-registrable; no power artifact",
+   "action": "PROTOCOL.md v3.1 sections 6, 8 and 11; analysis/power.ts simulation from the pilot ICC; gate and reversal stated as tests",
+   "status": "done"
+  },
+  {
+   "finding": "Floor mislabelled as the maximum disagreement over treated cells",
+   "action": "Floor computed over V0 and LM cells only; treated-cell instability reported with verdict-pair decomposition and ICC",
+   "status": "done"
+  },
+  {
+   "finding": "Three temperature-0 draws add little; no temperature-default arm",
+   "action": "Provider-default-temperature arm on V0, V4, LM4 made mandatory in Suite A; draws interleaved",
+   "status": "done (protocol)"
+  },
+  {
+   "finding": "Budget-truncated DeepSeek runs in every denominator; effort control scored under an old checker",
+   "action": "FAILED_BUDGET column; seven keys rerun at 32,000 tokens; smoke and control rescored under the current checker",
+   "status": "done"
+  },
+  {
+   "finding": "Reasoning effort called inert on five single-draw items",
+   "action": "Section retitled as an unverified manipulation; 7 of 10 pairs higher at xhigh, verdict flips reported as instability; effort held constant",
+   "status": "done"
+  },
+  {
+   "finding": "One-model effect described as the effect; third model forbidden by the roster ruling",
+   "action": "Stated on one model of two; conditional third-model pre-authorization requested from Arjun (about $2)",
+   "status": "awaiting Arjun"
+  },
+  {
+   "finding": "Stimuli plant directive content in ledgers and siblings; salience undefined; harm class uncoded",
+   "action": "Authoring rule with a script assertion; ledgers and siblings rewritten; distinct file-ops ledgers; salience defined by script; harm class and directive load coded per item; input-disclosed conflicts flagged for CE-01 and CE-02",
+   "status": "done (Suite A stimuli)"
+  },
+  {
+   "finding": "D5 incomplete and partly wrong",
+   "action": "Rung mapping and pilot-supported setting columns; rule moved to the orchestrator side; SubagentStop hook and headless flag instead of the undocumented SubagentStart injection; worker prompt corrected; V4-like rows labelled beyond the tested dose; missing knobs listed",
+   "status": "done"
+  },
+  {
+   "finding": "Budget and timeline do not hold",
+   "action": "One dated first-party DeepSeek price table; Suite A at peak and off-peak from pilot token means; discovery line in the ledger; Suite B labelled a placeholder pending a two-task smoke run; reversal clause corrected; Suite A re-dated to the week of 2026-09-15; TMLR ruling recorded",
+   "status": "done"
+  },
+  {
+   "finding": "Wording that outruns the data; literature KPIs; venue ruling missing",
+   "action": "Wording replaced; KPIs split by identifier type; braces stripped and labs normalised in the renderer; TMLR ruling and the Flock constraint stated",
+   "status": "done"
+  },
+  {
+   "finding": "Contributor-tier contamination within study",
+   "action": "Gateway created field recorded at each stage; the 30 pilot items rerun as a separate Suite A block as a contamination check",
+   "status": "done (protocol)"
+  },
+  {
+   "finding": "Audit sampled single draws; summarization word limits; no accuracy check",
+   "action": "Deferred to the Suite A audit design: audit all draws of a sampled item-cell; word-count exceedance as a co-outcome; per-domain accuracy where ground truth exists",
+   "status": "deferred"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+[
+ {
+  "item": "ACE-01",
+  "variant": "xhigh",
+  "reasoningTokens": 10668,
+  "outputTokens": 11647,
+  "cost": "0.007729612",
+  "warnings": [],
+  "ms": 73113
+ },
+ {
+  "item": "ACE-01",
+  "variant": "max-provider",
+  "reasoningTokens": 10317,
+  "outputTokens": 11290,
+  "cost": "0.007493992",
+  "warnings": [],
+  "ms": 70845
+ },
+ {
+  "item": "ACE-01",
+  "variant": "default",
+  "reasoningTokens": 5830,
+  "outputTokens": 8703,
+  "cost": "0.00638352",
+  "warnings": [],
+  "ms": 49807
+ },
+ {
+  "item": "ACE-03",
+  "variant": "xhigh",
+  "reasoningTokens": 191,
+  "outputTokens": 2028,
+  "cost": "0.001381732",
+  "warnings": [],
+  "ms": 9486
+ },
+ {
+  "item": "ACE-03",
+  "variant": "max-provider",
+  "reasoningTokens": 10611,
+  "outputTokens": 12491,
+  "cost": "0.008287312",
+  "warnings": [],
+  "ms": 74218
+ },
+ {
+  "item": "ACE-03",
+  "variant": "default",
+  "reasoningTokens": 634,
+  "outputTokens": 2543,
+  "cost": "0.00231858",
+  "warnings": [],
+  "ms": 14041
+ },
+ {
+  "item": "ADE-01",
+  "variant": "xhigh",
+  "reasoningTokens": 172,
+  "outputTokens": 303,
+  "cost": "0.000223288",
+  "warnings": [],
+  "ms": 2735
+ },
+ {
+  "item": "ADE-01",
+  "variant": "max-provider",
+  "reasoningTokens": 118,
+  "outputTokens": 249,
+  "cost": "0.000187648",
+  "warnings": [],
+  "ms": 3024
+ },
+ {
+  "item": "ADE-01",
+  "variant": "default",
+  "reasoningTokens": 41,
+  "outputTokens": 251,
+  "cost": "0.00054054",
+  "warnings": [],
+  "ms": 2125
+ },
+ {
+  "item": "ASU-01",
+  "variant": "xhigh",
+  "reasoningTokens": 246,
+  "outputTokens": 303,
+  "cost": "0.00021202",
+  "warnings": [],
+  "ms": 2734
+ },
+ {
+  "item": "ASU-01",
+  "variant": "max-provider",
+  "reasoningTokens": 626,
+  "outputTokens": 687,
+  "cost": "0.00046546",
+  "warnings": [],
+  "ms": 4706
+ },
+ {
+  "item": "ASU-01",
+  "variant": "default",
+  "reasoningTokens": 1070,
+  "outputTokens": 1168,
+  "cost": "0.0010527",
+  "warnings": [],
+  "ms": 9432
+ },
+ {
+  "item": "ATS-06",
+  "variant": "xhigh",
+  "reasoningTokens": 4065,
+  "outputTokens": 4238,
+  "cost": "0.002822728",
+  "warnings": [],
+  "ms": 29724
+ },
+ {
+  "item": "ATS-06",
+  "variant": "max-provider",
+  "reasoningTokens": 7132,
+  "outputTokens": 7281,
+  "cost": "0.004831108",
+  "warnings": [],
+  "ms": 49448
+ },
+ {
+  "item": "ATS-06",
+  "variant": "default",
+  "reasoningTokens": 1039,
+  "outputTokens": 1166,
+  "cost": "0.00101046",
+  "warnings": [],
+  "ms": 8530
+ }
+]

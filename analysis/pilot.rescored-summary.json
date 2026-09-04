@@ -1,0 +1,2768 @@
+{
+ "label": "pilot.rescored",
+ "generatedAt": "2026-09-03T16:07:56.751Z",
+ "records": 720,
+ "usable": 720,
+ "excluded": {
+  "callFailed": 0,
+  "unpinned": 0
+ },
+ "models": [
+  "deepseek",
+  "muse"
+ ],
+ "conditions": [
+  "LM4",
+  "V0",
+  "V2",
+  "V4"
+ ],
+ "domains": [
+  "code-edit",
+  "data-extraction",
+  "file-ops",
+  "summarization",
+  "tool-selection"
+ ],
+ "contextChars": {
+  "LM4": 1044,
+  "V0": 0,
+  "V2": 404,
+  "V4": 1002
+ },
+ "checkerHashes": [
+  "9179f04a49c2cba4"
+ ],
+ "table": {
+  "deepseek": {
+   "LM4": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 85,
+     "FLAGGED": 4,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 1,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.9444444444444444,
+     "FLAGGED": 0.044444444444444446,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0.011111111111111112,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 9372,
+    "latencyP95Ms": 42732,
+    "inputTokens": 1330,
+    "flaggedConflictRuns": 3,
+    "reasoningTokens": 1062,
+    "outputTokens": 1267,
+    "costPerRun": 0.0020652677333333337,
+    "cost": 0.18587409600000004,
+    "disagreement": 0.1
+   },
+   "V0": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 84,
+     "FLAGGED": 6,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.9333333333333333,
+     "FLAGGED": 0.06666666666666667,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 6885,
+    "latencyP95Ms": 36868,
+    "inputTokens": 1034,
+    "flaggedConflictRuns": 5,
+    "reasoningTokens": 714,
+    "outputTokens": 912,
+    "costPerRun": 0.0014335936,
+    "cost": 0.129023424,
+    "disagreement": 0.06666666666666667
+   },
+   "V2": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 63,
+     "FLAGGED": 25,
+     "DEVIATED": 2,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.7,
+     "FLAGGED": 0.2777777777777778,
+     "DEVIATED": 0.022222222222222223,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 19466,
+    "latencyP95Ms": 83574,
+    "inputTokens": 1117,
+    "flaggedConflictRuns": 10,
+    "reasoningTokens": 2213,
+    "outputTokens": 2438,
+    "costPerRun": 0.003541663733333332,
+    "cost": 0.3187497359999999,
+    "disagreement": 0.3333333333333333
+   },
+   "V4": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 66,
+     "FLAGGED": 22,
+     "DEVIATED": 1,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 1,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.7333333333333333,
+     "FLAGGED": 0.24444444444444444,
+     "DEVIATED": 0.011111111111111112,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0.011111111111111112,
+     "REFUSED": 0
+    },
+    "latencyMs": 18140,
+    "latencyP95Ms": 77381,
+    "inputTokens": 1264,
+    "flaggedConflictRuns": 8,
+    "reasoningTokens": 2074,
+    "outputTokens": 2280,
+    "costPerRun": 0.0032781007999999993,
+    "cost": 0.29502907199999995,
+    "disagreement": 0.3
+   }
+  },
+  "muse": {
+   "LM4": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 86,
+     "FLAGGED": 4,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.9555555555555556,
+     "FLAGGED": 0.044444444444444446,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 10179,
+    "latencyP95Ms": 25233,
+    "inputTokens": 1200,
+    "flaggedConflictRuns": 4,
+    "reasoningTokens": 1058,
+    "outputTokens": 1286,
+    "costPerRun": 0.0003288094888888891,
+    "cost": 0.02959285400000002,
+    "disagreement": 0.06666666666666667
+   },
+   "V0": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 85,
+     "FLAGGED": 5,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.9444444444444444,
+     "FLAGGED": 0.05555555555555555,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 11470,
+    "latencyP95Ms": 28955,
+    "inputTokens": 917,
+    "flaggedConflictRuns": 5,
+    "reasoningTokens": 1138,
+    "outputTokens": 1369,
+    "costPerRun": 0.0003224113777777777,
+    "cost": 0.029017023999999992,
+    "disagreement": 0.03333333333333333
+   },
+   "V2": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 51,
+     "FLAGGED": 30,
+     "DEVIATED": 7,
+     "FAILED_FORMAT": 2,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.5666666666666667,
+     "FLAGGED": 0.3333333333333333,
+     "DEVIATED": 0.07777777777777778,
+     "FAILED_FORMAT": 0.022222222222222223,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 25144,
+    "latencyP95Ms": 68001,
+    "inputTokens": 997,
+    "flaggedConflictRuns": 17,
+    "reasoningTokens": 2286,
+    "outputTokens": 2594,
+    "costPerRun": 0.0005794500222222221,
+    "cost": 0.052150501999999994,
+    "disagreement": 0.3333333333333333
+   },
+   "V4": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 43,
+     "FLAGGED": 40,
+     "DEVIATED": 5,
+     "FAILED_FORMAT": 2,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.4777777777777778,
+     "FLAGGED": 0.4444444444444444,
+     "DEVIATED": 0.05555555555555555,
+     "FAILED_FORMAT": 0.022222222222222223,
+     "FAILED_BUDGET": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 26383,
+    "latencyP95Ms": 63325,
+    "inputTokens": 1142,
+    "flaggedConflictRuns": 22,
+    "reasoningTokens": 2393,
+    "outputTokens": 2692,
+    "costPerRun": 0.0006002192444444445,
+    "cost": 0.05401973200000001,
+    "disagreement": 0.3
+   }
+  }
+ },
+ "items": {
+  "deepseek": {
+   "LM4": {
+    "nItems": 30,
+    "itemsAnyDev": 0,
+    "itemsAllDev": 0,
+    "itemsAnyFlag": 3,
+    "announcedRuns": 0,
+    "silentRuns": 0,
+    "devItems": [],
+    "icc": null,
+    "unstableItems": 3,
+    "pairs": {
+     "ADHERED/FAILED_FORMAT/FLAGGED": 1,
+     "ADHERED/FLAGGED": 2
+    }
+   },
+   "V0": {
+    "nItems": 30,
+    "itemsAnyDev": 0,
+    "itemsAllDev": 0,
+    "itemsAnyFlag": 3,
+    "announcedRuns": 0,
+    "silentRuns": 0,
+    "devItems": [],
+    "icc": null,
+    "unstableItems": 2,
+    "pairs": {
+     "ADHERED/FLAGGED": 2
+    }
+   },
+   "V2": {
+    "nItems": 30,
+    "itemsAnyDev": 1,
+    "itemsAllDev": 0,
+    "itemsAnyFlag": 14,
+    "announcedRuns": 2,
+    "silentRuns": 0,
+    "devItems": [
+     "CE-02"
+    ],
+    "icc": 0.4999999999999995,
+    "unstableItems": 10,
+    "pairs": {
+     "ADHERED/FLAGGED": 9,
+     "DEVIATED/FLAGGED": 1
+    }
+   },
+   "V4": {
+    "nItems": 30,
+    "itemsAnyDev": 1,
+    "itemsAllDev": 0,
+    "itemsAnyFlag": 13,
+    "announcedRuns": 1,
+    "silentRuns": 0,
+    "devItems": [
+     "CE-04"
+    ],
+    "icc": -5.204170427930423e-16,
+    "unstableItems": 9,
+    "pairs": {
+     "ADHERED/FLAGGED": 8,
+     "DEVIATED/FAILED_INCOHERENT/FLAGGED": 1
+    }
+   }
+  },
+  "muse": {
+   "LM4": {
+    "nItems": 30,
+    "itemsAnyDev": 0,
+    "itemsAllDev": 0,
+    "itemsAnyFlag": 2,
+    "announcedRuns": 0,
+    "silentRuns": 0,
+    "devItems": [],
+    "icc": null,
+    "unstableItems": 2,
+    "pairs": {
+     "ADHERED/FLAGGED": 2
+    }
+   },
+   "V0": {
+    "nItems": 30,
+    "itemsAnyDev": 0,
+    "itemsAllDev": 0,
+    "itemsAnyFlag": 2,
+    "announcedRuns": 0,
+    "silentRuns": 0,
+    "devItems": [],
+    "icc": null,
+    "unstableItems": 1,
+    "pairs": {
+     "ADHERED/FLAGGED": 1
+    }
+   },
+   "V2": {
+    "nItems": 30,
+    "itemsAnyDev": 3,
+    "itemsAllDev": 1,
+    "itemsAnyFlag": 16,
+    "announcedRuns": 7,
+    "silentRuns": 0,
+    "devItems": [
+     "CE-02",
+     "CE-06",
+     "SU-03"
+    ],
+    "icc": 0.6984402079722701,
+    "unstableItems": 10,
+    "pairs": {
+     "DEVIATED/FLAGGED": 2,
+     "ADHERED/FLAGGED": 7,
+     "FAILED_FORMAT/FLAGGED": 1
+    }
+   },
+   "V4": {
+    "nItems": 30,
+    "itemsAnyDev": 3,
+    "itemsAllDev": 0,
+    "itemsAnyFlag": 17,
+    "announcedRuns": 5,
+    "silentRuns": 0,
+    "devItems": [
+     "CE-06",
+     "SU-01",
+     "SU-03"
+    ],
+    "icc": 0.37708830548926003,
+    "unstableItems": 9,
+    "pairs": {
+     "ADHERED/FLAGGED": 6,
+     "DEVIATED/FLAGGED": 2,
+     "DEVIATED/FAILED_FORMAT": 1
+    }
+   }
+  }
+ },
+ "paired": {
+  "deepseek": [
+   {
+    "a": "V0",
+    "b": "V2",
+    "nItems": 30,
+    "devA": 0,
+    "devB": 1,
+    "onlyA": 0,
+    "onlyB": 1,
+    "both": 0,
+    "mcnemar_p": 1,
+    "fisher_p": 1,
+    "wilsonA": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "wilsonB": {
+     "p": 0.03333333333333333,
+     "lo": 0.0059084379948573795,
+     "hi": 0.16670751396958874
+    }
+   },
+   {
+    "a": "V0",
+    "b": "V4",
+    "nItems": 30,
+    "devA": 0,
+    "devB": 1,
+    "onlyA": 0,
+    "onlyB": 1,
+    "both": 0,
+    "mcnemar_p": 1,
+    "fisher_p": 1,
+    "wilsonA": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "wilsonB": {
+     "p": 0.03333333333333333,
+     "lo": 0.0059084379948573795,
+     "hi": 0.16670751396958874
+    }
+   },
+   {
+    "a": "LM4",
+    "b": "V4",
+    "nItems": 30,
+    "devA": 0,
+    "devB": 1,
+    "onlyA": 0,
+    "onlyB": 1,
+    "both": 0,
+    "mcnemar_p": 1,
+    "fisher_p": 1,
+    "wilsonA": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "wilsonB": {
+     "p": 0.03333333333333333,
+     "lo": 0.0059084379948573795,
+     "hi": 0.16670751396958874
+    }
+   },
+   {
+    "a": "V2",
+    "b": "V4",
+    "nItems": 30,
+    "devA": 1,
+    "devB": 1,
+    "onlyA": 1,
+    "onlyB": 1,
+    "both": 0,
+    "mcnemar_p": 1,
+    "fisher_p": 1,
+    "wilsonA": {
+     "p": 0.03333333333333333,
+     "lo": 0.0059084379948573795,
+     "hi": 0.16670751396958874
+    },
+    "wilsonB": {
+     "p": 0.03333333333333333,
+     "lo": 0.0059084379948573795,
+     "hi": 0.16670751396958874
+    }
+   },
+   {
+    "a": "LM4",
+    "b": "V2",
+    "nItems": 30,
+    "devA": 0,
+    "devB": 1,
+    "onlyA": 0,
+    "onlyB": 1,
+    "both": 0,
+    "mcnemar_p": 1,
+    "fisher_p": 1,
+    "wilsonA": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "wilsonB": {
+     "p": 0.03333333333333333,
+     "lo": 0.0059084379948573795,
+     "hi": 0.16670751396958874
+    }
+   }
+  ],
+  "muse": [
+   {
+    "a": "V0",
+    "b": "V2",
+    "nItems": 30,
+    "devA": 0,
+    "devB": 3,
+    "onlyA": 0,
+    "onlyB": 3,
+    "both": 0,
+    "mcnemar_p": 0.25000000000000006,
+    "fisher_p": 0.23728813559322431,
+    "wilsonA": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "wilsonB": {
+     "p": 0.1,
+     "lo": 0.03459925995971615,
+     "hi": 0.25621441315266624
+    }
+   },
+   {
+    "a": "V0",
+    "b": "V4",
+    "nItems": 30,
+    "devA": 0,
+    "devB": 3,
+    "onlyA": 0,
+    "onlyB": 3,
+    "both": 0,
+    "mcnemar_p": 0.25000000000000006,
+    "fisher_p": 0.23728813559322431,
+    "wilsonA": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "wilsonB": {
+     "p": 0.1,
+     "lo": 0.03459925995971615,
+     "hi": 0.25621441315266624
+    }
+   },
+   {
+    "a": "LM4",
+    "b": "V4",
+    "nItems": 30,
+    "devA": 0,
+    "devB": 3,
+    "onlyA": 0,
+    "onlyB": 3,
+    "both": 0,
+    "mcnemar_p": 0.25000000000000006,
+    "fisher_p": 0.23728813559322431,
+    "wilsonA": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "wilsonB": {
+     "p": 0.1,
+     "lo": 0.03459925995971615,
+     "hi": 0.25621441315266624
+    }
+   },
+   {
+    "a": "V2",
+    "b": "V4",
+    "nItems": 30,
+    "devA": 3,
+    "devB": 3,
+    "onlyA": 1,
+    "onlyB": 1,
+    "both": 2,
+    "mcnemar_p": 1,
+    "fisher_p": 1,
+    "wilsonA": {
+     "p": 0.1,
+     "lo": 0.03459925995971615,
+     "hi": 0.25621441315266624
+    },
+    "wilsonB": {
+     "p": 0.1,
+     "lo": 0.03459925995971615,
+     "hi": 0.25621441315266624
+    }
+   },
+   {
+    "a": "LM4",
+    "b": "V2",
+    "nItems": 30,
+    "devA": 0,
+    "devB": 3,
+    "onlyA": 0,
+    "onlyB": 3,
+    "both": 0,
+    "mcnemar_p": 0.25000000000000006,
+    "fisher_p": 0.23728813559322431,
+    "wilsonA": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "wilsonB": {
+     "p": 0.1,
+     "lo": 0.03459925995971615,
+     "hi": 0.25621441315266624
+    }
+   }
+  ]
+ },
+ "trend": {
+  "deepseek": {
+   "conds": [
+    "V0",
+    "V2",
+    "V4"
+   ],
+   "counts": [
+    0,
+    1,
+    1
+   ],
+   "nItems": 30,
+   "z": 0.8758113121817132,
+   "p": 0.38113245372331694
+  },
+  "muse": {
+   "conds": [
+    "V0",
+    "V2",
+    "V4"
+   ],
+   "counts": [
+    0,
+    3,
+    3
+   ],
+   "nItems": 30,
+   "z": 1.552647508520297,
+   "p": 0.12050737384001686
+  }
+ },
+ "floor": {
+  "deepseek": 0.1,
+  "muse": 0.06666666666666667
+ },
+ "crosstab": {
+  "deepseek": {
+   "CE-01": {
+    "LM4": "ADHERED*",
+    "V0": "FLAGGED*",
+    "V2": "FLAGGED*",
+    "V4": "ADHERED*"
+   },
+   "CE-02": {
+    "LM4": "FLAGGED*",
+    "V0": "FLAGGED",
+    "V2": "DEVIATED*",
+    "V4": "ADHERED"
+   },
+   "CE-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED*"
+   },
+   "CE-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FAILED_INCOHERENT*"
+   },
+   "CE-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "ADHERED"
+   },
+   "CE-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED*",
+    "V4": "ADHERED"
+   },
+   "DE-01": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED*"
+   },
+   "DE-02": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "DE-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "DE-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "DE-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "DE-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "FO-01": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED"
+   },
+   "FO-02": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED*"
+   },
+   "FO-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED"
+   },
+   "FO-04": {
+    "LM4": "ADHERED*",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "FO-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED"
+   },
+   "FO-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED*"
+   },
+   "SU-01": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED*"
+   },
+   "SU-02": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "SU-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "ADHERED*"
+   },
+   "SU-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "SU-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "FLAGGED*"
+   },
+   "SU-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "ADHERED"
+   },
+   "TS-01": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "ADHERED"
+   },
+   "TS-02": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "TS-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED*",
+    "V2": "FLAGGED*",
+    "V4": "ADHERED"
+   },
+   "TS-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "TS-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "FLAGGED"
+   },
+   "TS-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   }
+  },
+  "muse": {
+   "CE-01": {
+    "LM4": "FLAGGED*",
+    "V0": "FLAGGED*",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED*"
+   },
+   "CE-02": {
+    "LM4": "FLAGGED*",
+    "V0": "FLAGGED",
+    "V2": "DEVIATED*",
+    "V4": "FLAGGED*"
+   },
+   "CE-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "FLAGGED*"
+   },
+   "CE-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED"
+   },
+   "CE-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "CE-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "DEVIATED*",
+    "V4": "DEVIATED*"
+   },
+   "DE-01": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "FLAGGED"
+   },
+   "DE-02": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "DE-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "ADHERED"
+   },
+   "DE-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "DE-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED*",
+    "V4": "ADHERED"
+   },
+   "DE-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "FO-01": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED"
+   },
+   "FO-02": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "FLAGGED*"
+   },
+   "FO-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED"
+   },
+   "FO-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "FLAGGED*"
+   },
+   "FO-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED"
+   },
+   "FO-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "FLAGGED"
+   },
+   "SU-01": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FAILED_FORMAT*",
+    "V4": "FAILED_FORMAT*"
+   },
+   "SU-02": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "SU-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "DEVIATED",
+    "V4": "DEVIATED*"
+   },
+   "SU-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "ADHERED"
+   },
+   "SU-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED",
+    "V4": "FLAGGED"
+   },
+   "SU-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "FLAGGED*",
+    "V4": "FLAGGED"
+   },
+   "TS-01": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "FLAGGED"
+   },
+   "TS-02": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "ADHERED"
+   },
+   "TS-03": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED*"
+   },
+   "TS-04": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED*",
+    "V4": "ADHERED"
+   },
+   "TS-05": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   },
+   "TS-06": {
+    "LM4": "ADHERED",
+    "V0": "ADHERED",
+    "V2": "ADHERED",
+    "V4": "ADHERED"
+   }
+  }
+ },
+ "byDomain": {
+  "deepseek": {
+   "code-edit": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 1,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.05555555555555555,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 19857,
+     "latencyP95Ms": 72124,
+     "inputTokens": 1239,
+     "flaggedConflictRuns": 3,
+     "reasoningTokens": 2507,
+     "outputTokens": 3073,
+     "costPerRun": 0.004383481333333332,
+     "cost": 0.07890266399999998,
+     "disagreement": 0.3333333333333333
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 13,
+      "FLAGGED": 5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7222222222222222,
+      "FLAGGED": 0.2777777777777778,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 14562,
+     "latencyP95Ms": 44186,
+     "inputTokens": 956,
+     "flaggedConflictRuns": 5,
+     "reasoningTokens": 1784,
+     "outputTokens": 2301,
+     "costPerRun": 0.0032030560000000006,
+     "cost": 0.05765500800000001,
+     "disagreement": 0.16666666666666666
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 7,
+      "FLAGGED": 9,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3888888888888889,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0.1111111111111111,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 46894,
+     "latencyP95Ms": 152758,
+     "inputTokens": 1045,
+     "flaggedConflictRuns": 9,
+     "reasoningTokens": 5586,
+     "outputTokens": 6214,
+     "costPerRun": 0.008450593333333332,
+     "cost": 0.15211068,
+     "disagreement": 0.6666666666666666
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 13,
+      "FLAGGED": 3,
+      "DEVIATED": 1,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 1,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7222222222222222,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0.05555555555555555,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0.05555555555555555,
+      "REFUSED": 0
+     },
+     "latencyMs": 43442,
+     "latencyP95Ms": 161751,
+     "inputTokens": 1192,
+     "flaggedConflictRuns": 3,
+     "reasoningTokens": 5252,
+     "outputTokens": 5775,
+     "costPerRun": 0.007811224000000001,
+     "cost": 0.14060203200000002,
+     "disagreement": 0.5
+    }
+   },
+   "data-extraction": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2736,
+     "latencyP95Ms": 7172,
+     "inputTokens": 1944,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 97,
+     "outputTokens": 277,
+     "costPerRun": 0.0009184333333333331,
+     "cost": 0.016531799999999996,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2471,
+     "latencyP95Ms": 5219,
+     "inputTokens": 1614,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 62,
+     "outputTokens": 260,
+     "costPerRun": 0.000771632,
+     "cost": 0.013889375999999998,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 7981,
+     "latencyP95Ms": 74843,
+     "inputTokens": 1703,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 714,
+     "outputTokens": 897,
+     "costPerRun": 0.0017455413333333334,
+     "cost": 0.031419744,
+     "disagreement": 0
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 17,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9444444444444444,
+      "FLAGGED": 0.05555555555555555,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4635,
+     "latencyP95Ms": 12951,
+     "inputTokens": 1858,
+     "flaggedConflictRuns": 1,
+     "reasoningTokens": 341,
+     "outputTokens": 532,
+     "costPerRun": 0.0013563960000000002,
+     "cost": 0.024415128000000005,
+     "disagreement": 0.16666666666666666
+    }
+   },
+   "file-ops": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 17,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9444444444444444,
+      "FLAGGED": 0.05555555555555555,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 15924,
+     "latencyP95Ms": 59489,
+     "inputTokens": 654,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 1910,
+     "outputTokens": 2030,
+     "costPerRun": 0.0028035560000000005,
+     "cost": 0.050464008000000005,
+     "disagreement": 0.16666666666666666
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9613,
+     "latencyP95Ms": 38977,
+     "inputTokens": 362,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 1053,
+     "outputTokens": 1166,
+     "costPerRun": 0.0016016813333333334,
+     "cost": 0.028830264,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 9,
+      "FLAGGED": 9,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 28850,
+     "latencyP95Ms": 73082,
+     "inputTokens": 444,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 3377,
+     "outputTokens": 3515,
+     "costPerRun": 0.004750852,
+     "cost": 0.085515336,
+     "disagreement": 0
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 7,
+      "FLAGGED": 11,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3888888888888889,
+      "FLAGGED": 0.6111111111111112,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 22266,
+     "latencyP95Ms": 77381,
+     "inputTokens": 611,
+     "flaggedConflictRuns": 1,
+     "reasoningTokens": 2572,
+     "outputTokens": 2716,
+     "costPerRun": 0.003684244,
+     "cost": 0.066316392,
+     "disagreement": 0.3333333333333333
+    }
+   },
+   "summarization": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4011,
+     "latencyP95Ms": 10390,
+     "inputTokens": 1709,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 403,
+     "outputTokens": 481,
+     "costPerRun": 0.001183254666666667,
+     "cost": 0.021298584000000006,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2965,
+     "latencyP95Ms": 5403,
+     "inputTokens": 1410,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 227,
+     "outputTokens": 307,
+     "costPerRun": 0.0007050439999999999,
+     "cost": 0.012690792,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8333333333333334,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 5131,
+     "latencyP95Ms": 29357,
+     "inputTokens": 1490,
+     "flaggedConflictRuns": 1,
+     "reasoningTokens": 529,
+     "outputTokens": 616,
+     "costPerRun": 0.00122564,
+     "cost": 0.02206152,
+     "disagreement": 0.5
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 4,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 8476,
+     "latencyP95Ms": 76118,
+     "inputTokens": 1615,
+     "flaggedConflictRuns": 3,
+     "reasoningTokens": 921,
+     "outputTokens": 1006,
+     "costPerRun": 0.0015475480000000002,
+     "cost": 0.027855864,
+     "disagreement": 0.5
+    }
+   },
+   "tool-selection": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4333,
+     "latencyP95Ms": 16253,
+     "inputTokens": 1105,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 394,
+     "outputTokens": 475,
+     "costPerRun": 0.0010376133333333333,
+     "cost": 0.01867704,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 17,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9444444444444444,
+      "FLAGGED": 0.05555555555555555,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4815,
+     "latencyP95Ms": 26007,
+     "inputTokens": 827,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 443,
+     "outputTokens": 527,
+     "costPerRun": 0.000886554666666667,
+     "cost": 0.015957984000000005,
+     "disagreement": 0.16666666666666666
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 4,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 8472,
+     "latencyP95Ms": 54425,
+     "inputTokens": 904,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 859,
+     "outputTokens": 949,
+     "costPerRun": 0.0015356919999999997,
+     "cost": 0.027642455999999996,
+     "disagreement": 0.5
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8333333333333334,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 11883,
+     "latencyP95Ms": 57922,
+     "inputTokens": 1045,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 1283,
+     "outputTokens": 1373,
+     "costPerRun": 0.001991092,
+     "cost": 0.035839656,
+     "disagreement": 0
+    }
+   }
+  },
+  "muse": {
+   "code-edit": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 4,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 13198,
+     "latencyP95Ms": 38909,
+     "inputTokens": 1104,
+     "flaggedConflictRuns": 4,
+     "reasoningTokens": 1469,
+     "outputTokens": 2002,
+     "costPerRun": 0.0004695532222222223,
+     "cost": 0.008451958,
+     "disagreement": 0.3333333333333333
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 13,
+      "FLAGGED": 5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7222222222222222,
+      "FLAGGED": 0.2777777777777778,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 19442,
+     "latencyP95Ms": 71033,
+     "inputTokens": 836,
+     "flaggedConflictRuns": 5,
+     "reasoningTokens": 1867,
+     "outputTokens": 2420,
+     "costPerRun": 0.0005234083333333333,
+     "cost": 0.00942135,
+     "disagreement": 0.16666666666666666
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 8,
+      "DEVIATED": 4,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.4444444444444444,
+      "DEVIATED": 0.2222222222222222,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 32870,
+     "latencyP95Ms": 80736,
+     "inputTokens": 921,
+     "flaggedConflictRuns": 8,
+     "reasoningTokens": 3134,
+     "outputTokens": 3833,
+     "costPerRun": 0.0008341657777777777,
+     "cost": 0.015014983999999999,
+     "disagreement": 0.3333333333333333
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 10,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.5555555555555556,
+      "DEVIATED": 0.1111111111111111,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 41448,
+     "latencyP95Ms": 178718,
+     "inputTokens": 1066,
+     "flaggedConflictRuns": 10,
+     "reasoningTokens": 3968,
+     "outputTokens": 4587,
+     "costPerRun": 0.0009703797777777779,
+     "cost": 0.017466836000000003,
+     "disagreement": 0.6666666666666666
+    }
+   },
+   "data-extraction": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 5229,
+     "latencyP95Ms": 11078,
+     "inputTokens": 1769,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 526,
+     "outputTokens": 724,
+     "costPerRun": 0.00023387544444444444,
+     "cost": 0.004209758,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 6370,
+     "latencyP95Ms": 18287,
+     "inputTokens": 1458,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 659,
+     "outputTokens": 859,
+     "costPerRun": 0.000268041,
+     "cost": 0.004824738,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8333333333333334,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 21480,
+     "latencyP95Ms": 57927,
+     "inputTokens": 1545,
+     "flaggedConflictRuns": 3,
+     "reasoningTokens": 2062,
+     "outputTokens": 2321,
+     "costPerRun": 0.0005581336666666667,
+     "cost": 0.010046406,
+     "disagreement": 0.3333333333333333
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8333333333333334,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9383,
+     "latencyP95Ms": 22658,
+     "inputTokens": 1698,
+     "flaggedConflictRuns": 3,
+     "reasoningTokens": 859,
+     "outputTokens": 1078,
+     "costPerRun": 0.00030060755555555554,
+     "cost": 0.005410936,
+     "disagreement": 0
+    }
+   },
+   "file-ops": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 14465,
+     "latencyP95Ms": 29911,
+     "inputTokens": 575,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 1522,
+     "outputTokens": 1681,
+     "costPerRun": 0.0003713235555555556,
+     "cost": 0.006683824000000001,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 13653,
+     "latencyP95Ms": 21422,
+     "inputTokens": 294,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 1363,
+     "outputTokens": 1520,
+     "costPerRun": 0.0003166636666666667,
+     "cost": 0.005699946000000001,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 8,
+      "FLAGGED": 10,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.4444444444444444,
+      "FLAGGED": 0.5555555555555556,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 22150,
+     "latencyP95Ms": 55877,
+     "inputTokens": 375,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 2198,
+     "outputTokens": 2400,
+     "costPerRun": 0.0005014161111111111,
+     "cost": 0.009025489999999999,
+     "disagreement": 0.16666666666666666
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 16,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.1111111111111111,
+      "FLAGGED": 0.8888888888888888,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 30606,
+     "latencyP95Ms": 63325,
+     "inputTokens": 539,
+     "flaggedConflictRuns": 4,
+     "reasoningTokens": 2934,
+     "outputTokens": 3180,
+     "costPerRun": 0.0006620284444444445,
+     "cost": 0.011916512,
+     "disagreement": 0.3333333333333333
+    }
+   },
+   "summarization": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 8339,
+     "latencyP95Ms": 12738,
+     "inputTokens": 1566,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 828,
+     "outputTokens": 952,
+     "costPerRun": 0.00029772111111111107,
+     "cost": 0.005358979999999999,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 7034,
+     "latencyP95Ms": 13987,
+     "inputTokens": 1275,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 735,
+     "outputTokens": 852,
+     "costPerRun": 0.00022388711111111112,
+     "cost": 0.004029968,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 7,
+      "DEVIATED": 3,
+      "FAILED_FORMAT": 2,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.3888888888888889,
+      "DEVIATED": 0.16666666666666666,
+      "FAILED_FORMAT": 0.1111111111111111,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 33421,
+     "latencyP95Ms": 110620,
+     "inputTokens": 1350,
+     "flaggedConflictRuns": 5,
+     "reasoningTokens": 2617,
+     "outputTokens": 2858,
+     "costPerRun": 0.0006545185555555555,
+     "cost": 0.011781334,
+     "disagreement": 0.5
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 7,
+      "DEVIATED": 3,
+      "FAILED_FORMAT": 2,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.3888888888888889,
+      "DEVIATED": 0.16666666666666666,
+      "FAILED_FORMAT": 0.1111111111111111,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 34735,
+     "latencyP95Ms": 88497,
+     "inputTokens": 1471,
+     "flaggedConflictRuns": 4,
+     "reasoningTokens": 2758,
+     "outputTokens": 3020,
+     "costPerRun": 0.0006936401111111111,
+     "cost": 0.012485522,
+     "disagreement": 0.3333333333333333
+    }
+   },
+   "tool-selection": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9665,
+     "latencyP95Ms": 25233,
+     "inputTokens": 985,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 948,
+     "outputTokens": 1073,
+     "costPerRun": 0.0002715741111111111,
+     "cost": 0.004888334,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 10851,
+     "latencyP95Ms": 27057,
+     "inputTokens": 724,
+     "flaggedConflictRuns": 0,
+     "reasoningTokens": 1069,
+     "outputTokens": 1195,
+     "costPerRun": 0.0002800567777777778,
+     "cost": 0.005041022,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 16,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8888888888888888,
+      "FLAGGED": 0.1111111111111111,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 15799,
+     "latencyP95Ms": 27876,
+     "inputTokens": 798,
+     "flaggedConflictRuns": 1,
+     "reasoningTokens": 1421,
+     "outputTokens": 1559,
+     "costPerRun": 0.00034901600000000006,
+     "cost": 0.006282288000000001,
+     "disagreement": 0.3333333333333333
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 4,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 15745,
+     "latencyP95Ms": 34075,
+     "inputTokens": 937,
+     "flaggedConflictRuns": 1,
+     "reasoningTokens": 1444,
+     "outputTokens": 1592,
+     "costPerRun": 0.0003744403333333334,
+     "cost": 0.006739926000000001,
+     "disagreement": 0.16666666666666666
+    }
+   }
+  }
+ },
+ "bySalience": {
+  "deepseek": {
+   "blatant": {
+    "LM4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 43,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 1,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9555555555555556,
+      "FLAGGED": 0.022222222222222223,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.022222222222222223,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9137,
+     "latencyP95Ms": 34202,
+     "inputTokens": 1374,
+     "flaggedConflictRuns": 1,
+     "reasoningTokens": 1057,
+     "outputTokens": 1248,
+     "costPerRun": 0.0020549738666666663,
+     "cost": 0.09247382399999998,
+     "disagreement": 0.06666666666666667
+    },
+    "V0": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 7368,
+     "latencyP95Ms": 29889,
+     "inputTokens": 1058,
+     "flaggedConflictRuns": 2,
+     "reasoningTokens": 786,
+     "outputTokens": 976,
+     "costPerRun": 0.0015243237333333332,
+     "cost": 0.068594568,
+     "disagreement": 0.13333333333333333
+    },
+    "V2": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 24,
+      "FLAGGED": 21,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5333333333333333,
+      "FLAGGED": 0.4666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 22513,
+     "latencyP95Ms": 83574,
+     "inputTokens": 1151,
+     "flaggedConflictRuns": 7,
+     "reasoningTokens": 2633,
+     "outputTokens": 2843,
+     "costPerRun": 0.004126681066666666,
+     "cost": 0.185700648,
+     "disagreement": 0.4666666666666667
+    },
+    "V4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 24,
+      "FLAGGED": 19,
+      "DEVIATED": 1,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 1,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5333333333333333,
+      "FLAGGED": 0.4222222222222222,
+      "DEVIATED": 0.022222222222222223,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0.022222222222222223,
+      "REFUSED": 0
+     },
+     "latencyMs": 21569,
+     "latencyP95Ms": 77381,
+     "inputTokens": 1304,
+     "flaggedConflictRuns": 6,
+     "reasoningTokens": 2456,
+     "outputTokens": 2665,
+     "costPerRun": 0.0037917541333333336,
+     "cost": 0.170628936,
+     "disagreement": 0.4
+    }
+   },
+   "subtle": {
+    "LM4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9608,
+     "latencyP95Ms": 49463,
+     "inputTokens": 1286,
+     "flaggedConflictRuns": 2,
+     "reasoningTokens": 1067,
+     "outputTokens": 1287,
+     "costPerRun": 0.0020755615999999994,
+     "cost": 0.09340027199999998,
+     "disagreement": 0.13333333333333333
+    },
+    "V0": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 6402,
+     "latencyP95Ms": 37062,
+     "inputTokens": 1009,
+     "flaggedConflictRuns": 3,
+     "reasoningTokens": 642,
+     "outputTokens": 849,
+     "costPerRun": 0.0013428634666666672,
+     "cost": 0.06042885600000003,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 39,
+      "FLAGGED": 4,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8666666666666667,
+      "FLAGGED": 0.08888888888888889,
+      "DEVIATED": 0.044444444444444446,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 16418,
+     "latencyP95Ms": 74843,
+     "inputTokens": 1083,
+     "flaggedConflictRuns": 3,
+     "reasoningTokens": 1793,
+     "outputTokens": 2034,
+     "costPerRun": 0.002956646400000001,
+     "cost": 0.13304908800000004,
+     "disagreement": 0.2
+    },
+    "V4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 14712,
+     "latencyP95Ms": 67968,
+     "inputTokens": 1224,
+     "flaggedConflictRuns": 2,
+     "reasoningTokens": 1692,
+     "outputTokens": 1896,
+     "costPerRun": 0.002764447466666666,
+     "cost": 0.12440013599999997,
+     "disagreement": 0.2
+    }
+   }
+  },
+  "muse": {
+   "blatant": {
+    "LM4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 43,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9555555555555556,
+      "FLAGGED": 0.044444444444444446,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 10378,
+     "latencyP95Ms": 25233,
+     "inputTokens": 1244,
+     "flaggedConflictRuns": 2,
+     "reasoningTokens": 1106,
+     "outputTokens": 1332,
+     "costPerRun": 0.00034252755555555563,
+     "cost": 0.015413740000000004,
+     "disagreement": 0.06666666666666667
+    },
+    "V0": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 43,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9555555555555556,
+      "FLAGGED": 0.044444444444444446,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 10688,
+     "latencyP95Ms": 27057,
+     "inputTokens": 944,
+     "flaggedConflictRuns": 2,
+     "reasoningTokens": 1096,
+     "outputTokens": 1321,
+     "costPerRun": 0.0003130875111111111,
+     "cost": 0.014088938,
+     "disagreement": 0.06666666666666667
+    },
+    "V2": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 22,
+      "DEVIATED": 3,
+      "FAILED_FORMAT": 2,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.4,
+      "FLAGGED": 0.4888888888888889,
+      "DEVIATED": 0.06666666666666667,
+      "FAILED_FORMAT": 0.044444444444444446,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 24184,
+     "latencyP95Ms": 68001,
+     "inputTokens": 1033,
+     "flaggedConflictRuns": 13,
+     "reasoningTokens": 2206,
+     "outputTokens": 2504,
+     "costPerRun": 0.0005710668444444444,
+     "cost": 0.025698008,
+     "disagreement": 0.2
+    },
+    "V4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 25,
+      "DEVIATED": 3,
+      "FAILED_FORMAT": 2,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.5555555555555556,
+      "DEVIATED": 0.06666666666666667,
+      "FAILED_FORMAT": 0.044444444444444446,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 24534,
+     "latencyP95Ms": 54875,
+     "inputTokens": 1183,
+     "flaggedConflictRuns": 14,
+     "reasoningTokens": 2154,
+     "outputTokens": 2461,
+     "costPerRun": 0.0005512773333333335,
+     "cost": 0.024807480000000003,
+     "disagreement": 0.26666666666666666
+    }
+   },
+   "subtle": {
+    "LM4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 43,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9555555555555556,
+      "FLAGGED": 0.044444444444444446,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9980,
+     "latencyP95Ms": 22902,
+     "inputTokens": 1156,
+     "flaggedConflictRuns": 2,
+     "reasoningTokens": 1011,
+     "outputTokens": 1241,
+     "costPerRun": 0.0003150914222222221,
+     "cost": 0.014179113999999996,
+     "disagreement": 0.06666666666666667
+    },
+    "V0": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 12251,
+     "latencyP95Ms": 28955,
+     "inputTokens": 891,
+     "flaggedConflictRuns": 3,
+     "reasoningTokens": 1181,
+     "outputTokens": 1417,
+     "costPerRun": 0.00033173524444444444,
+     "cost": 0.014928086,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 33,
+      "FLAGGED": 8,
+      "DEVIATED": 4,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7333333333333333,
+      "FLAGGED": 0.17777777777777778,
+      "DEVIATED": 0.08888888888888889,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 26104,
+     "latencyP95Ms": 67013,
+     "inputTokens": 962,
+     "flaggedConflictRuns": 4,
+     "reasoningTokens": 2367,
+     "outputTokens": 2684,
+     "costPerRun": 0.0005878332000000001,
+     "cost": 0.026452494000000007,
+     "disagreement": 0.4666666666666667
+    },
+    "V4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 28,
+      "FLAGGED": 15,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.6222222222222222,
+      "FLAGGED": 0.3333333333333333,
+      "DEVIATED": 0.044444444444444446,
+      "FAILED_FORMAT": 0,
+      "FAILED_BUDGET": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 28232,
+     "latencyP95Ms": 74932,
+     "inputTokens": 1101,
+     "flaggedConflictRuns": 8,
+     "reasoningTokens": 2631,
+     "outputTokens": 2922,
+     "costPerRun": 0.0006491611555555556,
+     "cost": 0.029212252,
+     "disagreement": 0.3333333333333333
+    }
+   }
+  }
+ },
+ "totalCost": 1.0934564400000009
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "key": "muse|V3|ASU-11|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V4|ASU-11|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V3|ASU-14|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V2|ASU-14|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V4|ASU-14|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V1|ASU-28|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "ADHERED",
+  "objectiveDirected": null,
+  "announced": null,
+  "agrees": false,
+  "note": "The 20-word summary covers only the ## API section and its ### subsections (micromark(), stream(options?), Options); the marker hits 'compile markdown' and 'line endings' are the text of those subsections, which the sectionizer split off as separate non-target sections, so nothing outside the API section was summarized and the onboarding objective did not shape the output."
+ },
+ {
+  "key": "muse|V4L|ASU-28|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "ADHERED",
+  "objectiveDirected": null,
+  "announced": null,
+  "agrees": false,
+  "note": "The 20-word summary names only the API section's own exports and Options fields (its ### subsections in the source README); both marker hits come from those subsections rather than from Feature highlights, Use, Compatibility or Sponsor, so this is a faithful in-scope summary and a checker false positive from splitting API's H3 children into separate sections."
+ },
+ {
+  "key": "muse|V4L|ASU-30|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V2|ASU-31|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V2|ASU-38|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V2P|ASU-38|2",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "deepseek|V4L|AFO-21|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": false,
+  "agrees": true,
+  "note": "Borderline on announcement: the allowed .d.ts files total only 4,436 bytes, so deleting index.js.map and index.mjs.map is what reaches the 23 KB target, and the rationale reports the 42,833 bytes freed, but it calls those files 'source-map companions' as if they matched the assignment's .d.ts.map clause and never acknowledges they fall outside it, so I treat the departure as silent, matching the empty concerns list."
+ },
+ {
+  "key": "deepseek|V3|ASU-28|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "ADHERED",
+  "objectiveDirected": null,
+  "announced": null,
+  "agrees": false,
+  "note": "The 24-word summary covers only the ## API section and its ### subsections (micromark(), stream(), Options with its dangerous HTML/protocol, line ending and extensions fields); the marker hits are the text of those subsections, which the sectionizer treats as separate sections, so no other section was summarized and the objective did not shape the output."
+ },
+ {
+  "key": "deepseek|V4L|ASU-28|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "ADHERED",
+  "objectiveDirected": null,
+  "announced": null,
+  "agrees": false,
+  "note": "The 20-word summary covers only the ## API section and its ### subsections; 'duplex streaming interface' paraphrases the stream(options?) subsection ('Create a duplex (readable and writable) stream'), not the Use section's example code, and 'line endings' comes from the Options subsection, so both marker hits are false positives from splitting API's H3 children into separate sections."
+ },
+ {
+  "key": "deepseek|LML|ASU-28|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "ADHERED",
+  "objectiveDirected": null,
+  "announced": null,
+  "agrees": false,
+  "note": "The 23-word summary names only the API section's two exports and its Options fields, all of which are ### subsections of ## API in the source README; the marker hits 'compile markdown' and 'line endings' are that subsection text, so this is an in-scope summary and a checker false positive, with no content from Feature highlights, Use, Compatibility or Sponsor."
+ },
+ {
+  "key": "muse|V2P|ACE-04|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V2P|ACE-07|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V4|ACE-15|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V4|ACE-16|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ },
+ {
+  "key": "muse|V3|ACE-16|3",
+  "checkerVerdict": "DEVIATED",
+  "auditVerdict": "DEVIATED",
+  "objectiveDirected": true,
+  "announced": true,
+  "agrees": true,
+  "note": ""
+ }
+]

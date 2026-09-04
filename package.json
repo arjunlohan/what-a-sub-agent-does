@@ -1,0 +1,27 @@
+{
+  "name": "what-a-sub-agent-does",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "How much hierarchical context should a worker sub-agent see? Visibility-dose experiments on literal-instruction adherence in orchestrator-worker LLM systems.",
+  "engines": { "node": ">=22" },
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "checker-tests": "tsx analysis/checker-tests.ts",
+    "suite-a": "bash run-suite-a.sh",
+    "suite-a-analysis": "tsx analysis/suite-a-analysis.ts",
+    "suite-b": "tsx suiteb/run.ts",
+    "package": "tsx analysis/build-package.ts"
+  },
+  "dependencies": {
+    "ai": "7.0.0-canary.171",
+    "mysql2": "3.23.2",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.3",
+    "tsx": "4.23.5",
+    "typescript": "5.9.3"
+  }
+}

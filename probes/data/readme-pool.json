@@ -1,0 +1,1472 @@
+[
+{
+"pkg": "zod",
+"path": "node_modules/zod/README.md",
+"chars": 5567,
+"sections": 8
+},
+{
+"pkg": "media-chrome",
+"path": "node_modules/media-chrome/README.md",
+"chars": 6396,
+"sections": 8
+},
+{
+"pkg": "drizzle-kit",
+"path": "node_modules/drizzle-kit/README.md",
+"chars": 2073,
+"sections": 4
+},
+{
+"pkg": "next",
+"path": "node_modules/next/README.md",
+"chars": 3212,
+"sections": 6
+},
+{
+"pkg": "react-day-picker",
+"path": "node_modules/react-day-picker/README.md",
+"chars": 7172,
+"sections": 8
+},
+{
+"pkg": "use-stick-to-bottom",
+"path": "node_modules/use-stick-to-bottom/README.md",
+"chars": 4134,
+"sections": 5
+},
+{
+"pkg": "input-otp",
+"path": "node_modules/input-otp/README.md",
+"chars": 14249,
+"sections": 10
+},
+{
+"pkg": "mysql2",
+"path": "node_modules/mysql2/README.md",
+"chars": 5778,
+"sections": 5
+},
+{
+"pkg": "csv-parse",
+"path": "node_modules/csv-parse/README.md",
+"chars": 3266,
+"sections": 5
+},
+{
+"pkg": "typescript",
+"path": "node_modules/typescript/README.md",
+"chars": 2792,
+"sections": 4
+},
+{
+"pkg": "react-hook-form",
+"path": "node_modules/react-hook-form/README.md",
+"chars": 8199,
+"sections": 9
+},
+{
+"pkg": "lucide-react",
+"path": "node_modules/lucide-react/README.md",
+"chars": 2714,
+"sections": 9
+},
+{
+"pkg": "react-resizable-panels",
+"path": "node_modules/react-resizable-panels/README.md",
+"chars": 13931,
+"sections": 8
+},
+{
+"pkg": "motion",
+"path": "node_modules/motion/README.md",
+"chars": 6237,
+"sections": 16
+},
+{
+"pkg": "clsx",
+"path": "node_modules/clsx/README.md",
+"chars": 4002,
+"sections": 10
+},
+{
+"pkg": "react-jsx-parser",
+"path": "node_modules/react-jsx-parser/README.md",
+"chars": 7542,
+"sections": 6
+},
+{
+"pkg": "drizzle-orm",
+"path": "node_modules/drizzle-orm/README.md",
+"chars": 3241,
+"sections": 4
+},
+{
+"pkg": "ai",
+"path": "node_modules/ai/README.md",
+"chars": 7062,
+"sections": 12
+},
+{
+"pkg": "eve",
+"path": "node_modules/eve/README.md",
+"chars": 10336,
+"sections": 10
+},
+{
+"pkg": "recharts",
+"path": "node_modules/recharts/README.md",
+"chars": 3922,
+"sections": 8
+},
+{
+"pkg": "hyparquet",
+"path": "node_modules/hyparquet/README.md",
+"chars": 10690,
+"sections": 16
+},
+{
+"pkg": "streamdown",
+"path": "node_modules/streamdown/README.md",
+"chars": 5297,
+"sections": 6
+},
+{
+"pkg": "ansi-to-react",
+"path": "node_modules/ansi-to-react/README.md",
+"chars": 2064,
+"sections": 8
+},
+{
+"pkg": "cmdk",
+"path": "node_modules/cmdk/README.md",
+"chars": 14012,
+"sections": 22
+},
+{
+"pkg": "@elastic/elasticsearch",
+"path": "node_modules/@elastic/elasticsearch/README.md",
+"chars": 8843,
+"sections": 9
+},
+{
+"pkg": "@neondatabase/serverless",
+"path": "node_modules/@neondatabase/serverless/README.md",
+"chars": 10686,
+"sections": 16
+},
+{
+"pkg": "@tailwindcss/postcss",
+"path": "node_modules/@tailwindcss/postcss/README.md",
+"chars": 3666,
+"sections": 7
+},
+{
+"pkg": "@xyflow/react",
+"path": "node_modules/@xyflow/react/README.md",
+"chars": 6558,
+"sections": 10
+},
+{
+"pkg": "@base-ui/react",
+"path": "node_modules/@base-ui/react/README.md",
+"chars": 1850,
+"sections": 8
+},
+{
+"pkg": "@vercel/connect",
+"path": "node_modules/@vercel/connect/README.md",
+"chars": 2984,
+"sections": 7
+},
+{
+"pkg": "@upstash/redis",
+"path": "node_modules/@upstash/redis/README.md",
+"chars": 3426,
+"sections": 12
+},
+{
+"pkg": "iconv-lite",
+"path": "node_modules/.pnpm/iconv-lite@0.7.3/node_modules/iconv-lite/README.md",
+"chars": 6585,
+"sections": 11
+},
+{
+"pkg": "safer-buffer",
+"path": "node_modules/.pnpm/iconv-lite@0.7.3/node_modules/safer-buffer/README.md",
+"chars": 8238,
+"sections": 7
+},
+{
+"pkg": "generate-function",
+"path": "node_modules/.pnpm/generate-function@2.3.1/node_modules/generate-function/README.md",
+"chars": 2219,
+"sections": 5
+},
+{
+"pkg": "jose",
+"path": "node_modules/.pnpm/@better-auth+core@1.5.5_@better-auth+utils@0.3.1_@better-fetch+fetch@1.1.21_better-call@1.3.2_t46gio2k52sl6fylwzd6awpeo4/node_modules/jose/README.md",
+"chars": 9476,
+"sections": 13
+},
+{
+"pkg": "react-remove-scroll",
+"path": "node_modules/.pnpm/@radix-ui+react-dialog@1.1.16_@types+react-dom@19.2.3_@types+react@19.2.15__@types+react@19.2_mqbv7mcgcxbi5x6faqbhszyvou/node_modules/react-remove-scroll/README.md",
+"chars": 5905,
+"sections": 5
+},
+{
+"pkg": "os-paths",
+"path": "node_modules/.pnpm/os-paths@4.4.0/node_modules/os-paths/README.md",
+"chars": 8006,
+"sections": 14
+},
+{
+"pkg": "reselect",
+"path": "node_modules/.pnpm/@base-ui+utils@0.3.1_@types+react@19.2.15_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/reselect/README.md",
+"chars": 9840,
+"sections": 9
+},
+{
+"pkg": "khroma",
+"path": "node_modules/.pnpm/khroma@2.1.0/node_modules/khroma/README.md",
+"chars": 11936,
+"sections": 11
+},
+{
+"pkg": "long",
+"path": "node_modules/.pnpm/mysql2@3.23.2_@types+node@25.9.3/node_modules/long/README.md",
+"chars": 11118,
+"sections": 11
+},
+{
+"pkg": "aws-ssl-profiles",
+"path": "node_modules/.pnpm/mysql2@3.23.2_@types+node@25.9.3/node_modules/aws-ssl-profiles/README.md",
+"chars": 2271,
+"sections": 11
+},
+{
+"pkg": "lru.min",
+"path": "node_modules/.pnpm/mysql2@3.23.2_@types+node@25.9.3/node_modules/lru.min/README.md",
+"chars": 9356,
+"sections": 22
+},
+{
+"pkg": "micromark-util-encode",
+"path": "node_modules/.pnpm/micromark-util-encode@2.0.1/node_modules/micromark-util-encode/README.md",
+"chars": 4448,
+"sections": 12
+},
+{
+"pkg": "ohash",
+"path": "node_modules/.pnpm/ohash@2.0.11/node_modules/ohash/README.md",
+"chars": 3979,
+"sections": 8
+},
+{
+"pkg": "immer",
+"path": "node_modules/.pnpm/immer@11.1.15/node_modules/immer/README.md",
+"chars": 1880,
+"sections": 4
+},
+{
+"pkg": "micromark-util-types",
+"path": "node_modules/.pnpm/micromark-extension-cjk-friendly@2.0.1_micromark-util-types@2.0.2_micromark@4.0.2/node_modules/micromark-util-types/README.md",
+"chars": 3912,
+"sections": 11
+},
+{
+"pkg": "micromark-util-chunked",
+"path": "node_modules/.pnpm/micromark-extension-cjk-friendly@2.0.1_micromark-util-types@2.0.2_micromark@4.0.2/node_modules/micromark-util-chunked/README.md",
+"chars": 5570,
+"sections": 13
+},
+{
+"pkg": "micromark-util-resolve-all",
+"path": "node_modules/.pnpm/micromark-extension-cjk-friendly@2.0.1_micromark-util-types@2.0.2_micromark@4.0.2/node_modules/micromark-util-resolve-all/README.md",
+"chars": 6205,
+"sections": 12
+},
+{
+"pkg": "devlop",
+"path": "node_modules/.pnpm/micromark-extension-cjk-friendly@2.0.1_micromark-util-types@2.0.2_micromark@4.0.2/node_modules/devlop/README.md",
+"chars": 10055,
+"sections": 16
+},
+{
+"pkg": "micromark",
+"path": "node_modules/.pnpm/micromark-extension-cjk-friendly@2.0.1_micromark-util-types@2.0.2_micromark@4.0.2/node_modules/micromark/README.md",
+"chars": 14964,
+"sections": 16
+},
+{
+"pkg": "micromark-util-symbol",
+"path": "node_modules/.pnpm/micromark-extension-cjk-friendly@2.0.1_micromark-util-types@2.0.2_micromark@4.0.2/node_modules/micromark-util-symbol/README.md",
+"chars": 4597,
+"sections": 11
+},
+{
+"pkg": "micromark-extension-cjk-friendly",
+"path": "node_modules/.pnpm/micromark-extension-cjk-friendly@2.0.1_micromark-util-types@2.0.2_micromark@4.0.2/node_modules/micromark-extension-cjk-friendly/README.md",
+"chars": 15056,
+"sections": 12
+},
+{
+"pkg": "micromark-extension-cjk-friendly-util",
+"path": "node_modules/.pnpm/micromark-extension-cjk-friendly@2.0.1_micromark-util-types@2.0.2_micromark@4.0.2/node_modules/micromark-extension-cjk-friendly-util/README.md",
+"chars": 10814,
+"sections": 9
+},
+{
+"pkg": "micromark-core-commonmark",
+"path": "node_modules/.pnpm/micromark-extension-gfm-footnote@2.1.0/node_modules/micromark-core-commonmark/README.md",
+"chars": 4754,
+"sections": 11
+},
+{
+"pkg": "micromark-util-sanitize-uri",
+"path": "node_modules/.pnpm/micromark-extension-gfm-footnote@2.1.0/node_modules/micromark-util-sanitize-uri/README.md",
+"chars": 6024,
+"sections": 13
+},
+{
+"pkg": "micromark-util-normalize-identifier",
+"path": "node_modules/.pnpm/micromark-extension-gfm-footnote@2.1.0/node_modules/micromark-util-normalize-identifier/README.md",
+"chars": 5212,
+"sections": 12
+},
+{
+"pkg": "micromark-factory-space",
+"path": "node_modules/.pnpm/micromark-extension-gfm-footnote@2.1.0/node_modules/micromark-factory-space/README.md",
+"chars": 5636,
+"sections": 12
+},
+{
+"pkg": "micromark-util-character",
+"path": "node_modules/.pnpm/micromark-extension-gfm-footnote@2.1.0/node_modules/micromark-util-character/README.md",
+"chars": 11703,
+"sections": 23
+},
+{
+"pkg": "classcat",
+"path": "node_modules/.pnpm/classcat@5.0.5/node_modules/classcat/README.md",
+"chars": 1840,
+"sections": 5
+},
+{
+"pkg": "micromark-util-html-tag-name",
+"path": "node_modules/.pnpm/micromark-util-html-tag-name@2.0.1/node_modules/micromark-util-html-tag-name/README.md",
+"chars": 5360,
+"sections": 13
+},
+{
+"pkg": "stringify-entities",
+"path": "node_modules/.pnpm/stringify-entities@4.0.4/node_modules/stringify-entities/README.md",
+"chars": 6909,
+"sections": 14
+},
+{
+"pkg": "character-entities-html4",
+"path": "node_modules/.pnpm/stringify-entities@4.0.4/node_modules/character-entities-html4/README.md",
+"chars": 4130,
+"sections": 13
+},
+{
+"pkg": "character-entities-legacy",
+"path": "node_modules/.pnpm/stringify-entities@4.0.4/node_modules/character-entities-legacy/README.md",
+"chars": 4462,
+"sections": 13
+},
+{
+"pkg": "get-east-asian-width",
+"path": "node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/README.md",
+"chars": 1859,
+"sections": 6
+},
+{
+"pkg": "get-stream",
+"path": "node_modules/.pnpm/get-stream@6.0.1/node_modules/get-stream/README.md",
+"chars": 4195,
+"sections": 10
+},
+{
+"pkg": "entities",
+"path": "node_modules/.pnpm/entities@6.0.1/node_modules/entities/README.md",
+"chars": 5012,
+"sections": 9
+},
+{
+"pkg": "set-cookie-parser",
+"path": "node_modules/.pnpm/set-cookie-parser@3.1.0/node_modules/set-cookie-parser/README.md",
+"chars": 5941,
+"sections": 9
+},
+{
+"pkg": "rehype-harden",
+"path": "node_modules/.pnpm/rehype-harden@1.1.8/node_modules/rehype-harden/README.md",
+"chars": 14929,
+"sections": 24
+},
+{
+"pkg": "unist-util-visit",
+"path": "node_modules/.pnpm/rehype-harden@1.1.8/node_modules/unist-util-visit/README.md",
+"chars": 8582,
+"sections": 21
+},
+{
+"pkg": "unist-util-stringify-position",
+"path": "node_modules/.pnpm/mdast-util-mdx-jsx@3.2.0/node_modules/unist-util-stringify-position/README.md",
+"chars": 6010,
+"sections": 13
+},
+{
+"pkg": "ccount",
+"path": "node_modules/.pnpm/mdast-util-mdx-jsx@3.2.0/node_modules/ccount/README.md",
+"chars": 3437,
+"sections": 13
+},
+{
+"pkg": "mdast-util-from-markdown",
+"path": "node_modules/.pnpm/mdast-util-mdx-jsx@3.2.0/node_modules/mdast-util-from-markdown/README.md",
+"chars": 14465,
+"sections": 28
+},
+{
+"pkg": "parse-entities",
+"path": "node_modules/.pnpm/mdast-util-mdx-jsx@3.2.0/node_modules/parse-entities/README.md",
+"chars": 7280,
+"sections": 13
+},
+{
+"pkg": "vfile-message",
+"path": "node_modules/.pnpm/mdast-util-mdx-jsx@3.2.0/node_modules/vfile-message/README.md",
+"chars": 6911,
+"sections": 12
+},
+{
+"pkg": "inline-style-parser",
+"path": "node_modules/.pnpm/inline-style-parser@0.2.7/node_modules/inline-style-parser/README.md",
+"chars": 4154,
+"sections": 5
+},
+{
+"pkg": "unist-util-position",
+"path": "node_modules/.pnpm/hast-util-to-jsx-runtime@2.3.6/node_modules/unist-util-position/README.md",
+"chars": 6544,
+"sections": 14
+},
+{
+"pkg": "hast-util-whitespace",
+"path": "node_modules/.pnpm/hast-util-to-jsx-runtime@2.3.6/node_modules/hast-util-whitespace/README.md",
+"chars": 7097,
+"sections": 13
+},
+{
+"pkg": "style-to-js",
+"path": "node_modules/.pnpm/hast-util-to-jsx-runtime@2.3.6/node_modules/style-to-js/README.md",
+"chars": 4678,
+"sections": 14
+},
+{
+"pkg": "mdast-util-mdxjs-esm",
+"path": "node_modules/.pnpm/hast-util-to-jsx-runtime@2.3.6/node_modules/mdast-util-mdxjs-esm/README.md",
+"chars": 11612,
+"sections": 20
+},
+{
+"pkg": "space-separated-tokens",
+"path": "node_modules/.pnpm/hast-util-to-jsx-runtime@2.3.6/node_modules/space-separated-tokens/README.md",
+"chars": 3902,
+"sections": 14
+},
+{
+"pkg": "estree-util-is-identifier-name",
+"path": "node_modules/.pnpm/hast-util-to-jsx-runtime@2.3.6/node_modules/estree-util-is-identifier-name/README.md",
+"chars": 5644,
+"sections": 15
+},
+{
+"pkg": "comma-separated-tokens",
+"path": "node_modules/.pnpm/hast-util-to-jsx-runtime@2.3.6/node_modules/comma-separated-tokens/README.md",
+"chars": 4228,
+"sections": 14
+},
+{
+"pkg": "mdast-util-mdx-expression",
+"path": "node_modules/.pnpm/hast-util-to-jsx-runtime@2.3.6/node_modules/mdast-util-mdx-expression/README.md",
+"chars": 13640,
+"sections": 22
+},
+{
+"pkg": "html-url-attributes",
+"path": "node_modules/.pnpm/html-url-attributes@3.0.1/node_modules/html-url-attributes/README.md",
+"chars": 4533,
+"sections": 14
+},
+{
+"pkg": "import-meta-resolve",
+"path": "node_modules/.pnpm/import-meta-resolve@4.2.0/node_modules/import-meta-resolve/README.md",
+"chars": 7641,
+"sections": 15
+},
+{
+"pkg": "use-callback-ref",
+"path": "node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.15_react@19.2.6/node_modules/use-callback-ref/README.md",
+"chars": 6617,
+"sections": 6
+},
+{
+"pkg": "use-sidecar",
+"path": "node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.15_react@19.2.6/node_modules/use-sidecar/README.md",
+"chars": 11195,
+"sections": 15
+},
+{
+"pkg": "tslib",
+"path": "node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.2.15_react@19.2.6/node_modules/tslib/README.md",
+"chars": 3869,
+"sections": 5
+},
+{
+"pkg": "mdast-util-gfm-strikethrough",
+"path": "node_modules/.pnpm/mdast-util-gfm-strikethrough@2.0.0/node_modules/mdast-util-gfm-strikethrough/README.md",
+"chars": 9947,
+"sections": 18
+},
+{
+"pkg": "react-redux",
+"path": "node_modules/.pnpm/@reduxjs+toolkit@2.12.0_react-redux@9.3.0_@types+react@19.2.15_react@19.2.6_redux@5.0.1__react@19.2.6/node_modules/react-redux/README.md",
+"chars": 3154,
+"sections": 6
+},
+{
+"pkg": "redux",
+"path": "node_modules/.pnpm/@reduxjs+toolkit@2.12.0_react-redux@9.3.0_@types+react@19.2.15_react@19.2.6_redux@5.0.1__react@19.2.6/node_modules/redux/README.md",
+"chars": 8041,
+"sections": 12
+},
+{
+"pkg": "redux-thunk",
+"path": "node_modules/.pnpm/@reduxjs+toolkit@2.12.0_react-redux@9.3.0_@types+react@19.2.15_react@19.2.6_redux@5.0.1__react@19.2.6/node_modules/redux-thunk/README.md",
+"chars": 12377,
+"sections": 9
+},
+{
+"pkg": "remark-parse",
+"path": "node_modules/.pnpm/remark-parse@11.0.0/node_modules/remark-parse/README.md",
+"chars": 12683,
+"sections": 18
+},
+{
+"pkg": "points-on-curve",
+"path": "node_modules/.pnpm/points-on-curve@0.2.0/node_modules/points-on-curve/README.md",
+"chars": 3887,
+"sections": 5
+},
+{
+"pkg": "hast-util-sanitize",
+"path": "node_modules/.pnpm/hast-util-sanitize@5.0.2/node_modules/hast-util-sanitize/README.md",
+"chars": 11402,
+"sections": 15
+},
+{
+"pkg": "stylis",
+"path": "node_modules/.pnpm/stylis@4.4.0/node_modules/stylis/README.md",
+"chars": 6136,
+"sections": 15
+},
+{
+"pkg": "ts-dedent",
+"path": "node_modules/.pnpm/ts-dedent@2.3.0/node_modules/ts-dedent/README.md",
+"chars": 4406,
+"sections": 5
+},
+{
+"pkg": "detect-libc",
+"path": "node_modules/.pnpm/sharp@0.34.5/node_modules/detect-libc/README.md",
+"chars": 3215,
+"sections": 11
+},
+{
+"pkg": "sharp",
+"path": "node_modules/.pnpm/sharp@0.34.5/node_modules/sharp/README.md",
+"chars": 3160,
+"sections": 8
+},
+{
+"pkg": "punycode",
+"path": "node_modules/.pnpm/tr46@5.1.1/node_modules/punycode/README.md",
+"chars": 5620,
+"sections": 12
+},
+{
+"pkg": "tr46",
+"path": "node_modules/.pnpm/tr46@5.1.1/node_modules/tr46/README.md",
+"chars": 2188,
+"sections": 11
+},
+{
+"pkg": "unenv",
+"path": "node_modules/.pnpm/unenv@2.0.0-rc.24/node_modules/unenv/README.md",
+"chars": 9439,
+"sections": 8
+},
+{
+"pkg": "pathe",
+"path": "node_modules/.pnpm/unenv@2.0.0-rc.24/node_modules/pathe/README.md",
+"chars": 3035,
+"sections": 4
+},
+{
+"pkg": "path-data-parser",
+"path": "node_modules/.pnpm/path-data-parser@0.1.0/node_modules/path-data-parser/README.md",
+"chars": 2553,
+"sections": 7
+},
+{
+"pkg": "mdast-util-gfm-task-list-item",
+"path": "node_modules/.pnpm/mdast-util-gfm-task-list-item@2.0.0/node_modules/mdast-util-gfm-task-list-item/README.md",
+"chars": 9888,
+"sections": 18
+},
+{
+"pkg": "micromark-extension-math",
+"path": "node_modules/.pnpm/remark-math@6.0.0/node_modules/micromark-extension-math/README.md",
+"chars": 12424,
+"sections": 20
+},
+{
+"pkg": "mdast-util-math",
+"path": "node_modules/.pnpm/remark-math@6.0.0/node_modules/mdast-util-math/README.md",
+"chars": 12362,
+"sections": 21
+},
+{
+"pkg": "remark-math",
+"path": "node_modules/.pnpm/remark-math@6.0.0/node_modules/remark-math/README.md",
+"chars": 9664,
+"sections": 19
+},
+{
+"pkg": "micromark-util-classify-character",
+"path": "node_modules/.pnpm/micromark-util-classify-character@2.0.1/node_modules/micromark-util-classify-character/README.md",
+"chars": 5247,
+"sections": 12
+},
+{
+"pkg": "hastscript",
+"path": "node_modules/.pnpm/hast-util-from-dom@5.0.1/node_modules/hastscript/README.md",
+"chars": 11499,
+"sections": 18
+},
+{
+"pkg": "web-namespaces",
+"path": "node_modules/.pnpm/hast-util-from-dom@5.0.1/node_modules/web-namespaces/README.md",
+"chars": 3754,
+"sections": 13
+},
+{
+"pkg": "hast-util-from-dom",
+"path": "node_modules/.pnpm/hast-util-from-dom@5.0.1/node_modules/hast-util-from-dom/README.md",
+"chars": 6734,
+"sections": 15
+},
+{
+"pkg": "points-on-path",
+"path": "node_modules/.pnpm/points-on-path@0.2.1/node_modules/points-on-path/README.md",
+"chars": 2015,
+"sections": 4
+},
+{
+"pkg": "npm-run-path",
+"path": "node_modules/.pnpm/npm-run-path@4.0.1/node_modules/npm-run-path/README.md",
+"chars": 2965,
+"sections": 6
+},
+{
+"pkg": "httpxy",
+"path": "node_modules/.pnpm/httpxy@0.5.4/node_modules/httpxy/README.md",
+"chars": 11782,
+"sections": 14
+},
+{
+"pkg": "graceful-fs",
+"path": "node_modules/.pnpm/enhanced-resolve@5.24.0/node_modules/graceful-fs/README.md",
+"chars": 4741,
+"sections": 11
+},
+{
+"pkg": "unist-util-visit-parents",
+"path": "node_modules/.pnpm/unist-util-visit@5.1.0/node_modules/unist-util-visit-parents/README.md",
+"chars": 10250,
+"sections": 22
+},
+{
+"pkg": "unist-util-is",
+"path": "node_modules/.pnpm/unist-util-visit@5.1.0/node_modules/unist-util-is/README.md",
+"chars": 8826,
+"sections": 18
+},
+{
+"pkg": "mdast-util-gfm-footnote",
+"path": "node_modules/.pnpm/mdast-util-gfm-footnote@2.1.0/node_modules/mdast-util-gfm-footnote/README.md",
+"chars": 13029,
+"sections": 19
+},
+{
+"pkg": "ocache",
+"path": "node_modules/.pnpm/nitro@3.0.260610-beta_@upstash+redis@1.38.0_drizzle-orm@0.45.1_@neondatabase+serverless@1.0.2_555delckbh4g7oezkalgzfopjy/node_modules/ocache/README.md",
+"chars": 10825,
+"sections": 20
+},
+{
+"pkg": "hookable",
+"path": "node_modules/.pnpm/nitro@3.0.260610-beta_@upstash+redis@1.38.0_drizzle-orm@0.45.1_@neondatabase+serverless@1.0.2_555delckbh4g7oezkalgzfopjy/node_modules/hookable/README.md",
+"chars": 7483,
+"sections": 21
+},
+{
+"pkg": "jiti",
+"path": "node_modules/.pnpm/nitro@3.0.260610-beta_@upstash+redis@1.38.0_drizzle-orm@0.45.1_@neondatabase+serverless@1.0.2_555delckbh4g7oezkalgzfopjy/node_modules/jiti/README.md",
+"chars": 8534,
+"sections": 24
+},
+{
+"pkg": "consola",
+"path": "node_modules/.pnpm/nitro@3.0.260610-beta_@upstash+redis@1.38.0_drizzle-orm@0.45.1_@neondatabase+serverless@1.0.2_555delckbh4g7oezkalgzfopjy/node_modules/consola/README.md",
+"chars": 8948,
+"sections": 14
+},
+{
+"pkg": "nf3",
+"path": "node_modules/.pnpm/nitro@3.0.260610-beta_@upstash+redis@1.38.0_drizzle-orm@0.45.1_@neondatabase+serverless@1.0.2_555delckbh4g7oezkalgzfopjy/node_modules/nf3/README.md",
+"chars": 4452,
+"sections": 9
+},
+{
+"pkg": "ofetch",
+"path": "node_modules/.pnpm/nitro@3.0.260610-beta_@upstash+redis@1.38.0_drizzle-orm@0.45.1_@neondatabase+serverless@1.0.2_555delckbh4g7oezkalgzfopjy/node_modules/ofetch/README.md",
+"chars": 11211,
+"sections": 23
+},
+{
+"pkg": "unstorage",
+"path": "node_modules/.pnpm/nitro@3.0.260610-beta_@upstash+redis@1.38.0_drizzle-orm@0.45.1_@neondatabase+serverless@1.0.2_555delckbh4g7oezkalgzfopjy/node_modules/unstorage/README.md",
+"chars": 3293,
+"sections": 5
+},
+{
+"pkg": "mdast-util-phrasing",
+"path": "node_modules/.pnpm/mdast-util-phrasing@4.1.0/node_modules/mdast-util-phrasing/README.md",
+"chars": 5291,
+"sections": 13
+},
+{
+"pkg": "character-entities",
+"path": "node_modules/.pnpm/character-entities@2.0.2/node_modules/character-entities/README.md",
+"chars": 4026,
+"sections": 13
+},
+{
+"pkg": "rou3",
+"path": "node_modules/.pnpm/h3@2.0.1-rc.22_crossws@0.4.9_srvx@0.11.21_/node_modules/rou3/README.md",
+"chars": 9246,
+"sections": 8
+},
+{
+"pkg": "hast-util-is-element",
+"path": "node_modules/.pnpm/hast-util-to-text@4.0.2/node_modules/hast-util-is-element/README.md",
+"chars": 10059,
+"sections": 17
+},
+{
+"pkg": "unist-util-find-after",
+"path": "node_modules/.pnpm/hast-util-to-text@4.0.2/node_modules/unist-util-find-after/README.md",
+"chars": 6417,
+"sections": 12
+},
+{
+"pkg": "hast-util-to-text",
+"path": "node_modules/.pnpm/hast-util-to-text@4.0.2/node_modules/hast-util-to-text/README.md",
+"chars": 7958,
+"sections": 15
+},
+{
+"pkg": "hast-util-to-html",
+"path": "node_modules/.pnpm/@shikijs+core@3.23.0/node_modules/hast-util-to-html/README.md",
+"chars": 11794,
+"sections": 18
+},
+{
+"pkg": "buffer-from",
+"path": "node_modules/.pnpm/buffer-from@1.1.2/node_modules/buffer-from/README.md",
+"chars": 1990,
+"sections": 8
+},
+{
+"pkg": "decode-named-character-reference",
+"path": "node_modules/.pnpm/decode-named-character-reference@1.3.0/node_modules/decode-named-character-reference/README.md",
+"chars": 3200,
+"sections": 13
+},
+{
+"pkg": "eventsource-parser",
+"path": "node_modules/.pnpm/eventsource-parser@3.1.0/node_modules/eventsource-parser/README.md",
+"chars": 6601,
+"sections": 8
+},
+{
+"pkg": "fsevents",
+"path": "node_modules/.pnpm/tsx@4.23.5/node_modules/fsevents/README.md",
+"chars": 3201,
+"sections": 4
+},
+{
+"pkg": "defu",
+"path": "node_modules/.pnpm/better-auth@1.5.5_drizzle-kit@0.31.9_drizzle-orm@0.45.1_@neondatabase+serverless@1.0.2_@opent_wubxujxul3tgyyobwqylnjyaoe/node_modules/defu/README.md",
+"chars": 4617,
+"sections": 10
+},
+{
+"pkg": "is-decimal",
+"path": "node_modules/.pnpm/is-decimal@2.0.1/node_modules/is-decimal/README.md",
+"chars": 3299,
+"sections": 13
+},
+{
+"pkg": "micromark-util-decode-string",
+"path": "node_modules/.pnpm/mdast-util-from-markdown@2.0.3/node_modules/micromark-util-decode-string/README.md",
+"chars": 4692,
+"sections": 12
+},
+{
+"pkg": "micromark-util-decode-numeric-character-reference",
+"path": "node_modules/.pnpm/mdast-util-from-markdown@2.0.3/node_modules/micromark-util-decode-numeric-character-reference/README.md",
+"chars": 5301,
+"sections": 12
+},
+{
+"pkg": "mdast-util-to-string",
+"path": "node_modules/.pnpm/mdast-util-from-markdown@2.0.3/node_modules/mdast-util-to-string/README.md",
+"chars": 6000,
+"sections": 14
+},
+{
+"pkg": "dequal",
+"path": "node_modules/.pnpm/devlop@1.1.0/node_modules/dequal/README.md",
+"chars": 4446,
+"sections": 7
+},
+{
+"pkg": "xdg-app-paths",
+"path": "node_modules/.pnpm/@vercel+cli-config@0.2.0/node_modules/xdg-app-paths/README.md",
+"chars": 14706,
+"sections": 17
+},
+{
+"pkg": "anser",
+"path": "node_modules/.pnpm/ansi-to-react@6.2.6_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/anser/README.md",
+"chars": 6951,
+"sections": 10
+},
+{
+"pkg": "linkify-it",
+"path": "node_modules/.pnpm/ansi-to-react@6.2.6_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/linkify-it/README.md",
+"chars": 6129,
+"sections": 9
+},
+{
+"pkg": "ms",
+"path": "node_modules/.pnpm/debug@4.4.3/node_modules/ms/README.md",
+"chars": 1886,
+"sections": 6
+},
+{
+"pkg": "cross-spawn",
+"path": "node_modules/.pnpm/cross-spawn@7.0.6/node_modules/cross-spawn/README.md",
+"chars": 4117,
+"sections": 9
+},
+{
+"pkg": "zwitch",
+"path": "node_modules/.pnpm/hast-util-to-parse5@8.0.1/node_modules/zwitch/README.md",
+"chars": 4893,
+"sections": 15
+},
+{
+"pkg": "hast-util-to-parse5",
+"path": "node_modules/.pnpm/hast-util-to-parse5@8.0.1/node_modules/hast-util-to-parse5/README.md",
+"chars": 6253,
+"sections": 15
+},
+{
+"pkg": "onetime",
+"path": "node_modules/.pnpm/execa@5.1.1/node_modules/onetime/README.md",
+"chars": 1962,
+"sections": 6
+},
+{
+"pkg": "merge-stream",
+"path": "node_modules/.pnpm/execa@5.1.1/node_modules/merge-stream/README.md",
+"chars": 1813,
+"sections": 6
+},
+{
+"pkg": "human-signals",
+"path": "node_modules/.pnpm/execa@5.1.1/node_modules/human-signals/README.md",
+"chars": 5095,
+"sections": 10
+},
+{
+"pkg": "vfile-location",
+"path": "node_modules/.pnpm/vfile-location@5.0.3/node_modules/vfile-location/README.md",
+"chars": 4881,
+"sections": 12
+},
+{
+"pkg": "style-to-object",
+"path": "node_modules/.pnpm/style-to-object@1.0.14/node_modules/style-to-object/README.md",
+"chars": 3857,
+"sections": 8
+},
+{
+"pkg": "remend",
+"path": "node_modules/.pnpm/streamdown@2.5.0_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/remend/README.md",
+"chars": 6952,
+"sections": 10
+},
+{
+"pkg": "remark-gfm",
+"path": "node_modules/.pnpm/streamdown@2.5.0_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/remark-gfm/README.md",
+"chars": 15431,
+"sections": 28
+},
+{
+"pkg": "marked",
+"path": "node_modules/.pnpm/streamdown@2.5.0_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/marked/README.md",
+"chars": 3090,
+"sections": 7
+},
+{
+"pkg": "rehype-raw",
+"path": "node_modules/.pnpm/streamdown@2.5.0_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/rehype-raw/README.md",
+"chars": 7811,
+"sections": 13
+},
+{
+"pkg": "ce-la-react",
+"path": "node_modules/.pnpm/media-chrome@4.19.2_react@19.2.6/node_modules/ce-la-react/README.md",
+"chars": 7546,
+"sections": 6
+},
+{
+"pkg": "micromark-extension-gfm",
+"path": "node_modules/.pnpm/remark-gfm@4.0.1/node_modules/micromark-extension-gfm/README.md",
+"chars": 13090,
+"sections": 26
+},
+{
+"pkg": "remark-stringify",
+"path": "node_modules/.pnpm/remark-gfm@4.0.1/node_modules/remark-stringify/README.md",
+"chars": 13503,
+"sections": 16
+},
+{
+"pkg": "mdast-util-gfm",
+"path": "node_modules/.pnpm/remark-gfm@4.0.1/node_modules/mdast-util-gfm/README.md",
+"chars": 13955,
+"sections": 27
+},
+{
+"pkg": "secure-json-parse",
+"path": "node_modules/.pnpm/secure-json-parse@4.1.0/node_modules/secure-json-parse/README.md",
+"chars": 5256,
+"sections": 9
+},
+{
+"pkg": "framer-motion",
+"path": "node_modules/.pnpm/motion@12.43.0_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/framer-motion/README.md",
+"chars": 6178,
+"sections": 16
+},
+{
+"pkg": "micromark-factory-title",
+"path": "node_modules/.pnpm/micromark-factory-title@2.0.1/node_modules/micromark-factory-title/README.md",
+"chars": 5348,
+"sections": 12
+},
+{
+"pkg": "html-void-elements",
+"path": "node_modules/.pnpm/hast-util-to-html@9.0.5/node_modules/html-void-elements/README.md",
+"chars": 3343,
+"sections": 13
+},
+{
+"pkg": "unist-util-remove-position",
+"path": "node_modules/.pnpm/unist-util-remove-position@5.0.0/node_modules/unist-util-remove-position/README.md",
+"chars": 6135,
+"sections": 12
+},
+{
+"pkg": "package-manager-detector",
+"path": "node_modules/.pnpm/@antfu+install-pkg@1.1.0/node_modules/package-manager-detector/README.md",
+"chars": 4484,
+"sections": 6
+},
+{
+"pkg": "tinyexec",
+"path": "node_modules/.pnpm/@antfu+install-pkg@1.1.0/node_modules/tinyexec/README.md",
+"chars": 7596,
+"sections": 19
+},
+{
+"pkg": "micromark-extension-gfm-autolink-literal",
+"path": "node_modules/.pnpm/micromark-extension-gfm@3.0.0/node_modules/micromark-extension-gfm-autolink-literal/README.md",
+"chars": 13745,
+"sections": 19
+},
+{
+"pkg": "micromark-extension-gfm-strikethrough",
+"path": "node_modules/.pnpm/micromark-extension-gfm@3.0.0/node_modules/micromark-extension-gfm-strikethrough/README.md",
+"chars": 8424,
+"sections": 19
+},
+{
+"pkg": "micromark-extension-gfm-task-list-item",
+"path": "node_modules/.pnpm/micromark-extension-gfm@3.0.0/node_modules/micromark-extension-gfm-task-list-item/README.md",
+"chars": 8697,
+"sections": 18
+},
+{
+"pkg": "micromark-util-combine-extensions",
+"path": "node_modules/.pnpm/micromark-extension-gfm@3.0.0/node_modules/micromark-util-combine-extensions/README.md",
+"chars": 5630,
+"sections": 13
+},
+{
+"pkg": "micromark-extension-gfm-table",
+"path": "node_modules/.pnpm/micromark-extension-gfm@3.0.0/node_modules/micromark-extension-gfm-table/README.md",
+"chars": 13473,
+"sections": 19
+},
+{
+"pkg": "micromark-extension-gfm-tagfilter",
+"path": "node_modules/.pnpm/micromark-extension-gfm@3.0.0/node_modules/micromark-extension-gfm-tagfilter/README.md",
+"chars": 6565,
+"sections": 17
+},
+{
+"pkg": "acorn",
+"path": "node_modules/.pnpm/react-jsx-parser@2.4.1_react-dom@19.2.6_react@19.2.6__react@19.2.6/node_modules/acorn/README.md",
+"chars": 11751,
+"sections": 7
+},
+{
+"pkg": "hast-util-raw",
+"path": "node_modules/.pnpm/rehype-raw@7.0.0/node_modules/hast-util-raw/README.md",
+"chars": 8019,
+"sections": 14
+},
+{
+"pkg": "katex",
+"path": "node_modules/.pnpm/katex@0.16.47/node_modules/katex/README.md",
+"chars": 7261,
+"sections": 8
+},
+{
+"pkg": "robust-predicates",
+"path": "node_modules/.pnpm/robust-predicates@3.0.3/node_modules/robust-predicates/README.md",
+"chars": 4614,
+"sections": 11
+},
+{
+"pkg": "exsolve",
+"path": "node_modules/.pnpm/exsolve@1.1.0/node_modules/exsolve/README.md",
+"chars": 6120,
+"sections": 13
+},
+{
+"pkg": "source-map-support",
+"path": "node_modules/.pnpm/@esbuild-kit+core-utils@3.3.2/node_modules/source-map-support/README.md",
+"chars": 9459,
+"sections": 5
+},
+{
+"pkg": "rehype-katex",
+"path": "node_modules/.pnpm/rehype-katex@7.0.1/node_modules/rehype-katex/README.md",
+"chars": 9126,
+"sections": 17
+},
+{
+"pkg": "hast-util-from-html-isomorphic",
+"path": "node_modules/.pnpm/rehype-katex@7.0.1/node_modules/hast-util-from-html-isomorphic/README.md",
+"chars": 8095,
+"sections": 17
+},
+{
+"pkg": "tiny-invariant",
+"path": "node_modules/.pnpm/tiny-invariant@1.3.3/node_modules/tiny-invariant/README.md",
+"chars": 4378,
+"sections": 8
+},
+{
+"pkg": "regex-recursion",
+"path": "node_modules/.pnpm/regex-recursion@6.0.2/node_modules/regex-recursion/README.md",
+"chars": 5692,
+"sections": 5
+},
+{
+"pkg": "regex-utilities",
+"path": "node_modules/.pnpm/regex-recursion@6.0.2/node_modules/regex-utilities/README.md",
+"chars": 3433,
+"sections": 8
+},
+{
+"pkg": "webidl-conversions",
+"path": "node_modules/.pnpm/webidl-conversions@7.0.0/node_modules/webidl-conversions/README.md",
+"chars": 9200,
+"sections": 6
+},
+{
+"pkg": "mdast-util-find-and-replace",
+"path": "node_modules/.pnpm/mdast-util-find-and-replace@3.0.2/node_modules/mdast-util-find-and-replace/README.md",
+"chars": 9166,
+"sections": 20
+},
+{
+"pkg": "cytoscape",
+"path": "node_modules/.pnpm/cytoscape-cose-bilkent@4.1.0_cytoscape@3.34.0/node_modules/cytoscape/README.md",
+"chars": 9794,
+"sections": 14
+},
+{
+"pkg": "cytoscape-cose-bilkent",
+"path": "node_modules/.pnpm/cytoscape-cose-bilkent@4.1.0_cytoscape@3.34.0/node_modules/cytoscape-cose-bilkent/README.md",
+"chars": 5307,
+"sections": 6
+},
+{
+"pkg": "character-reference-invalid",
+"path": "node_modules/.pnpm/character-reference-invalid@2.0.1/node_modules/character-reference-invalid/README.md",
+"chars": 4316,
+"sections": 14
+},
+{
+"pkg": "longest-streak",
+"path": "node_modules/.pnpm/longest-streak@3.1.0/node_modules/longest-streak/README.md",
+"chars": 3528,
+"sections": 13
+},
+{
+"pkg": "trim-lines",
+"path": "node_modules/.pnpm/mdast-util-to-hast@13.2.1/node_modules/trim-lines/README.md",
+"chars": 2880,
+"sections": 11
+},
+{
+"pkg": "hpagent",
+"path": "node_modules/.pnpm/@elastic+transport@9.4.0/node_modules/hpagent/README.md",
+"chars": 4022,
+"sections": 8
+},
+{
+"pkg": "trough",
+"path": "node_modules/.pnpm/trough@2.2.0/node_modules/trough/README.md",
+"chars": 10575,
+"sections": 17
+},
+{
+"pkg": "dayjs",
+"path": "node_modules/.pnpm/dayjs@1.11.21/node_modules/dayjs/README.md",
+"chars": 7914,
+"sections": 10
+},
+{
+"pkg": "bson",
+"path": "node_modules/.pnpm/bson@7.3.1/node_modules/bson/README.md",
+"chars": 14231,
+"sections": 15
+},
+{
+"pkg": "roughjs",
+"path": "node_modules/.pnpm/roughjs@4.6.6/node_modules/roughjs/README.md",
+"chars": 6057,
+"sections": 12
+},
+{
+"pkg": "resolve-pkg-maps",
+"path": "node_modules/.pnpm/get-tsconfig@4.14.0/node_modules/resolve-pkg-maps/README.md",
+"chars": 7765,
+"sections": 10
+},
+{
+"pkg": "get-tsconfig",
+"path": "node_modules/.pnpm/get-tsconfig@4.14.0/node_modules/get-tsconfig/README.md",
+"chars": 8300,
+"sections": 12
+},
+{
+"pkg": "markdown-table",
+"path": "node_modules/.pnpm/markdown-table@3.0.4/node_modules/markdown-table/README.md",
+"chars": 7261,
+"sections": 13
+},
+{
+"pkg": "xdg-portable",
+"path": "node_modules/.pnpm/xdg-portable@7.3.0/node_modules/xdg-portable/README.md",
+"chars": 13022,
+"sections": 16
+},
+{
+"pkg": "hast-util-from-parse5",
+"path": "node_modules/.pnpm/hast-util-raw@9.1.0/node_modules/hast-util-from-parse5/README.md",
+"chars": 8459,
+"sections": 15
+},
+{
+"pkg": "cytoscape-fcose",
+"path": "node_modules/.pnpm/cytoscape-fcose@2.2.0_cytoscape@3.34.0/node_modules/cytoscape-fcose/README.md",
+"chars": 11394,
+"sections": 8
+},
+{
+"pkg": "delaunator",
+"path": "node_modules/.pnpm/delaunator@5.1.0/node_modules/delaunator/README.md",
+"chars": 7299,
+"sections": 8
+},
+{
+"pkg": "oniguruma-parser",
+"path": "node_modules/.pnpm/oniguruma-parser@0.12.2/node_modules/oniguruma-parser/README.md",
+"chars": 14619,
+"sections": 15
+},
+{
+"pkg": "is-alphabetical",
+"path": "node_modules/.pnpm/is-alphabetical@2.0.1/node_modules/is-alphabetical/README.md",
+"chars": 3532,
+"sections": 13
+},
+{
+"pkg": "csstype",
+"path": "node_modules/.pnpm/@types+react@18.3.31/node_modules/csstype/README.md",
+"chars": 10887,
+"sections": 13
+},
+{
+"pkg": "es-toolkit",
+"path": "node_modules/.pnpm/mermaid@11.15.0/node_modules/es-toolkit/README.md",
+"chars": 4116,
+"sections": 4
+},
+{
+"pkg": "d3-sankey",
+"path": "node_modules/.pnpm/mermaid@11.15.0/node_modules/d3-sankey/README.md",
+"chars": 14258,
+"sections": 4
+},
+{
+"pkg": "extend",
+"path": "node_modules/.pnpm/extend@3.0.2/node_modules/extend/README.md",
+"chars": 3034,
+"sections": 5
+},
+{
+"pkg": "micromark-extension-cjk-friendly-gfm-strikethrough",
+"path": "node_modules/.pnpm/remark-cjk-friendly-gfm-strikethrough@2.1.0_@types+mdast@4.0.4_micromark-util-types@2.0.2_micromark@4.0.2_unified@11.0.5/node_modules/micromark-extension-cjk-friendly-gfm-strikethrough/README.md",
+"chars": 12239,
+"sections": 9
+},
+{
+"pkg": "bail",
+"path": "node_modules/.pnpm/bail@2.0.2/node_modules/bail/README.md",
+"chars": 2986,
+"sections": 13
+},
+{
+"pkg": "victory-vendor",
+"path": "node_modules/.pnpm/recharts@3.8.0_@types+react@19.2.15_react-dom@19.2.6_react@19.2.6__react-is@19.2.8_react@19.2.6_redux@5.0.1/node_modules/victory-vendor/README.md",
+"chars": 2195,
+"sections": 6
+},
+{
+"pkg": "react-is",
+"path": "node_modules/.pnpm/recharts@3.8.0_@types+react@19.2.15_react-dom@19.2.6_react@19.2.6__react-is@19.2.8_react@19.2.6_redux@5.0.1/node_modules/react-is/README.md",
+"chars": 2314,
+"sections": 4
+},
+{
+"pkg": "eventemitter3",
+"path": "node_modules/.pnpm/recharts@3.8.0_@types+react@19.2.15_react-dom@19.2.6_react@19.2.6__react-is@19.2.8_react@19.2.6_redux@5.0.1/node_modules/eventemitter3/README.md",
+"chars": 3085,
+"sections": 6
+},
+{
+"pkg": "magic-string",
+"path": "node_modules/.pnpm/@tailwindcss+node@4.3.0/node_modules/magic-string/README.md",
+"chars": 12592,
+"sections": 38
+},
+{
+"pkg": "mdast-util-gfm-autolink-literal",
+"path": "node_modules/.pnpm/mdast-util-gfm@3.1.0/node_modules/mdast-util-gfm-autolink-literal/README.md",
+"chars": 10187,
+"sections": 16
+},
+{
+"pkg": "mdast-util-gfm-table",
+"path": "node_modules/.pnpm/mdast-util-gfm@3.1.0/node_modules/mdast-util-gfm-table/README.md",
+"chars": 15938,
+"sections": 22
+},
+{
+"pkg": "is-hexadecimal",
+"path": "node_modules/.pnpm/parse-entities@4.0.2/node_modules/is-hexadecimal/README.md",
+"chars": 3526,
+"sections": 13
+},
+{
+"pkg": "is-alphanumerical",
+"path": "node_modules/.pnpm/parse-entities@4.0.2/node_modules/is-alphanumerical/README.md",
+"chars": 3591,
+"sections": 13
+},
+{
+"pkg": "micromark-factory-label",
+"path": "node_modules/.pnpm/micromark-factory-label@2.0.1/node_modules/micromark-factory-label/README.md",
+"chars": 5367,
+"sections": 12
+},
+{
+"pkg": "hast-util-parse-selector",
+"path": "node_modules/.pnpm/hast-util-parse-selector@4.0.0/node_modules/hast-util-parse-selector/README.md",
+"chars": 5558,
+"sections": 13
+},
+{
+"pkg": "micromark-factory-whitespace",
+"path": "node_modules/.pnpm/micromark-factory-whitespace@2.0.1/node_modules/micromark-factory-whitespace/README.md",
+"chars": 5301,
+"sections": 12
+},
+{
+"pkg": "whatwg-url",
+"path": "node_modules/.pnpm/mongodb-connection-string-url@7.0.1/node_modules/whatwg-url/README.md",
+"chars": 7066,
+"sections": 7
+},
+{
+"pkg": "micromark-util-subtokenize",
+"path": "node_modules/.pnpm/micromark-util-subtokenize@2.1.0/node_modules/micromark-util-subtokenize/README.md",
+"chars": 4616,
+"sections": 12
+},
+{
+"pkg": "micromark-factory-destination",
+"path": "node_modules/.pnpm/micromark-core-commonmark@2.0.3/node_modules/micromark-factory-destination/README.md",
+"chars": 5680,
+"sections": 12
+},
+{
+"pkg": "@better-auth/utils",
+"path": "node_modules/.pnpm/@better-auth+core@1.5.5_@better-auth+utils@0.3.1_@better-fetch+fetch@1.1.21_better-call@1.3.2_t46gio2k52sl6fylwzd6awpeo4/node_modules/@better-auth/utils/README.md",
+"chars": 11238,
+"sections": 38
+},
+{
+"pkg": "@opentelemetry/api",
+"path": "node_modules/.pnpm/eve@0.22.1_@opentelemetry+api@1.9.1_@upstash+redis@1.38.0_ai@7.0.0-canary.171_zod@4.4.3__driz_2oavzhxlzqkvfczptaxajyah5i/node_modules/@opentelemetry/api/README.md",
+"chars": 8313,
+"sections": 11
+},
+{
+"pkg": "@reduxjs/toolkit",
+"path": "node_modules/.pnpm/@reduxjs+toolkit@2.12.0_react-redux@9.3.0_@types+react@19.2.15_react@19.2.6_redux@5.0.1__react@19.2.6/node_modules/@reduxjs/toolkit/README.md",
+"chars": 8123,
+"sections": 9
+},
+{
+"pkg": "@upsetjs/venn.js",
+"path": "node_modules/.pnpm/@upsetjs+venn.js@2.0.0/node_modules/@upsetjs/venn.js/README.md",
+"chars": 8193,
+"sections": 9
+},
+{
+"pkg": "@jridgewell/trace-mapping",
+"path": "node_modules/.pnpm/@jridgewell+remapping@2.3.5/node_modules/@jridgewell/trace-mapping/README.md",
+"chars": 14322,
+"sections": 4
+},
+{
+"pkg": "@jridgewell/gen-mapping",
+"path": "node_modules/.pnpm/@jridgewell+remapping@2.3.5/node_modules/@jridgewell/gen-mapping/README.md",
+"chars": 7466,
+"sections": 4
+},
+{
+"pkg": "@jridgewell/remapping",
+"path": "node_modules/.pnpm/@jridgewell+remapping@2.3.5/node_modules/@jridgewell/remapping/README.md",
+"chars": 7300,
+"sections": 5
+},
+{
+"pkg": "@iconify/types",
+"path": "node_modules/.pnpm/@iconify+utils@3.1.3/node_modules/@iconify/types/README.md",
+"chars": 15649,
+"sections": 5
+},
+{
+"pkg": "@alloc/quick-lru",
+"path": "node_modules/.pnpm/@tailwindcss+postcss@4.3.0/node_modules/@alloc/quick-lru/README.md",
+"chars": 3639,
+"sections": 6
+},
+{
+"pkg": "@rolldown/pluginutils",
+"path": "node_modules/.pnpm/rolldown@1.1.5/node_modules/@rolldown/pluginutils/README.md",
+"chars": 6177,
+"sections": 11
+},
+{
+"pkg": "@opentelemetry/core",
+"path": "node_modules/.pnpm/@opentelemetry+core@2.10.0_@opentelemetry+api@1.9.1/node_modules/@opentelemetry/core/README.md",
+"chars": 2760,
+"sections": 4
+},
+{
+"pkg": "@opentelemetry/semantic-conventions",
+"path": "node_modules/.pnpm/@opentelemetry+core@2.10.0_@opentelemetry+api@1.9.1/node_modules/@opentelemetry/semantic-conventions/README.md",
+"chars": 9745,
+"sections": 11
+},
+{
+"pkg": "@jridgewell/sourcemap-codec",
+"path": "node_modules/.pnpm/@jridgewell+trace-mapping@0.3.31/node_modules/@jridgewell/sourcemap-codec/README.md",
+"chars": 9990,
+"sections": 4
+},
+{
+"pkg": "@elastic/transport",
+"path": "node_modules/.pnpm/@elastic+elasticsearch@9.4.3/node_modules/@elastic/transport/README.md",
+"chars": 2465,
+"sections": 5
+},
+{
+"pkg": "@xyflow/system",
+"path": "node_modules/.pnpm/@xyflow+system@0.0.79/node_modules/@xyflow/system/README.md",
+"chars": 2469,
+"sections": 7
+},
+{
+"pkg": "@date-fns/tz",
+"path": "node_modules/.pnpm/react-day-picker@10.0.1_@types+react@19.2.15_react@19.2.6/node_modules/@date-fns/tz/README.md",
+"chars": 9374,
+"sections": 13
+},
+{
+"pkg": "@esbuild-kit/esm-loader",
+"path": "node_modules/.pnpm/@esbuild-kit+esm-loader@2.6.5/node_modules/@esbuild-kit/esm-loader/README.md",
+"chars": 7137,
+"sections": 12
+}
+]

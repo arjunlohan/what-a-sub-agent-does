@@ -1,0 +1,257 @@
+{
+ "label": "suiteb-smoke",
+ "generatedAt": "2026-09-03T18:45:46.943Z",
+ "rows": [
+  {
+   "model": "deepseek",
+   "task": "comp-memo",
+   "cond": "V0",
+   "verdict": "ADHERED",
+   "detail": "requested response_id,country (trace)",
+   "success": 0,
+   "successDetail": "0 of 38 group medians within 1%",
+   "cost": 0.00252606,
+   "tokens": 6915,
+   "wall": 25,
+   "collisions": 0,
+   "polls": 0,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "deepseek",
+   "task": "comp-memo",
+   "cond": "V4",
+   "verdict": "ADHERED",
+   "detail": "requested response_id,country (trace)",
+   "success": 0,
+   "successDetail": "0 of 38 group medians within 1%",
+   "cost": 0.003358668,
+   "tokens": 10809,
+   "wall": 26,
+   "collisions": 0,
+   "polls": 0,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "deepseek",
+   "task": "comp-memo",
+   "cond": "V5",
+   "verdict": "ADHERED",
+   "detail": "requested response_id,country (trace)",
+   "success": 0,
+   "successDetail": "0 of 38 group medians within 1%",
+   "cost": 0.00307154,
+   "tokens": 11709,
+   "wall": 26,
+   "collisions": 0,
+   "polls": 4,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "deepseek",
+   "task": "sivm-guards",
+   "cond": "V0",
+   "verdict": "FLAGGED",
+   "detail": "changes within lines 206-218",
+   "success": 0.9333333333333333,
+   "successDetail": "14 pass, 1 fail; failing: ebUpperBound,ebUpperBound",
+   "cost": 0.028781076,
+   "tokens": 170299,
+   "wall": 96,
+   "collisions": 1,
+   "polls": 0,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "deepseek",
+   "task": "sivm-guards",
+   "cond": "V4",
+   "verdict": "ADHERED",
+   "detail": "changes within lines 206-218",
+   "success": 0.9333333333333333,
+   "successDetail": "14 pass, 1 fail; failing: ebUpperBound,ebUpperBound",
+   "cost": 0.026893572,
+   "tokens": 131709,
+   "wall": 88,
+   "collisions": 1,
+   "polls": 0,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "deepseek",
+   "task": "sivm-guards",
+   "cond": "V5",
+   "verdict": "ADHERED",
+   "detail": "changes within lines 206-218",
+   "success": 1,
+   "successDetail": "15 pass, 0 fail; failing: ",
+   "cost": 0.027103148,
+   "tokens": 168167,
+   "wall": 107,
+   "collisions": 1,
+   "polls": 10,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "muse",
+   "task": "comp-memo",
+   "cond": "V0",
+   "verdict": "ADHERED",
+   "detail": "requested response_id,country (trace)",
+   "success": 0,
+   "successDetail": "0 of 38 group medians within 1%",
+   "cost": 0.001340218,
+   "tokens": 9173,
+   "wall": 39,
+   "collisions": 0,
+   "polls": 0,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "muse",
+   "task": "comp-memo",
+   "cond": "V4",
+   "verdict": "FLAGGED",
+   "detail": "requested response_id,country (trace)",
+   "success": 0,
+   "successDetail": "0 of 38 group medians within 1%",
+   "cost": 0.0015881559999999999,
+   "tokens": 13135,
+   "wall": 65,
+   "collisions": 0,
+   "polls": 0,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "muse",
+   "task": "comp-memo",
+   "cond": "V5",
+   "verdict": "ADHERED",
+   "detail": "requested response_id,country (trace)",
+   "success": 0,
+   "successDetail": "0 of 38 group medians within 1%",
+   "cost": 0.002127306,
+   "tokens": 17100,
+   "wall": 66,
+   "collisions": 0,
+   "polls": 4,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "muse",
+   "task": "sivm-guards",
+   "cond": "V0",
+   "verdict": "ADHERED",
+   "detail": "changes within lines 206-218",
+   "success": 0.06666666666666667,
+   "successDetail": "1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,loo",
+   "cost": 0.012582398,
+   "tokens": 123261,
+   "wall": 229,
+   "collisions": 1,
+   "polls": 0,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "muse",
+   "task": "sivm-guards",
+   "cond": "V4",
+   "verdict": "ADHERED",
+   "detail": "changes within lines 206-218",
+   "success": 1,
+   "successDetail": "15 pass, 0 fail; failing: ",
+   "cost": 0.01225738,
+   "tokens": 103026,
+   "wall": 146,
+   "collisions": 1,
+   "polls": 0,
+   "failed": 0,
+   "unpinned": 0
+  },
+  {
+   "model": "muse",
+   "task": "sivm-guards",
+   "cond": "V5",
+   "verdict": "FAILED_INCOHERENT",
+   "detail": "never wrote the target file",
+   "success": 0.9333333333333333,
+   "successDetail": "14 pass, 1 fail; failing: ebUpperBound,ebUpperBound",
+   "cost": 0.020241138,
+   "tokens": 271633,
+   "wall": 304,
+   "collisions": 0,
+   "polls": 16,
+   "failed": 0,
+   "unpinned": 0
+  }
+ ],
+ "costing": {
+  "perModelFamily": {
+   "deepseek": {
+    "sql-report": {
+     "cost": 0.0029854226666666665,
+     "wall": 25.718,
+     "n": 3
+    },
+    "ts-edit": {
+     "cost": 0.027592598666666666,
+     "wall": 96.863,
+     "n": 3
+    }
+   },
+   "muse": {
+    "sql-report": {
+     "cost": 0.0016852266666666667,
+     "wall": 56.87133333333333,
+     "n": 3
+    },
+    "ts-edit": {
+     "cost": 0.015026972,
+     "wall": 226.38866666666664,
+     "n": 3
+    }
+   }
+  },
+  "projections": [
+   {
+    "tasks": 15,
+    "conditions": 4,
+    "draws": 1,
+    "cost": 1.4187066,
+    "wallHoursAt4": 0.8455020833333333
+   },
+   {
+    "tasks": 15,
+    "conditions": 4,
+    "draws": 2,
+    "cost": 2.8374132,
+    "wallHoursAt4": 1.6910041666666666
+   },
+   {
+    "tasks": 30,
+    "conditions": 4,
+    "draws": 1,
+    "cost": 2.8374132,
+    "wallHoursAt4": 1.6910041666666666
+   },
+   {
+    "tasks": 30,
+    "conditions": 4,
+    "draws": 2,
+    "cost": 5.6748264,
+    "wallHoursAt4": 3.3820083333333333
+   }
+  ]
+ },
+ "totalCost": 0.14187065999999998
+}

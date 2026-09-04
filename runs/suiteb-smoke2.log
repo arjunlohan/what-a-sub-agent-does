@@ -1,0 +1,13 @@
+deepseek|comp-memo|V0|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0069; 39s
+deepseek|comp-memo|V5|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0060; 30s
+deepseek|comp-memo|V5E|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0081; 40s
+deepseek|sivm-guards|V0|1: success 0.93 (14 pass, 1 fail; failing: ebUpperBound,ebUpperBound); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0469; 80s
+deepseek|sivm-guards|V5|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0552; 95s
+deepseek|sivm-guards|V5E|1: success 0.93 (14 pass, 1 fail; failing: ebUpperBound,ebUpperBound); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0748; 131s
+muse|comp-memo|V0|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 43s
+muse|comp-memo|V5|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 57s
+muse|comp-memo|V5E|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 88s
+muse|sivm-guards|V0|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,loo); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0114; 242s
+muse|sivm-guards|V5|1: success 0.93 (14 pass, 1 fail; failing: ebUpperBound,ebUpperBound); verdicts {"W1":"FAILED_INCOHERENT","W2":"RECORDED","W3":"RECORDED"}; $0.0217; 535s
+muse|sivm-guards|V5E|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,loo); verdicts {"W2":"RECORDED","W1":"FLAGGED","W3":"RECORDED"}; $0.0172; 315s
+SUITE_B_DONE spent $0.2531

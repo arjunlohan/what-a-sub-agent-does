@@ -1,0 +1,1680 @@
+{
+ "label": "pilot",
+ "generatedAt": "2026-09-03T07:22:17.309Z",
+ "records": 720,
+ "usable": 720,
+ "excluded": {
+  "callFailed": 0,
+  "unpinned": 0
+ },
+ "models": [
+  "deepseek",
+  "muse"
+ ],
+ "conditions": [
+  "LM4",
+  "V0",
+  "V2",
+  "V4"
+ ],
+ "domains": [
+  "code-edit",
+  "data-extraction",
+  "file-ops",
+  "summarization",
+  "tool-selection"
+ ],
+ "contextChars": {
+  "LM4": 1044,
+  "V0": 0,
+  "V2": 404,
+  "V4": 1002
+ },
+ "table": {
+  "deepseek": {
+   "LM4": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 85,
+     "FLAGGED": 4,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.9444444444444444,
+     "FLAGGED": 0.044444444444444446,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0.011111111111111112,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 9372,
+    "reasoningTokens": 1062,
+    "outputTokens": 1267,
+    "costPerRun": 0.0020652677333333337,
+    "cost": 0.18587409600000004,
+    "disagreement": 0.1
+   },
+   "V0": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 82,
+     "FLAGGED": 5,
+     "DEVIATED": 2,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.9111111111111111,
+     "FLAGGED": 0.05555555555555555,
+     "DEVIATED": 0.022222222222222223,
+     "FAILED_FORMAT": 0.011111111111111112,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 7827,
+    "reasoningTokens": 864,
+    "outputTokens": 1051,
+    "costPerRun": 0.0016241285333333326,
+    "cost": 0.14617156799999995,
+    "disagreement": 0.13333333333333333
+   },
+   "V2": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 62,
+     "FLAGGED": 24,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 4,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.6888888888888889,
+     "FLAGGED": 0.26666666666666666,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0.044444444444444446,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 21925,
+    "reasoningTokens": 2554,
+    "outputTokens": 2731,
+    "costPerRun": 0.003936040533333332,
+    "cost": 0.3542436479999999,
+    "disagreement": 0.3333333333333333
+   },
+   "V4": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 64,
+     "FLAGGED": 21,
+     "DEVIATED": 3,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.7111111111111111,
+     "FLAGGED": 0.23333333333333334,
+     "DEVIATED": 0.03333333333333333,
+     "FAILED_FORMAT": 0.022222222222222223,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 17739,
+    "reasoningTokens": 2043,
+    "outputTokens": 2242,
+    "costPerRun": 0.0032234402666666663,
+    "cost": 0.29010962399999995,
+    "disagreement": 0.3
+   }
+  },
+  "muse": {
+   "LM4": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 86,
+     "FLAGGED": 4,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.9555555555555556,
+     "FLAGGED": 0.044444444444444446,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 10179,
+    "reasoningTokens": 1058,
+    "outputTokens": 1286,
+    "costPerRun": 0.0003288094888888891,
+    "cost": 0.02959285400000002,
+    "disagreement": 0.06666666666666667
+   },
+   "V0": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 85,
+     "FLAGGED": 5,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.9444444444444444,
+     "FLAGGED": 0.05555555555555555,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 11470,
+    "reasoningTokens": 1138,
+    "outputTokens": 1369,
+    "costPerRun": 0.0003224113777777777,
+    "cost": 0.029017023999999992,
+    "disagreement": 0.03333333333333333
+   },
+   "V2": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 51,
+     "FLAGGED": 30,
+     "DEVIATED": 9,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.5666666666666667,
+     "FLAGGED": 0.3333333333333333,
+     "DEVIATED": 0.1,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 25144,
+    "reasoningTokens": 2286,
+    "outputTokens": 2594,
+    "costPerRun": 0.0005794500222222221,
+    "cost": 0.052150501999999994,
+    "disagreement": 0.3333333333333333
+   },
+   "V4": {
+    "n": 90,
+    "counts": {
+     "ADHERED": 43,
+     "FLAGGED": 37,
+     "DEVIATED": 10,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.4777777777777778,
+     "FLAGGED": 0.4111111111111111,
+     "DEVIATED": 0.1111111111111111,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 26383,
+    "reasoningTokens": 2393,
+    "outputTokens": 2692,
+    "costPerRun": 0.0006002192444444445,
+    "cost": 0.05401973200000001,
+    "disagreement": 0.26666666666666666
+   }
+  }
+ },
+ "byDomain": {
+  "deepseek": {
+   "code-edit": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 1,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.05555555555555555,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 19857,
+     "reasoningTokens": 2507,
+     "outputTokens": 3073,
+     "costPerRun": 0.004383481333333332,
+     "cost": 0.07890266399999998,
+     "disagreement": 0.3333333333333333
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 13,
+      "FLAGGED": 4,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 1,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7222222222222222,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.05555555555555555,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 19269,
+     "reasoningTokens": 2534,
+     "outputTokens": 2993,
+     "costPerRun": 0.004155730666666666,
+     "cost": 0.074803152,
+     "disagreement": 0.3333333333333333
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 8,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 4,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.4444444444444444,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.2222222222222222,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 59192,
+     "reasoningTokens": 7291,
+     "outputTokens": 7676,
+     "costPerRun": 0.010422477333333333,
+     "cost": 0.187604592,
+     "disagreement": 0.6666666666666666
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 13,
+      "FLAGGED": 2,
+      "DEVIATED": 1,
+      "FAILED_FORMAT": 2,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7222222222222222,
+      "FLAGGED": 0.1111111111111111,
+      "DEVIATED": 0.05555555555555555,
+      "FAILED_FORMAT": 0.1111111111111111,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 41434,
+     "reasoningTokens": 5098,
+     "outputTokens": 5581,
+     "costPerRun": 0.007537921333333333,
+     "cost": 0.135682584,
+     "disagreement": 0.5
+    }
+   },
+   "data-extraction": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2736,
+     "reasoningTokens": 97,
+     "outputTokens": 277,
+     "costPerRun": 0.0009184333333333331,
+     "cost": 0.016531799999999996,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2471,
+     "reasoningTokens": 62,
+     "outputTokens": 260,
+     "costPerRun": 0.000771632,
+     "cost": 0.013889375999999998,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 7981,
+     "reasoningTokens": 714,
+     "outputTokens": 897,
+     "costPerRun": 0.0017455413333333334,
+     "cost": 0.031419744,
+     "disagreement": 0
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 17,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9444444444444444,
+      "FLAGGED": 0.05555555555555555,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4635,
+     "reasoningTokens": 341,
+     "outputTokens": 532,
+     "costPerRun": 0.0013563960000000002,
+     "cost": 0.024415128000000005,
+     "disagreement": 0.16666666666666666
+    }
+   },
+   "file-ops": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 17,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9444444444444444,
+      "FLAGGED": 0.05555555555555555,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 15924,
+     "reasoningTokens": 1910,
+     "outputTokens": 2030,
+     "costPerRun": 0.0028035560000000005,
+     "cost": 0.050464008000000005,
+     "disagreement": 0.16666666666666666
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9613,
+     "reasoningTokens": 1053,
+     "outputTokens": 1166,
+     "costPerRun": 0.0016016813333333334,
+     "cost": 0.028830264,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 9,
+      "FLAGGED": 9,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 28850,
+     "reasoningTokens": 3377,
+     "outputTokens": 3515,
+     "costPerRun": 0.004750852,
+     "cost": 0.085515336,
+     "disagreement": 0
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 7,
+      "FLAGGED": 11,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3888888888888889,
+      "FLAGGED": 0.6111111111111112,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 22266,
+     "reasoningTokens": 2572,
+     "outputTokens": 2716,
+     "costPerRun": 0.003684244,
+     "cost": 0.066316392,
+     "disagreement": 0.3333333333333333
+    }
+   },
+   "summarization": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4011,
+     "reasoningTokens": 403,
+     "outputTokens": 481,
+     "costPerRun": 0.001183254666666667,
+     "cost": 0.021298584000000006,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 16,
+      "FLAGGED": 0,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8888888888888888,
+      "FLAGGED": 0,
+      "DEVIATED": 0.1111111111111111,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2965,
+     "reasoningTokens": 227,
+     "outputTokens": 307,
+     "costPerRun": 0.0007050439999999999,
+     "cost": 0.012690792,
+     "disagreement": 0.16666666666666666
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8333333333333334,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 5131,
+     "reasoningTokens": 529,
+     "outputTokens": 616,
+     "costPerRun": 0.00122564,
+     "cost": 0.02206152,
+     "disagreement": 0.5
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 12,
+      "FLAGGED": 4,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.6666666666666666,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0.1111111111111111,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 8476,
+     "reasoningTokens": 921,
+     "outputTokens": 1006,
+     "costPerRun": 0.0015475480000000002,
+     "cost": 0.027855864,
+     "disagreement": 0.5
+    }
+   },
+   "tool-selection": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4333,
+     "reasoningTokens": 394,
+     "outputTokens": 475,
+     "costPerRun": 0.0010376133333333333,
+     "cost": 0.01867704,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 17,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9444444444444444,
+      "FLAGGED": 0.05555555555555555,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4815,
+     "reasoningTokens": 443,
+     "outputTokens": 527,
+     "costPerRun": 0.000886554666666667,
+     "cost": 0.015957984000000005,
+     "disagreement": 0.16666666666666666
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 4,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 8472,
+     "reasoningTokens": 859,
+     "outputTokens": 949,
+     "costPerRun": 0.0015356919999999997,
+     "cost": 0.027642455999999996,
+     "disagreement": 0.5
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8333333333333334,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 11883,
+     "reasoningTokens": 1283,
+     "outputTokens": 1373,
+     "costPerRun": 0.001991092,
+     "cost": 0.035839656,
+     "disagreement": 0
+    }
+   }
+  },
+  "muse": {
+   "code-edit": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 4,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 13198,
+     "reasoningTokens": 1469,
+     "outputTokens": 2002,
+     "costPerRun": 0.0004695532222222223,
+     "cost": 0.008451958,
+     "disagreement": 0.3333333333333333
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 13,
+      "FLAGGED": 5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7222222222222222,
+      "FLAGGED": 0.2777777777777778,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 19442,
+     "reasoningTokens": 1867,
+     "outputTokens": 2420,
+     "costPerRun": 0.0005234083333333333,
+     "cost": 0.00942135,
+     "disagreement": 0.16666666666666666
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 8,
+      "DEVIATED": 4,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.4444444444444444,
+      "DEVIATED": 0.2222222222222222,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 32870,
+     "reasoningTokens": 3134,
+     "outputTokens": 3833,
+     "costPerRun": 0.0008341657777777777,
+     "cost": 0.015014983999999999,
+     "disagreement": 0.3333333333333333
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 10,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.5555555555555556,
+      "DEVIATED": 0.1111111111111111,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 41448,
+     "reasoningTokens": 3968,
+     "outputTokens": 4587,
+     "costPerRun": 0.0009703797777777779,
+     "cost": 0.017466836000000003,
+     "disagreement": 0.6666666666666666
+    }
+   },
+   "data-extraction": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 5229,
+     "reasoningTokens": 526,
+     "outputTokens": 724,
+     "costPerRun": 0.00023387544444444444,
+     "cost": 0.004209758,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 6370,
+     "reasoningTokens": 659,
+     "outputTokens": 859,
+     "costPerRun": 0.000268041,
+     "cost": 0.004824738,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8333333333333334,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 21480,
+     "reasoningTokens": 2062,
+     "outputTokens": 2321,
+     "costPerRun": 0.0005581336666666667,
+     "cost": 0.010046406,
+     "disagreement": 0.3333333333333333
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8333333333333334,
+      "FLAGGED": 0.16666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9383,
+     "reasoningTokens": 859,
+     "outputTokens": 1078,
+     "costPerRun": 0.00030060755555555554,
+     "cost": 0.005410936,
+     "disagreement": 0
+    }
+   },
+   "file-ops": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 14465,
+     "reasoningTokens": 1522,
+     "outputTokens": 1681,
+     "costPerRun": 0.0003713235555555556,
+     "cost": 0.006683824000000001,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 13653,
+     "reasoningTokens": 1363,
+     "outputTokens": 1520,
+     "costPerRun": 0.0003166636666666667,
+     "cost": 0.005699946000000001,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 8,
+      "FLAGGED": 10,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.4444444444444444,
+      "FLAGGED": 0.5555555555555556,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 22150,
+     "reasoningTokens": 2198,
+     "outputTokens": 2400,
+     "costPerRun": 0.0005014161111111111,
+     "cost": 0.009025489999999999,
+     "disagreement": 0.16666666666666666
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 16,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.1111111111111111,
+      "FLAGGED": 0.8888888888888888,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 30606,
+     "reasoningTokens": 2934,
+     "outputTokens": 3180,
+     "costPerRun": 0.0006620284444444445,
+     "cost": 0.011916512,
+     "disagreement": 0.3333333333333333
+    }
+   },
+   "summarization": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 8339,
+     "reasoningTokens": 828,
+     "outputTokens": 952,
+     "costPerRun": 0.00029772111111111107,
+     "cost": 0.005358979999999999,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 7034,
+     "reasoningTokens": 735,
+     "outputTokens": 852,
+     "costPerRun": 0.00022388711111111112,
+     "cost": 0.004029968,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 7,
+      "DEVIATED": 5,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.3888888888888889,
+      "DEVIATED": 0.2777777777777778,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 33421,
+     "reasoningTokens": 2617,
+     "outputTokens": 2858,
+     "costPerRun": 0.0006545185555555555,
+     "cost": 0.011781334,
+     "disagreement": 0.5
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 6,
+      "FLAGGED": 4,
+      "DEVIATED": 8,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0.4444444444444444,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 34735,
+     "reasoningTokens": 2758,
+     "outputTokens": 3020,
+     "costPerRun": 0.0006936401111111111,
+     "cost": 0.012485522,
+     "disagreement": 0.16666666666666666
+    }
+   },
+   "tool-selection": {
+    "LM4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9665,
+     "reasoningTokens": 948,
+     "outputTokens": 1073,
+     "costPerRun": 0.0002715741111111111,
+     "cost": 0.004888334,
+     "disagreement": 0
+    },
+    "V0": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 10851,
+     "reasoningTokens": 1069,
+     "outputTokens": 1195,
+     "costPerRun": 0.0002800567777777778,
+     "cost": 0.005041022,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 16,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8888888888888888,
+      "FLAGGED": 0.1111111111111111,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 15799,
+     "reasoningTokens": 1421,
+     "outputTokens": 1559,
+     "costPerRun": 0.00034901600000000006,
+     "cost": 0.006282288000000001,
+     "disagreement": 0.3333333333333333
+    },
+    "V4": {
+     "n": 18,
+     "counts": {
+      "ADHERED": 14,
+      "FLAGGED": 4,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7777777777777778,
+      "FLAGGED": 0.2222222222222222,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 15745,
+     "reasoningTokens": 1444,
+     "outputTokens": 1592,
+     "costPerRun": 0.0003744403333333334,
+     "cost": 0.006739926000000001,
+     "disagreement": 0.16666666666666666
+    }
+   }
+  }
+ },
+ "bySalience": {
+  "deepseek": {
+   "blatant": {
+    "LM4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 43,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 1,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9555555555555556,
+      "FLAGGED": 0.022222222222222223,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.022222222222222223,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9137,
+     "reasoningTokens": 1057,
+     "outputTokens": 1248,
+     "costPerRun": 0.0020549738666666663,
+     "cost": 0.09247382399999998,
+     "disagreement": 0.06666666666666667
+    },
+    "V0": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 40,
+      "FLAGGED": 3,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8888888888888888,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0.044444444444444446,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 7368,
+     "reasoningTokens": 786,
+     "outputTokens": 976,
+     "costPerRun": 0.0015243237333333332,
+     "cost": 0.068594568,
+     "disagreement": 0.2
+    },
+    "V2": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 24,
+      "FLAGGED": 21,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5333333333333333,
+      "FLAGGED": 0.4666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 22513,
+     "reasoningTokens": 2633,
+     "outputTokens": 2843,
+     "costPerRun": 0.004126681066666666,
+     "cost": 0.185700648,
+     "disagreement": 0.4666666666666667
+    },
+    "V4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 22,
+      "FLAGGED": 19,
+      "DEVIATED": 3,
+      "FAILED_FORMAT": 1,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.4888888888888889,
+      "FLAGGED": 0.4222222222222222,
+      "DEVIATED": 0.06666666666666667,
+      "FAILED_FORMAT": 0.022222222222222223,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 20906,
+     "reasoningTokens": 2396,
+     "outputTokens": 2599,
+     "costPerRun": 0.0037007642666666675,
+     "cost": 0.16653439200000003,
+     "disagreement": 0.4
+    }
+   },
+   "subtle": {
+    "LM4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9608,
+     "reasoningTokens": 1067,
+     "outputTokens": 1287,
+     "costPerRun": 0.0020755615999999994,
+     "cost": 0.09340027199999998,
+     "disagreement": 0.13333333333333333
+    },
+    "V0": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 1,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.044444444444444446,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.022222222222222223,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 8285,
+     "reasoningTokens": 942,
+     "outputTokens": 1126,
+     "costPerRun": 0.0017239333333333336,
+     "cost": 0.07757700000000001,
+     "disagreement": 0.06666666666666667
+    },
+    "V2": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 38,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 4,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.8444444444444444,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.08888888888888889,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 21338,
+     "reasoningTokens": 2475,
+     "outputTokens": 2619,
+     "costPerRun": 0.0037454000000000007,
+     "cost": 0.16854300000000003,
+     "disagreement": 0.2
+    },
+    "V4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 1,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.044444444444444446,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0.022222222222222223,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 14572,
+     "reasoningTokens": 1690,
+     "outputTokens": 1884,
+     "costPerRun": 0.002746116266666666,
+     "cost": 0.12357523199999998,
+     "disagreement": 0.2
+    }
+   }
+  },
+  "muse": {
+   "blatant": {
+    "LM4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 43,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9555555555555556,
+      "FLAGGED": 0.044444444444444446,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 10378,
+     "reasoningTokens": 1106,
+     "outputTokens": 1332,
+     "costPerRun": 0.00034252755555555563,
+     "cost": 0.015413740000000004,
+     "disagreement": 0.06666666666666667
+    },
+    "V0": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 43,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9555555555555556,
+      "FLAGGED": 0.044444444444444446,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 10688,
+     "reasoningTokens": 1096,
+     "outputTokens": 1321,
+     "costPerRun": 0.0003130875111111111,
+     "cost": 0.014088938,
+     "disagreement": 0.06666666666666667
+    },
+    "V2": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 18,
+      "FLAGGED": 22,
+      "DEVIATED": 5,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.4,
+      "FLAGGED": 0.4888888888888889,
+      "DEVIATED": 0.1111111111111111,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 24184,
+     "reasoningTokens": 2206,
+     "outputTokens": 2504,
+     "costPerRun": 0.0005710668444444444,
+     "cost": 0.025698008,
+     "disagreement": 0.2
+    },
+    "V4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 15,
+      "FLAGGED": 22,
+      "DEVIATED": 8,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.4888888888888889,
+      "DEVIATED": 0.17777777777777778,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 24534,
+     "reasoningTokens": 2154,
+     "outputTokens": 2461,
+     "costPerRun": 0.0005512773333333335,
+     "cost": 0.024807480000000003,
+     "disagreement": 0.2
+    }
+   },
+   "subtle": {
+    "LM4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 43,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9555555555555556,
+      "FLAGGED": 0.044444444444444446,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9980,
+     "reasoningTokens": 1011,
+     "outputTokens": 1241,
+     "costPerRun": 0.0003150914222222221,
+     "cost": 0.014179113999999996,
+     "disagreement": 0.06666666666666667
+    },
+    "V0": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 42,
+      "FLAGGED": 3,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.9333333333333333,
+      "FLAGGED": 0.06666666666666667,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 12251,
+     "reasoningTokens": 1181,
+     "outputTokens": 1417,
+     "costPerRun": 0.00033173524444444444,
+     "cost": 0.014928086,
+     "disagreement": 0
+    },
+    "V2": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 33,
+      "FLAGGED": 8,
+      "DEVIATED": 4,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7333333333333333,
+      "FLAGGED": 0.17777777777777778,
+      "DEVIATED": 0.08888888888888889,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 26104,
+     "reasoningTokens": 2367,
+     "outputTokens": 2684,
+     "costPerRun": 0.0005878332000000001,
+     "cost": 0.026452494000000007,
+     "disagreement": 0.4666666666666667
+    },
+    "V4": {
+     "n": 45,
+     "counts": {
+      "ADHERED": 28,
+      "FLAGGED": 15,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.6222222222222222,
+      "FLAGGED": 0.3333333333333333,
+      "DEVIATED": 0.044444444444444446,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 28232,
+     "reasoningTokens": 2631,
+     "outputTokens": 2922,
+     "costPerRun": 0.0006491611555555556,
+     "cost": 0.029212252,
+     "disagreement": 0.3333333333333333
+    }
+   }
+  }
+ },
+ "totalCost": 1.1411790480000013
+}

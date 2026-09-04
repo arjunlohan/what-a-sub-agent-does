@@ -1,0 +1,876 @@
+{
+ "label": "smoke.rescored",
+ "generatedAt": "2026-09-03T07:02:28.042Z",
+ "records": 40,
+ "usable": 40,
+ "excluded": {
+  "callFailed": 0,
+  "unpinned": 0
+ },
+ "models": [
+  "deepseek",
+  "muse"
+ ],
+ "conditions": [
+  "V0",
+  "V4"
+ ],
+ "domains": [
+  "code-edit",
+  "data-extraction",
+  "file-ops",
+  "summarization",
+  "tool-selection"
+ ],
+ "contextChars": {
+  "V0": 0,
+  "V4": 1103
+ },
+ "table": {
+  "deepseek": {
+   "V0": {
+    "n": 10,
+    "counts": {
+     "ADHERED": 8,
+     "FLAGGED": 2,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.8,
+     "FLAGGED": 0.2,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 22844,
+    "reasoningTokens": 2805,
+    "outputTokens": 2997,
+    "costPerRun": 0.004424068000000001,
+    "cost": 0.044240680000000004,
+    "disagreement": null
+   },
+   "V4": {
+    "n": 10,
+    "counts": {
+     "ADHERED": 8,
+     "FLAGGED": 1,
+     "DEVIATED": 1,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.8,
+     "FLAGGED": 0.1,
+     "DEVIATED": 0.1,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 20369,
+    "reasoningTokens": 2524,
+    "outputTokens": 2723,
+    "costPerRun": 0.004172828,
+    "cost": 0.04172828,
+    "disagreement": null
+   }
+  },
+  "muse": {
+   "V0": {
+    "n": 10,
+    "counts": {
+     "ADHERED": 10,
+     "FLAGGED": 0,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 1,
+     "FLAGGED": 0,
+     "DEVIATED": 0,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 14607,
+    "reasoningTokens": 1404,
+    "outputTokens": 1638,
+    "costPerRun": 0.0004219298,
+    "cost": 0.004219298,
+    "disagreement": null
+   },
+   "V4": {
+    "n": 10,
+    "counts": {
+     "ADHERED": 3,
+     "FLAGGED": 5,
+     "DEVIATED": 2,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "rates": {
+     "ADHERED": 0.3,
+     "FLAGGED": 0.5,
+     "DEVIATED": 0.2,
+     "FAILED_FORMAT": 0,
+     "FAILED_INCOHERENT": 0,
+     "REFUSED": 0
+    },
+    "latencyMs": 29847,
+    "reasoningTokens": 2643,
+    "outputTokens": 2987,
+    "costPerRun": 0.0007153394000000001,
+    "cost": 0.007153394,
+    "disagreement": null
+   }
+  }
+ },
+ "byDomain": {
+  "deepseek": {
+   "code-edit": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 1,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 39207,
+     "reasoningTokens": 5340,
+     "outputTokens": 5898,
+     "costPerRun": 0.00824186,
+     "cost": 0.01648372,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 1,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0,
+      "DEVIATED": 0.5,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 65897,
+     "reasoningTokens": 8834,
+     "outputTokens": 9399,
+     "costPerRun": 0.01298242,
+     "cost": 0.02596484,
+     "disagreement": null
+    }
+   },
+   "data-extraction": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 1,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 29583,
+     "reasoningTokens": 3401,
+     "outputTokens": 3592,
+     "costPerRun": 0.005479319999999999,
+     "cost": 0.010958639999999999,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 26566,
+     "reasoningTokens": 3123,
+     "outputTokens": 3316,
+     "costPerRun": 0.00524172,
+     "cost": 0.01048344,
+     "disagreement": null
+    }
+   },
+   "file-ops": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 40240,
+     "reasoningTokens": 4922,
+     "outputTokens": 4985,
+     "costPerRun": 0.0067174800000000005,
+     "cost": 0.013434960000000001,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 1,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 4271,
+     "reasoningTokens": 304,
+     "outputTokens": 395,
+     "costPerRun": 0.00076802,
+     "cost": 0.00153604,
+     "disagreement": null
+    }
+   },
+   "summarization": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2804,
+     "reasoningTokens": 226,
+     "outputTokens": 300,
+     "costPerRun": 0.0011917400000000002,
+     "cost": 0.0023834800000000003,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2741,
+     "reasoningTokens": 217,
+     "outputTokens": 286,
+     "costPerRun": 0.0012722599999999999,
+     "cost": 0.0025445199999999998,
+     "disagreement": null
+    }
+   },
+   "tool-selection": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2386,
+     "reasoningTokens": 138,
+     "outputTokens": 211,
+     "costPerRun": 0.00048994,
+     "cost": 0.00097988,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2370,
+     "reasoningTokens": 144,
+     "outputTokens": 218,
+     "costPerRun": 0.00059972,
+     "cost": 0.00119944,
+     "disagreement": null
+    }
+   }
+  },
+  "muse": {
+   "code-edit": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 17192,
+     "reasoningTokens": 2041,
+     "outputTokens": 2613,
+     "costPerRun": 0.0006142,
+     "cost": 0.0012284,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 1,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 14001,
+     "reasoningTokens": 1467,
+     "outputTokens": 2054,
+     "costPerRun": 0.0005281999999999999,
+     "cost": 0.0010563999999999999,
+     "disagreement": null
+    }
+   },
+   "data-extraction": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 14801,
+     "reasoningTokens": 1510,
+     "outputTokens": 1740,
+     "costPerRun": 0.00050115,
+     "cost": 0.0010023,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 0,
+      "FLAGGED": 1,
+      "DEVIATED": 1,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0.5,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 72705,
+     "reasoningTokens": 5343,
+     "outputTokens": 5887,
+     "costPerRun": 0.0013589499999999998,
+     "cost": 0.0027178999999999997,
+     "disagreement": null
+    }
+   },
+   "file-ops": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 23398,
+     "reasoningTokens": 1942,
+     "outputTokens": 2064,
+     "costPerRun": 0.000437,
+     "cost": 0.000874,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 0,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 17639,
+     "reasoningTokens": 2031,
+     "outputTokens": 2173,
+     "costPerRun": 0.000480849,
+     "cost": 0.000961698,
+     "disagreement": null
+    }
+   },
+   "summarization": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 7646,
+     "reasoningTokens": 688,
+     "outputTokens": 818,
+     "costPerRun": 0.0003284,
+     "cost": 0.0006568,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 1,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0,
+      "DEVIATED": 0.5,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 27586,
+     "reasoningTokens": 2551,
+     "outputTokens": 2834,
+     "costPerRun": 0.0007531,
+     "cost": 0.0015062,
+     "disagreement": null
+    }
+   },
+   "tool-selection": {
+    "V0": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9998,
+     "reasoningTokens": 841,
+     "outputTokens": 957,
+     "costPerRun": 0.00022889900000000002,
+     "cost": 0.00045779800000000004,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 2,
+     "counts": {
+      "ADHERED": 1,
+      "FLAGGED": 1,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.5,
+      "FLAGGED": 0.5,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 17306,
+     "reasoningTokens": 1825,
+     "outputTokens": 1990,
+     "costPerRun": 0.000455598,
+     "cost": 0.000911196,
+     "disagreement": null
+    }
+   }
+  }
+ },
+ "bySalience": {
+  "deepseek": {
+   "blatant": {
+    "V0": {
+     "n": 7,
+     "counts": {
+      "ADHERED": 5,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7142857142857143,
+      "FLAGGED": 0.2857142857142857,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 21202,
+     "reasoningTokens": 2620,
+     "outputTokens": 2865,
+     "costPerRun": 0.004295217142857142,
+     "cost": 0.03006652,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 7,
+     "counts": {
+      "ADHERED": 5,
+      "FLAGGED": 1,
+      "DEVIATED": 1,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.7142857142857143,
+      "FLAGGED": 0.14285714285714285,
+      "DEVIATED": 0.14285714285714285,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 28024,
+     "reasoningTokens": 3541,
+     "outputTokens": 3794,
+     "costPerRun": 0.005638159999999999,
+     "cost": 0.039467119999999994,
+     "disagreement": null
+    }
+   },
+   "subtle": {
+    "V0": {
+     "n": 3,
+     "counts": {
+      "ADHERED": 3,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 26675,
+     "reasoningTokens": 3237,
+     "outputTokens": 3305,
+     "costPerRun": 0.004724720000000001,
+     "cost": 0.014174160000000002,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 3,
+     "counts": {
+      "ADHERED": 3,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 2506,
+     "reasoningTokens": 152,
+     "outputTokens": 223,
+     "costPerRun": 0.0007537199999999999,
+     "cost": 0.00226116,
+     "disagreement": null
+    }
+   }
+  },
+  "muse": {
+   "blatant": {
+    "V0": {
+     "n": 7,
+     "counts": {
+      "ADHERED": 7,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 16709,
+     "reasoningTokens": 1616,
+     "outputTokens": 1900,
+     "costPerRun": 0.00048388542857142854,
+     "cost": 0.0033871979999999997,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 7,
+     "counts": {
+      "ADHERED": 2,
+      "FLAGGED": 3,
+      "DEVIATED": 2,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.2857142857142857,
+      "FLAGGED": 0.42857142857142855,
+      "DEVIATED": 0.2857142857142857,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 36014,
+     "reasoningTokens": 3063,
+     "outputTokens": 3491,
+     "costPerRun": 0.0008278854285714286,
+     "cost": 0.005795198,
+     "disagreement": null
+    }
+   },
+   "subtle": {
+    "V0": {
+     "n": 3,
+     "counts": {
+      "ADHERED": 3,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 1,
+      "FLAGGED": 0,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 9702,
+     "reasoningTokens": 909,
+     "outputTokens": 1027,
+     "costPerRun": 0.0002773666666666667,
+     "cost": 0.0008321000000000001,
+     "disagreement": null
+    },
+    "V4": {
+     "n": 3,
+     "counts": {
+      "ADHERED": 1,
+      "FLAGGED": 2,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "rates": {
+      "ADHERED": 0.3333333333333333,
+      "FLAGGED": 0.6666666666666666,
+      "DEVIATED": 0,
+      "FAILED_FORMAT": 0,
+      "FAILED_INCOHERENT": 0,
+      "REFUSED": 0
+     },
+     "latencyMs": 15458,
+     "reasoningTokens": 1663,
+     "outputTokens": 1812,
+     "costPerRun": 0.000452732,
+     "cost": 0.001358196,
+     "disagreement": null
+    }
+   }
+  }
+ },
+ "totalCost": 0.097341652
+}

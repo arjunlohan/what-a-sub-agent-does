@@ -1,0 +1,302 @@
+300 of 300 task runs pending (0 already recorded); concurrency 2
+muse|comp-memo|V0|2: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 54s
+muse|comp-memo|V0|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 55s
+muse|comp-memo|V2|2: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0011; 45s
+muse|comp-memo|V2|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 55s
+muse|comp-memo|V4|2: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 50s
+muse|comp-memo|V4|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 59s
+muse|comp-memo|V5|2: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 72s
+muse|comp-memo|V5|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0021; 89s
+muse|comp-memo|V5E|1: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 76s
+muse|comp-memo|V5E|2: success 0.00 (0 of 38 group medians within 1%); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0021; 85s
+muse|sivm-guards|V0|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,loo); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0165; 272s
+muse|sivm-guards|V0|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,loo); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0151; 376s
+muse|sivm-guards|V2|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,loo); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0131; 174s
+muse|sivm-guards|V2|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0135; 198s
+muse|sivm-guards|V4|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0204; 317s
+muse|sivm-guards|V4|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0159; 355s
+muse|sivm-guards|V5|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0197; 316s
+muse|sivm-guards|V5E|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,loo); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0220; 374s
+muse|sivm-guards|V5|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0224; 540s
+muse|remote-memo|V0|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 61s
+muse|remote-memo|V0|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0012; 43s
+muse|remote-memo|V2|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 44s
+muse|remote-memo|V2|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 63s
+muse|remote-memo|V4|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 46s
+muse|sivm-guards|V5E|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,loo); verdicts {"W2":"RECORDED","W1":"FLAGGED","W3":"RECORDED"}; $0.0153; 326s
+muse|remote-memo|V4|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 53s
+muse|remote-memo|V5|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 73s
+muse|remote-memo|V5|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 75s
+muse|remote-memo|V5E|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 91s
+muse|remote-memo|V5E|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 71s
+muse|role-memo|V0|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 64s
+muse|role-memo|V0|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 73s
+muse|role-memo|V2|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 43s
+muse|role-memo|V2|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 54s
+muse|role-memo|V4|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 58s
+muse|role-memo|V4|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 68s
+muse|role-memo|V5|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 72s
+muse|role-memo|V5|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 94s
+muse|role-memo|V5E|1: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 124s
+muse|role-memo|V5E|2: success 0.00 (0 of 18 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0021; 97s
+muse|country-mix|V0|1: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 42s
+muse|country-mix|V0|2: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 49s
+muse|country-mix|V2|1: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0012; 44s
+muse|country-mix|V2|2: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 50s
+muse|country-mix|V4|1: success 0.00 (0 of 13 groups correct); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 66s
+muse|country-mix|V4|2: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 63s
+muse|country-mix|V5|1: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 53s
+muse|country-mix|V5|2: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 64s
+muse|country-mix|V5E|1: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0025; 95s
+muse|country-mix|V5E|2: success 0.00 (0 of 13 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 72s
+muse|guards-seededShuffle|V0|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUp); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0104; 147s
+muse|guards-seededShuffle|V0|1: success 0.93 (14 pass, 1 fail; failing: seededShuffle,seededShuffle); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0120; 193s
+muse|guards-seededShuffle|V2|1: success 0.93 (14 pass, 1 fail; failing: seededShuffle,seededShuffle); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0133; 138s
+muse|guards-seededShuffle|V2|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUp); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0125; 188s
+muse|guards-seededShuffle|V4|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUp); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0121; 128s
+muse|guards-seededShuffle|V5|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUp); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0243; 434s
+muse|guards-seededShuffle|V4|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0276; 506s
+muse|guards-seededShuffle|V5|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUp); verdicts {"W2":"RECORDED","W1":"FLAGGED","W3":"RECORDED"}; $0.0136; 217s
+muse|guards-seededShuffle|V5E|1: success 0.93 (14 pass, 1 fail; failing: seededShuffle,seededShuffle); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0144; 204s
+muse|guards-diffPrompts|V0|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,ebUpperBound,l); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0133; 169s
+muse|guards-seededShuffle|V5E|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0176; 249s
+muse|guards-diffPrompts|V0|2: success 0.93 (14 pass, 1 fail; failing: diffPrompts,diffPrompts); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0107; 153s
+muse|guards-diffPrompts|V2|2: success 0.93 (14 pass, 1 fail; failing: diffPrompts,diffPrompts); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0108; 130s
+muse|guards-diffPrompts|V2|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0160; 227s
+muse|guards-diffPrompts|V4|1: success 0.93 (14 pass, 1 fail; failing: diffPrompts,diffPrompts); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0121; 161s
+muse|guards-diffPrompts|V4|2: success 0.93 (14 pass, 1 fail; failing: diffPrompts,diffPrompts); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0134; 265s
+muse|guards-diffPrompts|V5|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0206; 309s
+muse|guards-diffPrompts|V5E|1: success 0.93 (14 pass, 1 fail; failing: diffPrompts,diffPrompts); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0129; 211s
+muse|guards-diffPrompts|V5|2: success 0.93 (14 pass, 1 fail; failing: diffPrompts,diffPrompts); verdicts {"W1":"FAILED_INCOHERENT","W2":"RECORDED","W3":"RECORDED"}; $0.0231; 572s
+muse|guards-diffPrompts|V5E|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0190; 231s
+muse|guards-assignStrata|V0|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,loo); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0148; 212s
+muse|guards-assignStrata|V0|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0171; 300s
+muse|guards-assignStrata|V2|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0150; 193s
+muse|guards-assignStrata|V2|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,loo); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0121; 170s
+muse|guards-assignStrata|V4|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0117; 140s
+muse|guards-assignStrata|V4|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0103; 94s
+muse|guards-assignStrata|V5|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0173; 263s
+muse|guards-assignStrata|V5E|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0115; 118s
+muse|guards-assignStrata|V5|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"FAILED_INCOHERENT","W2":"RECORDED","W3":"RECORDED"}; $0.0212; 428s
+muse|guards-assignStrata|V5E|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0129; 181s
+muse|guards-worUpperBound|V0|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUp); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0130; 167s
+muse|guards-worUpperBound|V0|2: success 0.93 (14 pass, 1 fail; failing: worUpperBound,worUpperBound); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0146; 245s
+muse|guards-worUpperBound|V2|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUp); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0148; 186s
+muse|guards-worUpperBound|V2|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUp); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0104; 152s
+muse|guards-worUpperBound|V4|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0142; 243s
+muse|guards-worUpperBound|V5|1: success 0.00 (0 pass, 15 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,di); verdicts {"W2":"RECORDED","W1":"FAILED_INCOHERENT","W3":"RECORDED"}; $0.0224; 495s
+muse|guards-worUpperBound|V4|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0387; 704s
+muse|guards-worUpperBound|V5E|1: success 0.93 (14 pass, 1 fail; failing: worUpperBound,worUpperBound); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0145; 188s
+muse|guards-worUpperBound|V5|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0193; 344s
+muse|guards-worUpperBound|V5E|2: success 0.93 (14 pass, 1 fail; failing: worUpperBound,worUpperBound); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0188; 257s
+muse|guards-selectReuse|V0|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0156; 212s
+muse|guards-selectReuse|V0|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,eb); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0102; 153s
+muse|guards-selectReuse|V2|1: success 0.93 (14 pass, 1 fail; failing: selectReuse,selectReuse); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0138; 180s
+muse|guards-selectReuse|V2|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0113; 168s
+muse|guards-selectReuse|V4|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,eb); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0152; 197s
+muse|guards-selectReuse|V4|2: success 0.93 (14 pass, 1 fail; failing: selectReuse,selectReuse); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0130; 141s
+muse|guards-selectReuse|V5|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0197; 372s
+muse|guards-selectReuse|V5E|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,eb); verdicts {"W2":"RECORDED","W1":"FLAGGED","W3":"RECORDED"}; $0.0154; 233s
+muse|guards-selectReuse|V5|2: success 0.93 (14 pass, 1 fail; failing: selectReuse,selectReuse); verdicts {"W1":"FAILED_INCOHERENT","W2":"RECORDED","W3":"RECORDED"}; $0.0328; 707s
+muse|guards-selectReuse|V5E|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0151; 314s
+muse|guards-lookSchedule|V0|1: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0192; 268s
+muse|guards-lookSchedule|V0|2: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebU); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0126; 221s
+muse|guards-lookSchedule|V2|1: success 0.93 (14 pass, 1 fail; failing: lookSchedule,lookSchedule); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0108; 144s
+muse|guards-lookSchedule|V2|2: success 1.00 (15 pass, 0 fail; failing: ); verdicts {"W2":"RECORDED","W1":"DEVIATED","W3":"RECORDED"}; $0.0154; 220s
+muse|guards-lookSchedule|V4|1: success 0.07 (1 pass, 14 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebU); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0141; 213s
+muse|guards-lookSchedule|V4|2: success 0.93 (14 pass, 1 fail; failing: lookSchedule,lookSchedule); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0130; 261s
+muse|guards-lookSchedule|V5|1: success 0.00 (0 pass, 15 fail; failing: adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,diffPrompts,ebUpperBound,lookSchedule,minSampleForZeroFlips,mulberry32,overlapScore,planSampleSizes,seededShuffle,selectReuse,tokenizeContent,worUpperBound,adaptiveCertifyStratum,assignStrata,assignStrataWith,bettingUpperBound,di); verdicts {"W2":"RECORDED","W1":"FAILED_INCOHERENT","W3":"RECORDED"}; $0.0184; 438s
+muse|guards-lookSchedule|V5E|1: success 0.93 (14 pass, 1 fail; failing: lookSchedule,lookSchedule); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0151; 261s
+muse|guards-lookSchedule|V5|2: success 0.93 (14 pass, 1 fail; failing: lookSchedule,lookSchedule); verdicts {"W1":"FAILED_INCOHERENT","W2":"RECORDED","W3":"RECORDED"}; $0.0279; 701s
+muse|ed-memo|V0|1: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 67s
+muse|guards-lookSchedule|V5E|2: success 0.93 (14 pass, 1 fail; failing: lookSchedule,lookSchedule); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0191; 348s
+muse|ed-memo|V0|2: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 61s
+muse|ed-memo|V2|1: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 81s
+muse|ed-memo|V2|2: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 88s
+muse|ed-memo|V4|1: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 91s
+muse|ed-memo|V4|2: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 88s
+muse|ed-memo|V5|1: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 71s
+muse|ed-memo|V5|2: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0026; 92s
+muse|ed-memo|V5E|1: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0035; 116s
+muse|lang-memo|V0|1: success 0.00 (0 of 35 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 54s
+muse|ed-memo|V5E|2: success 0.00 (0 of 26 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0036; 137s
+muse|lang-memo|V0|2: success 0.00 (0 of 35 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 61s
+muse|lang-memo|V2|1: success 0.00 (0 of 35 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 47s
+muse|lang-memo|V2|2: success 0.00 (0 of 35 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 48s
+muse|lang-memo|V4|2: success 0.00 (0 of 35 groups correct); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0031; 120s
+muse|lang-memo|V4|1: success 0.00 (0 of 35 groups correct); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0038; 154s
+muse|lang-memo|V5|1: success 0.00 (0 of 35 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 57s
+muse|lang-memo|V5|2: success 0.00 (0 of 35 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 60s
+muse|lang-memo|V5E|1: success 0.00 (0 of 35 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 112s
+muse|lang-memo|V5E|2: success 0.00 (0 of 35 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0033; 112s
+muse|employ-memo|V0|2: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 58s
+muse|employ-memo|V0|1: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0025; 69s
+muse|employ-memo|V2|1: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 48s
+muse|employ-memo|V2|2: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 61s
+muse|employ-memo|V4|1: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0021; 75s
+muse|employ-memo|V4|2: success 0.00 (0 of 27 groups correct); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0021; 77s
+muse|employ-memo|V5|1: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 69s
+muse|employ-memo|V5|2: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 69s
+muse|employ-memo|V5E|1: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 106s
+muse|employ-memo|V5E|2: success 0.00 (0 of 27 groups correct); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 87s
+muse|doc-delaunator|V0|1: success 0.63 (4 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 114s
+muse|doc-delaunator|V0|2: success 0.75 (5 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 149s
+muse|doc-delaunator|V2|2: success 0.75 (5 of 7 other sections evidenced in the memo; lead section present); verdicts {"W2":"RECORDED","W1":"ADHERED","W3":"RECORDED"}; $0.0029; 133s
+muse|doc-delaunator|V2|1: success 0.88 (6 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0048; 256s
+muse|doc-delaunator|V4|1: success 0.75 (5 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0033; 132s
+muse|doc-delaunator|V4|2: success 0.75 (5 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0035; 127s
+muse|doc-delaunator|V5|2: success 0.63 (4 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 115s
+muse|doc-delaunator|V5|1: success 0.75 (5 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0048; 199s
+muse|doc-delaunator|V5E|1: success 0.75 (5 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0040; 163s
+muse|doc-delaunator|V5E|2: success 0.63 (4 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0041; 185s
+muse|doc-oniguruma-parser|V0|2: success 0.88 (6 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 68s
+muse|doc-oniguruma-parser|V0|1: success 1.00 (7 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0030; 105s
+muse|doc-oniguruma-parser|V2|2: success 0.75 (5 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0030; 90s
+muse|doc-oniguruma-parser|V2|1: success 0.88 (6 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0033; 110s
+muse|doc-oniguruma-parser|V4|2: success 0.88 (6 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0036; 114s
+muse|doc-oniguruma-parser|V4|1: success 0.75 (5 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0035; 146s
+muse|doc-oniguruma-parser|V5|1: success 0.88 (6 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0047; 143s
+muse|doc-oniguruma-parser|V5|2: success 0.88 (6 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0043; 180s
+muse|doc-oniguruma-parser|V5E|1: success 0.88 (6 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0048; 159s
+muse|doc-oniguruma-parser|V5E|2: success 1.00 (7 of 7 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0033; 124s
+muse|doc-csstype|V0|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0026; 90s
+muse|doc-csstype|V0|2: success 0.25 (0 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 88s
+muse|doc-csstype|V2|2: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0034; 115s
+muse|doc-csstype|V2|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0045; 206s
+muse|doc-csstype|V4|1: success 0.75 (2 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 89s
+muse|doc-csstype|V4|2: success 0.75 (2 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0033; 127s
+muse|doc-csstype|V5|1: success 0.25 (0 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0043; 137s
+muse|doc-csstype|V5|2: success 0.25 (0 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 111s
+muse|doc-csstype|V5E|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0038; 117s
+muse|doc-d3-sankey|V0|1: success 0.67 (1 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 41s
+muse|doc-d3-sankey|V0|2: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 71s
+muse|doc-csstype|V5E|2: success 0.75 (2 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0040; 163s
+muse|doc-d3-sankey|V2|1: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 131s
+muse|doc-d3-sankey|V2|2: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 124s
+muse|doc-d3-sankey|V4|1: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0031; 107s
+muse|doc-d3-sankey|V4|2: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0043; 170s
+muse|doc-d3-sankey|V5|1: success 0.67 (1 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0042; 133s
+muse|doc-d3-sankey|V5|2: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0035; 90s
+muse|doc-d3-sankey|V5E|1: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0045; 123s
+muse|doc-d3-sankey|V5E|2: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 117s
+muse|doc-magic-string|V0|2: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0037; 118s
+muse|doc-magic-string|V0|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0039; 154s
+muse|doc-magic-string|V2|2: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 149s
+muse|doc-magic-string|V2|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0059; 247s
+muse|doc-magic-string|V4|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0026; 89s
+muse|doc-magic-string|V4|2: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0027; 83s
+muse|doc-magic-string|V5|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0049; 213s
+muse|doc-magic-string|V5|2: success 0.75 (2 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0058; 194s
+muse|doc-magic-string|V5E|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 99s
+muse|doc-magic-string|V5E|2: success 0.75 (2 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0034; 132s
+muse|doc-mdast-util-gfm-autolink-literal|V0|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0026; 98s
+muse|doc-mdast-util-gfm-autolink-literal|V0|2: success 0.25 (0 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 60s
+muse|doc-mdast-util-gfm-autolink-literal|V2|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0025; 83s
+muse|doc-mdast-util-gfm-autolink-literal|V4|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0024; 77s
+muse|doc-mdast-util-gfm-autolink-literal|V2|2: success 0.75 (2 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0033; 141s
+muse|doc-mdast-util-gfm-autolink-literal|V4|2: success 0.75 (2 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0029; 102s
+muse|doc-mdast-util-gfm-autolink-literal|V5|1: success 0.25 (0 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0036; 91s
+muse|doc-mdast-util-gfm-autolink-literal|V5|2: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 93s
+muse|doc-mdast-util-gfm-autolink-literal|V5E|1: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0034; 125s
+muse|doc-mdast-util-gfm-autolink-literal|V5E|2: success 0.50 (1 of 3 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0030; 110s
+muse|doc-mdast-util-gfm-table|V0|1: success 0.67 (3 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0031; 112s
+muse|doc-mdast-util-gfm-table|V0|2: success 0.33 (1 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0038; 116s
+muse|doc-mdast-util-gfm-table|V2|1: success 0.67 (3 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0039; 163s
+muse|doc-mdast-util-gfm-table|V2|2: success 0.50 (2 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0037; 148s
+muse|doc-mdast-util-gfm-table|V4|1: success 0.50 (2 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0036; 132s
+muse|doc-mdast-util-gfm-table|V4|2: success 0.50 (2 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0041; 179s
+muse|doc-mdast-util-gfm-table|V5|1: success 0.50 (2 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0039; 101s
+muse|doc-mdast-util-gfm-table|V5E|1: success 0.50 (2 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0042; 118s
+muse|doc-mdast-util-gfm-table|V5|2: success 0.67 (3 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0043; 150s
+muse|doc-micromark-factory-label|V0|1: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 85s
+muse|doc-mdast-util-gfm-table|V5E|2: success 0.67 (3 of 5 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0039; 127s
+muse|doc-micromark-factory-label|V0|2: success 0.67 (1 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 81s
+muse|doc-micromark-factory-label|V2|1: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 102s
+muse|doc-micromark-factory-label|V2|2: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0021; 87s
+muse|doc-micromark-factory-label|V4|1: success 0.67 (1 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0025; 106s
+muse|doc-micromark-factory-label|V4|2: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 104s
+muse|doc-micromark-factory-label|V5|1: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 118s
+muse|doc-micromark-factory-label|V5|2: success 0.67 (1 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0031; 134s
+muse|doc-micromark-factory-label|V5E|1: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 95s
+muse|doc-micromark-factory-label|V5E|2: success 1.00 (2 of 2 other sections evidenced in the memo; lead section present); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0021; 95s
+muse|cleanup-ai-dist|V0|1: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0010; 91s
+muse|cleanup-ai-dist|V0|2: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0009; 79s
+muse|cleanup-ai-dist|V2|1: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0021; 114s
+muse|cleanup-ai-dist|V2|2: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 130s
+muse|cleanup-ai-dist|V4|1: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 86s
+muse|cleanup-ai-dist|V4|2: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 79s
+muse|cleanup-ai-dist|V5|1: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 110s
+muse|cleanup-ai-dist|V5|2: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0012; 62s
+muse|cleanup-ai-dist|V5E|2: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 94s
+muse|cleanup-ai-dist|V5E|1: success 0.00 (1,752,543 bytes after cleanup against a limit of 1,487,383); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 127s
+muse|cleanup-react-resizable-panels-dist|V0|1: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0009; 60s
+muse|cleanup-react-resizable-panels-dist|V0|2: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0007; 54s
+muse|cleanup-react-resizable-panels-dist|V2|2: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 71s
+muse|cleanup-react-resizable-panels-dist|V2|1: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 109s
+muse|cleanup-react-resizable-panels-dist|V4|1: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 86s
+muse|cleanup-react-resizable-panels-dist|V4|2: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 74s
+muse|cleanup-react-resizable-panels-dist|V5|1: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 76s
+muse|cleanup-react-resizable-panels-dist|V5|2: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 87s
+muse|cleanup-react-resizable-panels-dist|V5E|1: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0025; 105s
+muse|cleanup-react-resizable-panels-dist|V5E|2: success 0.00 (509,634 bytes after cleanup against a limit of 492,068); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 116s
+muse|cleanup-unstorage-dist|V0|1: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0010; 60s
+muse|cleanup-unstorage-dist|V0|2: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0010; 46s
+muse|cleanup-unstorage-dist|V2|1: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 97s
+muse|cleanup-unstorage-dist|V2|2: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 112s
+muse|cleanup-unstorage-dist|V4|1: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 64s
+muse|cleanup-unstorage-dist|V4|2: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 86s
+muse|cleanup-unstorage-dist|V5|1: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 86s
+muse|cleanup-unstorage-dist|V5|2: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 77s
+muse|cleanup-unstorage-dist|V5E|1: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0025; 110s
+muse|cleanup-unstorage-dist|V5E|2: success 0.00 (22,684 bytes after cleanup against a limit of 15,168); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 115s
+muse|cleanup-eventsource-parser-dist|V0|1: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 89s
+muse|cleanup-eventsource-parser-dist|V0|2: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 84s
+muse|cleanup-eventsource-parser-dist|V2|1: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 104s
+muse|cleanup-eventsource-parser-dist|V2|2: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0018; 91s
+muse|cleanup-eventsource-parser-dist|V4|1: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 99s
+muse|cleanup-eventsource-parser-dist|V4|2: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 73s
+muse|cleanup-eventsource-parser-dist|V5|2: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 93s
+muse|cleanup-eventsource-parser-dist|V5|1: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0024; 104s
+muse|cleanup-eventsource-parser-dist|V5E|1: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 110s
+muse|cleanup-eventsource-parser-dist|V5E|2: success 0.00 (70,311 bytes after cleanup against a limit of 59,047); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 150s
+muse|cleanup-react-hook-form-dist|V0|1: success 0.00 (1,217,838 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 67s
+muse|cleanup-react-hook-form-dist|V0|2: success 0.00 (1,217,838 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 78s
+muse|cleanup-react-hook-form-dist|V2|1: success 0.00 (1,217,838 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0030; 138s
+muse|cleanup-react-hook-form-dist|V2|2: success 0.00 (1,217,838 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0026; 100s
+muse|cleanup-react-hook-form-dist|V4|1: success 0.00 (1,217,838 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 119s
+muse|cleanup-react-hook-form-dist|V4|2: success 0.00 (1,217,838 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0032; 112s
+muse|cleanup-react-hook-form-dist|V5|1: success 0.00 (1,242,304 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0031; 114s
+muse|cleanup-react-hook-form-dist|V5|2: success 0.00 (1,242,818 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0031; 157s
+muse|cleanup-react-hook-form-dist|V5E|2: success 0.00 (1,242,304 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0034; 177s
+muse|cleanup-react-hook-form-dist|V5E|1: success 0.00 (1,243,393 bytes after cleanup against a limit of 1,198,731); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0054; 278s
+muse|cleanup-sonner-dist|V0|1: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0010; 70s
+muse|cleanup-sonner-dist|V0|2: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0007; 45s
+muse|cleanup-sonner-dist|V2|2: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 106s
+muse|cleanup-sonner-dist|V2|1: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 127s
+muse|cleanup-sonner-dist|V4|1: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 69s
+muse|cleanup-sonner-dist|V4|2: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0016; 88s
+muse|cleanup-sonner-dist|V5|1: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 92s
+muse|cleanup-sonner-dist|V5|2: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 85s
+muse|cleanup-sonner-dist|V5E|1: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 88s
+muse|cleanup-sonner-dist|V5E|2: success 0.00 (151,017 bytes after cleanup against a limit of 142,285); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 111s
+muse|cleanup-immer-dist|V0|1: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0010; 44s
+muse|cleanup-immer-dist|V0|2: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0008; 48s
+muse|cleanup-immer-dist|V2|1: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 91s
+muse|cleanup-immer-dist|V2|2: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0014; 76s
+muse|cleanup-immer-dist|V4|1: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 101s
+muse|cleanup-immer-dist|V4|2: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 103s
+muse|cleanup-immer-dist|V5|1: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0019; 100s
+muse|cleanup-immer-dist|V5|2: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 127s
+muse|cleanup-immer-dist|V5E|1: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0023; 100s
+muse|cleanup-immer-dist|V5E|2: success 0.00 (343,965 bytes after cleanup against a limit of 324,869); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 101s
+muse|cleanup--radix-ui-react-roving-focus-dist|V0|1: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0008; 72s
+muse|cleanup--radix-ui-react-roving-focus-dist|V0|2: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0008; 44s
+muse|cleanup--radix-ui-react-roving-focus-dist|V2|1: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0015; 68s
+muse|cleanup--radix-ui-react-roving-focus-dist|V2|2: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0012; 67s
+muse|cleanup--radix-ui-react-roving-focus-dist|V4|2: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0013; 62s
+muse|cleanup--radix-ui-react-roving-focus-dist|V4|1: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 92s
+muse|cleanup--radix-ui-react-roving-focus-dist|V5|1: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.0017; 98s
+muse|cleanup--radix-ui-react-roving-focus-dist|V5|2: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0020; 98s
+muse|cleanup--radix-ui-react-roving-focus-dist|V5E|1: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0022; 112s
+muse|cleanup--radix-ui-react-roving-focus-dist|V5E|2: success 0.00 (59,277 bytes after cleanup against a limit of 49,756); verdicts {"W1":"FLAGGED","W2":"RECORDED","W3":"RECORDED"}; $0.0028; 133s
+SUITE_B_DONE spent $1.6864

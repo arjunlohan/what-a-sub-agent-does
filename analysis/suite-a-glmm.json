@@ -1,0 +1,158 @@
+{
+ "n_runs": 15589,
+ "models": {
+  "dose_numeric": {
+   "formula": "dev ~ dose * muse",
+   "vc": {
+    "item": "0 + C(item)",
+    "item_model": "0 + C(item_model)",
+    "item_dose": "0 + C(item):dose"
+   },
+   "n": 5999,
+   "events": 61,
+   "fixed": {
+    "Intercept": {
+     "mean": -6.856981012913396,
+     "sd": 0.13929703808143198
+    },
+    "dose": {
+     "mean": -0.06129791714500343,
+     "sd": 0.04967010335533219
+    },
+    "muse": {
+     "mean": -0.34079845961201827,
+     "sd": 0.18085920345630915
+    },
+    "dose:muse": {
+     "mean": 0.3581182427539396,
+     "sd": 0.0614368337403265
+    }
+   },
+   "variance_components": {},
+   "note": "numeric dose 0..4 by model, item intercept, item-by-model intercept, item slope for dose"
+  },
+  "dose_factor": {
+   "formula": "dev ~ C(cond, Treatment('V0')) * muse",
+   "vc": {
+    "item": "0 + C(item)",
+    "item_model": "0 + C(item_model)"
+   },
+   "n": 5999,
+   "events": 61,
+   "fixed": {
+    "Intercept": {
+     "mean": -8.106572190017316,
+     "sd": 0.13996988933150925
+    },
+    "C(cond, Treatment('V0'))[T.V1]": {
+     "mean": 0.6300999684131711,
+     "sd": 0.4290704858231368
+    },
+    "C(cond, Treatment('V0'))[T.V2]": {
+     "mean": 1.8331061899022119,
+     "sd": 0.22579042497483603
+    },
+    "C(cond, Treatment('V0'))[T.V3]": {
+     "mean": 0.9943507765367956,
+     "sd": 0.303015508527739
+    },
+    "C(cond, Treatment('V0'))[T.V4]": {
+     "mean": 0.8046535094792857,
+     "sd": 0.2779514038552881
+    },
+    "muse": {
+     "mean": -0.6004238258816161,
+     "sd": 0.18190071857765436
+    },
+    "C(cond, Treatment('V0'))[T.V1]:muse": {
+     "mean": -0.24704902491510014,
+     "sd": 0.6849291556725576
+    },
+    "C(cond, Treatment('V0'))[T.V2]:muse": {
+     "mean": 1.1689326405534757,
+     "sd": 0.28971977656065834
+    },
+    "C(cond, Treatment('V0'))[T.V3]:muse": {
+     "mean": 1.0653286703463276,
+     "sd": 0.38882651967181114
+    },
+    "C(cond, Treatment('V0'))[T.V4]:muse": {
+     "mean": 1.776388164834531,
+     "sd": 0.32863803976251665
+    }
+   },
+   "variance_components": {},
+   "note": "rung as a factor by model, item intercept, item-by-model intercept"
+  },
+  "content_by_length": {
+   "formula": "dev ~ C(content, Treatment('filler')) * long + muse",
+   "vc": {
+    "item": "0 + C(item)",
+    "item_model": "0 + C(item_model)"
+   },
+   "n": 7194,
+   "events": 45,
+   "fixed": {
+    "Intercept": {
+     "mean": -8.418343187718307,
+     "sd": 0.16237097826348376
+    },
+    "C(content, Treatment('filler'))[T.conflict]": {
+     "mean": 2.6070729805931734,
+     "sd": 0.17548594706682444
+    },
+    "C(content, Treatment('filler'))[T.hierarchy]": {
+     "mean": -1.3507896563919868,
+     "sd": 0.8085892553357115
+    },
+    "long": {
+     "mean": -0.49016933228355275,
+     "sd": 0.2572500817469509
+    },
+    "C(content, Treatment('filler'))[T.conflict]:long": {
+     "mean": -0.14322479303207467,
+     "sd": 0.27609529692311235
+    },
+    "C(content, Treatment('filler'))[T.hierarchy]:long": {
+     "mean": -1.4081349264145764,
+     "sd": 1.3070781142549368
+    },
+    "muse": {
+     "mean": 0.4417849584935475,
+     "sd": 0.21094362858453247
+    }
+   },
+   "variance_components": {},
+   "note": "content (filler, hierarchy, conflict) crossed with length, plus model"
+  },
+  "flag_dose_numeric": {
+   "formula": "dev ~ dose * muse",
+   "vc": {
+    "item": "0 + C(item)",
+    "item_model": "0 + C(item_model)"
+   },
+   "n": 5999,
+   "events": 1382,
+   "fixed": {
+    "Intercept": {
+     "mean": -3.2957045118752935,
+     "sd": 0.041206679668416665
+    },
+    "dose": {
+     "mean": 0.49112921016139865,
+     "sd": 0.015511588211002993
+    },
+    "muse": {
+     "mean": 0.07754946623091065,
+     "sd": 0.057541089628275977
+    },
+    "dose:muse": {
+     "mean": 0.1258285142718003,
+     "sd": 0.02166567055183883
+    }
+   },
+   "variance_components": {},
+   "note": "FLAGGED as outcome, numeric dose by model"
+  }
+ }
+}

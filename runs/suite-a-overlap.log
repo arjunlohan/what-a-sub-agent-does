@@ -1,0 +1,66 @@
+run=suite-a-overlap models=deepseek,muse conds=V0,V2,V4,LM4 draws=3 items=30 pending=720 done=0 cap=$4
+  20/720 done, $0.0181 spent, 31s
+  40/720 done, $0.0355 spent, 42s
+  60/720 done, $0.0565 spent, 66s
+  80/720 done, $0.0892 spent, 82s
+  100/720 done, $0.1109 spent, 98s
+  120/720 done, $0.1262 spent, 106s
+  140/720 done, $0.1434 spent, 113s
+  160/720 done, $0.1511 spent, 122s
+  180/720 done, $0.1916 spent, 142s
+  200/720 done, $0.2079 spent, 167s
+  220/720 done, $0.2350 spent, 175s
+  240/720 done, $0.2456 spent, 182s
+  260/720 done, $0.2619 spent, 198s
+  280/720 done, $0.2743 spent, 211s
+  300/720 done, $0.2833 spent, 221s
+  320/720 done, $0.2956 spent, 233s
+  340/720 done, $0.3196 spent, 250s
+  360/720 done, $0.3663 spent, 274s
+  380/720 done, $0.3761 spent, 284s
+  400/720 done, $0.3831 spent, 292s
+  420/720 done, $0.4197 spent, 319s
+  440/720 done, $0.4352 spent, 335s
+  460/720 done, $0.4591 spent, 343s
+  480/720 done, $0.4829 spent, 348s
+  500/720 done, $0.4927 spent, 376s
+  520/720 done, $0.5027 spent, 415s
+  540/720 done, $0.5135 spent, 476s
+  560/720 done, $0.5236 spent, 528s
+  580/720 done, $0.5339 spent, 582s
+  600/720 done, $0.5475 spent, 622s
+  620/720 done, $0.5569 spent, 671s
+  640/720 done, $0.5649 spent, 704s
+  660/720 done, $0.5757 spent, 769s
+  680/720 done, $0.5868 spent, 820s
+  700/720 done, $0.5969 spent, 873s
+  720/720 done, $0.6075 spent, 945s
+{
+ "run": "suite-a-overlap",
+ "completed": 720,
+ "pending": 0,
+ "spent": 0.6075,
+ "stats": {
+  "deepseek": {
+   "calls": 360,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.4204691160000001,
+   "inTok": 424134,
+   "outTok": 603761,
+   "reasonTok": 530647
+  },
+  "muse": {
+   "calls": 360,
+   "errors": 1,
+   "unpinned": 0,
+   "cost": 0.1870699179999999,
+   "inTok": 378572,
+   "outTok": 751213,
+   "reasonTok": 654217
+  }
+ },
+ "wallSeconds": 945,
+ "ledgerTotal": 25.8994
+}
+RUN_DONE

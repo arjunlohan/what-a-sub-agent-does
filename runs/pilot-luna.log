@@ -1,0 +1,39 @@
+run=pilot-luna models=luna conds=V0,V2,V4,LM4 draws=3 items=30 pending=360 done=0 cap=$3
+  20/360 done, $0.0435 spent, 42s
+  40/360 done, $0.0690 spent, 57s
+  60/360 done, $0.0857 spent, 76s
+  80/360 done, $0.0980 spent, 83s
+  100/360 done, $0.1070 spent, 91s
+  120/360 done, $0.1160 spent, 97s
+  140/360 done, $0.1252 spent, 107s
+  160/360 done, $0.1321 spent, 115s
+  180/360 done, $0.1392 spent, 126s
+  200/360 done, $0.1535 spent, 139s
+  220/360 done, $0.1595 spent, 148s
+  240/360 done, $0.1691 spent, 157s
+  260/360 done, $0.1808 spent, 170s
+  280/360 done, $0.1912 spent, 181s
+  300/360 done, $0.1996 spent, 193s
+  320/360 done, $0.2122 spent, 206s
+  340/360 done, $0.2239 spent, 223s
+  360/360 done, $0.2351 spent, 239s
+{
+ "run": "pilot-luna",
+ "completed": 360,
+ "pending": 0,
+ "spent": 0.2351,
+ "stats": {
+  "luna": {
+   "calls": 360,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.2350722699999998,
+   "inTok": 379566,
+   "outTok": 154606,
+   "reasonTok": 61706
+  }
+ },
+ "wallSeconds": 239,
+ "ledgerTotal": 1.6096
+}
+RUN_DONE

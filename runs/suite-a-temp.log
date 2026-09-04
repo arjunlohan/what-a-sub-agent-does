@@ -1,0 +1,90 @@
+run=suite-a-temp models=deepseek,muse conds=V0,V4,LM4 draws=1 items=200 pending=1200 done=0 cap=$6
+  20/1200 done, $0.0177 spent, 23s
+  40/1200 done, $0.0619 spent, 67s
+  60/1200 done, $0.0751 spent, 92s
+  80/1200 done, $0.1251 spent, 128s
+  100/1200 done, $0.1722 spent, 151s
+  120/1200 done, $0.2206 spent, 180s
+  140/1200 done, $0.2981 spent, 222s
+  160/1200 done, $0.3338 spent, 258s
+  180/1200 done, $0.4059 spent, 301s
+  200/1200 done, $0.4514 spent, 330s
+  220/1200 done, $0.4850 spent, 347s
+  240/1200 done, $0.5007 spent, 362s
+  260/1200 done, $0.5348 spent, 381s
+  280/1200 done, $0.5668 spent, 394s
+  300/1200 done, $0.6079 spent, 408s
+  320/1200 done, $0.6164 spent, 426s
+  340/1200 done, $0.6521 spent, 442s
+  360/1200 done, $0.7013 spent, 461s
+  380/1200 done, $0.7164 spent, 471s
+  400/1200 done, $0.7435 spent, 478s
+  420/1200 done, $0.7507 spent, 487s
+  440/1200 done, $0.7557 spent, 493s
+  460/1200 done, $0.7614 spent, 499s
+  480/1200 done, $0.7671 spent, 507s
+  500/1200 done, $0.7728 spent, 515s
+  520/1200 done, $0.7928 spent, 533s
+  540/1200 done, $0.8127 spent, 559s
+  560/1200 done, $0.8425 spent, 594s
+  580/1200 done, $0.8740 spent, 614s
+  600/1200 done, $0.9248 spent, 639s
+  620/1200 done, $0.9520 spent, 659s
+  640/1200 done, $0.9981 spent, 689s
+  660/1200 done, $1.0288 spent, 711s
+  680/1200 done, $1.0622 spent, 742s
+  700/1200 done, $1.0956 spent, 760s
+  720/1200 done, $1.1120 spent, 774s
+  740/1200 done, $1.1306 spent, 787s
+  760/1200 done, $1.1521 spent, 797s
+  780/1200 done, $1.1654 spent, 803s
+  800/1200 done, $1.1807 spent, 810s
+  820/1200 done, $1.1925 spent, 816s
+  840/1200 done, $1.2006 spent, 821s
+  860/1200 done, $1.2079 spent, 827s
+  880/1200 done, $1.2166 spent, 833s
+  900/1200 done, $1.2236 spent, 840s
+  920/1200 done, $1.2343 spent, 850s
+  940/1200 done, $1.2447 spent, 858s
+  960/1200 done, $1.2594 spent, 875s
+  980/1200 done, $1.2758 spent, 889s
+  1000/1200 done, $1.2909 spent, 897s
+  1020/1200 done, $1.3100 spent, 910s
+  1040/1200 done, $1.3288 spent, 935s
+  1060/1200 done, $1.3541 spent, 991s
+  1080/1200 done, $1.3661 spent, 1035s
+  1100/1200 done, $1.3757 spent, 1069s
+  1120/1200 done, $1.3842 spent, 1107s
+  1140/1200 done, $1.3901 spent, 1137s
+  1160/1200 done, $1.3976 spent, 1172s
+  1180/1200 done, $1.4058 spent, 1209s
+  1200/1200 done, $1.4131 spent, 1260s
+{
+ "run": "suite-a-temp",
+ "completed": 1200,
+ "pending": 0,
+ "spent": 1.4131,
+ "stats": {
+  "deepseek": {
+   "calls": 600,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 1.100838572,
+   "inTok": 944675,
+   "outTok": 1645390,
+   "reasonTok": 1467067
+  },
+  "muse": {
+   "calls": 600,
+   "errors": 2,
+   "unpinned": 0,
+   "cost": 0.3122598780000001,
+   "inTok": 850521,
+   "outTok": 1157422,
+   "reasonTok": 947454
+  }
+ },
+ "wallSeconds": 1260,
+ "ledgerTotal": 25.2918
+}
+RUN_DONE
