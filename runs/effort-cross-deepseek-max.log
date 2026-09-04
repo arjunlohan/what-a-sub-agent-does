@@ -1,0 +1,111 @@
+run=effort-cross-deepseek-max models=deepseek conds=V0,V4,HM4 draws=3 items=200 pending=1800 done=0 cap=$8
+  20/1800 done, $0.0437 spent, 78s
+  40/1800 done, $0.1104 spent, 138s
+  60/1800 done, $0.2312 spent, 223s
+  80/1800 done, $0.3186 spent, 274s
+  100/1800 done, $0.4407 spent, 397s
+  120/1800 done, $0.5201 spent, 434s
+  140/1800 done, $0.5287 spent, 447s
+  160/1800 done, $0.5449 spent, 458s
+  180/1800 done, $0.5508 spent, 468s
+  200/1800 done, $0.5720 spent, 474s
+  220/1800 done, $0.5773 spent, 483s
+  240/1800 done, $0.6201 spent, 497s
+  260/1800 done, $0.6740 spent, 552s
+  280/1800 done, $0.7166 spent, 569s
+  300/1800 done, $0.7566 spent, 613s
+  320/1800 done, $0.8034 spent, 666s
+  340/1800 done, $0.8481 spent, 707s
+  360/1800 done, $0.9017 spent, 755s
+  380/1800 done, $0.9231 spent, 773s
+  400/1800 done, $0.9516 spent, 780s
+  420/1800 done, $0.9571 spent, 787s
+  440/1800 done, $0.9640 spent, 793s
+  460/1800 done, $0.9782 spent, 801s
+  480/1800 done, $0.9868 spent, 808s
+  500/1800 done, $0.9969 spent, 819s
+  520/1800 done, $1.0158 spent, 841s
+  540/1800 done, $1.0316 spent, 854s
+  560/1800 done, $1.0475 spent, 883s
+  580/1800 done, $1.0668 spent, 897s
+  600/1800 done, $1.1015 spent, 926s
+  620/1800 done, $1.1939 spent, 1015s
+  640/1800 done, $1.2629 spent, 1094s
+  660/1800 done, $1.3840 spent, 1154s
+  680/1800 done, $1.4556 spent, 1214s
+  700/1800 done, $1.6084 spent, 1340s
+  720/1800 done, $1.6829 spent, 1384s
+  740/1800 done, $1.6996 spent, 1398s
+  760/1800 done, $1.7266 spent, 1407s
+  780/1800 done, $1.7333 spent, 1417s
+  800/1800 done, $1.7521 spent, 1425s
+  820/1800 done, $1.7674 spent, 1432s
+  840/1800 done, $1.7826 spent, 1443s
+  860/1800 done, $1.8243 spent, 1495s
+  880/1800 done, $1.8665 spent, 1530s
+  900/1800 done, $1.9264 spent, 1566s
+  920/1800 done, $1.9666 spent, 1610s
+  940/1800 done, $2.0417 spent, 1679s
+  960/1800 done, $2.0779 spent, 1714s
+  980/1800 done, $2.0973 spent, 1730s
+  1000/1800 done, $2.1097 spent, 1739s
+  1020/1800 done, $2.1281 spent, 1751s
+  1040/1800 done, $2.1412 spent, 1759s
+  1060/1800 done, $2.1597 spent, 1767s
+  1080/1800 done, $2.1763 spent, 1773s
+  1100/1800 done, $2.1828 spent, 1781s
+  1120/1800 done, $2.1911 spent, 1791s
+  1140/1800 done, $2.2043 spent, 1816s
+  1160/1800 done, $2.2222 spent, 1830s
+  1180/1800 done, $2.2371 spent, 1853s
+  1200/1800 done, $2.2868 spent, 1902s
+  1220/1800 done, $2.3821 spent, 2003s
+  1240/1800 done, $2.4839 spent, 2068s
+  1260/1800 done, $2.6345 spent, 2183s
+  1280/1800 done, $2.7448 spent, 2276s
+  1300/1800 done, $2.8739 spent, 2362s
+  1320/1800 done, $2.9331 spent, 2414s
+  1340/1800 done, $2.9459 spent, 2433s
+  1360/1800 done, $2.9602 spent, 2447s
+  1380/1800 done, $2.9821 spent, 2456s
+  1400/1800 done, $2.9876 spent, 2466s
+  1420/1800 done, $3.0038 spent, 2475s
+  1440/1800 done, $3.0290 spent, 2494s
+  1460/1800 done, $3.0717 spent, 2545s
+  1480/1800 done, $3.1163 spent, 2587s
+  1500/1800 done, $3.2075 spent, 2637s
+  1520/1800 done, $3.2585 spent, 2683s
+  1540/1800 done, $3.3177 spent, 2733s
+  1560/1800 done, $3.3525 spent, 2770s
+  1580/1800 done, $3.3652 spent, 2787s
+  1600/1800 done, $3.3813 spent, 2798s
+  1620/1800 done, $3.3984 spent, 2809s
+  1640/1800 done, $3.4074 spent, 2819s
+  1660/1800 done, $3.4211 spent, 2826s
+  1680/1800 done, $3.4268 spent, 2832s
+  1700/1800 done, $3.4327 spent, 2846s
+  1720/1800 done, $3.4585 spent, 2863s
+  1740/1800 done, $3.4858 spent, 2877s
+  1760/1800 done, $3.4967 spent, 2896s
+  1780/1800 done, $3.5133 spent, 2916s
+  1800/1800 done, $3.5754 spent, 2981s
+{
+ "run": "effort-cross-deepseek-max",
+ "completed": 1800,
+ "pending": 0,
+ "spent": 3.5754,
+ "stats": {
+  "deepseek": {
+   "calls": 1800,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 3.5754079320000005,
+   "inTok": 2806137,
+   "outTok": 5350512,
+   "reasonTok": 4800128
+  }
+ },
+ "wallSeconds": 2981,
+ "ledgerTotal": 30.3593
+}
+RUN_DONE

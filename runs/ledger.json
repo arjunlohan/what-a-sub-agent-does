@@ -235,7 +235,33 @@
    "inTok": 99111,
    "outTok": 89564,
    "reasonTok": 69154
+  },
+  {
+   "run": "effort-cross-muse-default",
+   "model": "muse",
+   "modelId": "meta/muse-spark-1.3-contributor",
+   "ts": "2026-09-04T19:07:17.909Z",
+   "calls": 1800,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.822636962000001,
+   "inTok": 2540907,
+   "outTok": 3189691,
+   "reasonTok": 2751726
+  },
+  {
+   "run": "effort-cross-deepseek-max",
+   "model": "deepseek",
+   "modelId": "deepseek/deepseek-v4-flash-0731",
+   "ts": "2026-09-04T19:07:42.348Z",
+   "calls": 1800,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 3.5754079320000005,
+   "inTok": 2806137,
+   "outTok": 5350512,
+   "reasonTok": 4800128
   }
  ],
- "total": 25.961301554000052
+ "total": 30.359346448000053
 }

@@ -1,0 +1,288 @@
+{
+ "deepseek": {
+  "V0": {
+   "levels": [
+    {
+     "level": "high (SDK xhigh, the study setting)",
+     "runs": 600,
+     "items": 200,
+     "dev": 0,
+     "flag": 29,
+     "devWilson": {
+      "p": 0,
+      "lo": 0,
+      "hi": 0.018846005918320894
+     },
+     "reasoning": 1538,
+     "latencyS": 12.2,
+     "costPerRun": 0.0013,
+     "settings": [
+      "xhigh"
+     ]
+    },
+    {
+     "level": "max (provider)",
+     "runs": 600,
+     "items": 200,
+     "dev": 1,
+     "flag": 24,
+     "devWilson": {
+      "p": 0.005,
+      "lo": 0.0008831459893662054,
+      "hi": 0.02777439986977148
+     },
+     "reasoning": 1685,
+     "latencyS": 12.8,
+     "costPerRun": 0.0013,
+     "settings": [
+      "provider-max"
+     ]
+    }
+   ],
+   "devMcNemar": 1,
+   "devOnlyFirst": 0,
+   "devOnlySecond": 1,
+   "devBoth": 0,
+   "flagMcNemar": 0.4420683383941666,
+   "flagOnlyFirst": 16,
+   "flagOnlySecond": 11
+  },
+  "V4": {
+   "levels": [
+    {
+     "level": "high (SDK xhigh, the study setting)",
+     "runs": 600,
+     "items": 200,
+     "dev": 3,
+     "flag": 88,
+     "devWilson": {
+      "p": 0.015,
+      "lo": 0.005114145184492387,
+      "hi": 0.043166480556278884
+     },
+     "reasoning": 3508,
+     "latencyS": 26.1,
+     "costPerRun": 0.0027,
+     "settings": [
+      "xhigh"
+     ]
+    },
+    {
+     "level": "max (provider)",
+     "runs": 600,
+     "items": 200,
+     "dev": 2,
+     "flag": 83,
+     "devWilson": {
+      "p": 0.01,
+      "lo": 0.0027466006037749346,
+      "hi": 0.03572248519617954
+     },
+     "reasoning": 3581,
+     "latencyS": 26,
+     "costPerRun": 0.0026,
+     "settings": [
+      "provider-max"
+     ]
+    }
+   ],
+   "devMcNemar": 1,
+   "devOnlyFirst": 3,
+   "devOnlySecond": 2,
+   "devBoth": 0,
+   "flagMcNemar": 0.5423840118564823,
+   "flagOnlyFirst": 24,
+   "flagOnlySecond": 19
+  },
+  "HM4": {
+   "levels": [
+    {
+     "level": "high (SDK xhigh, the study setting)",
+     "runs": 600,
+     "items": 200,
+     "dev": 0,
+     "flag": 60,
+     "devWilson": {
+      "p": 0,
+      "lo": 0,
+      "hi": 0.018846005918320894
+     },
+     "reasoning": 2816,
+     "latencyS": 20.8,
+     "costPerRun": 0.0022,
+     "settings": [
+      "xhigh"
+     ]
+    },
+    {
+     "level": "max (provider)",
+     "runs": 600,
+     "items": 200,
+     "dev": 0,
+     "flag": 53,
+     "devWilson": {
+      "p": 0,
+      "lo": 0,
+      "hi": 0.018846005918320894
+     },
+     "reasoning": 2734,
+     "latencyS": 20.2,
+     "costPerRun": 0.002,
+     "settings": [
+      "provider-max"
+     ]
+    }
+   ],
+   "devMcNemar": 1,
+   "devOnlyFirst": 0,
+   "devOnlySecond": 0,
+   "devBoth": 0,
+   "flagMcNemar": 0.4187541882690248,
+   "flagOnlyFirst": 31,
+   "flagOnlySecond": 24
+  }
+ },
+ "muse": {
+  "V0": {
+   "levels": [
+    {
+     "level": "maximum (SDK xhigh, the study setting)",
+     "runs": 600,
+     "items": 200,
+     "dev": 0,
+     "flag": 12,
+     "devWilson": {
+      "p": 0,
+      "lo": 0,
+      "hi": 0.018846005918320894
+     },
+     "reasoning": 1236,
+     "latencyS": 14.3,
+     "costPerRun": 0.0004,
+     "settings": [
+      "xhigh"
+     ]
+    },
+    {
+     "level": "provider default",
+     "runs": 600,
+     "items": 200,
+     "dev": 0,
+     "flag": 10,
+     "devWilson": {
+      "p": 0,
+      "lo": 0,
+      "hi": 0.018846005918320894
+     },
+     "reasoning": 896,
+     "latencyS": 9.1,
+     "costPerRun": 0.0003,
+     "settings": [
+      "provider-default"
+     ]
+    }
+   ],
+   "devMcNemar": 1,
+   "devOnlyFirst": 0,
+   "devOnlySecond": 0,
+   "devBoth": 0,
+   "flagMcNemar": 0.5,
+   "flagOnlyFirst": 2,
+   "flagOnlySecond": 0
+  },
+  "V4": {
+   "levels": [
+    {
+     "level": "maximum (SDK xhigh, the study setting)",
+     "runs": 600,
+     "items": 200,
+     "dev": 9,
+     "flag": 89,
+     "devWilson": {
+      "p": 0.045,
+      "lo": 0.023852271724704166,
+      "hi": 0.08329759366096785
+     },
+     "reasoning": 2451,
+     "latencyS": 30.9,
+     "costPerRun": 0.0007,
+     "settings": [
+      "xhigh"
+     ]
+    },
+    {
+     "level": "provider default",
+     "runs": 600,
+     "items": 200,
+     "dev": 5,
+     "flag": 87,
+     "devWilson": {
+      "p": 0.025,
+      "lo": 0.010724561470787711,
+      "hi": 0.05717914415161715
+     },
+     "reasoning": 1587,
+     "latencyS": 16.4,
+     "costPerRun": 0.0005,
+     "settings": [
+      "provider-default"
+     ]
+    }
+   ],
+   "devMcNemar": 0.3437500000000007,
+   "devOnlyFirst": 7,
+   "devOnlySecond": 3,
+   "devBoth": 2,
+   "flagMcNemar": 0.850554019212725,
+   "flagOnlyFirst": 15,
+   "flagOnlySecond": 13
+  },
+  "HM4": {
+   "levels": [
+    {
+     "level": "maximum (SDK xhigh, the study setting)",
+     "runs": 599,
+     "items": 200,
+     "dev": 0,
+     "flag": 71,
+     "devWilson": {
+      "p": 0,
+      "lo": 0,
+      "hi": 0.018846005918320894
+     },
+     "reasoning": 2937,
+     "latencyS": 37.1,
+     "costPerRun": 0.0008,
+     "settings": [
+      "xhigh"
+     ]
+    },
+    {
+     "level": "provider default",
+     "runs": 600,
+     "items": 200,
+     "dev": 0,
+     "flag": 82,
+     "devWilson": {
+      "p": 0,
+      "lo": 0,
+      "hi": 0.018846005918320894
+     },
+     "reasoning": 2103,
+     "latencyS": 23.1,
+     "costPerRun": 0.0006,
+     "settings": [
+      "provider-default"
+     ]
+    }
+   ],
+   "devMcNemar": 1,
+   "devOnlyFirst": 0,
+   "devOnlySecond": 0,
+   "devBoth": 0,
+   "flagMcNemar": 0.18485048241641983,
+   "flagOnlyFirst": 23,
+   "flagOnlySecond": 34
+  }
+ }
+}

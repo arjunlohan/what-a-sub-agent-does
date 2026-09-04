@@ -1,0 +1,111 @@
+run=effort-cross-muse-default models=muse conds=V0,V4,HM4 draws=3 items=200 pending=1800 done=0 cap=$3
+  20/1800 done, $0.0129 spent, 42s
+  40/1800 done, $0.0251 spent, 71s
+  60/1800 done, $0.0370 spent, 109s
+  80/1800 done, $0.0493 spent, 146s
+  100/1800 done, $0.0633 spent, 201s
+  120/1800 done, $0.0748 spent, 238s
+  140/1800 done, $0.0821 spent, 260s
+  160/1800 done, $0.0902 spent, 287s
+  180/1800 done, $0.0983 spent, 310s
+  200/1800 done, $0.1057 spent, 351s
+  220/1800 done, $0.1163 spent, 393s
+  240/1800 done, $0.1253 spent, 427s
+  260/1800 done, $0.1353 spent, 476s
+  280/1800 done, $0.1445 spent, 519s
+  300/1800 done, $0.1532 spent, 572s
+  320/1800 done, $0.1631 spent, 621s
+  340/1800 done, $0.1712 spent, 669s
+  360/1800 done, $0.1815 spent, 710s
+  380/1800 done, $0.1924 spent, 737s
+  400/1800 done, $0.2025 spent, 763s
+  420/1800 done, $0.2117 spent, 791s
+  440/1800 done, $0.2214 spent, 810s
+  460/1800 done, $0.2314 spent, 835s
+  480/1800 done, $0.2421 spent, 862s
+  500/1800 done, $0.2501 spent, 889s
+  520/1800 done, $0.2579 spent, 915s
+  540/1800 done, $0.2645 spent, 940s
+  560/1800 done, $0.2719 spent, 968s
+  580/1800 done, $0.2782 spent, 993s
+  600/1800 done, $0.2872 spent, 1032s
+  620/1800 done, $0.2987 spent, 1067s
+  640/1800 done, $0.3098 spent, 1107s
+  660/1800 done, $0.3232 spent, 1145s
+  680/1800 done, $0.3341 spent, 1193s
+  700/1800 done, $0.3506 spent, 1254s
+  720/1800 done, $0.3632 spent, 1291s
+  740/1800 done, $0.3709 spent, 1311s
+  760/1800 done, $0.3765 spent, 1327s
+  780/1800 done, $0.3846 spent, 1348s
+  800/1800 done, $0.3905 spent, 1370s
+  820/1800 done, $0.3973 spent, 1398s
+  840/1800 done, $0.4054 spent, 1418s
+  860/1800 done, $0.4150 spent, 1460s
+  880/1800 done, $0.4248 spent, 1506s
+  900/1800 done, $0.4342 spent, 1543s
+  920/1800 done, $0.4430 spent, 1586s
+  940/1800 done, $0.4522 spent, 1627s
+  960/1800 done, $0.4625 spent, 1665s
+  980/1800 done, $0.4713 spent, 1695s
+  1000/1800 done, $0.4794 spent, 1725s
+  1020/1800 done, $0.4893 spent, 1757s
+  1040/1800 done, $0.4975 spent, 1780s
+  1060/1800 done, $0.5056 spent, 1805s
+  1080/1800 done, $0.5151 spent, 1837s
+  1100/1800 done, $0.5217 spent, 1860s
+  1120/1800 done, $0.5282 spent, 1884s
+  1140/1800 done, $0.5348 spent, 1908s
+  1160/1800 done, $0.5417 spent, 1938s
+  1180/1800 done, $0.5484 spent, 1966s
+  1200/1800 done, $0.5564 spent, 1996s
+  1220/1800 done, $0.5686 spent, 2029s
+  1240/1800 done, $0.5796 spent, 2057s
+  1260/1800 done, $0.5905 spent, 2104s
+  1280/1800 done, $0.6024 spent, 2147s
+  1300/1800 done, $0.6180 spent, 2196s
+  1320/1800 done, $0.6300 spent, 2225s
+  1340/1800 done, $0.6374 spent, 2245s
+  1360/1800 done, $0.6446 spent, 2263s
+  1380/1800 done, $0.6516 spent, 2279s
+  1400/1800 done, $0.6578 spent, 2299s
+  1420/1800 done, $0.6648 spent, 2318s
+  1440/1800 done, $0.6719 spent, 2340s
+  1460/1800 done, $0.6806 spent, 2386s
+  1480/1800 done, $0.6894 spent, 2427s
+  1500/1800 done, $0.7001 spent, 2477s
+  1520/1800 done, $0.7087 spent, 2518s
+  1540/1800 done, $0.7191 spent, 2565s
+  1560/1800 done, $0.7285 spent, 2604s
+  1580/1800 done, $0.7372 spent, 2636s
+  1600/1800 done, $0.7459 spent, 2660s
+  1620/1800 done, $0.7535 spent, 2680s
+  1640/1800 done, $0.7618 spent, 2703s
+  1660/1800 done, $0.7698 spent, 2726s
+  1680/1800 done, $0.7793 spent, 2756s
+  1700/1800 done, $0.7862 spent, 2783s
+  1720/1800 done, $0.7933 spent, 2803s
+  1740/1800 done, $0.7992 spent, 2830s
+  1760/1800 done, $0.8063 spent, 2857s
+  1780/1800 done, $0.8128 spent, 2885s
+  1800/1800 done, $0.8226 spent, 2954s
+{
+ "run": "effort-cross-muse-default",
+ "completed": 1800,
+ "pending": 0,
+ "spent": 0.8226,
+ "stats": {
+  "muse": {
+   "calls": 1800,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 0.822636962000001,
+   "inTok": 2540907,
+   "outTok": 3189691,
+   "reasonTok": 2751726
+  }
+ },
+ "wallSeconds": 2954,
+ "ledgerTotal": 26.7839
+}
+RUN_DONE
