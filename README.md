@@ -26,4 +26,4 @@ Suite A: `bash run-suite-a.sh` (environment variables select models, conditions,
 
 ## Data notes
 
-Stimulus inputs come from real material: survey and job-candidate tables, READMEs and distribution listings of installed packages, and this project's own source files. Third-party content is reproduced for research under its own terms. Model outputs were produced by DeepSeek V4 Flash 0731 and Meta Muse Spark 1.3 (contributor tier) through Vercel's AI Gateway; both providers' terms permit training on the traffic.
+Stimulus inputs come from real material: survey and job-candidate tables, READMEs and distribution listings of installed packages, and this project's own source files. Third-party content is reproduced for research under its own terms.
