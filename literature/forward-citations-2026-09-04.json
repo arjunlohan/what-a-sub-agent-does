@@ -1,0 +1,34 @@
+{
+ "fetched": "2026-09-04",
+ "source": "api.openalex.org (works by arXiv DOI; filter=cites)",
+ "papers": {
+  "2608.24569": {
+   "name": "Constraint Weakening",
+   "openalex_id": "W7204254558",
+   "openalex_title": "When \"Must\" Becomes \"Maybe\": Constraint Weakening in LLM Agent Workflows",
+   "cited_by_count": 0,
+   "citations": []
+  },
+  "2608.16055": {
+   "name": "Governance at the Boundary",
+   "openalex_id": "W7203663751",
+   "openalex_title": "Governance at the Boundary: How Agent Decomposition Degrades Policy Compliance",
+   "cited_by_count": 0,
+   "citations": []
+  },
+  "2607.07097": {
+   "name": "Operational Reframing / Approval-Framed Delegation",
+   "openalex_id": "W7167820927",
+   "openalex_title": "Operational Reframing and Approval-Framed Delegation in Multi-Agent LLM Safety",
+   "cited_by_count": 0,
+   "citations": []
+  },
+  "2608.07556": {
+   "name": "MasDrift",
+   "openalex_id": "W7202169705",
+   "openalex_title": "MasDrift: Benchmarking Authorization Preservation Across Multi-Agent Architectures",
+   "cited_by_count": 0,
+   "citations": []
+  }
+ }
+}

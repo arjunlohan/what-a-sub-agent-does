@@ -1,0 +1,244 @@
+{
+ "definition": "W2 duplication of W1's owned unit in the two concurrent families (doc-memo: target section summarized; ts-edit: guard inside W1's function), from W2's own output; ts-edit cases where W1 wrote first are counted as possibly inherited, not as duplication.",
+ "byModelCondition": {
+  "deepseek": {
+   "V0": {
+    "n": 30,
+    "dup": 0,
+    "dupWilson": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "possiblyInherited": 0,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 0,
+    "tsN": 14,
+    "polled": 0,
+    "meanPolls": 0
+   },
+   "V2": {
+    "n": 30,
+    "dup": 0,
+    "dupWilson": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "possiblyInherited": 0,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 0,
+    "tsN": 14,
+    "polled": 0,
+    "meanPolls": 0
+   },
+   "V4": {
+    "n": 30,
+    "dup": 0,
+    "dupWilson": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "possiblyInherited": 1,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 0,
+    "tsN": 14,
+    "polled": 0,
+    "meanPolls": 0
+   },
+   "V5": {
+    "n": 30,
+    "dup": 1,
+    "dupWilson": {
+     "p": 0.03333333333333333,
+     "lo": 0.0059084379948573795,
+     "hi": 0.16670751396958874
+    },
+    "possiblyInherited": 1,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 1,
+    "tsN": 14,
+    "polled": 30,
+    "meanPolls": 2.53
+   },
+   "V5E": {
+    "n": 30,
+    "dup": 2,
+    "dupWilson": {
+     "p": 0.06666666666666667,
+     "lo": 0.01847663532769335,
+     "hi": 0.21323817721072091
+    },
+    "possiblyInherited": 4,
+    "docDup": 1,
+    "docN": 16,
+    "tsDup": 1,
+    "tsN": 14,
+    "polled": 30,
+    "meanPolls": 3.1
+   }
+  },
+  "muse": {
+   "V0": {
+    "n": 30,
+    "dup": 0,
+    "dupWilson": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "possiblyInherited": 0,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 0,
+    "tsN": 14,
+    "polled": 0,
+    "meanPolls": 0
+   },
+   "V2": {
+    "n": 30,
+    "dup": 0,
+    "dupWilson": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "possiblyInherited": 0,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 0,
+    "tsN": 14,
+    "polled": 0,
+    "meanPolls": 0
+   },
+   "V4": {
+    "n": 30,
+    "dup": 0,
+    "dupWilson": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "possiblyInherited": 3,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 0,
+    "tsN": 14,
+    "polled": 0,
+    "meanPolls": 0
+   },
+   "V5": {
+    "n": 30,
+    "dup": 0,
+    "dupWilson": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "possiblyInherited": 2,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 0,
+    "tsN": 14,
+    "polled": 26,
+    "meanPolls": 3.53
+   },
+   "V5E": {
+    "n": 30,
+    "dup": 0,
+    "dupWilson": {
+     "p": 0,
+     "lo": 0,
+     "hi": 0.113517091390478
+    },
+    "possiblyInherited": 1,
+    "docDup": 0,
+    "docN": 16,
+    "tsDup": 0,
+    "tsN": 14,
+    "polled": 28,
+    "meanPolls": 1.9
+   }
+  }
+ },
+ "polling": {
+  "deepseek": {
+   "polledN": 60,
+   "polledDup": 3,
+   "notPolledN": 0,
+   "notPolledDup": 0,
+   "fisherP": 1,
+   "polledRate": {
+    "p": 0.05,
+    "lo": 0.01714919117914121,
+    "hi": 0.13700734625099836
+   },
+   "notPolledRate": {
+    "p": 0,
+    "lo": 0,
+    "hi": 0.7934567085261071
+   },
+   "v5VsV2": {
+    "v5N": 60,
+    "v5Dup": 3,
+    "v2N": 30,
+    "v2Dup": 0,
+    "fisherP": 0.548008171603658
+   }
+  },
+  "muse": {
+   "polledN": 54,
+   "polledDup": 0,
+   "notPolledN": 6,
+   "notPolledDup": 0,
+   "fisherP": 1,
+   "polledRate": {
+    "p": 0,
+    "lo": 6.938893903907228e-18,
+    "hi": 0.06641586678100189
+   },
+   "notPolledRate": {
+    "p": 0,
+    "lo": 0,
+    "hi": 0.3903430336530645
+   },
+   "v5VsV2": {
+    "v5N": 60,
+    "v5Dup": 0,
+    "v2N": 30,
+    "v2Dup": 0,
+    "fisherP": 1
+   }
+  },
+  "both": {
+   "polledN": 114,
+   "polledDup": 3,
+   "notPolledN": 6,
+   "notPolledDup": 0,
+   "fisherP": 0.9999999999999613,
+   "polledRate": {
+    "p": 0.02631578947368421,
+    "lo": 0.008989398451945727,
+    "hi": 0.07452610031928616
+   },
+   "notPolledRate": {
+    "p": 0,
+    "lo": 0,
+    "hi": 0.3903430336530645
+   },
+   "v5VsV2": {
+    "v5N": 120,
+    "v5Dup": 3,
+    "v2N": 60,
+    "v2Dup": 0,
+    "fisherP": 0.5518172117255394
+   }
+  }
+ },
+ "rows": 300
+}

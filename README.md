@@ -27,3 +27,7 @@ Suite A: `bash run-suite-a.sh` (environment variables select models, conditions,
 ## Data notes
 
 Stimulus inputs come from real material: survey and job-candidate tables, READMEs and distribution listings of installed packages, and this project's own source files. Third-party content is reproduced for research under its own terms.
+
+## License
+
+Code is under the MIT License and the data and documentation under CC BY 4.0; third-party stimulus material stays under its own terms. See LICENSE.

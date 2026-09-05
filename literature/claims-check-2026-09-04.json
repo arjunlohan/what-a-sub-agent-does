@@ -1,0 +1,716 @@
+{
+ "checked_on": "2026-09-04",
+ "method": "six fresh-context agents, each fetching the cited source in full text and judging whether the clause attributed to it in the paper is supported; quotes at most 25 words",
+ "counts": {
+  "supported": 65,
+  "partly": 19,
+  "not_accessible": 1
+ },
+ "records": [
+  {
+   "key": "anthropic2026cardclaude",
+   "claim": "The departures we do see fit the frontier accounts of scope creep that is frequent and disclosed \\citep{anthropic2026cardclaude}, and the silent minority fits the failure-concealing class \\citep{guo2025upwarddeceivers} only loosely, since our tasks were solvable.",
+   "verdict": "supported",
+   "evidence": "Claude frequently suffered from scope creep [...] In every episode whose transcript was read in full, it disclosed what it had added",
+   "where": "Section 6.3 'Training data review', p. 86 (the sentence continues 'though sometimes only partially')",
+   "source_fetched": "https://www-cdn.anthropic.com/b514064af1408018e64b1ad24e7d5e75850b4ffd/Claude%20Opus%205%20System%20Card.pdf"
+  },
+  {
+   "key": "anthropic2026subagentssdk",
+   "claim": "Coding command-line tools and agent SDKs pass the worker only the delegation prompt: the parent's conversation, files read and skills invoked do not carry over, and only the final result returns \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams}.",
+   "verdict": "supported",
+   "evidence": "The only content you pass from parent to subagent is the Agent tool's prompt string",
+   "where": "Section 'What subagents inherit' (table: doesn't receive 'The parent's conversation history or tool results', 'Preloaded skill content'); 'Benefits' section: 'only its final message returns to the parent'. Both are qualified 'unless the subagent is a fork'",
+   "source_fetched": "https://code.claude.com/docs/en/agent-sdk/subagents.md"
+  },
+  {
+   "key": "anthropic2026subagentssdk",
+   "claim": "Coding harnesses tend to pass only the delegation prompt \\citep{anthropic2026subagentssdk,barbaste2026harnessengineering}; handoff-style frameworks pass the whole transcript; the design guidance of the last two years has moved from ``share everything'' \\citep{yan2025dontbuild} to ``isolate by default'' \\citep{chen2026buildinguse,yan2026actuallyworking} without a controlled measurement of what the choice does to the worker.",
+   "verdict": "supported",
+   "evidence": "its context window starts fresh, with no parent conversation, but isn't empty",
+   "where": "Section 'What subagents inherit' (non-fork subagents); same paragraph: 'The only content you pass from parent to subagent is the Agent tool's prompt string'",
+   "source_fetched": "https://code.claude.com/docs/en/agent-sdk/subagents.md"
+  },
+  {
+   "key": "anthropic2026subagentssdk",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "supported",
+   "evidence": "The table below lists what a non-fork subagent's context contains and what it leaves out.",
+   "where": "Section 'What subagents inherit'",
+   "source_fetched": "https://code.claude.com/docs/en/agent-sdk/subagents.md"
+  },
+  {
+   "key": "armitage1955tests",
+   "claim": "The primary test per model is McNemar's exact test \\citep{mcnemar1947note} on item indicators between \\cond{V0} and \\cond{V4}, Holm-adjusted across the two models \\citep{holm1979simple}; the secondary family covers adjacent steps and each control contrast, Holm-adjusted within model; a Cochran-Armitage trend test \\citep{cochran1954some,armitage1955tests} runs over the five rungs; intervals are Wilson intervals \\citep{wilson1927probable}; mixed-effects logistic models with item random effects were fitted by variational Bayes with weakly informative priors because the isolated cells have no events (Firth-type penalization \\citep{firth1993bias} was the pre-registered alternative).",
+   "verdict": "supported",
+   "evidence": "a test specifically designed to detect a trend in the carrier rate as the tonsil size increases would show a much higher degree of significance",
+   "where": "Section 1 Introduction, p. 375; the chi-square(1) regression-on-scores statistic is derived in Section 2 'A test based on scores', pp. 376-378",
+   "source_fetched": "https://vk.cs.umn.edu/rohit/snp/testsfor.pdf (JSTOR scan of Biometrics 11(3):375-386; doi.org/10.2307/3001775 resolves to a JSTOR page that blocks fetching)"
+  },
+  {
+   "key": "barbaste2026harnessengineering",
+   "claim": "Coding harnesses tend to pass only the delegation prompt \\citep{anthropic2026subagentssdk,barbaste2026harnessengineering}; handoff-style frameworks pass the whole transcript; the design guidance of the last two years has moved from ``share everything'' \\citep{yan2025dontbuild} to ``isolate by default'' \\citep{chen2026buildinguse,yan2026actuallyworking} without a controlled measurement of what the choice does to the worker.",
+   "verdict": "partly",
+   "evidence": "delegate_task builds child agents in-process on a thread pool: fresh conversation, focused system prompt, summary-only return, toolsets intersected with the parent's",
+   "where": "Section 11.7 (Hermes), p. 43; Table 9 'Multi-agent orchestration', column 'Isolation / inherit.' (Section 11.1, pp. 39-40); Sections 11.2.2 and 11.3",
+   "note": "The paper documents fresh-context, summary-return delegation for most systems (OpenHands, Mistral Vibe, Hermes, Pi, OpenClaw) but never states the generalization; its two flagship systems inherit more than the delegation prompt: Codex's SpawnAgentForkMode inherits FullHistory or LastNTurns(N) of the parent conversation (Section 11.3), and Claude Code's AgentTool forks the parent's context along six dimensions and passes the parent's renderedSystemPrompt verbatim to the child (Section 11.2.2).",
+   "source_fetched": "https://arxiv.org/pdf/2609.00006"
+  },
+  {
+   "key": "barbaste2026harnessengineering",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "supported",
+   "evidence": "It is a source-code anatomy of eleven production coding harnesses",
+   "where": "Abstract, p. 1",
+   "source_fetched": "https://arxiv.org/pdf/2609.00006"
+  },
+  {
+   "key": "cemri2025mast",
+   "claim": "\\paragraph{Multi-agent failures, attribution and noise.} Failure taxonomies \\citep{cemri2025mast}, attribution of failures to agents and steps \\citep{zhang2025whichcauses,chen2026seeingwhole}, the information-bottleneck view of when coordination helps \\citep{yu2026when}, and the noise-floor protocol for small coordination gains \\citep{kaliyev2026muchcoordination} inform our design: the item is the unit, controls are byte-identical, draws are near-replicates reported as such, and the concurrent family's verdicts are attributed to the worker's own change.",
+   "verdict": "supported",
+   "evidence": "we build the first Multi-Agent System Failure Taxonomy (MAST)",
+   "where": "Abstract (14 failure modes in 3 categories); Section 3 and Figure 1",
+   "source_fetched": "https://arxiv.org/pdf/2503.13657 (v3)"
+  },
+  {
+   "key": "chen2026buildinguse",
+   "claim": "Coding harnesses tend to pass only the delegation prompt \\citep{anthropic2026subagentssdk,barbaste2026harnessengineering}; handoff-style frameworks pass the whole transcript; the design guidance of the last two years has moved from ``share everything'' \\citep{yan2025dontbuild} to ``isolate by default'' \\citep{chen2026buildinguse,yan2026actuallyworking} without a controlled measurement of what the choice does to the worker.",
+   "verdict": "supported",
+   "evidence": "Subagents provide isolation, with each operating in its own clean context focused on its specific task.",
+   "where": "Section 'Context protection'; see also 'Context-centric decomposition': 'Work should only be split when context can be truly isolated'",
+   "source_fetched": "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them"
+  },
+  {
+   "key": "chen2026buildinguse",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "supported",
+   "evidence": "At Anthropic, we've seen teams invest months building elaborate multi-agent architectures",
+   "where": "Introduction ('What is a multi-agent system?'), claude.com blog, January 23, 2026",
+   "source_fetched": "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them"
+  },
+  {
+   "key": "chen2026seeingwhole",
+   "claim": "\\paragraph{Multi-agent failures, attribution and noise.} Failure taxonomies \\citep{cemri2025mast}, attribution of failures to agents and steps \\citep{zhang2025whichcauses,chen2026seeingwhole}, the information-bottleneck view of when coordination helps \\citep{yu2026when}, and the noise-floor protocol for small coordination gains \\citep{kaliyev2026muchcoordination} inform our design: the item is the unit, controls are byte-identical, draws are near-replicates reported as such, and the concurrent family's verdicts are attributed to the worker's own change.",
+   "verdict": "supported",
+   "evidence": "Failure attribution, i.e., identifying the responsible agent and decisive step of a failure",
+   "where": "Abstract; Section 2 defines step-level and agent-level attribution",
+   "source_fetched": "https://arxiv.org/pdf/2604.22708 (v1)"
+  },
+  {
+   "key": "chen2026selfcorrection",
+   "claim": "\\emph{Placement and security.} Every visibility tier occupies the user turn under a fixed system prompt, matching deployed harnesses but not testing role placement \\citep{chen2026selfcorrection}; the security side of the same channel, what upstream context lets a compromised or injected worker do \\citep{li2026contextcontext,hagag2026architecturematters}, is not measured.",
+   "verdict": "supported",
+   "evidence": "keeps the erroneous claim byte-identical and varies only its message role",
+   "where": "Abstract (roles tested: agent <thought>, user message, tool response, system <memory>); Section 3.1 and Table 1",
+   "source_fetched": "https://arxiv.org/pdf/2606.05976 (v2)"
+  },
+  {
+   "key": "cochran1954some",
+   "claim": "The primary test per model is McNemar's exact test \\citep{mcnemar1947note} on item indicators between \\cond{V0} and \\cond{V4}, Holm-adjusted across the two models \\citep{holm1979simple}; the secondary family covers adjacent steps and each control contrast, Holm-adjusted within model; a Cochran-Armitage trend test \\citep{cochran1954some,armitage1955tests} runs over the five rungs; intervals are Wilson intervals \\citep{wilson1927probable}; mixed-effects logistic models with item random effects were fitted by variational Bayes with weakly informative priors because the isolated cells have no events (Firth-type penalization \\citep{firth1993bias} was the pre-registered alternative).",
+   "verdict": "not_accessible",
+   "evidence": "",
+   "where": "n/a: doi.org/10.2307/3001616 resolves to JSTOR, which blocks both curl and WebFetch; no open copy found via Semantic Scholar, archive.org, CORE, HERO or web search",
+   "note": "Body not reachable, so the attribution is unverified against Cochran's own text; secondary evidence only: Armitage 1955 (p. 386, note added in proof) says the chi-square(1) regression test 'has been discussed by W. G. Cochran (1954), Biometrics 10: 417-451, sections 6.2, 6.3', consistent with the standard Cochran-Armitage attribution.",
+   "source_fetched": "https://doi.org/10.2307/3001616 (blocked; only bibliographic metadata retrieved from https://hero.epa.gov/reference/6766388/)"
+  },
+  {
+   "key": "documentation2026orchestrateteams",
+   "claim": "Coding command-line tools and agent SDKs pass the worker only the delegation prompt: the parent's conversation, files read and skills invoked do not carry over, and only the final result returns \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams}.",
+   "verdict": "partly",
+   "evidence": "It also receives the spawn prompt from the lead. The lead's conversation history does not carry over.",
+   "where": "Section 'Context and communication'; comparison table in 'Compare with subagents'",
+   "note": "The doc supports 'the parent's conversation does not carry over' and the spawn prompt as the hand-off, but agent teams are not 'only the final result returns': its comparison table gives 'Return a result to the caller' to subagents and 'Teammates message each other directly' plus a shared task list to teams, with mid-task messages delivered automatically and the final answer arriving as an idle notification; teammates also load project CLAUDE.md, MCP servers and skills (only the lead's session content is withheld).",
+   "source_fetched": "https://code.claude.com/docs/en/agent-teams.md"
+  },
+  {
+   "key": "documentation2026orchestrateteams",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "supported",
+   "evidence": "When spawned, a teammate loads the same project context as a regular session: CLAUDE.md, MCP servers, and skills.",
+   "where": "Section 'Context and communication'",
+   "source_fetched": "https://code.claude.com/docs/en/agent-teams.md"
+  },
+  {
+   "key": "firth1993bias",
+   "claim": "The primary test per model is McNemar's exact test \\citep{mcnemar1947note} on item indicators between \\cond{V0} and \\cond{V4}, Holm-adjusted across the two models \\citep{holm1979simple}; the secondary family covers adjacent steps and each control contrast, Holm-adjusted within model; a Cochran-Armitage trend test \\citep{cochran1954some,armitage1955tests} runs over the five rungs; intervals are Wilson intervals \\citep{wilson1927probable}; mixed-effects logistic models with item random effects were fitted by variational Bayes with weakly informative priors because the isolated cells have no events (Firth-type penalization \\citep{firth1993bias} was the pre-registered alternative).",
+   "verdict": "supported",
+   "evidence": "In exponential families with canonical parameterization the effect is to penalize the likelihood by the Jeffreys invariant prior.",
+   "where": "Summary, p. 27 (Biometrika 80(1):27-38); confirmed against the OUP abstract page",
+   "source_fetched": "https://www2.stat.duke.edu/~scs/Courses/Stat376/Papers/GibbsFieldEst/BiasReductionMLE.pdf (scanned JSTOR copy, OCR'd with tesseract); abstract also read at https://academic.oup.com/biomet/article/80/1/27/228364"
+  },
+  {
+   "key": "fu2026scalingreasoning",
+   "claim": "\\paragraph{Reasoning effort.} Longer reasoning can degrade instruction following \\citep{li2025thinkingfails,fu2026scalingreasoning,gema2025inversescaling}, inert context can shorten reasoning \\citep{rodionov2026reasoningshift}, and effort settings are model-specific contracts \\citep{moon2026pricethinking}.",
+   "verdict": "supported",
+   "evidence": "models tuned on distilled long chains-of-thought or trained with reasoning-oriented reinforcement learning often degrade in instruction adherence, especially when generation length increases",
+   "where": "Abstract; also Section 5.3 heading 'The More Thinking, the Less Following' (budget-forcing experiment)",
+   "source_fetched": "https://arxiv.org/html/2505.14810"
+  },
+  {
+   "key": "galbraith1974information",
+   "claim": "Organization theory supplies the frame: uncertainty absorption in hierarchies \\citep{march1958organizations}, organization design as information processing \\citep{galbraith1974information}, coordination under interdependence \\citep{thompson1967organizations}, and the costs of delegation \\citep{williamson1975markets,jensen1976theory}.",
+   "verdict": "supported",
+   "evidence": "the greater the uncertainty of the task, the greater the amount of information that has to be processed between decision makers",
+   "where": "p. 28, section 'The Information Processing Model' (Interfaces 4(3), May 1974)",
+   "source_fetched": "http://www.sietmanagement.fr/wp-content/uploads/2019/02/Galbraith1974.pdf (scan of Interfaces 4(3):28-36 with text layer; https://doi.org/10.1287/inte.4.3.28 resolves to INFORMS, which returned 403)"
+  },
+  {
+   "key": "galbraith1974information",
+   "claim": "The information-processing cost of that comparison \\citep{galbraith1974information} is measurable, about a doubling of reasoning, latency and cost, and it is paid for the shape of the context whether or not a conflict exists.",
+   "verdict": "supported",
+   "evidence": "The cost of this strategy is the cost of the information processing resources consumed in transmitting and processing the data.",
+   "where": "p. 31, strategy 3 'Investment in vertical information systems'; see also p. 28-29 on exceptions overloading the hierarchy",
+   "source_fetched": "http://www.sietmanagement.fr/wp-content/uploads/2019/02/Galbraith1974.pdf (scan of Interfaces 4(3):28-36 with text layer; https://doi.org/10.1287/inte.4.3.28 resolves to INFORMS, which returned 403)"
+  },
+  {
+   "key": "gamage2026omissionconstraints",
+   "claim": "Prohibition-type constraints, which decay where requirements persist \\citep{gamage2026omissionconstraints}, ambiguous assignments \\citep{ji2026codingguessing} and adversarial inputs were not planted, and the rates here do not transfer to them.",
+   "verdict": "supported",
+   "evidence": "Prohibition-type constraints decay under context pressure while requirement-type constraints persist; we term this asymmetry Security-Recall Divergence (SRD).",
+   "where": "Abstract; Section 3.2 'Per-Constraint Decay: The Commission/Omission Asymmetry', Finding 1",
+   "source_fetched": "https://arxiv.org/html/2604.20911"
+  },
+  {
+   "key": "ganz2026handofftax",
+   "claim": "Relay and handoff costs \\citep{kc2026handoffdebt,ganz2026handofftax,sharma2026statecompression} and specification stripping between peers \\citep{sartori2026specificationgap} vary what a successor or peer inherits on cooperative tasks.",
+   "verdict": "supported",
+   "evidence": "We study how this handoff affects quality and cost, and how varying the trajectory information inherited by the receiver changes the outcome.",
+   "where": "Abstract; Section 3.1 'Handoff Strategies' (Raw, Compact-pre, Compact-suf, Traj-drop interfaces)",
+   "source_fetched": "https://arxiv.org/html/2608.24358"
+  },
+  {
+   "key": "gema2025inversescaling",
+   "claim": "\\paragraph{Reasoning effort.} Longer reasoning can degrade instruction following \\citep{li2025thinkingfails,fu2026scalingreasoning,gema2025inversescaling}, inert context can shorten reasoning \\citep{rodionov2026reasoningshift}, and effort settings are model-specific contracts \\citep{moon2026pricethinking}.",
+   "verdict": "partly",
+   "evidence": "extending the reasoning length of Large Reasoning Models (LRMs) deteriorates performance, exhibiting an inverse scaling relationship between test-time compute and accuracy",
+   "where": "Abstract; contradicting detail in Appendix F.2 'Inverse Scaling Prize Tasks', Results and Discussion",
+   "note": "The source shows longer reasoning degrades accuracy on distractor, spurious-feature and constraint-tracking tasks and amplifies self-preservation; it does not measure instruction following, and its only instruction-following-type tasks (Inverse Scaling Prize 'Strong Prior' tasks, which 'test models' ability to follow instructions over priors') show 'mostly flat or positive scaling trends' with reasoning length.",
+   "source_fetched": "https://arxiv.org/html/2507.14417"
+  },
+  {
+   "key": "geng2026illusion",
+   "claim": "\\section{Related work} \\paragraph{Instruction hierarchies.} Training models to prioritize privileged instructions \\citep{wallace2024hierarchy} and evaluating that priority \\citep{zhang2025iheval,geng2026illusion,zhang2026manyih} concern conflicts between system, developer and user turns of a single model.",
+   "verdict": "supported",
+   "evidence": "the widely-adopted system/user prompt separation fails to establish a reliable instruction hierarchy",
+   "where": "Abstract; 'Problem Identification' section (p. 30816). Roles evaluated are system vs user of a single model; 'developer' is equated with the system message via the OpenAI Model Spec quoted in the Introduction",
+   "source_fetched": "https://ojs.aaai.org/index.php/AAAI/article/download/40339/44300 (PDF linked from the DOI landing page)"
+  },
+  {
+   "key": "gloaguen2026codingknow",
+   "claim": "Benchmarks of over-eager behaviour report unrequested actions in a substantial minority of runs \\citep{qu2026overeagercoding,ji2026codingguessing,gloaguen2026codingknow}, authorization loss that grows with hierarchy depth \\citep{xu2026masdriftbenchmarking}, and process instructions that agents promise to follow and do not \\citep{shin2026compliancegap}.",
+   "verdict": "partly",
+   "evidence": "even state-of-the-art models fail, proposing undesirable changes (excluding tests and documentation) in 35 to 65% of cases",
+   "where": "Abstract; Section 3.2 'Agents Fall Victim to Action Bias'",
+   "note": "The source's range runs to 65%, a majority for several model/harness pairs; 'substantial minority' fits only the best models (correct abstention no higher than 67%, i.e. at least one in three stale reports gets spurious edits).",
+   "source_fetched": "https://arxiv.org/html/2605.07769"
+  },
+  {
+   "key": "gloaguen2026codingknow",
+   "claim": "\\paragraph{Over-eager and goal-directed agents.} Out-of-scope actions on benign tasks move with a single consent line \\citep{qu2026overeagercoding}, with instruction clarity \\citep{ji2026codingguessing}, and with whether the correct answer is to do nothing \\citep{gloaguen2026codingknow}; computer-use agents pursue goals blindly \\citep{shayegani2025justcomputer}; agents conceal blocked work by acting without reporting \\citep{guo2025upwarddeceivers}; stated compliance and logged behaviour diverge \\citep{shin2026compliancegap}; over-helpfulness becomes harmful proactivity in adversarial dilemmas \\citep{wang2026helpfulnesstoxic}; frontier models take unauthorized corrective action when context i",
+   "verdict": "partly",
+   "evidence": "they choose to act even if inaction would be appropriate. To break this pattern, inaction needs to be explicitly framed as a path to success",
+   "where": "Abstract; Section 3.2 'Better Instructions Help' and 'The Problem with Instruction Changes'",
+   "note": "What moves the out-of-scope action rate in the source is whether the instructions frame inaction as a valid outcome (GPT-5.4 mini abstention 60.5% to 88.5% under 'Abstain or Fix'), not whether inaction is in fact correct: on ground truth the agents fail to differentiate, editing already-fixed code in 35-65% of cases while editing only 24-29% of Partial cases that genuinely needed a fix.",
+   "source_fetched": "https://arxiv.org/html/2605.07769"
+  },
+  {
+   "key": "gomez2025surveillancesignalling",
+   "claim": "\\paragraph{Escalation channels.} An out-of-band escalation channel cuts harmful action under a task-rule conflict \\citep{gomez2025surveillancesignalling} and redirects reward hacking toward disclosure \\citep{gomez2026escalationchannels}; peer assertion drives near-silent drift \\citep{ordez2026catchingshortcut}; agents override standing policies under plausible requests and report compliance they did not achieve \\citep{panavas2026handbookbenchmark}.",
+   "verdict": "supported",
+   "evidence": "without any control the harmful action rate is 38.73%. A simple escalation channel reduces this to 5.92%",
+   "where": "Abstract (channel defined there as 'a formal, out-of-band route to surface a conflict to an independent authority'); Section 5.1",
+   "source_fetched": "https://arxiv.org/html/2510.05192"
+  },
+  {
+   "key": "gomez2026escalationchannels",
+   "claim": "\\paragraph{Escalation channels.} An out-of-band escalation channel cuts harmful action under a task-rule conflict \\citep{gomez2025surveillancesignalling} and redirects reward hacking toward disclosure \\citep{gomez2026escalationchannels}; peer assertion drives near-silent drift \\citep{ordez2026catchingshortcut}; agents override standing policies under plausible requests and report compliance they did not achieve \\citep{panavas2026handbookbenchmark}.",
+   "verdict": "supported",
+   "evidence": "Escalation and hacking are near-perfectly mutually exclusive, with 98.7% of escalations involving no hacking",
+   "where": "Abstract ('escalation channels redirect capability toward disclosure rather than exploitation'); Table 1 (escalation alone 23.6% to 15.0%, with policy 5.3%); Section 5 'genuine redirection'",
+   "source_fetched": "https://arxiv.org/html/2608.29460"
+  },
+  {
+   "key": "guo2025upwarddeceivers",
+   "claim": "The departures we do see fit the frontier accounts of scope creep that is frequent and disclosed \\citep{anthropic2026cardclaude}, and the silent minority fits the failure-concealing class \\citep{guo2025upwarddeceivers} only loosely, since our tasks were solvable.",
+   "verdict": "supported",
+   "evidence": "an agent facing environmental constraints conceals its failure and performs actions that were not requested without reporting",
+   "where": "Abstract (definition of agentic upward deception); Section 7 Conclusion: 'By sabotaging tools and issuing impossible instructions, we create an agentic environment'",
+   "source_fetched": "https://arxiv.org/html/2512.04864"
+  },
+  {
+   "key": "guo2025upwarddeceivers",
+   "claim": "\\paragraph{Over-eager and goal-directed agents.} Out-of-scope actions on benign tasks move with a single consent line \\citep{qu2026overeagercoding}, with instruction clarity \\citep{ji2026codingguessing}, and with whether the correct answer is to do nothing \\citep{gloaguen2026codingknow}; computer-use agents pursue goals blindly \\citep{shayegani2025justcomputer}; agents conceal blocked work by acting without reporting \\citep{guo2025upwarddeceivers}; stated compliance and logged behaviour diverge \\citep{shin2026compliancegap}; over-helpfulness becomes harmful proactivity in adversarial dilemmas \\citep{wang2026helpfulnesstoxic}; frontier models take unauthorized corrective action when context i",
+   "verdict": "supported",
+   "evidence": "most agents, with an extremely high probability, choose to conceal from the user when the download cannot be completed",
+   "where": "Section 3.2 'Result Analysis' (NFR metric for Tasks 4 and 5); definition in Abstract",
+   "source_fetched": "https://arxiv.org/html/2512.04864"
+  },
+  {
+   "key": "hadfield2025how",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "supported",
+   "evidence": "Each subagent needs an objective, an output format, guidance on the tools and sources to use, and clear task boundaries.",
+   "where": "Section 'Prompt engineering and evaluations for research agents', paragraph 'Teach the orchestrator how to delegate'; architecture in 'Architecture overview for Research'",
+   "source_fetched": "https://www.anthropic.com/engineering/multi-agent-research-system (redirect target of /engineering/built-multi-agent-research-system)"
+  },
+  {
+   "key": "hagag2026architecturematters",
+   "claim": "\\emph{Placement and security.} Every visibility tier occupies the user turn under a fixed system prompt, matching deployed harnesses but not testing role placement \\citep{chen2026selfcorrection}; the security side of the same channel, what upstream context lets a compromised or injected worker do \\citep{li2026contextcontext,hagag2026architecturematters}, is not measured.",
+   "verdict": "partly",
+   "evidence": "We study only direct misuse by a malicious user; indirect prompt injection, memory poisoning, and adversarial agents operating within the system represent distinct threat vectors",
+   "where": "Section 8 Limitations (see also Abstract: memory 'determines the context and state visibility accessible to each agent')",
+   "note": "The paper varies memory visibility, topology and roles and shows that context-starved specialists execute harmful sub-steps under a malicious user's direct misuse; compromised or injected workers are explicitly outside its threat model.",
+   "source_fetched": "https://arxiv.org/html/2604.23459"
+  },
+  {
+   "key": "holm1979simple",
+   "claim": "The primary test per model is McNemar's exact test \\citep{mcnemar1947note} on item indicators between \\cond{V0} and \\cond{V4}, Holm-adjusted across the two models \\citep{holm1979simple}; the secondary family covers adjacent steps and each control contrast, Holm-adjusted within model; a Cochran-Armitage trend test \\citep{cochran1954some,armitage1955tests} runs over the five rungs; intervals are Wilson intervals \\citep{wilson1927probable}; mixed-effects logistic models with item random effects were fitted by variational Bayes with weakly informative priors because the isolated cells have no events (Firth-type penalization \\citep{firth1993bias} was the pre-registered alternative).",
+   "verdict": "supported",
+   "evidence": "a simple and widely applicable multiple test procedure of the sequentially rejective type, i.e. hypotheses are rejected one at a time",
+   "where": "Abstract, p. 65 (procedure defined as the sequentially rejective Bonferroni test, Section 2, pp. 66-67)",
+   "source_fetched": "https://www.ime.usp.br/~abe/lista/pdf4R8xPVzCnX.pdf"
+  },
+  {
+   "key": "jensen1976theory",
+   "claim": "Organization theory supplies the frame: uncertainty absorption in hierarchies \\citep{march1958organizations}, organization design as information processing \\citep{galbraith1974information}, coordination under interdependence \\citep{thompson1967organizations}, and the costs of delegation \\citep{williamson1975markets,jensen1976theory}.",
+   "verdict": "supported",
+   "evidence": "engage another person (the agent) to perform some service on their behalf which involves delegating some decision making authority to the agent",
+   "where": "Section 1.4 Agency costs, p. 308 (agency costs defined as monitoring expenditures, bonding expenditures and residual loss)",
+   "source_fetched": "https://web.archive.org/web/2019id_/http://uclafinance.typepad.com/main/files/jensen_76.pdf"
+  },
+  {
+   "key": "ji2026codingguessing",
+   "claim": "Benchmarks of over-eager behaviour report unrequested actions in a substantial minority of runs \\citep{qu2026overeagercoding,ji2026codingguessing,gloaguen2026codingknow}, authorization loss that grows with hierarchy depth \\citep{xu2026masdriftbenchmarking}, and process instructions that agents promise to follow and do not \\citep{shin2026compliancegap}.",
+   "verdict": "supported",
+   "evidence": "Table II (Percentages over scored runs): OverScope Rate 26.0, 31.0, 44.4, 24.9, 31.4; Overstep Rate 27.9, 32.2, 46.3, 27.0, 32.6",
+   "where": "Table II, Section V (the abstract's 55.8-67.8% figure is, per Section I Findings, the share of acted runs violating a boundary)",
+   "source_fetched": "https://arxiv.org/html/2607.02294"
+  },
+  {
+   "key": "ji2026codingguessing",
+   "claim": "Prohibition-type constraints, which decay where requirements persist \\citep{gamage2026omissionconstraints}, ambiguous assignments \\citep{ji2026codingguessing} and adversarial inputs were not planted, and the rates here do not transfer to them.",
+   "verdict": "supported",
+   "evidence": "leaving open how agents behave under benign but underspecified instructions",
+   "where": "Abstract; Section III-B (three underspecification axes: intent clarity, target certainty, blast radius)",
+   "source_fetched": "https://arxiv.org/html/2607.02294"
+  },
+  {
+   "key": "ji2026codingguessing",
+   "claim": "\\paragraph{Over-eager and goal-directed agents.} Out-of-scope actions on benign tasks move with a single consent line \\citep{qu2026overeagercoding}, with instruction clarity \\citep{ji2026codingguessing}, and with whether the correct answer is to do nothing \\citep{gloaguen2026codingknow}; computer-use agents pursue goals blindly \\citep{shayegani2025justcomputer}; agents conceal blocked work by acting without reporting \\citep{guo2025upwarddeceivers}; stated compliance and logged behaviour diverge \\citep{shin2026compliancegap}; over-helpfulness becomes harmful proactivity in adversarial dilemmas \\citep{wang2026helpfulnesstoxic}; frontier models take unauthorized corrective action when context i",
+   "verdict": "supported",
+   "evidence": "acted-run Safe Success Rate falls from 50.9% at S0 to 29.4% at S3 ... acted-run OverScope Rate from 47.3% to 66.3%",
+   "where": "Section V-C RQ2 Action Quality (intent-clarity axis S); Section V-B (action rate falls 72.3% to 58.5% across S)",
+   "source_fetched": "https://arxiv.org/html/2607.02294"
+  },
+  {
+   "key": "kaliyev2026muchcoordination",
+   "claim": "\\paragraph{Multi-agent failures, attribution and noise.} Failure taxonomies \\citep{cemri2025mast}, attribution of failures to agents and steps \\citep{zhang2025whichcauses,chen2026seeingwhole}, the information-bottleneck view of when coordination helps \\citep{yu2026when}, and the noise-floor protocol for small coordination gains \\citep{kaliyev2026muchcoordination} inform our design: the item is the unit, controls are byte-identical, draws are near-replicates reported as such, and the concurrent family's verdicts are attributed to the worker's own change.",
+   "verdict": "supported",
+   "evidence": "we label it a coordination noise floor because it is the gate any coordination claim on this benchmark must clear",
+   "where": "Section 6.3 Results; Abstract ('report small benchmark deltas as evidence that one architecture beats another')",
+   "source_fetched": "https://arxiv.org/html/2606.20695"
+  },
+  {
+   "key": "kbis2025delegationartificial",
+   "claim": "Humans delegating to machines behave differently under rule-based and goal-based interfaces \\citep{kbis2025delegationartificial}, and organizations of aligned models are more effective and less aligned than single models \\citep{shen2026organizationsmore}; our study isolates one candidate driver, what each subordinate is shown.",
+   "verdict": "supported",
+   "evidence": "supervised learning and goal-based conditions were significantly more likely to engage in higher levels of cheating ... than participants in the control and rule-based conditions",
+   "where": "Results, 'Type of cheating across conditions' (studies 1 and 2)",
+   "source_fetched": "https://www.nature.com/articles/s41586-025-09505-x"
+  },
+  {
+   "key": "kc2026handoffdebt",
+   "claim": "Relay and handoff costs \\citep{kc2026handoffdebt,ganz2026handofftax,sharma2026statecompression} and specification stripping between peers \\citep{sartori2026specificationgap} vary what a successor or peer inherits on cooperative tasks.",
+   "verdict": "supported",
+   "evidence": "evaluates successor agents under four handoff views: repository state only, raw trace, summary notes, and structured notes",
+   "where": "Abstract; Section 1 ('The four views differ in how much predecessor context the successor receives')",
+   "source_fetched": "https://arxiv.org/html/2606.02875"
+  },
+  {
+   "key": "koo2026knowbut",
+   "claim": "\\citet{yang2026hierarchicalalignment} name the benign, partially conflicting regime as the gap in this literature; \\citet{koo2026knowbut} classify dialogue behaviour under a prior-context conflict into adhere, yield and waver, a taxonomy ours parallels.",
+   "verdict": "partly",
+   "evidence": "a taxonomy that categorizes model behaviors into three distinct response types (adhering, sycophantic, and wavering)",
+   "where": "Abstract; Section 3 'Establishing Taxonomy of Model Behavior'",
+   "note": "The paper's categories are adhering, sycophantic and wavering; 'yield' is our relabeling of 'sycophantic' (uncritically agreeing with user input against the system-instruction persona), and the conflict studied is specifically persona versus user utterance.",
+   "source_fetched": "https://aclanthology.org/2026.findings-eacl.24.pdf"
+  },
+  {
+   "key": "li2025thinkingfails",
+   "claim": "\\paragraph{Reasoning effort.} Longer reasoning can degrade instruction following \\citep{li2025thinkingfails,fu2026scalingreasoning,gema2025inversescaling}, inert context can shorten reasoning \\citep{rodionov2026reasoningshift}, and effort settings are model-specific contracts \\citep{moon2026pricethinking}.",
+   "verdict": "partly",
+   "evidence": "we also explored whether longer reasoning tends to degrade performance and found that reasoning length does not meaningfully correlate with instruction-following effectiveness",
+   "where": "Section 4.2 Constraint-Aware Attention Analysis; Appendix I (Table 3, Pearson correlations near zero)",
+   "note": "The paper shows that switching explicit CoT reasoning on degrades instruction following (15 models, IFEval and ComplexBench), but it tested reasoning length directly and found no meaningful correlation, so it does not support 'longer' reasoning as the degrading factor.",
+   "source_fetched": "https://arxiv.org/html/2505.11423"
+  },
+  {
+   "key": "li2026contextcontext",
+   "claim": "\\emph{Placement and security.} Every visibility tier occupies the user turn under a fixed system prompt, matching deployed harnesses but not testing role placement \\citep{chen2026selfcorrection}; the security side of the same channel, what upstream context lets a compromised or injected worker do \\citep{li2026contextcontext,hagag2026architecturematters}, is not measured.",
+   "verdict": "supported",
+   "evidence": "attacker-controlled content originating from a low-privileged context is incorporated into a higher-privileged message role ... full agent compromise, remote code execution",
+   "where": "Abstract (M-CPE, X-CPE); Section II threat model (attacker-controlled sub-agent definitions, skills, tools, MCP servers)",
+   "source_fetched": "https://arxiv.org/html/2609.01222"
+  },
+  {
+   "key": "li2026contextcontext",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "supported",
+   "evidence": "identifying context sources given an agent harness implementation including their privilege roles (based on static analysis of harness source code)",
+   "where": "Section I (CoRA contribution); Section V-B; 12 open harnesses incl. Claude Code, Codex, Gemini CLI (Table I)",
+   "source_fetched": "https://arxiv.org/html/2609.01222"
+  },
+  {
+   "key": "li2026governanceboundary",
+   "claim": "\\emph{Hierarchy.} Delegation is one hop deep and the orchestrator is scripted, so that the worker's response is measured against a fixed hierarchy rather than against an orchestrator's own variability; degradation across deeper chains \\citep{li2026governanceboundary,wang2026factswithout,sharma2026statecompression} and negotiation between agents are outside the design.",
+   "verdict": "supported",
+   "evidence": "Fact attenuation rate (conditional on discovery) vs. constraint distance ... both models show a monotone increase with decomposition depth",
+   "where": "Section 5.2 Results, Figure 1 caption; Section 3.3 (constraint distance = boundaries a fact must cross, 0 to 2)",
+   "source_fetched": "https://arxiv.org/html/2608.16055"
+  },
+  {
+   "key": "li2026governanceboundary",
+   "claim": "\\paragraph{Delegation, handoffs and decomposition.} The closest designs vary what crosses a handoff: constraint transformations that leave a rule present in text but dead in effect \\citep{sun2026mustbecomes}, policy facts attenuated at the orchestrator-subagent boundary \\citep{li2026governanceboundary}, approval framing in delegation prompts on harmful requests \\citep{liu2026operationalreframing}, boundary metadata lost to compression \\citep{wang2026factswithout}, and authorization eroded across depth and width \\citep{xu2026masdriftbenchmarking}, whose re-anchoring defence of re-showing the root request is our \\cond{V1} and \\cond{V2} read from the authorization side.",
+   "verdict": "supported",
+   "evidence": "Policy-relevant facts discovered by one component are attenuated at the handoff boundary before reaching the component that must act on them",
+   "where": "Abstract; Section 5.2 (85% attenuation under orchestrator-subagent architecture, Table 4)",
+   "source_fetched": "https://arxiv.org/html/2608.16055"
+  },
+  {
+   "key": "liu2026operationalreframing",
+   "claim": "\\paragraph{Delegation, handoffs and decomposition.} The closest designs vary what crosses a handoff: constraint transformations that leave a rule present in text but dead in effect \\citep{sun2026mustbecomes}, policy facts attenuated at the orchestrator-subagent boundary \\citep{li2026governanceboundary}, approval framing in delegation prompts on harmful requests \\citep{liu2026operationalreframing}, boundary metadata lost to compression \\citep{wang2026factswithout}, and authorization eroded across depth and width \\citep{xu2026masdriftbenchmarking}, whose re-anchoring defence of re-showing the root request is our \\cond{V1} and \\cond{V2} read from the authorization side.",
+   "verdict": "supported",
+   "evidence": "routes each harmful scenario through direct, planner-mediated, and approval-framed pipeline variants so that input reframing, planner behavior, and approval-framed delegation can be measured separately",
+   "where": "Section 1 Introduction (also Abstract; Section 4.2 F3 and Section 4.4 'Approval Framing Is Prompt-Sensitive')",
+   "source_fetched": "https://arxiv.org/html/2607.07097"
+  },
+  {
+   "key": "lynch2026agenticmisalignment",
+   "claim": "\\paragraph{Over-eager and goal-directed agents.} Out-of-scope actions on benign tasks move with a single consent line \\citep{qu2026overeagercoding}, with instruction clarity \\citep{ji2026codingguessing}, and with whether the correct answer is to do nothing \\citep{gloaguen2026codingknow}; computer-use agents pursue goals blindly \\citep{shayegani2025justcomputer}; agents conceal blocked work by acting without reporting \\citep{guo2025upwarddeceivers}; stated compliance and logged behaviour diverge \\citep{shin2026compliancegap}; over-helpfulness becomes harmful proactivity in adversarial dilemmas \\citep{wang2026helpfulnesstoxic}; frontier models take unauthorized corrective action when context i",
+   "verdict": "supported",
+   "evidence": "often placed holds or changed artifacts without authorization, but told the team",
+   "where": "Covert Sabotage section, cross-model frequency discussion under Figure 1 ('Disclosed unilateral intervention was more common than covert sabotage'); tl;dr also notes 'several models also show disclosed unauthorized intervention'",
+   "source_fetched": "https://alignment.anthropic.com/2026/agentic-misalignment-summer-2026/"
+  },
+  {
+   "key": "march1958organizations",
+   "claim": "Organization theory supplies the frame: uncertainty absorption in hierarchies \\citep{march1958organizations}, organization design as information processing \\citep{galbraith1974information}, coordination under interdependence \\citep{thompson1967organizations}, and the costs of delegation \\citep{williamson1975markets,jensen1976theory}.",
+   "verdict": "supported",
+   "evidence": "inferences are drawn from a body of evidence and the inferences, instead of the evidence itself, are then communicated",
+   "where": "Chapter 6, variable 6.27 'Uncertainty absorption' (p. 186 of the 1993 Blackwell second edition, which reprints the 1958 text; index also lists 'locus of (6.28), 187' and 6.29 'Organization, influence structure of the'); 1958 Wiley pagination differs",
+   "source_fetched": "https://books.google.com/books?id=FbBJEAAAQBAJ&jscmd=SearchWithin&q=%22uncertainty+absorption%22 (Google Books search-inside snippets of the 1993 edition; archive.org 1958 copy organizations00marc is access-restricted)"
+  },
+  {
+   "key": "march1958organizations",
+   "claim": "\\section{Discussion} \\paragraph{What visibility buys and costs.} In organization-theoretic terms the ladder controls uncertainty absorption \\citep{march1958organizations}: at \\cond{V0} the orchestrator has absorbed the objective into an assignment the worker takes on trust; at \\cond{V2} the worker can compare the two and does, mostly by exception.",
+   "verdict": "supported",
+   "evidence": "the recipient of a communication is severely limited in his ability to judge its correctness",
+   "where": "Chapter 6, uncertainty absorption passage (p. 186, 1993 Blackwell edition); p. 221 adds 'the relatively greater ease of communicating conclusions than of communicating the evidence they are drawn from'",
+   "source_fetched": "https://books.google.com/books?id=FbBJEAAAQBAJ&jscmd=SearchWithin&q=%22the+recipient+of+a+communication%22 (Google Books search-inside snippets of the 1993 edition)"
+  },
+  {
+   "key": "mcnemar1947note",
+   "claim": "The primary test per model is McNemar's exact test \\citep{mcnemar1947note} on item indicators between \\cond{V0} and \\cond{V4}, Holm-adjusted across the two models \\citep{holm1979simple}; the secondary family covers adjacent steps and each control contrast, Holm-adjusted within model; a Cochran-Armitage trend test \\citep{cochran1954some,armitage1955tests} runs over the five rungs; intervals are Wilson intervals \\citep{wilson1927probable}; mixed-effects logistic models with item random effects were fitted by variational Bayes with weakly informative priors because the isolated cells have no events (Firth-type penalization \\citep{firth1993bias} was the pre-registered alternative).",
+   "verdict": "partly",
+   "evidence": "Two formulas are presented for judging the significance of the difference between correlated proportions",
+   "where": "Abstract (Cambridge Core landing page for doi 10.1007/bf02295996; full text paywalled at Cambridge and Springer, so the body was not read)",
+   "note": "The note is the origin of the correlated-proportions test, but its abstract describes two significance formulas and 'the chi square equivalent' of one, i.e. the large-sample chi-square form; the exact binomial variant the paper calls 'McNemar's exact test' is not what the 1947 note presents, and the body could not be checked (paywall).",
+   "source_fetched": "https://www.cambridge.org/core/journals/psychometrika/article/abs/note-on-the-sampling-error-of-the-difference-between-correlated-proportions-or-percentages/698C2461BE63F5848763502D54E534FD (resolved from https://doi.org/10.1007/bf02295996)"
+  },
+  {
+   "key": "moon2026pricethinking",
+   "claim": "\\paragraph{Reasoning effort.} Longer reasoning can degrade instruction following \\citep{li2025thinkingfails,fu2026scalingreasoning,gema2025inversescaling}, inert context can shorten reasoning \\citep{rodionov2026reasoningshift}, and effort settings are model-specific contracts \\citep{moon2026pricethinking}.",
+   "verdict": "supported",
+   "evidence": "omission is itself a model-specific request state. We therefore treat the configured API contract as the candidate service",
+   "where": "Related work, cost-aware routing paragraph; title 'Reasoning Effort as a Model-Specific API Contract'; Abstract reports 'model-specific omission semantics, including within a provider'",
+   "source_fetched": "https://arxiv.org/html/2608.16956"
+  },
+  {
+   "key": "openai2026gptcard2",
+   "claim": "Both ran at their maximum effort; Muse's flags are stable across its effort range and DeepSeek's down to its default level (Section~\\ref{sec:effort}), so the model contrast is one between vendors and training regimes as much as between capabilities; the vendor of a more capable pair reports that more capable, higher-effort models exceed intent more often \\citep{openai2026gptcard2}, which this design cannot test.",
+   "verdict": "partly",
+   "evidence": "a greater tendency than GPT-5.5 to go beyond the user's intent",
+   "where": "Section 1 Introduction, item 1 (p. 1); Section on misaligned behavior in agentic coding traffic, 'Estimated misalignment changes in internal agentic coding traffic' (p. 19)",
+   "note": "The 'more capable' half is a measured finding (GPT-5.6 vs GPT-5.5 at matched effort), but the 'higher-effort' half is only a stated suspicion: 'We suspect that this effect is driven in part by the model's increased persistence relative to GPT-5.5 when using the highest reasoning efforts'; no effort-level contrast is reported.",
+   "source_fetched": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf"
+  },
+  {
+   "key": "openai2026openaiapi",
+   "claim": "Framework SDKs are switchable with a prompt-only default: a flag or a mode passes the transcript, the team history or the sibling interactions, and some (OpenAI's multi-agent API with its \\texttt{fork\\_turns}) expose exactly the graded dose our ladder varies \\citep{openai2026openaiapi}.",
+   "verdict": "partly",
+   "evidence": "You can decide how much context you want to propagate to your sub-agents with the `fork_turns` parameter.",
+   "where": "Prompt guidance section, root-agent injected instructions; the only documented value is the example spawn_agent argument \"fork_turns\":\"all\" in the 'Handling hosted collaboration actions' example",
+   "note": "The page confirms fork_turns controls 'how much context' is propagated to subagents, but it documents no value set beyond the example 'all', so 'expose exactly the graded dose our ladder varies' asserts a graded scale and a correspondence to the paper's rungs that the page does not state.",
+   "source_fetched": "https://developers.openai.com/api/docs/guides/responses-multi-agent (and the .md rendering of the same page)"
+  },
+  {
+   "key": "openai2026openaiapi",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "supported",
+   "evidence": "our systems automatically append these instructions to the root agent and subagents as a new developer message",
+   "where": "Prompt guidance section (verbatim root-agent and subagent instructions, message formats, concurrency slots); 'How Multi-agent works' and collaboration-action table",
+   "source_fetched": "https://developers.openai.com/api/docs/guides/responses-multi-agent"
+  },
+  {
+   "key": "ordez2026catchingshortcut",
+   "claim": "\\paragraph{Escalation channels.} An out-of-band escalation channel cuts harmful action under a task-rule conflict \\citep{gomez2025surveillancesignalling} and redirects reward hacking toward disclosure \\citep{gomez2026escalationchannels}; peer assertion drives near-silent drift \\citep{ordez2026catchingshortcut}; agents override standing policies under plausible requests and report compliance they did not achieve \\citep{panavas2026handbookbenchmark}.",
+   "verdict": "partly",
+   "evidence": "when two peers assert the same wrong answer, the holdout under test adopts it in 38% of cases",
+   "where": "Abstract; Section 4.2 'Two endorsing peers propagate an incorrect answer'; 'near-silent' appears in the Abstract and Section 4.5 'Decoy uptake toward a hidden rubric is almost never self-reported'",
+   "note": "Peer assertion drives adoption (a cascade), but 'near-silent' is the paper's finding for drift toward a hidden rubric in a separate experiment that 'replaced the social channel with an evaluation rule' (only 1/10 text and 1/134 imaging drifters name the rubric); the peer-assertion cascade itself is not characterized as silent, only as undetectable without a private re-query (Section 4.3).",
+   "source_fetched": "https://arxiv.org/html/2608.03744"
+  },
+  {
+   "key": "panavas2026handbookbenchmark",
+   "claim": "\\paragraph{Escalation channels.} An out-of-band escalation channel cuts harmful action under a task-rule conflict \\citep{gomez2025surveillancesignalling} and redirects reward hacking toward disclosure \\citep{gomez2026escalationchannels}; peer assertion drives near-silent drift \\citep{ordez2026catchingshortcut}; agents override standing policies under plausible requests and report compliance they did not achieve \\citep{panavas2026handbookbenchmark}.",
+   "verdict": "supported",
+   "evidence": "A plausible, authoritative-sounding instruction from inside the environment displaces the policy that governs whether it may be obeyed",
+   "where": "Section 6 Failure analysis, pattern 1 'The immediate request overrides the standing rule'; pattern 4 'The final report asserts compliance regardless' ('Nearly every failed trajectory ends with a confident statement that the handbook was followed'); Introduction summary",
+   "source_fetched": "https://arxiv.org/html/2607.25398"
+  },
+  {
+   "key": "printed2026patternsproblems",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "partly",
+   "evidence": "gave each one its own virtual machine, a shared forum on which they could coordinate, and an identical prompt",
+   "where": "'Measuring coordination' section (vulnerability-finding swarm of 45 agents; fantasy-game swarms with shared forum and self-hosted repository)",
+   "note": "It is a vendor (Anthropic Frontier Red Team) account and it does state what each agent was given, but the systems are research simulations of peer swarms with 'no clear hierarchy between them', not deployed orchestrator-worker systems, so it fixes what agents saw in experiments rather than 'what workers see in deployed systems'.",
+   "source_fetched": "https://www.anthropic.com/research/multiagent-systems"
+  },
+  {
+   "key": "qu2026overeagercoding",
+   "claim": "Benchmarks of over-eager behaviour report unrequested actions in a substantial minority of runs \\citep{qu2026overeagercoding,ji2026codingguessing,gloaguen2026codingknow}, authorization loss that grows with hierarchy depth \\citep{xu2026masdriftbenchmarking}, and process instructions that agents promise to follow and do not \\citep{shin2026compliancegap}.",
+   "verdict": "supported",
+   "evidence": "a permissive cluster (Claude Code, Codex CLI, Gemini CLI) runs at 5.4\u201327.7% while the ask-to-continue framework (OpenHands) sits at 0.2\u20134.5%",
+   "where": "Abstract (OverEager-Bench, 500 scenarios, about 7,500 runs); Section 5 results",
+   "source_fetched": "https://arxiv.org/html/2605.18583"
+  },
+  {
+   "key": "qu2026overeagercoding",
+   "claim": "\\paragraph{Over-eager and goal-directed agents.} Out-of-scope actions on benign tasks move with a single consent line \\citep{qu2026overeagercoding}, with instruction clarity \\citep{ji2026codingguessing}, and with whether the correct answer is to do nothing \\citep{gloaguen2026codingknow}; computer-use agents pursue goals blindly \\citep{shayegani2025justcomputer}; agents conceal blocked work by acting without reporting \\citep{guo2025upwarddeceivers}; stated compliance and logged behaviour diverge \\citep{shin2026compliancegap}; over-helpfulness becomes harmful proactivity in adversarial dilemmas \\citep{wang2026helpfulnesstoxic}; frontier models take unauthorized corrective action when context i",
+   "verdict": "partly",
+   "evidence": "stripping the consent declaration alone raises the overeager rate from 0.0% to 17.1% on paired scenarios",
+   "where": "Abstract; Section 5 RQ1 'Consent ablation isolates the causal driver' (11.9\u201317.2 pp on every base model); appendix 'Three-tier scenario prompt templates' shows the block",
+   "note": "The manipulated element is a 'Scope of consent' block appended to the prompt ('Scope of consent: / Authorized: <A> / OUT OF SCOPE: <NOT_A>'), which the paper calls a consent declaration or consent block, not a single line; the direction and size of the effect are as stated.",
+   "source_fetched": "https://arxiv.org/html/2605.18583"
+  },
+  {
+   "key": "rodionov2026reasoningshift",
+   "claim": "\\paragraph{Reasoning effort.} Longer reasoning can degrade instruction following \\citep{li2025thinkingfails,fu2026scalingreasoning,gema2025inversescaling}, inert context can shorten reasoning \\citep{rodionov2026reasoningshift}, and effort settings are model-specific contracts \\citep{moon2026pricethinking}.",
+   "verdict": "supported",
+   "evidence": "increasing the amount of input context leads to a gradual and consistent reduction in reasoning length in both Long Input and Multi-turn scenarios",
+   "where": "Section 3.2 Results (Long Input condition = irrelevant Shakespeare text prepended to the problem; Table 1 and Figure 2)",
+   "source_fetched": "https://arxiv.org/html/2604.01161"
+  },
+  {
+   "key": "sartori2026specificationgap",
+   "claim": "Relay and handoff costs \\citep{kc2026handoffdebt,ganz2026handofftax,sharma2026statecompression} and specification stripping between peers \\citep{sartori2026specificationgap} vary what a successor or peer inherits on cooperative tasks.",
+   "verdict": "supported",
+   "evidence": "progressively stripping specification detail from full docstrings (L0) to bare signatures (L3)",
+   "where": "Abstract; Section 3.2 (four nested specification levels) and Section 4.1 (two-agent integration accuracy falls from 58.2% to 24.6%)",
+   "source_fetched": "https://arxiv.org/html/2603.24284"
+  },
+  {
+   "key": "sharma2026statecompression",
+   "claim": "Relay and handoff costs \\citep{kc2026handoffdebt,ganz2026handofftax,sharma2026statecompression} and specification stripping between peers \\citep{sartori2026specificationgap} vary what a successor or peer inherits on cooperative tasks.",
+   "verdict": "supported",
+   "evidence": "narrative summarization, despite producing the smallest compressed hand-off payload, degrades feasibility to 0.48",
+   "where": "Abstract; Section III-A Table I (Booker receives only the goal and the hand-off payload; feasibility 0.48 to 0.96 by hand-off representation)",
+   "source_fetched": "https://arxiv.org/html/2607.18265"
+  },
+  {
+   "key": "sharma2026statecompression",
+   "claim": "\\emph{Hierarchy.} Delegation is one hop deep and the orchestrator is scripted, so that the worker's response is measured against a fixed hierarchy rather than against an orchestrator's own variability; degradation across deeper chains \\citep{li2026governanceboundary,wang2026factswithout,sharma2026statecompression} and negotiation between agents are outside the design.",
+   "verdict": "partly",
+   "evidence": "This paper studies state compression at a single, controlled hand-off bottleneck using a closed-world travel planning benchmark.",
+   "where": "Section I Introduction; Section II-C Two-Agent Relay Protocol; Section VI Future Areas of Research (no multi-hop condition anywhere)",
+   "note": "The paper measures degradation across exactly one Researcher-to-Booker hand-off; it never runs or discusses chains deeper than two agents, so it cannot evidence degradation across deeper chains (the other two keys in this cluster may, but this one does not).",
+   "source_fetched": "https://arxiv.org/html/2607.18265"
+  },
+  {
+   "key": "shayegani2025justcomputer",
+   "claim": "\\paragraph{Over-eager and goal-directed agents.} Out-of-scope actions on benign tasks move with a single consent line \\citep{qu2026overeagercoding}, with instruction clarity \\citep{ji2026codingguessing}, and with whether the correct answer is to do nothing \\citep{gloaguen2026codingknow}; computer-use agents pursue goals blindly \\citep{shayegani2025justcomputer}; agents conceal blocked work by acting without reporting \\citep{guo2025upwarddeceivers}; stated compliance and logged behaviour diverge \\citep{shin2026compliancegap}; over-helpfulness becomes harmful proactivity in adversarial dilemmas \\citep{wang2026helpfulnesstoxic}; frontier models take unauthorized corrective action when context i",
+   "verdict": "supported",
+   "evidence": "CUAs consistently exhibit Blind Goal-Directedness (BGD): a bias to pursue goals regardless of feasibility, safety, reliability, or context.",
+   "where": "Abstract; Section 1 Introduction (average BGD rate 80.8% across nine frontier models on Blind-Act)",
+   "source_fetched": "https://arxiv.org/html/2510.01670"
+  },
+  {
+   "key": "shen2026organizationsmore",
+   "claim": "Humans delegating to machines behave differently under rule-based and goal-based interfaces \\citep{kbis2025delegationartificial}, and organizations of aligned models are more effective and less aligned than single models \\citep{shen2026organizationsmore}; our study isolates one candidate driver, what each subordinate is shown.",
+   "verdict": "supported",
+   "evidence": "AI Organizations composed of aligned models produce solutions with higher utility but greater misalignment compared to a single aligned model.",
+   "where": "Abstract; Section 1 Introduction and Figure 1 (12 scenarios, consultancy and software team settings)",
+   "source_fetched": "https://arxiv.org/html/2604.10290"
+  },
+  {
+   "key": "shin2026compliancegap",
+   "claim": "Benchmarks of over-eager behaviour report unrequested actions in a substantial minority of runs \\citep{qu2026overeagercoding,ji2026codingguessing,gloaguen2026codingknow}, authorization loss that grows with hierarchy depth \\citep{xu2026masdriftbenchmarking}, and process instructions that agents promise to follow and do not \\citep{shin2026compliancegap}.",
+   "verdict": "supported",
+   "evidence": "The AI replies \"Yes, I will read each file individually\"\u2014and then issues a single batched call summarizing all fifty files at once.",
+   "where": "Abstract; Section 1 Introduction (False Compliance Sycophancy: agreeing to a procedure in words, then substituting a shortcut; ICR 0% on all six models)",
+   "source_fetched": "https://arxiv.org/html/2605.01771"
+  },
+  {
+   "key": "shin2026compliancegap",
+   "claim": "\\paragraph{Over-eager and goal-directed agents.} Out-of-scope actions on benign tasks move with a single consent line \\citep{qu2026overeagercoding}, with instruction clarity \\citep{ji2026codingguessing}, and with whether the correct answer is to do nothing \\citep{gloaguen2026codingknow}; computer-use agents pursue goals blindly \\citep{shayegani2025justcomputer}; agents conceal blocked work by acting without reporting \\citep{guo2025upwarddeceivers}; stated compliance and logged behaviour diverge \\citep{shin2026compliancegap}; over-helpfulness becomes harmful proactivity in adversarial dilemmas \\citep{wang2026helpfulnesstoxic}; frontier models take unauthorized corrective action when context i",
+   "verdict": "supported",
+   "evidence": "The text says one thing; the tool-call log shows another. We call this the Compliance Gap.",
+   "where": "Abstract; Section 1 (CG = verbal compliance rate minus actual compliance rate evidenced by tool-call logs; Claude Sonnet 4 reaches CG = 100 pp)",
+   "source_fetched": "https://arxiv.org/html/2605.01771"
+  },
+  {
+   "key": "sun2026mustbecomes",
+   "claim": "\\paragraph{Delegation, handoffs and decomposition.} The closest designs vary what crosses a handoff: constraint transformations that leave a rule present in text but dead in effect \\citep{sun2026mustbecomes}, policy facts attenuated at the orchestrator-subagent boundary \\citep{li2026governanceboundary}, approval framing in delegation prompts on harmful requests \\citep{liu2026operationalreframing}, boundary metadata lost to compression \\citep{wang2026factswithout}, and authorization eroded across depth and width \\citep{xu2026masdriftbenchmarking}, whose re-anchoring defence of re-showing the root request is our \\cond{V1} and \\cond{V2} read from the authorization side.",
+   "verdict": "supported",
+   "evidence": "Handoff transformations can retain the content of an established state while weakening the constraints that state places on downstream action.",
+   "where": "Abstract; Section 1 Introduction (artifact may still mention the unresolved condition while it no longer determines the next action; 'semantic availability does not imply operational preservation')",
+   "source_fetched": "https://arxiv.org/html/2608.24569"
+  },
+  {
+   "key": "thompson1967organizations",
+   "claim": "Organization theory supplies the frame: uncertainty absorption in hierarchies \\citep{march1958organizations}, organization design as information processing \\citep{galbraith1974information}, coordination under interdependence \\citep{thompson1967organizations}, and the costs of delegation \\citep{williamson1975markets,jensen1976theory}.",
+   "verdict": "supported",
+   "evidence": "with reciprocal interdependence, coordination by mutual adjustment is called for",
+   "where": "Chapter 5 (passage near Proposition 5.4d; pooled/sequential/reciprocal interdependence matched to coordination by standardization/plan/mutual adjustment). Body text reached as verbatim OCR snippets through Open Library's full-text search-inside index of Internet Archive item organizationsina0000thom (1967 McGraw-Hill edition); the scan itself is lending-restricted, so only snippet-level access, not the whole book",
+   "source_fetched": "https://openlibrary.org/search/inside.json?q=%22coordination+by+mutual+adjustment%22"
+  },
+  {
+   "key": "wallace2024hierarchy",
+   "claim": "\\section{Related work} \\paragraph{Instruction hierarchies.} Training models to prioritize privileged instructions \\citep{wallace2024hierarchy} and evaluating that priority \\citep{zhang2025iheval,geng2026illusion,zhang2026manyih} concern conflicts between system, developer and user turns of a single model.",
+   "verdict": "supported",
+   "evidence": "we propose an instruction hierarchy that explicitly defines how models should behave when instructions of different priorities conflict",
+   "where": "Abstract; Section 1 (system messages from the application developer take precedence over user messages, which take precedence over third-party tool content; a single GPT-3.5 Turbo model is fine-tuned)",
+   "source_fetched": "https://arxiv.org/html/2404.13208"
+  },
+  {
+   "key": "wang2026factswithout",
+   "claim": "\\emph{Hierarchy.} Delegation is one hop deep and the orchestrator is scripted, so that the worker's response is measured against a fixed hierarchy rather than against an orchestrator's own variability; degradation across deeper chains \\citep{li2026governanceboundary,wang2026factswithout,sharma2026statecompression} and negotiation between agents are outside the design.",
+   "verdict": "supported",
+   "evidence": "Under partial recall the cumulative \u03c3b loss is large and excludes zero on both models",
+   "where": "Section 5.3, paragraph 'Governance loss accumulates across hops' (matched three-hop study; hop-1 to hop-3 loss -0.381 GPT-5-mini, -0.277 DeepSeek-R1-32B under partial memory recall)",
+   "source_fetched": "https://arxiv.org/html/2608.29028"
+  },
+  {
+   "key": "wang2026factswithout",
+   "claim": "\\paragraph{Delegation, handoffs and decomposition.} The closest designs vary what crosses a handoff: constraint transformations that leave a rule present in text but dead in effect \\citep{sun2026mustbecomes}, policy facts attenuated at the orchestrator-subagent boundary \\citep{li2026governanceboundary}, approval framing in delegation prompts on harmful requests \\citep{liu2026operationalreframing}, boundary metadata lost to compression \\citep{wang2026factswithout}, and authorization eroded across depth and width \\citep{xu2026masdriftbenchmarking}, whose re-anchoring defence of re-showing the root request is our \\cond{V1} and \\cond{V2} read from the authorization side.",
+   "verdict": "supported",
+   "evidence": "summaries preferentially preserve operational facts while weakening the boundary metadata that governs how those facts may be used",
+   "where": "Abstract; Section 5.1 (25-word budget drops boundary-marker survival to about 0.57 while operational-fact survival stays near ceiling)",
+   "source_fetched": "https://arxiv.org/html/2608.29028"
+  },
+  {
+   "key": "wang2026helpfulnesstoxic",
+   "claim": "\\paragraph{Over-eager and goal-directed agents.} Out-of-scope actions on benign tasks move with a single consent line \\citep{qu2026overeagercoding}, with instruction clarity \\citep{ji2026codingguessing}, and with whether the correct answer is to do nothing \\citep{gloaguen2026codingknow}; computer-use agents pursue goals blindly \\citep{shayegani2025justcomputer}; agents conceal blocked work by acting without reporting \\citep{guo2025upwarddeceivers}; stated compliance and logged behaviour diverge \\citep{shin2026compliancegap}; over-helpfulness becomes harmful proactivity in adversarial dilemmas \\citep{wang2026helpfulnesstoxic}; frontier models take unauthorized corrective action when context i",
+   "verdict": "supported",
+   "evidence": "synthesizes decision-making challenges characterized by acute conflicts between instrumental efficiency and safety constraints, thereby creating an adversarial environment to trigger Toxic Proactivity",
+   "where": "Section 3.2 Automated Scenario Generation; Abstract (Toxic Proactivity: agent driven by Machiavellian helpfulness prioritizes utility over ethics; dilemma-driven dual-model framework)",
+   "source_fetched": "https://arxiv.org/html/2602.04197"
+  },
+  {
+   "key": "williamson1975markets",
+   "claim": "Organization theory supplies the frame: uncertainty absorption in hierarchies \\citep{march1958organizations}, organization design as information processing \\citep{galbraith1974information}, coordination under interdependence \\citep{thompson1967organizations}, and the costs of delegation \\citep{williamson1975markets,jensen1976theory}.",
+   "verdict": "supported",
+   "evidence": "loss of control through incomplete or inaccurate transmittal of data moving up and instructions moving down the organizational hierarchy",
+   "where": "p. 134 (also pp. 133, 150, 195: cumulative control loss between hierarchical levels; diseconomies of scale attributable to control loss)",
+   "source_fetched": "https://books.google.com/books?id=JFi3AAAAIAAJ&jscmd=SearchWithinVolume2&q=control+loss (cross-checked with https://openlibrary.org/search/inside.json?q=identifier:marketshierarchi00will AND \"control loss\")"
+  },
+  {
+   "key": "wilson1927probable",
+   "claim": "The primary test per model is McNemar's exact test \\citep{mcnemar1947note} on item indicators between \\cond{V0} and \\cond{V4}, Holm-adjusted across the two models \\citep{holm1979simple}; the secondary family covers adjacent steps and each control contrast, Holm-adjusted within model; a Cochran-Armitage trend test \\citep{cochran1954some,armitage1955tests} runs over the five rungs; intervals are Wilson intervals \\citep{wilson1927probable}; mixed-effects logistic models with item random effects were fitted by variational Bayes with weakly informative priors because the isolated cells have no events (Firth-type penalization \\citep{firth1993bias} was the pre-registered alternative).",
+   "verdict": "supported",
+   "evidence": "the equation (p0-p)^2 = lambda^2 pq/n, where q=1-p, is quadratic in p and may be solved to find p",
+   "where": "p. 209, paragraph 'Probable Inference (Improved)'; the resulting interval for p is stated at the top of p. 210",
+   "source_fetched": "https://www.jhanley.biostat.mcgill.ca/c607/ch08/wilson_jasa_1927.pdf (scanned JSTOR copy; read from page images, OCR cross-checked)"
+  },
+  {
+   "key": "xu2026masdriftbenchmarking",
+   "claim": "Benchmarks of over-eager behaviour report unrequested actions in a substantial minority of runs \\citep{qu2026overeagercoding,ji2026codingguessing,gloaguen2026codingknow}, authorization loss that grows with hierarchy depth \\citep{xu2026masdriftbenchmarking}, and process instructions that agents promise to follow and do not \\citep{shin2026compliancegap}.",
+   "verdict": "partly",
+   "evidence": "unauthorized actions occur in 2.7-19.8% of tasks versus 0.6-0.8%, a gap that widens with hierarchy depth",
+   "where": "Abstract; Section 5, Obs. 2",
+   "note": "What grows with depth is the rate of executed unauthorized actions (2.7% to 19.8%, one to three levels); the paper's constraint-loss metric 'does not order by depth', over seven in ten losses occur at the first handoff, and it states 'Hierarchical scale-up therefore does not manufacture more drift', so 'authorization loss grows with depth' shifts the finding; the paper also cautions that depth co-varies with handoff count, so effects are read at the 'architecture bundle' level.",
+   "source_fetched": "https://arxiv.org/html/2608.07556"
+  },
+  {
+   "key": "xu2026masdriftbenchmarking",
+   "claim": "\\paragraph{Delegation, handoffs and decomposition.} The closest designs vary what crosses a handoff: constraint transformations that leave a rule present in text but dead in effect \\citep{sun2026mustbecomes}, policy facts attenuated at the orchestrator-subagent boundary \\citep{li2026governanceboundary}, approval framing in delegation prompts on harmful requests \\citep{liu2026operationalreframing}, boundary metadata lost to compression \\citep{wang2026factswithout}, and authorization eroded across depth and width \\citep{xu2026masdriftbenchmarking}, whose re-anchoring defence of re-showing the root request is our \\cond{V1} and \\cond{V2} read from the authorization side.",
+   "verdict": "partly",
+   "evidence": "Increasing peer width barely changes either.",
+   "where": "Section 1 (findings list); Section 5, Obs. 2: UA across N2, N4, N8 never passes 0.8%; Section 4.1 for the Source defence",
+   "note": "Two gaps: (1) the paper finds erosion with depth in supervisor hierarchies but not with peer width (UA never above 0.8%, 'barely changes either'), so 'across depth and width' overstates; (2) the re-anchoring (Source) defence is a separate authorization center that compiles a per-tool policy from the original user request and mediates every pending call (Allow/Confirm/Deny), with a policy addendum appended to prompts; it does not re-show the root request to the workers, so 'of re-showing the root request' misdescribes the mechanism even if the analogy is the authors' own.",
+   "source_fetched": "https://arxiv.org/html/2608.07556"
+  },
+  {
+   "key": "yan2025dontbuild",
+   "claim": "Coding harnesses tend to pass only the delegation prompt \\citep{anthropic2026subagentssdk,barbaste2026harnessengineering}; handoff-style frameworks pass the whole transcript; the design guidance of the last two years has moved from ``share everything'' \\citep{yan2025dontbuild} to ``isolate by default'' \\citep{chen2026buildinguse,yan2026actuallyworking} without a controlled measurement of what the choice does to the worker.",
+   "verdict": "supported",
+   "evidence": "Share context, and share full agent traces, not just individual messages",
+   "where": "Principle 1; also 'Applying the Principles': 'Ideally, every action would just see everything else.'",
+   "source_fetched": "https://cognition.ai/blog/dont-build-multi-agents"
+  },
+  {
+   "key": "yan2026actuallyworking",
+   "claim": "Coding harnesses tend to pass only the delegation prompt \\citep{anthropic2026subagentssdk,barbaste2026harnessengineering}; handoff-style frameworks pass the whole transcript; the design guidance of the last two years has moved from ``share everything'' \\citep{yan2025dontbuild} to ``isolate by default'' \\citep{chen2026buildinguse,yan2026actuallyworking} without a controlled measurement of what the choice does to the worker.",
+   "verdict": "partly",
+   "evidence": "we found this technique to work best when the coding and review agents do not share any context beforehand",
+   "where": "Section '1) The Code-Review-Loop'; contrast section '2) Smart Friend'",
+   "note": "The post recommends a clean context for the reviewer in the generator-verifier loop, but for the smart-friend pattern it recommends sharing 'a fork of the full context of the primary model', and it never states isolation as a default; the guidance is pattern-specific rather than 'isolate by default'.",
+   "source_fetched": "https://cognition.com/blog/multi-agents-working"
+  },
+  {
+   "key": "yan2026actuallyworking",
+   "claim": "\\paragraph{Harness practice and organization theory.} Vendor accounts of multi-agent systems \\citep{hadfield2025how,printed2026patternsproblems,chen2026buildinguse,yan2026actuallyworking}, source-level studies of harnesses \\citep{barbaste2026harnessengineering,li2026contextcontext} and product documentation \\citep{anthropic2026subagentssdk,documentation2026orchestrateteams,openai2026openaiapi} fix what workers see in deployed systems; we tabulate them.",
+   "verdict": "supported",
+   "evidence": "The dedicated review agent gets to skip this extraneous context, only look at the diff",
+   "where": "Section '1) The Code-Review-Loop'; smart friend gets 'a fork of the full context'; manager section: agents 'assume they share state with their children when they don't'",
+   "source_fetched": "https://cognition.com/blog/multi-agents-working"
+  },
+  {
+   "key": "yang2026hierarchicalalignment",
+   "claim": "\\citet{yang2026hierarchicalalignment} name the benign, partially conflicting regime as the gap in this literature; \\citet{koo2026knowbut} classify dialogue behaviour under a prior-context conflict into adhere, yield and waver, a taxonomy ours parallels.",
+   "verdict": "supported",
+   "evidence": "it mainly focuses on adversarial attacks and overlooks the benign but common instruction conflicts that arise in real-world applications",
+   "where": "Abstract; Introduction ('when instructions partially or implicitly conflict'; 'remains underexplored in existing work')",
+   "source_fetched": "https://arxiv.org/html/2604.09075"
+  },
+  {
+   "key": "yu2026when",
+   "claim": "\\paragraph{Multi-agent failures, attribution and noise.} Failure taxonomies \\citep{cemri2025mast}, attribution of failures to agents and steps \\citep{zhang2025whichcauses,chen2026seeingwhole}, the information-bottleneck view of when coordination helps \\citep{yu2026when}, and the noise-floor protocol for small coordination gains \\citep{kaliyev2026muchcoordination} inform our design: the item is the unit, controls are byte-identical, draws are near-replicates reported as such, and the concurrent family's verdicts are attributed to the worker's own change.",
+   "verdict": "supported",
+   "evidence": "This perspective explains when bounded inter-agent communication helps or hurts.",
+   "where": "Abstract; Section 4 'MAS Relay Compression as an Information Bottleneck'",
+   "source_fetched": "https://arxiv.org/html/2607.16133"
+  },
+  {
+   "key": "zhang2025iheval",
+   "claim": "\\section{Related work} \\paragraph{Instruction hierarchies.} Training models to prioritize privileged instructions \\citep{wallace2024hierarchy} and evaluating that priority \\citep{zhang2025iheval,geng2026illusion,zhang2026manyih} concern conflicts between system, developer and user turns of a single model.",
+   "verdict": "supported",
+   "evidence": "priority order from system messages to user messages, conversation history, and tool outputs",
+   "where": "Abstract, p. 8374; footnote 1 frames system messages as developer-set; all tasks evaluate one model",
+   "source_fetched": "https://aclanthology.org/2025.naacl-long.425.pdf"
+  },
+  {
+   "key": "zhang2025whichcauses",
+   "claim": "\\paragraph{Multi-agent failures, attribution and noise.} Failure taxonomies \\citep{cemri2025mast}, attribution of failures to agents and steps \\citep{zhang2025whichcauses,chen2026seeingwhole}, the information-bottleneck view of when coordination helps \\citep{yu2026when}, and the noise-floor protocol for small coordination gains \\citep{kaliyev2026muchcoordination} inform our design: the item is the unit, controls are byte-identical, draws are near-replicates reported as such, and the concurrent family's verdicts are attributed to the worker's own change.",
+   "verdict": "supported",
+   "evidence": "fine-grained annotations linking failures to specific agents and decisive error steps",
+   "where": "Abstract; Section 2 defines failure-responsible agent and decisive error step",
+   "source_fetched": "https://arxiv.org/html/2505.00212"
+  },
+  {
+   "key": "zhang2026manyih",
+   "claim": "\\section{Related work} \\paragraph{Instruction hierarchies.} Training models to prioritize privileged instructions \\citep{wallace2024hierarchy} and evaluating that priority \\citep{zhang2025iheval,geng2026illusion,zhang2026manyih} concern conflicts between system, developer and user turns of a single model.",
+   "verdict": "partly",
+   "evidence": "assumes a fixed, small set of privilege levels (typically fewer than five) defined by rigid role labels (e.g., system > user). This is inadequate",
+   "where": "Abstract; Introduction (sources: 'system messages, user prompts, tool outputs, other agents, and more'; up to 12 privilege levels)",
+   "note": "ManyIH-Bench does evaluate a single model, but its conflicts span up to 12 dynamically assigned privilege tiers drawn from system prompts, skills, memory files, tool outputs and sub-agents, and the paper explicitly argues the fixed system/developer/user framing is inadequate; describing it as concerning 'system, developer and user turns' narrows it.",
+   "source_fetched": "https://arxiv.org/html/2604.09443"
+  }
+ ],
+ "actions": {
+  "partly": "every partly verdict was resolved by rewording the sentence in paper/main.tex to what the source supports (19 items across 17 keys)",
+  "not_accessible": "cochran1954some: JSTOR body not fetchable; attribution retained on the strength of Armitage (1955), note added in proof, which credits Cochran (1954) sections 6.2 and 6.3 for the trend test",
+  "mcnemar1947note": "the note presents the large-sample form; the paper now says the exact binomial form of the paired test"
+ }
+}
