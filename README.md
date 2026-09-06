@@ -2,7 +2,7 @@
 
 Data, stimuli, harness and analysis for a pre-registered study of how much of the hierarchy a delegated worker agent should see, and what it does when it sees it.
 
-Preprint: https://doi.org/10.5281/zenodo.22433898 (this DOI resolves to the latest version; version 1 is https://doi.org/10.5281/zenodo.22433899).
+Preprint: https://doi.org/10.5281/zenodo.22433898 (this DOI resolves to the latest version; version 1 is https://doi.org/10.5281/zenodo.22433899 and version 2 is https://doi.org/10.5281/zenodo.22548556).
 
 ## What is here
 
