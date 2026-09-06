@@ -1,4 +1,4 @@
-# What a Sub-Agent Does When It Can See the Hierarchy Above It
+# The Scope Creep Myth: How Hierarchical Visibility Drives Escalation Rather Than Departure in Multi-Agent Systems
 
 Data, stimuli, harness and analysis for a pre-registered study of how much of the hierarchy a delegated worker agent should see, and what it does when it sees it. The paper is in preparation; the preprint link will be added here when it is public.
 
