@@ -1,0 +1,18 @@
+{
+  "title": "what-a-sub-agent-does: data, run records, checkers and harness for a study of hierarchical visibility in multi-agent delegation",
+  "upload_type": "software",
+  "description": "<p>The complete experimental material behind the study of how much of the supervising hierarchy a delegated worker agent should see, and what it does when it sees it (preprint: https://doi.org/10.5281/zenodo.22433898). It contains the analysis plan and its archive hash, the 200 Suite A stimulus items and 30 pilot items, the deterministic checkers with their source hashes (frozen 9179f04a49c2cba4, revised dc79531ca3f268a8) and the Suite B arbiter (5244f7de5c54a4f2), every recorded model call as JSONL for three models (DeepSeek V4 Flash, Meta Muse Spark 1.3 and OpenAI GPT-6.1 Sol) in Suite A and in the Suite B multi-agent loop, the audit samples and returns, the analysis scripts that generate every number, table and figure, the Suite B harness, and the documentation survey of 62 orchestration frameworks. Code is under the MIT License and data and documentation under CC BY 4.0; third-party stimulus material stays under its own terms, and model outputs remain subject to the generating providers' terms (see LICENSE).</p>",
+  "creators": [
+    {
+      "name": "Lohan, Arjun",
+      "affiliation": "University of Southern California",
+      "orcid": "0009-0003-3605-1221"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["multi-agent systems", "large language model agents", "delegation", "instruction following", "escalation", "agent evaluation", "dataset", "run records"],
+  "related_identifiers": [
+    { "identifier": "10.5281/zenodo.22433898", "relation": "isSupplementTo", "resource_type": "publication-preprint", "scheme": "doi" }
+  ],
+  "language": "eng"
+}
