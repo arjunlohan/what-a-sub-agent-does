@@ -1,0 +1,50 @@
+run=suite-a-sol-temp models=sol conds=V0,V4,LM4 draws=1 items=200 pending=592 done=8 cap=$10
+  20/592 done, $0.3798 spent, 66s
+  40/592 done, $0.5621 spent, 113s
+  60/592 done, $0.8068 spent, 160s
+  80/592 done, $1.0407 spent, 214s
+  100/592 done, $1.3178 spent, 264s
+  120/592 done, $1.4624 spent, 314s
+  140/592 done, $1.5742 spent, 344s
+  160/592 done, $1.6956 spent, 374s
+  180/592 done, $1.8249 spent, 413s
+  200/592 done, $1.9378 spent, 446s
+  220/592 done, $2.0765 spent, 484s
+  240/592 done, $2.1648 spent, 519s
+  260/592 done, $2.2076 spent, 553s
+  280/592 done, $2.2604 spent, 588s
+  300/592 done, $2.2996 spent, 623s
+  320/592 done, $2.3363 spent, 660s
+  340/592 done, $2.3733 spent, 693s
+  360/592 done, $2.4562 spent, 729s
+  380/592 done, $2.6222 spent, 771s
+  400/592 done, $2.7753 spent, 806s
+  420/592 done, $2.9497 spent, 853s
+  440/592 done, $3.1382 spent, 897s
+  460/592 done, $3.3198 spent, 935s
+  480/592 done, $3.4469 spent, 967s
+  500/592 done, $3.5159 spent, 1005s
+  520/592 done, $3.5641 spent, 1038s
+  540/592 done, $3.6143 spent, 1074s
+  560/592 done, $3.6546 spent, 1108s
+  580/592 done, $3.7063 spent, 1145s
+{
+ "run": "suite-a-sol-temp",
+ "completed": 592,
+ "pending": 0,
+ "spent": 3.7424,
+ "stats": {
+  "sol": {
+   "calls": 592,
+   "errors": 0,
+   "unpinned": 0,
+   "cost": 3.7423585000000004,
+   "inTok": 841222,
+   "outTok": 182398,
+   "reasonTok": 24094
+  }
+ },
+ "wallSeconds": 1171,
+ "ledgerTotal": 90.8969
+}
+RUN_DONE

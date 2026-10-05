@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { existsSync, readFileSync } from "node:fs";
 import { generateText, gateway } from "ai";
 import type { ModelSpec } from "./models";
 
@@ -12,12 +13,32 @@ export type CallResult = {
   reasoningTokens: number | null;
   cacheReadTokens: number | null;
   cost: number | null;
+  marketCost: number | null; // list-price cost; on BYOK calls the gateway bills cost 0 and the provider bills marketCost
+  credentialTypes: string[]; // credential type of every provider attempt (byok or system)
   provider: string | null;
   generationId: string | null;
   finishReason: string | null;
   responseModelId: string | null;
   warnings: string[];
 };
+
+/**
+ * Spend billed to gateway credits by calls whose BYOK attempt failed and fell back to system credentials (the gateway
+ * always retries that way; it cannot be disabled). Sums the gateway cost of every record carrying a system credential
+ * across the given run files, so concurrent runners of one arm share a single fallback cap (FALLBACK_CAP_USD).
+ */
+export function fallbackSpendUsd(files: string[]): number {
+  let total = 0;
+  for (const f of files) {
+    if (!existsSync(f)) continue;
+    for (const line of readFileSync(f, "utf8").split("\n")) {
+      if (!line.trim()) continue;
+      const r = JSON.parse(line);
+      if ((r.credentialTypes ?? []).includes("system")) total += Number(r.cost ?? 0);
+    }
+  }
+  return total;
+}
 
 export const sha16 = (s: string) => createHash("sha256").update(s).digest("hex").slice(0, 16);
 
@@ -64,6 +85,8 @@ export async function callWorker(
       reasoningTokens: u.outputTokenDetails?.reasoningTokens ?? null,
       cacheReadTokens: u.inputTokenDetails?.cacheReadTokens ?? null,
       cost: g.cost != null ? Number(g.cost) : null,
+      marketCost: g.marketCost != null ? Number(g.marketCost) : null,
+      credentialTypes: (g.routing?.modelAttempts ?? []).flatMap((m: any) => (m.providerAttempts ?? []).map((a: any) => String(a.credentialType))),
       provider: g.routing?.finalProvider ?? null,
       generationId: g.generationId ?? null,
       finishReason: res.finishReason ?? null,
@@ -77,7 +100,7 @@ export async function callWorker(
       text: "",
       latencyMs: Date.now() - started,
       inputTokens: null, outputTokens: null, reasoningTokens: null, cacheReadTokens: null,
-      cost: null, provider: null, generationId: null, finishReason: null, responseModelId: null, warnings: [],
+      cost: null, marketCost: null, credentialTypes: [], provider: null, generationId: null, finishReason: null, responseModelId: null, warnings: [],
     };
   }
 }

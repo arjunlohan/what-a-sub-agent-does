@@ -15,7 +15,7 @@
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { BUDGET_USD, MODELS } from "./models";
-import { callWorker, sha16 } from "./gateway";
+import { callWorker, fallbackSpendUsd, sha16 } from "./gateway";
 import { loadItems, RUNS, type Item } from "./items";
 import { buildPrompt, type Condition } from "./prompts";
 import { check, type Verdict } from "./checkers";
@@ -24,12 +24,13 @@ const CHECKER_HASH = sha16(readSrc(join(import.meta.dirname, "checkers.ts"), "ut
 
 export type RunRecord = {
   run: string; key: string;
-  model: "deepseek" | "muse" | "luna"; modelId: string;
+  model: "deepseek" | "muse" | "luna" | "sol"; modelId: string;
   condition: Condition; item: string; domain: Item["domain"]; salience: Item["salience"]; draw: number;
   ts: string; promptHash: string; systemHash: string; contextChars: number; promptChars: number;
   temperature: number; reasoningSetting: string;
   ok: boolean; error: string | null; provider: string | null; pinned: boolean;
   latencyMs: number; inputTokens: number | null; outputTokens: number | null; reasoningTokens: number | null; cacheReadTokens: number | null; cost: number | null;
+  marketCost?: number | null; credentialTypes?: string[];
   generationId: string | null; finishReason: string | null; warnings: string[];
   verdict: Verdict | "CALL_FAILED"; verdictDetail: string; concerns: string[]; rationale: string; flaggedConflict: boolean; checkerHash: string;
   raw: string;
@@ -37,7 +38,7 @@ export type RunRecord = {
 
 const RUN = process.env.RUN_LABEL ?? "pilot";
 const OUT = join(RUNS, process.env.RUN_OUT ?? `${RUN}.jsonl`);
-const MODEL_KEYS = (process.env.RUN_MODELS ?? "deepseek,muse").split(",").map((s) => s.trim()) as Array<"deepseek" | "muse" | "luna">;
+const MODEL_KEYS = (process.env.RUN_MODELS ?? "deepseek,muse").split(",").map((s) => s.trim()) as Array<"deepseek" | "muse" | "luna" | "sol">;
 const CONDS = (process.env.RUN_CONDITIONS ?? "V0,V2,V4,LM4").split(",").map((s) => s.trim()) as Condition[];
 const DRAWS = Number(process.env.RUN_DRAWS ?? 3);
 const ITEMS = process.env.RUN_ITEMS ?? "all";
@@ -86,7 +87,7 @@ async function main() {
   if (!items.length) throw new Error("no items selected");
   const indexOf = new Map(all.map((it, i) => [it.id, i] as const));
   const done = doneKeys();
-  type Task = { model: "deepseek" | "muse" | "luna"; item: Item; cond: Condition; draw: number; key: string };
+  type Task = { model: "deepseek" | "muse" | "luna" | "sol"; item: Item; cond: Condition; draw: number; key: string };
   const tasks: Task[] = [];
   // Draw-major order: every item-cell's first draw runs before any second draw, so the three draws of one
   // item-cell are spread across the run instead of sharing one provider state (referee round 1).
@@ -110,7 +111,7 @@ async function main() {
     const spec = MODELS[mk];
     const st = (stats[mk] = { calls: 0, errors: 0, unpinned: 0, cost: 0, inTok: 0, outTok: 0, reasonTok: 0 });
     const mine = tasks.filter((t) => t.model === mk);
-    await mapLimit(mine, spec.concurrency, async (t) => {
+    await mapLimit(mine, Number(process.env.RUN_CONCURRENCY ?? spec.concurrency), async (t) => {
       const p = buildPrompt(t.item, t.cond, indexOf.get(t.item.id)!, all);
       const res = await callWorker(spec, p.system, p.user, { temperature: TEMPERATURE, reasoning: PROVIDER_REASONING || PROVIDER_THINKING ? null : REASONING, providerReasoning: PROVIDER_REASONING, providerThinking: PROVIDER_THINKING });
       const chk = res.ok ? check(t.item, res.text, { finishReason: res.finishReason }) : null;
@@ -121,7 +122,7 @@ async function main() {
         temperature: TEMPERATURE === null ? -1 : TEMPERATURE, reasoningSetting: PROVIDER_THINKING ? `provider-thinking-${PROVIDER_THINKING}` : PROVIDER_REASONING ? `provider-${PROVIDER_REASONING}` : REASONING === null ? "provider-default" : (REASONING ?? spec.reasoning),
         ok: res.ok, error: res.error, provider: res.provider, pinned,
         latencyMs: res.latencyMs, inputTokens: res.inputTokens, outputTokens: res.outputTokens, reasoningTokens: res.reasoningTokens, cacheReadTokens: res.cacheReadTokens, cost: res.cost,
-        generationId: res.generationId, finishReason: res.finishReason, warnings: res.warnings,
+        marketCost: res.marketCost, credentialTypes: res.credentialTypes, generationId: res.generationId, finishReason: res.finishReason, warnings: res.warnings,
         verdict: chk ? chk.verdict : "CALL_FAILED", verdictDetail: chk ? chk.detail : (res.error ?? "call failed"), concerns: chk?.concerns ?? [], rationale: chk?.rationale ?? "", flaggedConflict: chk?.flaggedConflict ?? false, checkerHash: CHECKER_HASH,
         raw: res.text,
       };
@@ -129,7 +130,16 @@ async function main() {
       st.calls++; completed++;
       if (!res.ok) st.errors++;
       if (res.ok && !pinned) st.unpinned++;
-      st.cost += res.cost ?? 0; spent += res.cost ?? 0;
+      // spend counts the list price on BYOK calls, where the gateway bills 0 and the provider bills the tokens
+      const callCost = res.cost || res.marketCost || 0; st.cost += callCost; spent += callCost;
+      // a BYOK model's failed attempt falls back to system credentials (billed to gateway credits); the arm's total fallback
+      // spend across its run files is capped by FALLBACK_CAP_USD (0 by default: any fallback stops the run)
+      if (spec.byok && res.ok && !res.credentialTypes.every((c) => c === "byok")) {
+        const fb = fallbackSpendUsd((process.env.FALLBACK_FILES ?? OUT).split(",").map((f) => (f.startsWith("/") ? f : join(RUNS, f))));
+        const fbCap = Number(process.env.FALLBACK_CAP_USD ?? 0);
+        console.error(`FALLBACK: ${mk} call ${t.key} used credentials ${JSON.stringify(res.credentialTypes)}; fallback spend $${fb.toFixed(4)} of cap $${fbCap}`);
+        if (fb > fbCap) { console.error(`RUN_ABORT: fallback spend $${fb.toFixed(4)} exceeded cap $${fbCap}`); stopped = true; }
+      }
       st.inTok += res.inputTokens ?? 0; st.outTok += res.outputTokens ?? 0; st.reasonTok += res.reasoningTokens ?? 0;
       if (completed % 20 === 0) console.log(`  ${completed}/${tasks.length} done, $${spent.toFixed(4)} spent, ${Math.round((Date.now() - started) / 1000)}s`);
       if (st.calls >= 50 && st.errors / st.calls > 0.05) { console.error(`RUN_ABORT: ${mk} error rate ${(100 * st.errors / st.calls).toFixed(1)}% after ${st.calls} calls`); stopped = true; }

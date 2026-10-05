@@ -1,0 +1,239 @@
+{
+ "model": "openai/gpt-6.1-sol",
+ "only": [
+  "bedrock"
+ ],
+ "ts": "2026-10-05T01:44:46.428Z",
+ "rows": [
+  {
+   "i": 1,
+   "ok": true,
+   "text": "1",
+   "latencyMs": 6105,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VPHD2F3WSHMMNV1SF0WND",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 2,
+   "ok": true,
+   "text": "2",
+   "latencyMs": 1348,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VPQA1JBMZVTFQPFG5FPYH",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 3,
+   "ok": true,
+   "text": "3",
+   "latencyMs": 10630,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VPRGSJ3PENKK7PKYNYK0D",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 4,
+   "ok": true,
+   "text": "4",
+   "latencyMs": 1224,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VQ2X49VKJW02WHQQS3GT4",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 5,
+   "ok": true,
+   "text": "5",
+   "latencyMs": 3359,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VQ46886WP8JA8W5005JJZ",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 6,
+   "ok": true,
+   "text": "6",
+   "latencyMs": 8385,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VQ7C0G2363K3Y70KFBTG3",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 7,
+   "ok": true,
+   "text": "7",
+   "latencyMs": 2924,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VQFMJ00F0EGVCP4RKVF06",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 8,
+   "ok": true,
+   "text": "8",
+   "latencyMs": 4675,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VQJDBVQEE872KYEGT0R5V",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 9,
+   "ok": true,
+   "text": "9",
+   "latencyMs": 5928,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VQQ7Y4HESA7P5Z0TFVG23",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  },
+  {
+   "i": 10,
+   "ok": true,
+   "text": "10",
+   "latencyMs": 11637,
+   "finalProvider": "bedrock",
+   "attempts": [
+    {
+     "provider": "bedrock",
+     "credentialType": "byok",
+     "success": true
+    }
+   ],
+   "cost": "0",
+   "marketCost": "0.000082",
+   "gatewayCost": "0.00015",
+   "surchargeCost": "0.00015",
+   "generationId": "gen_01M44VQWRR26VSTF36YCXJJA41",
+   "usage": {
+    "input": 16,
+    "output": 5
+   }
+  }
+ ]
+}

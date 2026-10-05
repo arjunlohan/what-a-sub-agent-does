@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 TSX="$PWD/node_modules/.bin/tsx"; [ -x "$TSX" ] || TSX="$PWD/../node_modules/.bin/tsx"
 "$TSX" paper/build-numbers.ts
-STATSENV="${STATSENV:-/private/tmp/claude-501/-Users-lohan-Downloads-GitHub-project-lore--claude-worktrees-semantic-search-table-107563/3ba085b1-55a2-4a83-90d7-aef0c2863285/scratchpad/statsenv}"
+STATSENV="${STATSENV:-/Users/lohan/Downloads/GitHub/visibility-statsenv}"
 if [ -x "$STATSENV/bin/python" ]; then PY="$STATSENV/bin/python"; elif python3 -c "import matplotlib" 2>/dev/null; then PY=python3; else python3 -m venv "$STATSENV" && "$STATSENV/bin/pip" -q install matplotlib numpy && PY="$STATSENV/bin/python"; fi
 "$PY" paper/figures.py
 python3 - <<'PY2'

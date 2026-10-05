@@ -10,7 +10,7 @@ import { appendFileSync, existsSync, mkdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { generateText, gateway, stepCountIs } from "ai";
 import { MODELS, type ModelSpec } from "../harness/models";
-import { sha16 } from "../harness/gateway";
+import { fallbackSpendUsd, sha16 } from "../harness/gateway";
 import { parseJsonObject, extractField, changedSpan, check as checkItem, rationaleNames } from "../harness/checkers";
 import { escalateTool, fsTools, peerTool, sqlTools, type PeerStatus, type ToolEvent } from "./tools";
 import { TASKS, functionSpan, type TaskCtx, type TaskSpec, type WorkerSpec } from "./tasks";
@@ -24,7 +24,7 @@ const CONDS = (process.env.SB_CONDS ?? "V0,V4,V5").split(",");
 const DRAWS = Number(process.env.SB_DRAWS ?? 1);
 const CAP = Number(process.env.SB_BUDGET_USD ?? 5);
 const clock = () => new Date().toISOString().slice(11, 19);
-let spent = 0;
+let spent = 0; let aborted = false; const fallbackPending: string[] = []; // aborted is set by the lanes (cap) and by runTask (a non-BYOK call on a BYOK model)
 function contextBlock(task: TaskSpec, w: WorkerSpec, cond: string, ledger: string[], ctx: TaskCtx): string {
   const v2 = `Orchestrator objective: ${task.objective}\n\nOrchestrator's task brief (verbatim, as received from its principal):\n${task.brief}`;
   if (cond === "V0") return "";
@@ -117,12 +117,15 @@ async function runTask(task: TaskSpec, spec: ModelSpec, cond: string, draw: numb
     const t0 = Date.now(); let res: any = null; let error: string | null = null;
     try { res = await generateText({ model: gateway(spec.id), system, prompt: user, tools, stopWhen: stepCountIs(14), temperature: 0, maxRetries: 3, maxOutputTokens: 32000, reasoning: spec.reasoning, providerOptions: { gateway: { only: spec.only, tags: ["visibility-paper", "suite-b"] } } } as any); } catch (e: any) { error = String(e?.message ?? e).slice(0, 300); }
     const text = res?.text ?? ""; outputs[w.id] = text; status[w.id]!.state = error ? "failed" : "done"; status[w.id]!.last = text.slice(0, 300); ledger.push(`${clock()} [orchestrator] ${w.id} ${error ? "failed" : "returned"}`);
-    const steps = res?.steps ?? []; const cost = steps.reduce((a: number, s: any) => a + Number(s.providerMetadata?.gateway?.cost ?? 0), 0) || Number(res?.providerMetadata?.gateway?.cost ?? 0); const usage = res?.totalUsage ?? res?.usage ?? {};
+    const steps = res?.steps ?? []; const cost = steps.reduce((a: number, s: any) => a + Number(s.providerMetadata?.gateway?.cost ?? 0), 0) || Number(res?.providerMetadata?.gateway?.cost ?? 0);
+    // on BYOK calls the gateway bills 0 and the provider bills the list price: marketCost is what the cap counts, and every attempt's credential type is kept
+    const marketCost = steps.reduce((a: number, s: any) => a + Number(s.providerMetadata?.gateway?.marketCost ?? 0), 0); const credentialTypes = [...new Set(steps.flatMap((s: any) => (s.providerMetadata?.gateway?.routing?.modelAttempts ?? []).flatMap((m: any) => (m.providerAttempts ?? []).map((x: any) => String(x.credentialType)))))];
+    if (spec.byok && !error && !credentialTypes.every((c) => c === "byok")) { fallbackPending.push(`${key}|${w.id} ${JSON.stringify(credentialTypes)}`); } const usage = res?.totalUsage ?? res?.usage ?? {};
     const provider = steps.map((s: any) => s.providerMetadata?.gateway?.routing?.finalProvider).filter(Boolean); const pinned = provider.length ? provider.every((p: string) => p === spec.only[0]) : false;
     const v: WorkerVerdict = error ? { verdict: "CALL_FAILED", detail: error, concerns: [], escalations: 0, toolErrors: 0, disclosure: null, claimedVsObserved: null } : verdictFor(task, w, ctx, text, events);
     const generationIds = steps.map((s: any) => s.providerMetadata?.gateway?.generationId).filter(Boolean);
-    taskCost += cost; taskTokens += Number(usage.inputTokens ?? 0) + Number(usage.outputTokens ?? 0); spent += cost;
-    records.push({ kind: "worker", label: LABEL, key: `${key}|${w.id}`, task: task.id, family: task.family, model: spec.key, modelId: spec.id, condition: cond, draw, worker: w.id, planted: w.planted, assignment: w.assignment(ctx), contextChars: ctxBlock.length, promptHash: sha16(user), ok: !error, error, pinned, providers: [...new Set(provider)], steps: steps.length, toolCalls: events.filter((e) => e.worker === w.id).map((e) => ({ tool: e.tool, args: e.args, ok: e.ok, ms: e.ms })), inputTokens: usage.inputTokens ?? null, outputTokens: usage.outputTokens ?? null, reasoningTokens: usage.outputTokenDetails?.reasoningTokens ?? null, cost, latencyMs: Date.now() - t0, verdict: v.verdict, verdictDetail: v.detail, concerns: v.concerns, disclosure: v.disclosure, claimedVsObserved: v.claimedVsObserved, escalations: v.escalations, escalationMessages: events.filter((e) => e.worker === w.id && e.tool === "flag_to_orchestrator").map((e) => String(e.args.message ?? "")), toolErrors: v.toolErrors, generationIds, system, prompt: user, targetWrites: events.filter((e) => e.worker === w.id && e.tool === "write_file" && e.ok && typeof (e as any).content === "string").map((e) => ({ path: e.args.path, before: (e as any).before ?? null, after: String((e as any).content).slice(0, 60000), lastRead: (() => { const np = (q: unknown) => String(q ?? "").replace(/^\.\//, ""); const rs = events.filter((x) => x.worker === w.id && x.tool === "read_file" && x.ok && np(x.args.path) === np(e.args.path) && x.t <= e.t && typeof (x as any).content === "string"); return rs.length ? String((rs[rs.length - 1] as any).content).slice(0, 60000) : null; })() })), raw: text.slice(0, 120000), ts: new Date().toISOString() });
+    taskCost += cost || marketCost; taskTokens += Number(usage.inputTokens ?? 0) + Number(usage.outputTokens ?? 0); spent += cost || marketCost;
+    records.push({ kind: "worker", label: LABEL, key: `${key}|${w.id}`, task: task.id, family: task.family, model: spec.key, modelId: spec.id, condition: cond, draw, worker: w.id, planted: w.planted, assignment: w.assignment(ctx), contextChars: ctxBlock.length, promptHash: sha16(user), ok: !error, error, pinned, providers: [...new Set(provider)], steps: steps.length, toolCalls: events.filter((e) => e.worker === w.id).map((e) => ({ tool: e.tool, args: e.args, ok: e.ok, ms: e.ms })), inputTokens: usage.inputTokens ?? null, outputTokens: usage.outputTokens ?? null, reasoningTokens: usage.outputTokenDetails?.reasoningTokens ?? null, cost, marketCost, credentialTypes, latencyMs: Date.now() - t0, verdict: v.verdict, verdictDetail: v.detail, concerns: v.concerns, disclosure: v.disclosure, claimedVsObserved: v.claimedVsObserved, escalations: v.escalations, escalationMessages: events.filter((e) => e.worker === w.id && e.tool === "flag_to_orchestrator").map((e) => String(e.args.message ?? "")), toolErrors: v.toolErrors, generationIds, system, prompt: user, targetWrites: events.filter((e) => e.worker === w.id && e.tool === "write_file" && e.ok && typeof (e as any).content === "string").map((e) => ({ path: e.args.path, before: (e as any).before ?? null, after: String((e as any).content).slice(0, 60000), lastRead: (() => { const np = (q: unknown) => String(q ?? "").replace(/^\.\//, ""); const rs = events.filter((x) => x.worker === w.id && x.tool === "read_file" && x.ok && np(x.args.path) === np(e.args.path) && x.t <= e.t && typeof (x as any).content === "string"); return rs.length ? String((rs[rs.length - 1] as any).content).slice(0, 60000) : null; })() })), raw: text.slice(0, 120000), ts: new Date().toISOString() });
   };
   const done = new Set<string>();
   while (done.size < task.workers.length) { const wave = task.workers.filter((w) => !done.has(w.id) && w.dependsOn.every((d) => done.has(d))); if (!wave.length) throw new Error("dependency cycle"); await Promise.all(wave.map(runWorker)); for (const w of wave) done.add(w.id); }
@@ -135,6 +138,13 @@ async function runTask(task: TaskSpec, spec: ModelSpec, cond: string, draw: numb
   else { const writes = events.filter((e) => e.tool === "write_file" && e.ok && String(e.args.path).endsWith("sivm.ts")); const final = readFileSync(join(ctx.root!, "sivm.ts"), "utf8"); const survived = Object.fromEntries(task.workers.map((w) => { const mine = writes.filter((e) => e.worker === w.id); const lastMine = mine[mine.length - 1] as any; return [w.id, lastMine ? (lastMine.content === final) : null]; })); redundancy = { writesPerWorker: Object.fromEntries(task.workers.map((w) => [w.id, writes.filter((e) => e.worker === w.id).length])), lastWriteSurvived: survived, writeOrder: writes.map((e) => e.worker) }; }
   records.push({ kind: "task", label: LABEL, key, task: task.id, family: task.family, model: spec.key, condition: cond, draw, success, sandbox: ctx.root ?? null, cost: taskCost, tokens: taskTokens, wallMs: Date.now() - started, redundancy, ledger, workerVerdicts: Object.fromEntries(records.filter((r) => r.kind === "worker").map((r) => [r.worker, r.verdict])), ts: new Date().toISOString() });
   for (const r of records) appendFileSync(OUT, JSON.stringify(r) + "\n");
+  // fallbacks to system credentials on a BYOK model are checked once the task's records are on disk, against the arm's
+  // shared cap (FALLBACK_CAP_USD across FALLBACK_FILES; 0 by default, so any fallback stops the run)
+  while (fallbackPending.length) {
+    const what = fallbackPending.shift()!; const fb = fallbackSpendUsd((process.env.FALLBACK_FILES ?? OUT).split(",").map((f) => (f.startsWith("/") ? f : join(ROOT, "runs", f)))); const fbCap = Number(process.env.FALLBACK_CAP_USD ?? 0);
+    console.error(`FALLBACK: ${what}; fallback spend $${fb.toFixed(4)} of cap $${fbCap}`);
+    if (fb > fbCap) { aborted = true; console.error(`SB_ABORT: fallback spend $${fb.toFixed(4)} exceeded cap $${fbCap}`); }
+  }
   console.log(`${key}: success ${success.score.toFixed(2)} (${success.detail}); verdicts ${JSON.stringify(Object.fromEntries(records.filter((r) => r.kind === "worker").map((r) => [r.worker, r.verdict])))}; $${taskCost.toFixed(4)}; ${Math.round((Date.now() - started) / 1000)}s`);
 }
 async function main() {
@@ -144,7 +154,7 @@ async function main() {
   // resume: skip jobs whose task record already exists in the output file
   const done = new Set<string>(); try { for (const l of readFileSync(OUT, "utf8").split("\n")) if (l.trim()) { const r = JSON.parse(l); if (r.kind === "task") done.add(r.key); } } catch {}
   const pending = jobs.filter(([mk, tid, cond, d]) => !done.has(`${MODELS[mk]!.key}|${tid}|${cond}|${d}`)); console.log(`${pending.length} of ${jobs.length} task runs pending (${done.size} already recorded); concurrency ${CONCURRENCY}`);
-  let i = 0; let aborted = false;
+  let i = 0;
   const lane = async () => { while (i < pending.length && !aborted) { const [mk, tid, cond, d] = pending[i++]!; if (spent > CAP) { aborted = true; console.error(`SB_ABORT: spend $${spent.toFixed(2)} over cap $${CAP}`); break; } try { await runTask(TASKS[tid]!, MODELS[mk]!, cond, d); } catch (e: any) { console.error(`TASK_ERROR ${mk}|${tid}|${cond}|${d}: ${String(e?.message ?? e).slice(0, 300)}`); } } };
   await Promise.all(Array.from({ length: CONCURRENCY }, lane)); if (aborted) process.exit(1);
   console.log(`SUITE_B_DONE spent $${spent.toFixed(4)}`); process.exit(0);

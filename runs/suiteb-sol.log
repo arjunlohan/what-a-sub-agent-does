@@ -1,0 +1,3 @@
+1 of 300 task runs pending (299 already recorded); concurrency 3
+sol|guards-selectReuse|V5E|1: success 0.93 (14 pass, 1 fail; failing: selectReuse,selectReuse); verdicts {"W1":"ADHERED","W2":"RECORDED","W3":"RECORDED"}; $0.2739; 232s
+SUITE_B_DONE spent $0.2739

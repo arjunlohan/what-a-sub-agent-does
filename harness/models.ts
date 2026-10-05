@@ -4,10 +4,11 @@
  * the gateway's per-request cost field, which is authoritative.
  */
 export type ModelSpec = {
-  key: "deepseek" | "muse" | "luna";
+  key: "deepseek" | "muse" | "luna" | "sol";
   id: string;
   only: string[]; // provider pin: a run served by any other provider is discarded
-  reasoning: "xhigh";
+  reasoning: "xhigh" | "medium";
+  byok?: boolean; // tokens bill to the team's own provider credentials; a call served on any other credential aborts the run
   priceIn: number;
   priceOut: number;
   priceCacheRead: number;
@@ -15,7 +16,7 @@ export type ModelSpec = {
   concurrency: number;
 };
 
-export const MODELS: Record<"deepseek" | "muse" | "luna", ModelSpec> = {
+export const MODELS: Record<"deepseek" | "muse" | "luna" | "sol", ModelSpec> = {
   deepseek: {
     key: "deepseek",
     id: "deepseek/deepseek-v4-flash-0731",
@@ -50,6 +51,21 @@ export const MODELS: Record<"deepseek" | "muse" | "luna", ModelSpec> = {
     priceIn: 0.2,
     priceOut: 1.2,
     priceCacheRead: 0.02,
+    concurrency: 8,
+  },
+  // Third model for the journal version (Arjun, 2026-10-04): GPT-6.1 Sol pinned to AWS Bedrock, which the team has
+  // connected to the gateway with its own credentials (BYOK), so tokens bill to AWS. probes/bedrock-sol-check.ts
+  // verified 10 of 10 requests served by bedrock on byok credentials with gateway cost 0 (runs/bedrock-sol-check.json).
+  // List prices per million tokens: $2 in, $10 out, $0.10 cache read (gateway endpoint listing, 2026-10-04).
+  sol: {
+    key: "sol",
+    id: "openai/gpt-6.1-sol",
+    only: ["bedrock"],
+    reasoning: "medium", // Arjun, 2026-10-04: medium effort for Sol (the other two models run at maximum)
+    byok: true,
+    priceIn: 2,
+    priceOut: 10,
+    priceCacheRead: 0.1,
     concurrency: 8,
   },
 };

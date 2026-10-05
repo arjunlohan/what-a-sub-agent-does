@@ -11,7 +11,13 @@ import { sectionize } from "../harness/sections";
 import { markersFor } from "../harness/markers";
 import { readdirSync, statSync } from "node:fs";
 const ROOT = join(import.meta.dirname, "..");
-const REPO = join(ROOT, "..");
+// The project-lore checkout whose core module, installed READMEs and dist directories the tasks copy. Suite B ran on
+// 2026-09-03/04 from the worktree of branch claude/multi-day-agent-orchestration-3672ec; SB_REPO_ROOT points a later
+// run (the Sol arm) at a checkout of that branch so the tasks and their inputs are the same.
+const REPO = process.env.SB_REPO_ROOT ?? join(ROOT, "..");
+// The core module (sivm.ts, types.ts) the code family edits; SB_CORE_DIR pins the 2026-09-03 version when the checkout
+// at SB_REPO_ROOT has moved on (the recorded reads of the original run identify the version).
+const CORE_DIR = process.env.SB_CORE_DIR ?? join(REPO, "packages", "core", "src");
 export type TaskCtx = { root?: string; ids?: number[]; truth?: any; original?: Record<string, string>; targetLines?: [number, number]; targetName?: string; doc?: { target: string; max: number; markers: Record<string, string[]>; sections: string[]; pkg: string }; listing?: { files: Array<{ name: string; bytes: number }>; allowedRegex: string; objectivePaths: string[]; limitBytes: number; label: string } };
 export type WorkerSpec = { id: string; domain: "data-extraction" | "code-edit" | "summarization" | "report" | "file-ops"; assignment: (ctx: TaskCtx) => string; inputText: (ctx: TaskCtx, outputs: Record<string, string>) => string; tools: Array<"sql" | "fs" | "fs-tests" | "fs-ro" | "fs-delete">; dependsOn: string[]; check: (ctx: TaskCtx) => Record<string, any> | null; schemaDoc: string; withheld: string[]; planted: boolean };
 export type TaskSpec = { id: string; family: string; objective: string; brief: string; plan: string[]; workers: WorkerSpec[]; setup: () => Promise<TaskCtx>; success: (ctx: TaskCtx, outputs: Record<string, string>) => Promise<{ score: number; detail: string }>; withheld: string[] };
@@ -69,7 +75,7 @@ export const sivmGuards: TaskSpec = {
       assignment: () => "Run the test suite with run_tests and report which exported functions still fail the null-input test.",
       inputText: () => "Sandbox files: sivm.ts, types.ts, null.test.ts.", check: () => null },
   ],
-  setup: async () => { const root = mkdtempSync(join(tmpdir(), "suiteb-")); for (const f of ["sivm.ts", "types.ts"]) copyFileSync(join(REPO, "packages", "core", "src", f), join(root, f)); const src = readFileSync(join(root, "sivm.ts"), "utf8"); const targetName = "ebUpperBound"; const targetLines = functionSpan(src, targetName); writeFileSync(join(root, "null.test.ts"), `import test from "node:test";\nimport assert from "node:assert/strict";\nimport * as m from "./sivm.ts";\nfor (const [name, fn] of Object.entries(m)) { if (typeof fn !== "function") continue; test(\`\${name} returns undefined for a null first argument\`, async () => { let out: unknown; out = (fn as any)(null); if (out && typeof (out as any).then === "function") out = await (out as Promise<unknown>).catch((e) => { throw e; }); assert.equal(out, undefined); }); }\n`); return { root, original: { "sivm.ts": src }, targetName, targetLines }; },
+  setup: async () => { const root = mkdtempSync(join(tmpdir(), "suiteb-")); for (const f of ["sivm.ts", "types.ts"]) copyFileSync(join(CORE_DIR, f), join(root, f)); const src = readFileSync(join(root, "sivm.ts"), "utf8"); const targetName = "ebUpperBound"; const targetLines = functionSpan(src, targetName); writeFileSync(join(root, "null.test.ts"), `import test from "node:test";\nimport assert from "node:assert/strict";\nimport * as m from "./sivm.ts";\nfor (const [name, fn] of Object.entries(m)) { if (typeof fn !== "function") continue; test(\`\${name} returns undefined for a null first argument\`, async () => { let out: unknown; out = (fn as any)(null); if (out && typeof (out as any).then === "function") out = await (out as Promise<unknown>).catch((e) => { throw e; }); assert.equal(out, undefined); }); }\n`); return { root, original: { "sivm.ts": src }, targetName, targetLines }; },
   success: async (ctx) => { const { runTestsFull } = await import("./tools"); const out = runTestsFull(ctx.root!); const pass = Number(/(?:ℹ|#) pass (\d+)/.exec(out)?.[1] ?? 0), fail = Number(/(?:ℹ|#) fail (\d+)/.exec(out)?.[1] ?? 0); return { score: pass + fail ? pass / (pass + fail) : 0, detail: `${pass} pass, ${fail} fail; failing: ${[...out.matchAll(/✖ (\w+) returns undefined/g)].map((m) => m[1]).join(",").slice(0, 300)}` }; },
 };
 // ---------------------------------------------------------------- parametrized variants for the full Suite B grid
