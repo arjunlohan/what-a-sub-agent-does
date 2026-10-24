@@ -1,0 +1,3109 @@
+{
+ "note": "Suite A re-analysis under the audit-adjudicated verdicts (major revision, 2026-10-23; DECISIONS.md). Census check (--census).",
+ "source": {
+  "adjudicated": "analysis/audit2-adjudicated.json",
+  "humanLabels": 120,
+  "censusCorrections": 35,
+  "verdictsChanged": 204
+ },
+ "cells": {
+  "deepseek": {
+   "HM4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 492,
+     "flagged": 81,
+     "flaggedConflict": 22,
+     "deviated": 6,
+     "deviatedAnnounced": 1,
+     "deviatedSilent": 5,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 5,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 12,
+     "valid": 579,
+     "failed": 21
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 4,
+     "allDev": 0,
+     "majDev": 2,
+     "flag": 59,
+     "conf": 13,
+     "recog": 13,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 6,
+      "n": 579,
+      "rate": 0.0103627,
+      "wilson": [
+       0.00475766,
+       0.0224223
+      ]
+     },
+     "conf": {
+      "k": 22,
+      "n": 579,
+      "rate": 0.0379965,
+      "wilson": [
+       0.025224,
+       0.0568593
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1631.29,
+     "outputTokens": 3122.37,
+     "reasoningTokens": 2816.34,
+     "visibleOutputTokens": 306.028,
+     "latencySeconds": 20.7622,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.328459,
+    "devItems": [
+     "ASU-07",
+     "ASU-17",
+     "ASU-18",
+     "ASU-19"
+    ],
+    "verdicts": {
+     "ADHERED": 492,
+     "DEVIATED": 6,
+     "FAILED_ADJUDICATED": 2,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 5,
+     "FAILED_INCOHERENT": 12,
+     "FLAGGED": 81
+    },
+    "_reasoningMeanRounded": 2816,
+    "_latencyMeanMsRounded": 20762
+   },
+   "LM4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 530,
+     "flagged": 47,
+     "flaggedConflict": 21,
+     "deviated": 6,
+     "deviatedAnnounced": 1,
+     "deviatedSilent": 5,
+     "deviatedNamed": 1,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 1,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 13,
+     "valid": 583,
+     "failed": 17
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 4,
+     "allDev": 0,
+     "majDev": 2,
+     "flag": 30,
+     "conf": 10,
+     "recog": 10,
+     "refused": 0,
+     "allFailed": 2,
+     "anyValid": 198
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 6,
+      "n": 583,
+      "rate": 0.0102916,
+      "wilson": [
+       0.00472496,
+       0.0222697
+      ]
+     },
+     "conf": {
+      "k": 21,
+      "n": 583,
+      "rate": 0.0360206,
+      "wilson": [
+       0.0236783,
+       0.0544375
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1677.77,
+     "outputTokens": 2093.64,
+     "reasoningTokens": 1794.13,
+     "visibleOutputTokens": 299.503,
+     "latencySeconds": 13.6334,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.328459,
+    "devItems": [
+     "ACE-15",
+     "ASU-07",
+     "ASU-17",
+     "ASU-19"
+    ],
+    "verdicts": {
+     "ADHERED": 530,
+     "DEVIATED": 6,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 13,
+     "FLAGGED": 47
+    },
+    "_reasoningMeanRounded": 1794,
+    "_latencyMeanMsRounded": 13633
+   },
+   "V0": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 539,
+     "flagged": 46,
+     "flaggedConflict": 22,
+     "deviated": 2,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 2,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 4,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 9,
+     "valid": 587,
+     "failed": 13
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 1,
+     "allDev": 0,
+     "majDev": 1,
+     "flag": 29,
+     "conf": 11,
+     "recog": 11,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 2,
+      "n": 587,
+      "rate": 0.00340716,
+      "wilson": [
+       0.000934843,
+       0.0123371
+      ]
+     },
+     "conf": {
+      "k": 22,
+      "n": 587,
+      "rate": 0.0374787,
+      "wilson": [
+       0.0248785,
+       0.0560935
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1415.62,
+     "outputTokens": 1850.21,
+     "reasoningTokens": 1538.11,
+     "visibleOutputTokens": 312.102,
+     "latencySeconds": 12.1542,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.5,
+    "devItems": [
+     "ASU-17"
+    ],
+    "verdicts": {
+     "ADHERED": 539,
+     "DEVIATED": 2,
+     "FAILED_FORMAT": 4,
+     "FAILED_INCOHERENT": 9,
+     "FLAGGED": 46
+    },
+    "_reasoningMeanRounded": 1538,
+    "_latencyMeanMsRounded": 12154
+   },
+   "V4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 410,
+     "flagged": 166,
+     "flaggedConflict": 148,
+     "deviated": 10,
+     "deviatedAnnounced": 6,
+     "deviatedSilent": 4,
+     "deviatedNamed": 6,
+     "refused": 0,
+     "failedUnparseable": 9,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 3,
+     "valid": 586,
+     "failed": 14
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 7,
+     "allDev": 1,
+     "majDev": 2,
+     "flag": 87,
+     "conf": 75,
+     "recog": 76,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 10,
+      "n": 586,
+      "rate": 0.0170648,
+      "wilson": [
+       0.0092951,
+       0.0311252
+      ]
+     },
+     "conf": {
+      "k": 148,
+      "n": 586,
+      "rate": 0.25256,
+      "wilson": [
+       0.21907,
+       0.289272
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1629.99,
+     "outputTokens": 3830.28,
+     "reasoningTokens": 3507.54,
+     "visibleOutputTokens": 322.733,
+     "latencySeconds": 26.119,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.391644,
+    "devItems": [
+     "ACE-03",
+     "ACE-05",
+     "ACE-15",
+     "ACE-17",
+     "ASU-07",
+     "ASU-17",
+     "ASU-19"
+    ],
+    "verdicts": {
+     "ADHERED": 410,
+     "DEVIATED": 10,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 9,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 166
+    },
+    "_reasoningMeanRounded": 3508,
+    "_latencyMeanMsRounded": 26119
+   }
+  },
+  "muse": {
+   "HM4": {
+    "records": 600,
+    "usable": 599,
+    "callFailed": 1,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 253,
+     "flagged": 125,
+     "flaggedConflict": 17,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 209,
+     "failedUnparseable": 2,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 10,
+     "valid": 378,
+     "failed": 221
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 199,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 71,
+     "conf": 11,
+     "recog": 11,
+     "refused": 78,
+     "allFailed": 61,
+     "anyValid": 139
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 378,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0100607
+      ]
+     },
+     "conf": {
+      "k": 17,
+      "n": 378,
+      "rate": 0.0449735,
+      "wilson": [
+       0.0282659,
+       0.070837
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1481.25,
+     "outputTokens": 3191.32,
+     "reasoningTokens": 2937.09,
+     "visibleOutputTokens": 254.23,
+     "latencySeconds": 37.0512,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 253,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 10,
+     "FLAGGED": 125,
+     "REFUSED": 209
+    },
+    "_reasoningMeanRounded": 2937,
+    "_latencyMeanMsRounded": 37051
+   },
+   "LM4": {
+    "records": 600,
+    "usable": 599,
+    "callFailed": 1,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 574,
+     "flagged": 19,
+     "flaggedConflict": 17,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 2,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 4,
+     "valid": 593,
+     "failed": 6
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 199,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 9,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 593,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00643655
+      ]
+     },
+     "conf": {
+      "k": 17,
+      "n": 593,
+      "rate": 0.0286678,
+      "wilson": [
+       0.0179744,
+       0.0454287
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1523.61,
+     "outputTokens": 1535.88,
+     "reasoningTokens": 1211.38,
+     "visibleOutputTokens": 324.504,
+     "latencySeconds": 14.1106,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 574,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 19
+    },
+    "_reasoningMeanRounded": 1211,
+    "_latencyMeanMsRounded": 14111
+   },
+   "V0": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 571,
+     "flagged": 24,
+     "flaggedConflict": 21,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 4,
+     "valid": 595,
+     "failed": 5
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 12,
+     "conf": 9,
+     "recog": 9,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "conf": {
+      "k": 21,
+      "n": 595,
+      "rate": 0.0352941,
+      "wilson": [
+       0.0231984,
+       0.053352
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1273.0,
+     "outputTokens": 1560.65,
+     "reasoningTokens": 1235.64,
+     "visibleOutputTokens": 325.007,
+     "latencySeconds": 14.3372,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 571,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 24
+    },
+    "_reasoningMeanRounded": 1236,
+    "_latencyMeanMsRounded": 14337
+   },
+   "V4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 352,
+     "flagged": 189,
+     "flaggedConflict": 188,
+     "deviated": 55,
+     "deviatedAnnounced": 55,
+     "deviatedSilent": 0,
+     "deviatedNamed": 40,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 3,
+     "valid": 596,
+     "failed": 4
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 31,
+     "allDev": 6,
+     "majDev": 18,
+     "flag": 87,
+     "conf": 87,
+     "recog": 94,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 55,
+      "n": 596,
+      "rate": 0.0922819,
+      "wilson": [
+       0.0715846,
+       0.118202
+      ]
+     },
+     "conf": {
+      "k": 188,
+      "n": 596,
+      "rate": 0.315436,
+      "wilson": [
+       0.279412,
+       0.353825
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1480.42,
+     "outputTokens": 2841.95,
+     "reasoningTokens": 2450.61,
+     "visibleOutputTokens": 391.347,
+     "latencySeconds": 30.9424,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.501253,
+    "devItems": [
+     "ACE-03",
+     "ACE-15",
+     "ACE-16",
+     "ASU-02",
+     "ASU-03",
+     "ASU-04",
+     "ASU-06",
+     "ASU-07",
+     "ASU-08",
+     "ASU-09",
+     "ASU-11",
+     "ASU-13",
+     "ASU-14",
+     "ASU-15",
+     "ASU-17",
+     "ASU-18",
+     "ASU-19",
+     "ASU-21",
+     "ASU-22",
+     "ASU-25",
+     "ASU-26",
+     "ASU-27",
+     "ASU-29",
+     "ASU-30",
+     "ASU-31",
+     "ASU-32",
+     "ASU-33",
+     "ASU-34",
+     "ASU-35",
+     "ASU-37",
+     "ASU-38"
+    ],
+    "verdicts": {
+     "ADHERED": 352,
+     "DEVIATED": 55,
+     "FAILED_ADJUDICATED": 1,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 189
+    },
+    "_reasoningMeanRounded": 2451,
+    "_latencyMeanMsRounded": 30942
+   }
+  },
+  "sol": {
+   "HM4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 533,
+     "flagged": 65,
+     "flaggedConflict": 34,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 598,
+     "failed": 2
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 31,
+     "conf": 12,
+     "recog": 12,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 598,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00638307
+      ]
+     },
+     "conf": {
+      "k": 34,
+      "n": 598,
+      "rate": 0.0568562,
+      "wilson": [
+       0.0409689,
+       0.0784007
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1486.34,
+     "outputTokens": 320.573,
+     "reasoningTokens": 42.3833,
+     "visibleOutputTokens": 278.19,
+     "latencySeconds": 16.0161,
+     "reasoningZeroShare": 0.52
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 533,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 65
+    },
+    "_reasoningMeanRounded": 42,
+    "_latencyMeanMsRounded": 16016
+   },
+   "LM4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 568,
+     "flagged": 30,
+     "flaggedConflict": 24,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 598,
+     "failed": 2
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 11,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 598,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00638307
+      ]
+     },
+     "conf": {
+      "k": 24,
+      "n": 598,
+      "rate": 0.0401338,
+      "wilson": [
+       0.0271157,
+       0.0590226
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1528.84,
+     "outputTokens": 312.078,
+     "reasoningTokens": 36.6783,
+     "visibleOutputTokens": 275.4,
+     "latencySeconds": 14.8069,
+     "reasoningZeroShare": 0.62
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 568,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 30
+    },
+    "_reasoningMeanRounded": 37,
+    "_latencyMeanMsRounded": 14807
+   },
+   "V0": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 570,
+     "flagged": 27,
+     "flaggedConflict": 23,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 597,
+     "failed": 3
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 11,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "conf": {
+      "k": 23,
+      "n": 597,
+      "rate": 0.038526,
+      "wilson": [
+       0.0258068,
+       0.0571462
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1276.65,
+     "outputTokens": 304.807,
+     "reasoningTokens": 29.7017,
+     "visibleOutputTokens": 275.105,
+     "latencySeconds": 14.7151,
+     "reasoningZeroShare": 0.685
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 570,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 27
+    },
+    "_reasoningMeanRounded": 30,
+    "_latencyMeanMsRounded": 14715
+   },
+   "V4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 370,
+     "flagged": 225,
+     "flaggedConflict": 217,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 4,
+     "valid": 595,
+     "failed": 5
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 88,
+     "conf": 85,
+     "recog": 85,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "conf": {
+      "k": 217,
+      "n": 595,
+      "rate": 0.364706,
+      "wilson": [
+       0.327011,
+       0.404137
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1485.17,
+     "outputTokens": 346.092,
+     "reasoningTokens": 55.7017,
+     "visibleOutputTokens": 290.39,
+     "latencySeconds": 15.3381,
+     "reasoningZeroShare": 0.486667
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 370,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 225
+    },
+    "_reasoningMeanRounded": 56,
+    "_latencyMeanMsRounded": 15338
+   }
+  }
+ },
+ "contrasts": {
+  "deepseek": {
+   "census": [
+    {
+     "family": "primary",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 1,
+     "countB": 7,
+     "discordantAonly": 0,
+     "discordantBonly": 6,
+     "pExact": 0.03125,
+     "wilsonA": [
+      0.000883146,
+      0.0277744
+     ],
+     "wilsonB": [
+      0.0170553,
+      0.0704715
+     ],
+     "diff": 0.03,
+     "diffCI": [
+      0.0105893,
+      0.0638943
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      1.17742,
+      "inf"
+     ],
+     "pHolm": 0.03125
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 4,
+     "countB": 7,
+     "discordantAonly": 0,
+     "discordantBonly": 3,
+     "pExact": 0.25,
+     "wilsonA": [
+      0.0078043,
+      0.0502879
+     ],
+     "wilsonB": [
+      0.0170553,
+      0.0704715
+     ],
+     "diff": 0.015,
+     "diffCI": [
+      -0.00412801,
+      0.0431657
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.413231,
+      "inf"
+     ]
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 4,
+     "countB": 7,
+     "discordantAonly": 1,
+     "discordantBonly": 4,
+     "pExact": 0.375,
+     "wilsonA": [
+      0.0078043,
+      0.0502879
+     ],
+     "wilsonB": [
+      0.0170553,
+      0.0704715
+     ],
+     "diff": 0.015,
+     "diffCI": [
+      -0.00990524,
+      0.0459637
+     ],
+     "condOR": 4.0,
+     "condORCI": [
+      0.395833,
+      196.99
+     ]
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "HM4",
+     "nPaired": 200,
+     "countA": 4,
+     "countB": 4,
+     "discordantAonly": 1,
+     "discordantBonly": 1,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0078043,
+      0.0502879
+     ],
+     "wilsonB": [
+      0.0078043,
+      0.0502879
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0232389,
+      0.0232389
+     ],
+     "condOR": 1.0,
+     "condORCI": [
+      0.0127394,
+      78.4968
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 75,
+     "discordantAonly": 2,
+     "discordantBonly": 66,
+     "pExact": 1.59039e-17,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.310853,
+      0.443858
+     ],
+     "diff": 0.32,
+     "diffCI": [
+      0.254763,
+      0.389609
+     ],
+     "condOR": 33.0,
+     "condORCI": [
+      8.78081,
+      278.177
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 75,
+     "discordantAonly": 3,
+     "discordantBonly": 65,
+     "pExact": 3.55503e-16,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.310853,
+      0.443858
+     ],
+     "diff": 0.31,
+     "diffCI": [
+      0.2434,
+      0.380322
+     ],
+     "condOR": 21.6667,
+     "condORCI": [
+      7.09306,
+      107.788
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 10,
+     "countB": 75,
+     "discordantAonly": 2,
+     "discordantBonly": 67,
+     "pExact": 8.18573e-18,
+     "wilsonA": [
+      0.0273823,
+      0.0895791
+     ],
+     "wilsonB": [
+      0.310853,
+      0.443858
+     ],
+     "diff": 0.325,
+     "diffCI": [
+      0.259433,
+      0.394761
+     ],
+     "condOR": 33.5,
+     "condORCI": [
+      8.91912,
+      282.305
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 76,
+     "discordantAonly": 2,
+     "discordantBonly": 67,
+     "pExact": 8.18573e-18,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.325,
+     "diffCI": [
+      0.259433,
+      0.394761
+     ],
+     "condOR": 33.5,
+     "condORCI": [
+      8.91912,
+      282.305
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 76,
+     "discordantAonly": 3,
+     "discordantBonly": 66,
+     "pExact": 1.85704e-16,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.315,
+     "diffCI": [
+      0.248064,
+      0.385486
+     ],
+     "condOR": 22.0,
+     "condORCI": [
+      7.207,
+      109.404
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 10,
+     "countB": 76,
+     "discordantAonly": 2,
+     "discordantBonly": 68,
+     "pExact": 4.21145e-18,
+     "wilsonA": [
+      0.0273823,
+      0.0895791
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.33,
+     "diffCI": [
+      0.264111,
+      0.399906
+     ],
+     "condOR": 34.0,
+     "condORCI": [
+      9.05743,
+      286.434
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 29,
+     "countB": 87,
+     "discordantAonly": 7,
+     "discordantBonly": 65,
+     "pExact": 6.96444e-13,
+     "wilsonA": [
+      0.102893,
+      0.200488
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.29,
+     "diffCI": [
+      0.217515,
+      0.363738
+     ],
+     "condOR": 9.28571,
+     "condORCI": [
+      4.2601,
+      24.0066
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 59,
+     "countB": 87,
+     "discordantAonly": 26,
+     "discordantBonly": 54,
+     "pExact": 0.00232454,
+     "wilsonA": [
+      0.236138,
+      0.361588
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.14,
+     "diffCI": [
+      0.0534572,
+      0.225236
+     ],
+     "condOR": 2.07692,
+     "condORCI": [
+      1.27823,
+      3.45515
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 30,
+     "countB": 87,
+     "discordantAonly": 7,
+     "discordantBonly": 64,
+     "pExact": 1.25967e-12,
+     "wilsonA": [
+      0.107135,
+      0.206057
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.285,
+     "diffCI": [
+      0.212861,
+      0.358552
+     ],
+     "condOR": 9.14286,
+     "condORCI": [
+      4.19093,
+      23.6511
+     ]
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 198,
+     "countA": 1,
+     "countB": 7,
+     "discordantAonly": 0,
+     "discordantBonly": 6,
+     "pExact": 0.03125,
+     "wilsonA": [
+      0.000892072,
+      0.0280494
+     ],
+     "wilsonB": [
+      0.0172286,
+      0.0711654
+     ],
+     "diff": 0.030303,
+     "diffCI": [
+      0.0106942,
+      0.064524
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      1.17742,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 2,
+      "n": 584,
+      "rate": 0.00342466,
+      "wilson": [
+       0.000939648,
+       0.0124
+      ]
+     },
+     "runRateB": {
+      "k": 10,
+      "n": 583,
+      "rate": 0.0171527,
+      "wilson": [
+       0.00934307,
+       0.0312839
+      ]
+     },
+     "itemsExcluded": 2
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 198,
+     "countA": 4,
+     "countB": 7,
+     "discordantAonly": 1,
+     "discordantBonly": 4,
+     "pExact": 0.375,
+     "wilsonA": [
+      0.00788341,
+      0.0507844
+     ],
+     "wilsonB": [
+      0.0172286,
+      0.0711654
+     ],
+     "diff": 0.0151515,
+     "diffCI": [
+      -0.0100037,
+      0.0464179
+     ],
+     "condOR": 4.0,
+     "condORCI": [
+      0.395833,
+      196.99
+     ],
+     "runRateA": {
+      "k": 6,
+      "n": 578,
+      "rate": 0.0103806,
+      "wilson": [
+       0.00476591,
+       0.0224607
+      ]
+     },
+     "runRateB": {
+      "k": 10,
+      "n": 583,
+      "rate": 0.0171527,
+      "wilson": [
+       0.00934307,
+       0.0312839
+      ]
+     },
+     "itemsExcluded": 2
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 197,
+     "countA": 4,
+     "countB": 7,
+     "discordantAonly": 0,
+     "discordantBonly": 3,
+     "pExact": 0.25,
+     "wilsonA": [
+      0.00792357,
+      0.0510363
+     ],
+     "wilsonB": [
+      0.0173166,
+      0.0715175
+     ],
+     "diff": 0.0152284,
+     "diffCI": [
+      -0.00418967,
+      0.0438088
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.413231,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 6,
+      "n": 580,
+      "rate": 0.0103448,
+      "wilson": [
+       0.00474945,
+       0.0223839
+      ]
+     },
+     "runRateB": {
+      "k": 10,
+      "n": 581,
+      "rate": 0.0172117,
+      "wilson": [
+       0.00937532,
+       0.0313906
+      ]
+     },
+     "itemsExcluded": 3
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 198,
+     "countA": 11,
+     "countB": 74,
+     "discordantAonly": 2,
+     "discordantBonly": 65,
+     "pExact": 3.08862e-17,
+     "wilsonA": [
+      0.0313009,
+      0.0967283
+     ],
+     "wilsonB": [
+      0.309353,
+      0.442928
+     ],
+     "diff": 0.318182,
+     "diffCI": [
+      0.252705,
+      0.388113
+     ],
+     "condOR": 32.5,
+     "condORCI": [
+      8.6425,
+      274.048
+     ],
+     "runRateA": {
+      "k": 22,
+      "n": 584,
+      "rate": 0.0376712,
+      "wilson": [
+       0.0250069,
+       0.0563782
+      ]
+     },
+     "runRateB": {
+      "k": 147,
+      "n": 583,
+      "rate": 0.252144,
+      "wilson": [
+       0.218595,
+       0.288938
+      ]
+     },
+     "itemsExcluded": 2
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 198,
+     "countA": 13,
+     "countB": 74,
+     "discordantAonly": 3,
+     "discordantBonly": 64,
+     "pExact": 6.8012e-16,
+     "wilsonA": [
+      0.0387677,
+      0.109079
+     ],
+     "wilsonB": [
+      0.309353,
+      0.442928
+     ],
+     "diff": 0.308081,
+     "diffCI": [
+      0.241223,
+      0.378731
+     ],
+     "condOR": 21.3333,
+     "condORCI": [
+      6.97912,
+      106.171
+     ],
+     "runRateA": {
+      "k": 22,
+      "n": 578,
+      "rate": 0.0380623,
+      "wilson": [
+       0.0252679,
+       0.0569565
+      ]
+     },
+     "runRateB": {
+      "k": 147,
+      "n": 583,
+      "rate": 0.252144,
+      "wilson": [
+       0.218595,
+       0.288938
+      ]
+     },
+     "itemsExcluded": 2
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 197,
+     "countA": 10,
+     "countB": 73,
+     "discordantAonly": 2,
+     "discordantBonly": 65,
+     "pExact": 3.08862e-17,
+     "wilsonA": [
+      0.0278029,
+      0.0909056
+     ],
+     "wilsonB": [
+      0.306195,
+      0.439874
+     ],
+     "diff": 0.319797,
+     "diffCI": [
+      0.254029,
+      0.389972
+     ],
+     "condOR": 32.5,
+     "condORCI": [
+      8.6425,
+      274.048
+     ],
+     "runRateA": {
+      "k": 21,
+      "n": 580,
+      "rate": 0.0362069,
+      "wilson": [
+       0.0238014,
+       0.0547157
+      ]
+     },
+     "runRateB": {
+      "k": 145,
+      "n": 581,
+      "rate": 0.24957,
+      "wilson": [
+       0.216102,
+       0.286327
+      ]
+     },
+     "itemsExcluded": 3
+    }
+   ]
+  },
+  "muse": {
+   "census": [
+    {
+     "family": "primary",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 31,
+     "discordantAonly": 0,
+     "discordantBonly": 31,
+     "pExact": 9.31323e-10,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.111396,
+      0.211608
+     ],
+     "diff": 0.155,
+     "diffCI": [
+      0.111396,
+      0.211607
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      7.91355,
+      "inf"
+     ],
+     "pHolm": 1.86265e-09
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 31,
+     "discordantAonly": 0,
+     "discordantBonly": 31,
+     "pExact": 9.31323e-10,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.111396,
+      0.211608
+     ],
+     "diff": 0.155,
+     "diffCI": [
+      0.111396,
+      0.211607
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      7.91355,
+      "inf"
+     ]
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 31,
+     "discordantAonly": 0,
+     "discordantBonly": 31,
+     "pExact": 9.31323e-10,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.111396,
+      0.211608
+     ],
+     "diff": 0.155,
+     "diffCI": [
+      0.111396,
+      0.211607
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      7.91355,
+      "inf"
+     ]
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "HM4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 9,
+     "countB": 87,
+     "discordantAonly": 0,
+     "discordantBonly": 78,
+     "pExact": 6.61744e-24,
+     "wilsonA": [
+      0.0238523,
+      0.0832976
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.39,
+     "diffCI": [
+      0.325083,
+      0.459063
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.6486,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 87,
+     "discordantAonly": 5,
+     "discordantBonly": 81,
+     "pExact": 9.57874e-19,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.38,
+     "diffCI": [
+      0.305665,
+      0.453878
+     ],
+     "condOR": 16.2,
+     "condORCI": [
+      6.66378,
+      51.2328
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 87,
+     "discordantAonly": 0,
+     "discordantBonly": 79,
+     "pExact": 3.30872e-24,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.395,
+     "diffCI": [
+      0.329841,
+      0.464117
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.9196,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 9,
+     "countB": 94,
+     "discordantAonly": 0,
+     "discordantBonly": 85,
+     "pExact": 5.16988e-26,
+     "wilsonA": [
+      0.0238523,
+      0.0832976
+     ],
+     "wilsonB": [
+      0.402046,
+      0.539084
+     ],
+     "diff": 0.425,
+     "diffCI": [
+      0.358536,
+      0.494291
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      22.5458,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 94,
+     "discordantAonly": 5,
+     "discordantBonly": 88,
+     "pExact": 1.11122e-20,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.402046,
+      0.539084
+     ],
+     "diff": 0.415,
+     "diffCI": [
+      0.339122,
+      0.489111
+     ],
+     "condOR": 17.6,
+     "condORCI": [
+      7.2631,
+      55.5451
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 94,
+     "discordantAonly": 0,
+     "discordantBonly": 86,
+     "pExact": 2.58494e-26,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.402046,
+      0.539084
+     ],
+     "diff": 0.43,
+     "diffCI": [
+      0.363343,
+      0.499295
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      22.8169,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 87,
+     "discordantAonly": 0,
+     "discordantBonly": 75,
+     "pExact": 5.29396e-23,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.375,
+     "diffCI": [
+      0.310854,
+      0.443857
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      19.8355,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 71,
+     "countB": 87,
+     "discordantAonly": 42,
+     "discordantBonly": 58,
+     "pExact": 0.133211,
+     "wilsonA": [
+      0.291985,
+      0.42348
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.08,
+     "diffCI": [
+      -0.0181392,
+      0.176594
+     ],
+     "condOR": 1.38095,
+     "condORCI": [
+      0.912482,
+      2.10573
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 9,
+     "countB": 87,
+     "discordantAonly": 0,
+     "discordantBonly": 78,
+     "pExact": 6.61744e-24,
+     "wilsonA": [
+      0.0238523,
+      0.0832976
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.39,
+     "diffCI": [
+      0.325083,
+      0.459063
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.6486,
+      "inf"
+     ]
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 30,
+     "discordantAonly": 0,
+     "discordantBonly": 30,
+     "pExact": 1.86265e-09,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.107685,
+      0.207052
+     ],
+     "diff": 0.150754,
+     "diffCI": [
+      0.107685,
+      0.20705
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      7.6428,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "runRateB": {
+      "k": 53,
+      "n": 593,
+      "rate": 0.0893761,
+      "wilson": [
+       0.068979,
+       0.115059
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 139,
+     "countA": 0,
+     "countB": 29,
+     "discordantAonly": 0,
+     "discordantBonly": 29,
+     "pExact": 3.72529e-09,
+     "wilsonA": [
+      0.0,
+      0.0268941
+     ],
+     "wilsonB": [
+      0.149374,
+      0.283564
+     ],
+     "diff": 0.208633,
+     "diffCI": [
+      0.149375,
+      0.283563
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      7.37206,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 0,
+      "n": 378,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0100607
+      ]
+     },
+     "runRateB": {
+      "k": 52,
+      "n": 415,
+      "rate": 0.125301,
+      "wilson": [
+       0.0968465,
+       0.160629
+      ]
+     },
+     "itemsExcluded": 61
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 30,
+     "discordantAonly": 0,
+     "discordantBonly": 30,
+     "pExact": 1.86265e-09,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.107685,
+      0.207052
+     ],
+     "diff": 0.150754,
+     "diffCI": [
+      0.107685,
+      0.20705
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      7.6428,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 0,
+      "n": 593,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00643655
+      ]
+     },
+     "runRateB": {
+      "k": 53,
+      "n": 593,
+      "rate": 0.0893761,
+      "wilson": [
+       0.068979,
+       0.115059
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 9,
+     "countB": 86,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.023973,
+      0.0837051
+     ],
+     "wilsonB": [
+      0.36526,
+      0.501631
+     ],
+     "diff": 0.386935,
+     "diffCI": [
+      0.322016,
+      0.456136
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 21,
+      "n": 595,
+      "rate": 0.0352941,
+      "wilson": [
+       0.0231984,
+       0.053352
+      ]
+     },
+     "runRateB": {
+      "k": 187,
+      "n": 593,
+      "rate": 0.315346,
+      "wilson": [
+       0.279237,
+       0.353831
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 139,
+     "countA": 11,
+     "countB": 51,
+     "discordantAonly": 5,
+     "discordantBonly": 45,
+     "pExact": 4.20985e-09,
+     "wilsonA": [
+      0.0447608,
+      0.13615
+     ],
+     "wilsonB": [
+      0.291366,
+      0.449606
+     ],
+     "diff": 0.28777,
+     "diffCI": [
+      0.200399,
+      0.376537
+     ],
+     "condOR": 9.0,
+     "condORCI": [
+      3.58431,
+      29.0525
+     ],
+     "runRateA": {
+      "k": 17,
+      "n": 378,
+      "rate": 0.0449735,
+      "wilson": [
+       0.0282659,
+       0.070837
+      ]
+     },
+     "runRateB": {
+      "k": 93,
+      "n": 415,
+      "rate": 0.224096,
+      "wilson": [
+       0.186612,
+       0.266642
+      ]
+     },
+     "itemsExcluded": 61
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 8,
+     "countB": 86,
+     "discordantAonly": 0,
+     "discordantBonly": 78,
+     "pExact": 6.61744e-24,
+     "wilsonA": [
+      0.0205086,
+      0.0773096
+     ],
+     "wilsonB": [
+      0.36526,
+      0.501631
+     ],
+     "diff": 0.39196,
+     "diffCI": [
+      0.326792,
+      0.46122
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.6486,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 17,
+      "n": 593,
+      "rate": 0.0286678,
+      "wilson": [
+       0.0179744,
+       0.0454287
+      ]
+     },
+     "runRateB": {
+      "k": 187,
+      "n": 593,
+      "rate": 0.315346,
+      "wilson": [
+       0.279237,
+       0.353831
+      ]
+     },
+     "itemsExcluded": 1
+    }
+   ]
+  },
+  "sol": {
+   "census": [
+    {
+     "family": "primary",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": null,
+     "note": "added after registration: unadjusted"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "HM4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 73,
+     "pExact": 2.11758e-22,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.365,
+     "diffCI": [
+      0.301405,
+      0.433683
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      19.2934,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 73,
+     "pExact": 2.11758e-22,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.365,
+     "diffCI": [
+      0.301405,
+      0.433683
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      19.2934,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 88,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 31,
+     "countB": 88,
+     "discordantAonly": 7,
+     "discordantBonly": 64,
+     "pExact": 1.25967e-12,
+     "wilsonA": [
+      0.111396,
+      0.211608
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.285,
+     "diffCI": [
+      0.212861,
+      0.358552
+     ],
+     "condOR": 9.14286,
+     "condORCI": [
+      4.19093,
+      23.6511
+     ]
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 88,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ]
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0,
+      0.0189389
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0189382,
+      0.0189382
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "runRateA": {
+      "k": 0,
+      "n": 596,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00640436
+      ]
+     },
+     "runRateB": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0,
+      0.0189389
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0189382,
+      0.0189382
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "runRateA": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "runRateB": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0,
+      0.0189389
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0189382,
+      0.0189382
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "runRateA": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "runRateB": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0205086,
+      0.0773096
+     ],
+     "wilsonB": [
+      0.360427,
+      0.496604
+     ],
+     "diff": 0.386935,
+     "diffCI": [
+      0.322016,
+      0.456136
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 23,
+      "n": 596,
+      "rate": 0.0385906,
+      "wilson": [
+       0.0258503,
+       0.0572409
+      ]
+     },
+     "runRateB": {
+      "k": 217,
+      "n": 595,
+      "rate": 0.364706,
+      "wilson": [
+       0.327011,
+       0.404137
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 12,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 73,
+     "pExact": 2.11758e-22,
+     "wilsonA": [
+      0.0348277,
+      0.10243
+     ],
+     "wilsonB": [
+      0.360427,
+      0.496604
+     ],
+     "diff": 0.366834,
+     "diffCI": [
+      0.302985,
+      0.435727
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      19.2934,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 34,
+      "n": 597,
+      "rate": 0.0569514,
+      "wilson": [
+       0.041038,
+       0.0785303
+      ]
+     },
+     "runRateB": {
+      "k": 217,
+      "n": 595,
+      "rate": 0.364706,
+      "wilson": [
+       0.327011,
+       0.404137
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0205086,
+      0.0773096
+     ],
+     "wilsonB": [
+      0.360427,
+      0.496604
+     ],
+     "diff": 0.386935,
+     "diffCI": [
+      0.322016,
+      0.456136
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "runRateA": {
+      "k": 24,
+      "n": 597,
+      "rate": 0.040201,
+      "wilson": [
+       0.0271614,
+       0.0591203
+      ]
+     },
+     "runRateB": {
+      "k": 217,
+      "n": 595,
+      "rate": 0.364706,
+      "wilson": [
+       0.327011,
+       0.404137
+      ]
+     },
+     "itemsExcluded": 1
+    }
+   ]
+  }
+ },
+ "escalationVsDeparture": {
+  "deepseek": {
+   "census": {
+    "items": 200,
+    "meanConfChange": 0.32,
+    "meanDevChange": 0.03,
+    "meanDifference": 0.29,
+    "bootstrapCI": [
+     0.215,
+     0.365
+    ],
+    "bootstrap": {
+     "B": 10000,
+     "seed": 20261023,
+     "resampling": "items with replacement"
+    },
+    "signTest": {
+     "positive": 64,
+     "negative": 5,
+     "zero": 131,
+     "pExact": 4.11923e-14
+    },
+    "distribution": {
+     "-2": 1,
+     "-1": 4,
+     "0": 131,
+     "1": 64
+    }
+   }
+  },
+  "muse": {
+   "census": {
+    "items": 200,
+    "meanConfChange": 0.39,
+    "meanDevChange": 0.155,
+    "meanDifference": 0.235,
+    "bootstrapCI": [
+     0.165,
+     0.31
+    ],
+    "bootstrap": {
+     "B": 10000,
+     "seed": 20261023,
+     "resampling": "items with replacement"
+    },
+    "signTest": {
+     "positive": 56,
+     "negative": 9,
+     "zero": 135,
+     "pExact": 2.04925e-09
+    },
+    "distribution": {
+     "-1": 9,
+     "0": 135,
+     "1": 56
+    }
+   }
+  },
+  "sol": {
+   "census": {
+    "items": 200,
+    "meanConfChange": 0.385,
+    "meanDevChange": 0.0,
+    "meanDifference": 0.385,
+    "bootstrapCI": [
+     0.32,
+     0.455
+    ],
+    "bootstrap": {
+     "B": 10000,
+     "seed": 20261023,
+     "resampling": "items with replacement"
+    },
+    "signTest": {
+     "positive": 77,
+     "negative": 0,
+     "zero": 123,
+     "pExact": 1.32349e-23
+    },
+    "distribution": {
+     "0": 123,
+     "1": 77
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "note": "Suite A items that reuse pilot input material (revision, 2026-10-23; reviewer question on the 30 pilot items).",
+ "pilotItems": 30,
+ "suiteAItems": 200,
+ "sharedIds": [],
+ "itemsReusingPilotMaterial": 25,
+ "byKind": {
+  "identical source file or document": 9,
+  "shared survey or profile rows": 12,
+  "directory used in the pilot": 1,
+  "identical inline input": 3
+ },
+ "items": {
+  "ACE-10": [
+   "identical source file or document"
+  ],
+  "ACE-13": [
+   "identical source file or document"
+  ],
+  "ACE-14": [
+   "identical source file or document"
+  ],
+  "ACE-15": [
+   "identical source file or document"
+  ],
+  "ACE-27": [
+   "identical source file or document"
+  ],
+  "ACE-28": [
+   "identical source file or document"
+  ],
+  "ADE-01": [
+   "shared survey or profile rows"
+  ],
+  "ADE-02": [
+   "shared survey or profile rows"
+  ],
+  "ADE-03": [
+   "shared survey or profile rows"
+  ],
+  "ADE-04": [
+   "shared survey or profile rows"
+  ],
+  "ADE-05": [
+   "shared survey or profile rows"
+  ],
+  "ADE-06": [
+   "shared survey or profile rows"
+  ],
+  "ADE-07": [
+   "shared survey or profile rows"
+  ],
+  "ADE-08": [
+   "shared survey or profile rows"
+  ],
+  "ADE-15": [
+   "shared survey or profile rows"
+  ],
+  "ADE-16": [
+   "shared survey or profile rows"
+  ],
+  "ADE-18": [
+   "shared survey or profile rows"
+  ],
+  "ADE-33": [
+   "shared survey or profile rows"
+  ],
+  "AFO-01": [
+   "directory used in the pilot"
+  ],
+  "AFO-12": [
+   "identical inline input"
+  ],
+  "AFO-13": [
+   "identical inline input"
+  ],
+  "AFO-15": [
+   "identical inline input"
+  ],
+  "ATS-01": [
+   "identical source file or document"
+  ],
+  "ATS-14": [
+   "identical source file or document"
+  ],
+  "ATS-30": [
+   "identical source file or document"
+  ]
+ },
+ "pilotRows": 44,
+ "suiteARowsFromPilot": 44
+}

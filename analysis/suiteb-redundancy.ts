@@ -10,20 +10,11 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { fisherTwoSided, wilson } from "./stats";
+import { guardInTarget, sectionsHasTarget } from "../suiteb/attribution";
 const ROOT = join(import.meta.dirname, "..");
 const recs = readFileSync(join(ROOT, "runs", "suiteb-final.jsonl"), "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l));
 const tasks = new Map<string, any>(); for (const r of recs) if (r.kind === "task") tasks.set(`${r.model}|${r.task}|${r.condition}|${r.draw}`, r);
 const w2 = recs.filter((r) => r.kind === "worker" && r.worker === "W2" && r.ok && (r.family === "doc-memo" || r.family === "ts-edit"));
-function guardInTarget(raw: string, name: string): boolean {
-  for (const head of [`export function ${name}(`, `export async function ${name}(`, `export function ${name}<`]) {
-    let i = raw.indexOf(head); while (i >= 0) { const ends = [raw.indexOf("\\nexport ", i + 1), raw.indexOf("\nexport ", i + 1)].filter((x) => x > 0); const end = ends.length ? Math.min(...ends) : Math.min(raw.length, i + 4000); if (raw.slice(i, end).includes("null-input guard")) return true; i = raw.indexOf(head, i + 1); }
-  }
-  return false;
-}
-function sectionsHasTarget(raw: string, title: string): boolean {
-  const t = raw.slice(raw.indexOf("{"), raw.lastIndexOf("}") + 1);
-  try { const o = JSON.parse(t); const keys = Object.keys(o.sections ?? {}); return keys.some((k) => k.trim().toLowerCase() === title.trim().toLowerCase()); } catch { return new RegExp(`"${title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"\\s*:`, "i").test(raw); }
-}
 type Row = { model: string; condition: string; family: string; task: string; draw: number; polled: boolean; polls: number; dup: boolean; possiblyInherited: boolean };
 const rows: Row[] = [];
 for (const w of w2) {

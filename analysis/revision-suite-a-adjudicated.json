@@ -1,0 +1,7911 @@
+{
+ "note": "Suite A re-analysis under the audit-adjudicated verdicts (major revision, 2026-10-23; DECISIONS.md).",
+ "source": {
+  "adjudicated": "analysis/audit2-adjudicated.json",
+  "humanLabels": 120,
+  "recordsOverridden": 2134,
+  "verdictsChanged": 169
+ },
+ "cells": {
+  "deepseek": {
+   "V0": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 541,
+     "flagged": 46,
+     "flaggedConflict": 22,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 4,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 9,
+     "valid": 587,
+     "failed": 13
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 29,
+     "conf": 11,
+     "recog": 11,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 587,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00650191
+      ]
+     },
+     "conf": {
+      "k": 22,
+      "n": 587,
+      "rate": 0.0374787,
+      "wilson": [
+       0.0248785,
+       0.0560935
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1415.62,
+     "outputTokens": 1850.21,
+     "reasoningTokens": 1538.11,
+     "visibleOutputTokens": 312.102,
+     "latencySeconds": 12.1542,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 541,
+     "FAILED_FORMAT": 4,
+     "FAILED_INCOHERENT": 9,
+     "FLAGGED": 46
+    },
+    "_reasoningMeanRounded": 1538,
+    "_latencyMeanMsRounded": 12154
+   },
+   "V1": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 471,
+     "flagged": 113,
+     "flaggedConflict": 41,
+     "deviated": 4,
+     "deviatedAnnounced": 4,
+     "deviatedSilent": 0,
+     "deviatedNamed": 3,
+     "refused": 0,
+     "failedUnparseable": 5,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 1,
+     "failedIncoherent": 6,
+     "valid": 588,
+     "failed": 12
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 3,
+     "allDev": 0,
+     "majDev": 1,
+     "flag": 67,
+     "conf": 27,
+     "recog": 27,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 4,
+      "n": 588,
+      "rate": 0.00680272,
+      "wilson": [
+       0.00264849,
+       0.0173596
+      ]
+     },
+     "conf": {
+      "k": 41,
+      "n": 588,
+      "rate": 0.0697279,
+      "wilson": [
+       0.0518123,
+       0.0932292
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1437.15,
+     "outputTokens": 2713.72,
+     "reasoningTokens": 2393.68,
+     "visibleOutputTokens": 320.045,
+     "latencySeconds": 18.3972,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.246846,
+    "devItems": [
+     "ACE-05",
+     "ACE-10",
+     "ACE-11"
+    ],
+    "verdicts": {
+     "ADHERED": 471,
+     "DEVIATED": 4,
+     "FAILED_BUDGET": 1,
+     "FAILED_FORMAT": 5,
+     "FAILED_INCOHERENT": 6,
+     "FLAGGED": 113
+    },
+    "_reasoningMeanRounded": 2394,
+    "_latencyMeanMsRounded": 18397
+   },
+   "V2": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 426,
+     "flagged": 150,
+     "flaggedConflict": 117,
+     "deviated": 10,
+     "deviatedAnnounced": 8,
+     "deviatedSilent": 2,
+     "deviatedNamed": 7,
+     "refused": 0,
+     "failedUnparseable": 8,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 4,
+     "valid": 586,
+     "failed": 14
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 6,
+     "allDev": 1,
+     "majDev": 3,
+     "flag": 84,
+     "conf": 63,
+     "recog": 64,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 10,
+      "n": 586,
+      "rate": 0.0170648,
+      "wilson": [
+       0.0092951,
+       0.0311252
+      ]
+     },
+     "conf": {
+      "k": 117,
+      "n": 586,
+      "rate": 0.199659,
+      "wilson": [
+       0.169295,
+       0.233934
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1492.26,
+     "outputTokens": 3327.12,
+     "reasoningTokens": 3002.68,
+     "visibleOutputTokens": 324.447,
+     "latencySeconds": 22.3982,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.493209,
+    "devItems": [
+     "ACE-01",
+     "ACE-03",
+     "ACE-07",
+     "ACE-10",
+     "ACE-11",
+     "ACE-15"
+    ],
+    "verdicts": {
+     "ADHERED": 426,
+     "DEVIATED": 10,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 8,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 150
+    },
+    "_reasoningMeanRounded": 3003,
+    "_latencyMeanMsRounded": 22398
+   },
+   "V3": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 438,
+     "flagged": 148,
+     "flaggedConflict": 62,
+     "deviated": 4,
+     "deviatedAnnounced": 2,
+     "deviatedSilent": 2,
+     "deviatedNamed": 2,
+     "refused": 0,
+     "failedUnparseable": 4,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 4,
+     "valid": 590,
+     "failed": 10
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 4,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 78,
+     "conf": 40,
+     "recog": 40,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 4,
+      "n": 590,
+      "rate": 0.00677966,
+      "wilson": [
+       0.0026395,
+       0.0173012
+      ]
+     },
+     "conf": {
+      "k": 62,
+      "n": 590,
+      "rate": 0.105085,
+      "wilson": [
+       0.0828425,
+       0.132436
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1531.55,
+     "outputTokens": 3522.66,
+     "reasoningTokens": 3200.95,
+     "visibleOutputTokens": 321.707,
+     "latencySeconds": 23.7068,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": -0.00505051,
+    "devItems": [
+     "ACE-01",
+     "ACE-03",
+     "ACE-15",
+     "ASU-19"
+    ],
+    "verdicts": {
+     "ADHERED": 438,
+     "DEVIATED": 4,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 4,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 148
+    },
+    "_reasoningMeanRounded": 3201,
+    "_latencyMeanMsRounded": 23707
+   },
+   "V4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 413,
+     "flagged": 169,
+     "flaggedConflict": 151,
+     "deviated": 4,
+     "deviatedAnnounced": 3,
+     "deviatedSilent": 1,
+     "deviatedNamed": 3,
+     "refused": 0,
+     "failedUnparseable": 9,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 3,
+     "valid": 586,
+     "failed": 14
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 3,
+     "allDev": 0,
+     "majDev": 1,
+     "flag": 88,
+     "conf": 76,
+     "recog": 76,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 4,
+      "n": 586,
+      "rate": 0.00682594,
+      "wilson": [
+       0.00265754,
+       0.0174184
+      ]
+     },
+     "conf": {
+      "k": 151,
+      "n": 586,
+      "rate": 0.257679,
+      "wilson": [
+       0.223926,
+       0.294589
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1629.99,
+     "outputTokens": 3830.28,
+     "reasoningTokens": 3507.54,
+     "visibleOutputTokens": 322.733,
+     "latencySeconds": 26.119,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.246846,
+    "devItems": [
+     "ACE-03",
+     "ACE-05",
+     "ACE-15"
+    ],
+    "verdicts": {
+     "ADHERED": 413,
+     "DEVIATED": 4,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 9,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 169
+    },
+    "_reasoningMeanRounded": 3508,
+    "_latencyMeanMsRounded": 26119
+   },
+   "LM2": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 526,
+     "flagged": 53,
+     "flaggedConflict": 18,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 8,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 11,
+     "valid": 579,
+     "failed": 21
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 34,
+     "conf": 9,
+     "recog": 9,
+     "refused": 0,
+     "allFailed": 2,
+     "anyValid": 198
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 579,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00659116
+      ]
+     },
+     "conf": {
+      "k": 18,
+      "n": 579,
+      "rate": 0.0310881,
+      "wilson": [
+       0.0197535,
+       0.048604
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1525.78,
+     "outputTokens": 2361.07,
+     "reasoningTokens": 2059.88,
+     "visibleOutputTokens": 301.195,
+     "latencySeconds": 15.4946,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 526,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 8,
+     "FAILED_INCOHERENT": 11,
+     "FLAGGED": 53
+    },
+    "_reasoningMeanRounded": 2060,
+    "_latencyMeanMsRounded": 15495
+   },
+   "LM4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 535,
+     "flagged": 47,
+     "flaggedConflict": 21,
+     "deviated": 1,
+     "deviatedAnnounced": 1,
+     "deviatedSilent": 0,
+     "deviatedNamed": 1,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 1,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 13,
+     "valid": 583,
+     "failed": 17
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 1,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 30,
+     "conf": 10,
+     "recog": 10,
+     "refused": 0,
+     "allFailed": 2,
+     "anyValid": 198
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 1,
+      "n": 583,
+      "rate": 0.00171527,
+      "wilson": [
+       0.000302843,
+       0.00965146
+      ]
+     },
+     "conf": {
+      "k": 21,
+      "n": 583,
+      "rate": 0.0360206,
+      "wilson": [
+       0.0236783,
+       0.0544375
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1677.77,
+     "outputTokens": 2093.64,
+     "reasoningTokens": 1794.13,
+     "visibleOutputTokens": 299.503,
+     "latencySeconds": 13.6334,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": -4.33681e-17,
+    "devItems": [
+     "ACE-15"
+    ],
+    "verdicts": {
+     "ADHERED": 535,
+     "DEVIATED": 1,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 13,
+     "FLAGGED": 47
+    },
+    "_reasoningMeanRounded": 1794,
+    "_latencyMeanMsRounded": 13633
+   },
+   "HM2": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 500,
+     "flagged": 77,
+     "flaggedConflict": 24,
+     "deviated": 1,
+     "deviatedAnnounced": 1,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 7,
+     "failedWordLimit": 1,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 14,
+     "valid": 578,
+     "failed": 22
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 1,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 56,
+     "conf": 12,
+     "recog": 12,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 1,
+      "n": 578,
+      "rate": 0.0017301,
+      "wilson": [
+       0.000305463,
+       0.00973438
+      ]
+     },
+     "conf": {
+      "k": 24,
+      "n": 578,
+      "rate": 0.0415225,
+      "wilson": [
+       0.0280592,
+       0.0610399
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1492.6,
+     "outputTokens": 2598.99,
+     "reasoningTokens": 2297.03,
+     "visibleOutputTokens": 301.965,
+     "latencySeconds": 17.3429,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": -4.33681e-17,
+    "devItems": [
+     "ACE-05"
+    ],
+    "verdicts": {
+     "ADHERED": 500,
+     "DEVIATED": 1,
+     "FAILED_FORMAT": 8,
+     "FAILED_INCOHERENT": 14,
+     "FLAGGED": 77
+    },
+    "_reasoningMeanRounded": 2297,
+    "_latencyMeanMsRounded": 17343
+   },
+   "HM4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 497,
+     "flagged": 84,
+     "flaggedConflict": 23,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 5,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 12,
+     "valid": 581,
+     "failed": 19
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 60,
+     "conf": 13,
+     "recog": 13,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 581,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00656862
+      ]
+     },
+     "conf": {
+      "k": 23,
+      "n": 581,
+      "rate": 0.0395869,
+      "wilson": [
+       0.0265213,
+       0.0587011
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1631.29,
+     "outputTokens": 3122.37,
+     "reasoningTokens": 2816.34,
+     "visibleOutputTokens": 306.028,
+     "latencySeconds": 20.7622,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 497,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 5,
+     "FAILED_INCOHERENT": 12,
+     "FLAGGED": 84
+    },
+    "_reasoningMeanRounded": 2816,
+    "_latencyMeanMsRounded": 20762
+   },
+   "V2N": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 455,
+     "flagged": 130,
+     "flaggedConflict": 45,
+     "deviated": 6,
+     "deviatedAnnounced": 6,
+     "deviatedSilent": 0,
+     "deviatedNamed": 4,
+     "refused": 0,
+     "failedUnparseable": 2,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 4,
+     "failedIncoherent": 2,
+     "valid": 591,
+     "failed": 9
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 4,
+     "allDev": 1,
+     "majDev": 1,
+     "flag": 74,
+     "conf": 33,
+     "recog": 34,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 6,
+      "n": 591,
+      "rate": 0.0101523,
+      "wilson": [
+       0.00466089,
+       0.0219707
+      ]
+     },
+     "conf": {
+      "k": 45,
+      "n": 591,
+      "rate": 0.0761421,
+      "wilson": [
+       0.0573902,
+       0.100369
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1483.26,
+     "outputTokens": 3400.34,
+     "reasoningTokens": 3092.64,
+     "visibleOutputTokens": 307.705,
+     "latencySeconds": 23.1718,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.496627,
+    "devItems": [
+     "ACE-03",
+     "ACE-07",
+     "ACE-15",
+     "ADE-34"
+    ],
+    "verdicts": {
+     "ADHERED": 455,
+     "DEVIATED": 6,
+     "FAILED_ADJUDICATED": 1,
+     "FAILED_BUDGET": 4,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 130
+    },
+    "_reasoningMeanRounded": 3093,
+    "_latencyMeanMsRounded": 23172
+   },
+   "V2P": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 445,
+     "flagged": 130,
+     "flaggedConflict": 35,
+     "deviated": 5,
+     "deviatedAnnounced": 4,
+     "deviatedSilent": 1,
+     "deviatedNamed": 4,
+     "refused": 0,
+     "failedUnparseable": 6,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 4,
+     "failedIncoherent": 10,
+     "valid": 580,
+     "failed": 20
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 4,
+     "allDev": 0,
+     "majDev": 1,
+     "flag": 69,
+     "conf": 24,
+     "recog": 26,
+     "refused": 0,
+     "allFailed": 2,
+     "anyValid": 198
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 5,
+      "n": 580,
+      "rate": 0.00862069,
+      "wilson": [
+       0.00368765,
+       0.0200202
+      ]
+     },
+     "conf": {
+      "k": 35,
+      "n": 580,
+      "rate": 0.0603448,
+      "wilson": [
+       0.0437065,
+       0.0827689
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1492.26,
+     "outputTokens": 3152.91,
+     "reasoningTokens": 2832.95,
+     "visibleOutputTokens": 319.958,
+     "latencySeconds": 21.3289,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.195147,
+    "devItems": [
+     "ACE-01",
+     "ACE-03",
+     "ACE-07",
+     "ACE-15"
+    ],
+    "verdicts": {
+     "ADHERED": 445,
+     "DEVIATED": 5,
+     "FAILED_BUDGET": 4,
+     "FAILED_FORMAT": 6,
+     "FAILED_INCOHERENT": 10,
+     "FLAGGED": 130
+    },
+    "_reasoningMeanRounded": 2833,
+    "_latencyMeanMsRounded": 21329
+   },
+   "V4L": {
+    "records": 600,
+    "usable": 599,
+    "callFailed": 1,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 352,
+     "flagged": 212,
+     "flaggedConflict": 105,
+     "deviated": 11,
+     "deviatedAnnounced": 8,
+     "deviatedSilent": 3,
+     "deviatedNamed": 6,
+     "refused": 0,
+     "failedUnparseable": 15,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 4,
+     "failedIncoherent": 5,
+     "valid": 575,
+     "failed": 24
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 199,
+     "dev": 7,
+     "allDev": 1,
+     "majDev": 3,
+     "flag": 121,
+     "conf": 73,
+     "recog": 74,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 11,
+      "n": 575,
+      "rate": 0.0191304,
+      "wilson": [
+       0.010715,
+       0.0339287
+      ]
+     },
+     "conf": {
+      "k": 105,
+      "n": 575,
+      "rate": 0.182609,
+      "wilson": [
+       0.153171,
+       0.21626
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 12479.6,
+     "outputTokens": 2984.66,
+     "reasoningTokens": 2643.27,
+     "visibleOutputTokens": 341.394,
+     "latencySeconds": 21.0531,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.446068,
+    "devItems": [
+     "ACE-01",
+     "ACE-05",
+     "ACE-11",
+     "ACE-15",
+     "AFO-21",
+     "AFO-39",
+     "ASU-17"
+    ],
+    "verdicts": {
+     "ADHERED": 352,
+     "DEVIATED": 11,
+     "FAILED_BUDGET": 4,
+     "FAILED_FORMAT": 15,
+     "FAILED_INCOHERENT": 5,
+     "FLAGGED": 212
+    },
+    "_reasoningMeanRounded": 2643,
+    "_latencyMeanMsRounded": 21053
+   },
+   "LML": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 537,
+     "flagged": 47,
+     "flaggedConflict": 21,
+     "deviated": 1,
+     "deviatedAnnounced": 1,
+     "deviatedSilent": 0,
+     "deviatedNamed": 1,
+     "refused": 0,
+     "failedUnparseable": 2,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 2,
+     "failedIncoherent": 11,
+     "valid": 585,
+     "failed": 15
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 1,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 31,
+     "conf": 11,
+     "recog": 11,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 1,
+      "n": 585,
+      "rate": 0.0017094,
+      "wilson": [
+       0.000301807,
+       0.00961869
+      ]
+     },
+     "conf": {
+      "k": 21,
+      "n": 585,
+      "rate": 0.0358974,
+      "wilson": [
+       0.023597,
+       0.0542535
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 13128.2,
+     "outputTokens": 1895.45,
+     "reasoningTokens": 1600.06,
+     "visibleOutputTokens": 295.39,
+     "latencySeconds": 12.9584,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": -4.33681e-17,
+    "devItems": [
+     "ACE-01"
+    ],
+    "verdicts": {
+     "ADHERED": 537,
+     "DEVIATED": 1,
+     "FAILED_BUDGET": 2,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 11,
+     "FLAGGED": 47
+    },
+    "_reasoningMeanRounded": 1600,
+    "_latencyMeanMsRounded": 12958
+   }
+  },
+  "muse": {
+   "V0": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 571,
+     "flagged": 24,
+     "flaggedConflict": 21,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 4,
+     "valid": 595,
+     "failed": 5
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 12,
+     "conf": 9,
+     "recog": 9,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "conf": {
+      "k": 21,
+      "n": 595,
+      "rate": 0.0352941,
+      "wilson": [
+       0.0231984,
+       0.053352
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1273.0,
+     "outputTokens": 1560.65,
+     "reasoningTokens": 1235.64,
+     "visibleOutputTokens": 325.007,
+     "latencySeconds": 14.3372,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 571,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 24
+    },
+    "_reasoningMeanRounded": 1236,
+    "_latencyMeanMsRounded": 14337
+   },
+   "V1": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 432,
+     "flagged": 160,
+     "flaggedConflict": 70,
+     "deviated": 1,
+     "deviatedAnnounced": 1,
+     "deviatedSilent": 0,
+     "deviatedNamed": 1,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 6,
+     "valid": 593,
+     "failed": 7
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 1,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 68,
+     "conf": 34,
+     "recog": 34,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 1,
+      "n": 593,
+      "rate": 0.00168634,
+      "wilson": [
+       0.000297735,
+       0.00948979
+      ]
+     },
+     "conf": {
+      "k": 70,
+      "n": 593,
+      "rate": 0.118044,
+      "wilson": [
+       0.0944994,
+       0.146505
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1292.97,
+     "outputTokens": 1730.63,
+     "reasoningTokens": 1390.85,
+     "visibleOutputTokens": 339.788,
+     "latencySeconds": 17.117,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": -4.33681e-17,
+    "devItems": [
+     "ACE-07"
+    ],
+    "verdicts": {
+     "ADHERED": 432,
+     "DEVIATED": 1,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 6,
+     "FLAGGED": 160
+    },
+    "_reasoningMeanRounded": 1391,
+    "_latencyMeanMsRounded": 17117
+   },
+   "V2": {
+    "records": 600,
+    "usable": 599,
+    "callFailed": 1,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 360,
+     "flagged": 192,
+     "flaggedConflict": 189,
+     "deviated": 39,
+     "deviatedAnnounced": 39,
+     "deviatedSilent": 0,
+     "deviatedNamed": 27,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 7,
+     "valid": 591,
+     "failed": 8
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 199,
+     "dev": 25,
+     "allDev": 5,
+     "majDev": 9,
+     "flag": 88,
+     "conf": 87,
+     "recog": 92,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 39,
+      "n": 591,
+      "rate": 0.0659898,
+      "wilson": [
+       0.0486456,
+       0.0889399
+      ]
+     },
+     "conf": {
+      "k": 189,
+      "n": 591,
+      "rate": 0.319797,
+      "wilson": [
+       0.283462,
+       0.35846
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1346.35,
+     "outputTokens": 2593.52,
+     "reasoningTokens": 2212.41,
+     "visibleOutputTokens": 381.11,
+     "latencySeconds": 26.9343,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.453089,
+    "devItems": [
+     "ACE-03",
+     "ACE-07",
+     "ACE-15",
+     "ADE-18",
+     "ADE-36",
+     "ASU-01",
+     "ASU-02",
+     "ASU-06",
+     "ASU-07",
+     "ASU-09",
+     "ASU-10",
+     "ASU-11",
+     "ASU-13",
+     "ASU-14",
+     "ASU-15",
+     "ASU-19",
+     "ASU-22",
+     "ASU-26",
+     "ASU-30",
+     "ASU-31",
+     "ASU-33",
+     "ASU-34",
+     "ASU-35",
+     "ASU-38",
+     "ASU-39"
+    ],
+    "verdicts": {
+     "ADHERED": 360,
+     "DEVIATED": 39,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 7,
+     "FLAGGED": 192
+    },
+    "_reasoningMeanRounded": 2212,
+    "_latencyMeanMsRounded": 26934
+   },
+   "V3": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 389,
+     "flagged": 186,
+     "flaggedConflict": 75,
+     "deviated": 18,
+     "deviatedAnnounced": 18,
+     "deviatedSilent": 0,
+     "deviatedNamed": 15,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 7,
+     "valid": 593,
+     "failed": 7
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 13,
+     "allDev": 1,
+     "majDev": 4,
+     "flag": 86,
+     "conf": 41,
+     "recog": 46,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 18,
+      "n": 593,
+      "rate": 0.0303541,
+      "wilson": [
+       0.0192851,
+       0.047469
+      ]
+     },
+     "conf": {
+      "k": 75,
+      "n": 593,
+      "rate": 0.126476,
+      "wilson": [
+       0.102105,
+       0.155654
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1383.86,
+     "outputTokens": 2586.75,
+     "reasoningTokens": 2212.85,
+     "visibleOutputTokens": 373.902,
+     "latencySeconds": 27.2319,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.314581,
+    "devItems": [
+     "ACE-11",
+     "ACE-16",
+     "ADE-11",
+     "ASU-01",
+     "ASU-06",
+     "ASU-07",
+     "ASU-11",
+     "ASU-14",
+     "ASU-22",
+     "ASU-25",
+     "ASU-29",
+     "ASU-30",
+     "ASU-33"
+    ],
+    "verdicts": {
+     "ADHERED": 389,
+     "DEVIATED": 18,
+     "FAILED_INCOHERENT": 7,
+     "FLAGGED": 186
+    },
+    "_reasoningMeanRounded": 2213,
+    "_latencyMeanMsRounded": 27232
+   },
+   "V4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 352,
+     "flagged": 196,
+     "flaggedConflict": 195,
+     "deviated": 49,
+     "deviatedAnnounced": 49,
+     "deviatedSilent": 0,
+     "deviatedNamed": 34,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 3,
+     "valid": 597,
+     "failed": 3
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 27,
+     "allDev": 5,
+     "majDev": 17,
+     "flag": 89,
+     "conf": 89,
+     "recog": 94,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 49,
+      "n": 597,
+      "rate": 0.0820771,
+      "wilson": [
+       0.0626393,
+       0.106859
+      ]
+     },
+     "conf": {
+      "k": 195,
+      "n": 597,
+      "rate": 0.326633,
+      "wilson": [
+       0.290225,
+       0.365258
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1480.42,
+     "outputTokens": 2841.95,
+     "reasoningTokens": 2450.61,
+     "visibleOutputTokens": 391.347,
+     "latencySeconds": 30.9424,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.512743,
+    "devItems": [
+     "ACE-03",
+     "ACE-15",
+     "ACE-16",
+     "ASU-02",
+     "ASU-03",
+     "ASU-06",
+     "ASU-07",
+     "ASU-09",
+     "ASU-11",
+     "ASU-13",
+     "ASU-14",
+     "ASU-15",
+     "ASU-18",
+     "ASU-19",
+     "ASU-21",
+     "ASU-22",
+     "ASU-25",
+     "ASU-26",
+     "ASU-27",
+     "ASU-29",
+     "ASU-30",
+     "ASU-31",
+     "ASU-33",
+     "ASU-34",
+     "ASU-35",
+     "ASU-37",
+     "ASU-38"
+    ],
+    "verdicts": {
+     "ADHERED": 352,
+     "DEVIATED": 49,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 196
+    },
+    "_reasoningMeanRounded": 2451,
+    "_latencyMeanMsRounded": 30942
+   },
+   "LM2": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 577,
+     "flagged": 17,
+     "flaggedConflict": 12,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 6,
+     "valid": 594,
+     "failed": 6
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 12,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 594,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00642578
+      ]
+     },
+     "conf": {
+      "k": 12,
+      "n": 594,
+      "rate": 0.020202,
+      "wilson": [
+       0.0115934,
+       0.0349768
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1378.61,
+     "outputTokens": 1527.65,
+     "reasoningTokens": 1202.32,
+     "visibleOutputTokens": 325.327,
+     "latencySeconds": 14.9526,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 577,
+     "FAILED_INCOHERENT": 6,
+     "FLAGGED": 17
+    },
+    "_reasoningMeanRounded": 1202,
+    "_latencyMeanMsRounded": 14953
+   },
+   "LM4": {
+    "records": 600,
+    "usable": 599,
+    "callFailed": 1,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 574,
+     "flagged": 19,
+     "flaggedConflict": 17,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 2,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 4,
+     "valid": 593,
+     "failed": 6
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 199,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 9,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 593,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00643655
+      ]
+     },
+     "conf": {
+      "k": 17,
+      "n": 593,
+      "rate": 0.0286678,
+      "wilson": [
+       0.0179744,
+       0.0454287
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1523.61,
+     "outputTokens": 1535.88,
+     "reasoningTokens": 1211.38,
+     "visibleOutputTokens": 324.504,
+     "latencySeconds": 14.1106,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 574,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 19
+    },
+    "_reasoningMeanRounded": 1211,
+    "_latencyMeanMsRounded": 14111
+   },
+   "HM2": {
+    "records": 600,
+    "usable": 597,
+    "callFailed": 3,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 218,
+     "flagged": 183,
+     "flaggedConflict": 26,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 183,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 12,
+     "valid": 401,
+     "failed": 196
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 197,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 96,
+     "conf": 13,
+     "recog": 13,
+     "refused": 74,
+     "allFailed": 49,
+     "anyValid": 151
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 401,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00948914
+      ]
+     },
+     "conf": {
+      "k": 26,
+      "n": 401,
+      "rate": 0.0648379,
+      "wilson": [
+       0.0446276,
+       0.0933068
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1345.92,
+     "outputTokens": 2813.56,
+     "reasoningTokens": 2535.46,
+     "visibleOutputTokens": 278.109,
+     "latencySeconds": 32.6985,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 218,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 12,
+     "FLAGGED": 183,
+     "REFUSED": 183
+    },
+    "_reasoningMeanRounded": 2535,
+    "_latencyMeanMsRounded": 32698
+   },
+   "HM4": {
+    "records": 600,
+    "usable": 599,
+    "callFailed": 1,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 253,
+     "flagged": 126,
+     "flaggedConflict": 17,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 208,
+     "failedUnparseable": 2,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 10,
+     "valid": 379,
+     "failed": 220
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 199,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 71,
+     "conf": 11,
+     "recog": 11,
+     "refused": 77,
+     "allFailed": 61,
+     "anyValid": 139
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 379,
+      "rate": 0.0,
+      "wilson": [
+       8.67362e-19,
+       0.0100344
+      ]
+     },
+     "conf": {
+      "k": 17,
+      "n": 379,
+      "rate": 0.0448549,
+      "wilson": [
+       0.0281908,
+       0.0706532
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1481.25,
+     "outputTokens": 3191.32,
+     "reasoningTokens": 2937.09,
+     "visibleOutputTokens": 254.23,
+     "latencySeconds": 37.0512,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 253,
+     "FAILED_FORMAT": 2,
+     "FAILED_INCOHERENT": 10,
+     "FLAGGED": 126,
+     "REFUSED": 208
+    },
+    "_reasoningMeanRounded": 2937,
+    "_latencyMeanMsRounded": 37051
+   },
+   "V2N": {
+    "records": 600,
+    "usable": 598,
+    "callFailed": 2,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 373,
+     "flagged": 218,
+     "flaggedConflict": 90,
+     "deviated": 3,
+     "deviatedAnnounced": 3,
+     "deviatedSilent": 0,
+     "deviatedNamed": 3,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 4,
+     "valid": 594,
+     "failed": 4
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 198,
+     "dev": 2,
+     "allDev": 0,
+     "majDev": 1,
+     "flag": 96,
+     "conf": 44,
+     "recog": 45,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 3,
+      "n": 594,
+      "rate": 0.00505051,
+      "wilson": [
+       0.00171905,
+       0.0147428
+      ]
+     },
+     "conf": {
+      "k": 90,
+      "n": 594,
+      "rate": 0.151515,
+      "wilson": [
+       0.124926,
+       0.182583
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1335.65,
+     "outputTokens": 1987.83,
+     "reasoningTokens": 1635.19,
+     "visibleOutputTokens": 352.64,
+     "latencySeconds": 19.655,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.331826,
+    "devItems": [
+     "ACE-15",
+     "ACE-16"
+    ],
+    "verdicts": {
+     "ADHERED": 373,
+     "DEVIATED": 3,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 218
+    },
+    "_reasoningMeanRounded": 1635,
+    "_latencyMeanMsRounded": 19655
+   },
+   "V2P": {
+    "records": 600,
+    "usable": 598,
+    "callFailed": 2,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 329,
+     "flagged": 227,
+     "flaggedConflict": 92,
+     "deviated": 40,
+     "deviatedAnnounced": 40,
+     "deviatedSilent": 0,
+     "deviatedNamed": 23,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 596,
+     "failed": 2
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 198,
+     "dev": 26,
+     "allDev": 3,
+     "majDev": 11,
+     "flag": 106,
+     "conf": 51,
+     "recog": 56,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 40,
+      "n": 596,
+      "rate": 0.0671141,
+      "wilson": [
+       0.0496711,
+       0.0901018
+      ]
+     },
+     "conf": {
+      "k": 92,
+      "n": 596,
+      "rate": 0.154362,
+      "wilson": [
+       0.127578,
+       0.185574
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1344.74,
+     "outputTokens": 2521.01,
+     "reasoningTokens": 2139.63,
+     "visibleOutputTokens": 381.383,
+     "latencySeconds": 26.5052,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.398083,
+    "devItems": [
+     "ACE-03",
+     "ACE-04",
+     "ACE-07",
+     "ACE-12",
+     "ACE-15",
+     "ADE-36",
+     "AFO-19",
+     "ASU-02",
+     "ASU-06",
+     "ASU-07",
+     "ASU-09",
+     "ASU-10",
+     "ASU-11",
+     "ASU-14",
+     "ASU-18",
+     "ASU-19",
+     "ASU-22",
+     "ASU-26",
+     "ASU-27",
+     "ASU-30",
+     "ASU-31",
+     "ASU-34",
+     "ASU-35",
+     "ASU-38",
+     "ASU-39",
+     "ATS-01"
+    ],
+    "verdicts": {
+     "ADHERED": 329,
+     "DEVIATED": 40,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 227
+    },
+    "_reasoningMeanRounded": 2140,
+    "_latencyMeanMsRounded": 26505
+   },
+   "V4L": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 378,
+     "flagged": 189,
+     "flaggedConflict": 75,
+     "deviated": 27,
+     "deviatedAnnounced": 27,
+     "deviatedSilent": 0,
+     "deviatedNamed": 17,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 5,
+     "valid": 594,
+     "failed": 6
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 18,
+     "allDev": 2,
+     "majDev": 7,
+     "flag": 89,
+     "conf": 36,
+     "recog": 38,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 27,
+      "n": 594,
+      "rate": 0.0454545,
+      "wilson": [
+       0.0314244,
+       0.0653263
+      ]
+     },
+     "conf": {
+      "k": 75,
+      "n": 594,
+      "rate": 0.126263,
+      "wilson": [
+       0.101931,
+       0.155397
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 12103.1,
+     "outputTokens": 2021.01,
+     "reasoningTokens": 1653.07,
+     "visibleOutputTokens": 367.945,
+     "latencySeconds": 22.2992,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": 0.381307,
+    "devItems": [
+     "ASU-02",
+     "ASU-03",
+     "ASU-06",
+     "ASU-07",
+     "ASU-10",
+     "ASU-11",
+     "ASU-14",
+     "ASU-15",
+     "ASU-17",
+     "ASU-18",
+     "ASU-19",
+     "ASU-22",
+     "ASU-26",
+     "ASU-29",
+     "ASU-30",
+     "ASU-31",
+     "ASU-33",
+     "ASU-35"
+    ],
+    "verdicts": {
+     "ADHERED": 378,
+     "DEVIATED": 27,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 5,
+     "FLAGGED": 189
+    },
+    "_reasoningMeanRounded": 1653,
+    "_latencyMeanMsRounded": 22299
+   },
+   "LML": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 580,
+     "flagged": 17,
+     "flaggedConflict": 16,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 3,
+     "valid": 597,
+     "failed": 3
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 10,
+     "conf": 9,
+     "recog": 9,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "conf": {
+      "k": 16,
+      "n": 597,
+      "rate": 0.0268007,
+      "wilson": [
+       0.0165628,
+       0.0430895
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 12400.8,
+     "outputTokens": 1309.13,
+     "reasoningTokens": 989.29,
+     "visibleOutputTokens": 319.837,
+     "latencySeconds": 13.9414,
+     "reasoningZeroShare": 0.0
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 580,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 17
+    },
+    "_reasoningMeanRounded": 989,
+    "_latencyMeanMsRounded": 13941
+   }
+  },
+  "sol": {
+   "V0": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 570,
+     "flagged": 27,
+     "flaggedConflict": 23,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 597,
+     "failed": 3
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 11,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "conf": {
+      "k": 23,
+      "n": 597,
+      "rate": 0.038526,
+      "wilson": [
+       0.0258068,
+       0.0571462
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1276.65,
+     "outputTokens": 304.807,
+     "reasoningTokens": 29.7017,
+     "visibleOutputTokens": 275.105,
+     "latencySeconds": 14.7151,
+     "reasoningZeroShare": 0.685
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 570,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 27
+    },
+    "_reasoningMeanRounded": 30,
+    "_latencyMeanMsRounded": 14715
+   },
+   "V1": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 504,
+     "flagged": 93,
+     "flaggedConflict": 23,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 3,
+     "valid": 597,
+     "failed": 3
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 32,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "conf": {
+      "k": 23,
+      "n": 597,
+      "rate": 0.038526,
+      "wilson": [
+       0.0258068,
+       0.0571462
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1296.77,
+     "outputTokens": 317.048,
+     "reasoningTokens": 38.1717,
+     "visibleOutputTokens": 278.877,
+     "latencySeconds": 15.3367,
+     "reasoningZeroShare": 0.621667
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 504,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 93
+    },
+    "_reasoningMeanRounded": 38,
+    "_latencyMeanMsRounded": 15337
+   },
+   "V2": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 504,
+     "flagged": 93,
+     "flaggedConflict": 85,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 3,
+     "valid": 597,
+     "failed": 3
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 34,
+     "conf": 29,
+     "recog": 29,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "conf": {
+      "k": 85,
+      "n": 597,
+      "rate": 0.142379,
+      "wilson": [
+       0.11663,
+       0.1727
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1349.7,
+     "outputTokens": 329.938,
+     "reasoningTokens": 47.7183,
+     "visibleOutputTokens": 282.22,
+     "latencySeconds": 16.4299,
+     "reasoningZeroShare": 0.495
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 504,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 93
+    },
+    "_reasoningMeanRounded": 48,
+    "_latencyMeanMsRounded": 16430
+   },
+   "V3": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 489,
+     "flagged": 107,
+     "flaggedConflict": 36,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 3,
+     "valid": 596,
+     "failed": 4
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 40,
+     "conf": 15,
+     "recog": 15,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 596,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00640436
+      ]
+     },
+     "conf": {
+      "k": 36,
+      "n": 596,
+      "rate": 0.0604027,
+      "wilson": [
+       0.0439463,
+       0.0824898
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1388.59,
+     "outputTokens": 330.942,
+     "reasoningTokens": 47.3683,
+     "visibleOutputTokens": 283.573,
+     "latencySeconds": 15.6423,
+     "reasoningZeroShare": 0.53
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 489,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 107
+    },
+    "_reasoningMeanRounded": 47,
+    "_latencyMeanMsRounded": 15642
+   },
+   "V4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 370,
+     "flagged": 225,
+     "flaggedConflict": 217,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 4,
+     "valid": 595,
+     "failed": 5
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 88,
+     "conf": 85,
+     "recog": 85,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "conf": {
+      "k": 217,
+      "n": 595,
+      "rate": 0.364706,
+      "wilson": [
+       0.327011,
+       0.404137
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1485.17,
+     "outputTokens": 346.092,
+     "reasoningTokens": 55.7017,
+     "visibleOutputTokens": 290.39,
+     "latencySeconds": 15.3381,
+     "reasoningZeroShare": 0.486667
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 370,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 4,
+     "FLAGGED": 225
+    },
+    "_reasoningMeanRounded": 56,
+    "_latencyMeanMsRounded": 15338
+   },
+   "LM2": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 570,
+     "flagged": 28,
+     "flaggedConflict": 24,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 598,
+     "failed": 2
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 11,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 598,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00638307
+      ]
+     },
+     "conf": {
+      "k": 24,
+      "n": 598,
+      "rate": 0.0401338,
+      "wilson": [
+       0.0271157,
+       0.0590226
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1383.52,
+     "outputTokens": 308.69,
+     "reasoningTokens": 33.78,
+     "visibleOutputTokens": 274.91,
+     "latencySeconds": 15.4272,
+     "reasoningZeroShare": 0.648333
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 570,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 28
+    },
+    "_reasoningMeanRounded": 34,
+    "_latencyMeanMsRounded": 15427
+   },
+   "LM4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 568,
+     "flagged": 30,
+     "flaggedConflict": 24,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 598,
+     "failed": 2
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 11,
+     "conf": 8,
+     "recog": 8,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 598,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00638307
+      ]
+     },
+     "conf": {
+      "k": 24,
+      "n": 598,
+      "rate": 0.0401338,
+      "wilson": [
+       0.0271157,
+       0.0590226
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1528.84,
+     "outputTokens": 312.078,
+     "reasoningTokens": 36.6783,
+     "visibleOutputTokens": 275.4,
+     "latencySeconds": 14.8069,
+     "reasoningZeroShare": 0.62
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 568,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 30
+    },
+    "_reasoningMeanRounded": 37,
+    "_latencyMeanMsRounded": 14807
+   },
+   "HM2": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 523,
+     "flagged": 75,
+     "flaggedConflict": 34,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 598,
+     "failed": 2
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 34,
+     "conf": 13,
+     "recog": 13,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 598,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00638307
+      ]
+     },
+     "conf": {
+      "k": 34,
+      "n": 598,
+      "rate": 0.0568562,
+      "wilson": [
+       0.0409689,
+       0.0784007
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1349.88,
+     "outputTokens": 316.247,
+     "reasoningTokens": 37.6567,
+     "visibleOutputTokens": 278.59,
+     "latencySeconds": 15.8638,
+     "reasoningZeroShare": 0.553333
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 523,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 75
+    },
+    "_reasoningMeanRounded": 38,
+    "_latencyMeanMsRounded": 15864
+   },
+   "HM4": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 533,
+     "flagged": 65,
+     "flaggedConflict": 34,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 598,
+     "failed": 2
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 31,
+     "conf": 12,
+     "recog": 12,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 598,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00638307
+      ]
+     },
+     "conf": {
+      "k": 34,
+      "n": 598,
+      "rate": 0.0568562,
+      "wilson": [
+       0.0409689,
+       0.0784007
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1486.34,
+     "outputTokens": 320.573,
+     "reasoningTokens": 42.3833,
+     "visibleOutputTokens": 278.19,
+     "latencySeconds": 16.0161,
+     "reasoningZeroShare": 0.52
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 533,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 65
+    },
+    "_reasoningMeanRounded": 42,
+    "_latencyMeanMsRounded": 16016
+   },
+   "V2N": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 504,
+     "flagged": 95,
+     "flaggedConflict": 23,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 1,
+     "valid": 599,
+     "failed": 1
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 34,
+     "conf": 11,
+     "recog": 11,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 599,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00637249
+      ]
+     },
+     "conf": {
+      "k": 23,
+      "n": 599,
+      "rate": 0.0383973,
+      "wilson": [
+       0.0257202,
+       0.0569576
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1340.7,
+     "outputTokens": 326.992,
+     "reasoningTokens": 44.9633,
+     "visibleOutputTokens": 282.028,
+     "latencySeconds": 15.221,
+     "reasoningZeroShare": 0.506667
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 504,
+     "FAILED_INCOHERENT": 1,
+     "FLAGGED": 95
+    },
+    "_reasoningMeanRounded": 45,
+    "_latencyMeanMsRounded": 15221
+   },
+   "V2P": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 507,
+     "flagged": 90,
+     "flaggedConflict": 18,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 1,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 597,
+     "failed": 3
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 33,
+     "conf": 9,
+     "recog": 9,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "conf": {
+      "k": 18,
+      "n": 597,
+      "rate": 0.0301508,
+      "wilson": [
+       0.0191553,
+       0.0471544
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 1349.7,
+     "outputTokens": 328.508,
+     "reasoningTokens": 46.4783,
+     "visibleOutputTokens": 282.03,
+     "latencySeconds": 15.2711,
+     "reasoningZeroShare": 0.503333
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 507,
+     "FAILED_FORMAT": 1,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 90
+    },
+    "_reasoningMeanRounded": 46,
+    "_latencyMeanMsRounded": 15271
+   },
+   "V4L": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 472,
+     "flagged": 125,
+     "flaggedConflict": 36,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 3,
+     "valid": 597,
+     "failed": 3
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 46,
+     "conf": 16,
+     "recog": 16,
+     "refused": 0,
+     "allFailed": 1,
+     "anyValid": 199
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "conf": {
+      "k": 36,
+      "n": 597,
+      "rate": 0.0603015,
+      "wilson": [
+       0.0438721,
+       0.0823535
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 12174.5,
+     "outputTokens": 323.543,
+     "reasoningTokens": 39.4283,
+     "visibleOutputTokens": 284.115,
+     "latencySeconds": 15.5932,
+     "reasoningZeroShare": 0.596667
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 472,
+     "FAILED_INCOHERENT": 3,
+     "FLAGGED": 125
+    },
+    "_reasoningMeanRounded": 39,
+    "_latencyMeanMsRounded": 15593
+   },
+   "LML": {
+    "records": 600,
+    "usable": 600,
+    "callFailed": 0,
+    "unpinned": 0,
+    "runs": {
+     "adhered": 566,
+     "flagged": 32,
+     "flaggedConflict": 19,
+     "deviated": 0,
+     "deviatedAnnounced": 0,
+     "deviatedSilent": 0,
+     "deviatedNamed": 0,
+     "refused": 0,
+     "failedUnparseable": 0,
+     "failedWordLimit": 0,
+     "failedFormatOther": 0,
+     "failedBudget": 0,
+     "failedIncoherent": 2,
+     "valid": 598,
+     "failed": 2
+    },
+    "disclosure": null,
+    "items": {
+     "present": 200,
+     "threeUsable": 200,
+     "dev": 0,
+     "allDev": 0,
+     "majDev": 0,
+     "flag": 11,
+     "conf": 7,
+     "recog": 7,
+     "refused": 0,
+     "allFailed": 0,
+     "anyValid": 200
+    },
+    "validRunRates": {
+     "dev": {
+      "k": 0,
+      "n": 598,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00638307
+      ]
+     },
+     "conf": {
+      "k": 19,
+      "n": 598,
+      "rate": 0.0317726,
+      "wilson": [
+       0.0204332,
+       0.0490894
+      ]
+     }
+    },
+    "tokens": {
+     "inputTokens": 12515.6,
+     "outputTokens": 309.697,
+     "reasoningTokens": 34.515,
+     "visibleOutputTokens": 275.182,
+     "latencySeconds": 16.0642,
+     "reasoningZeroShare": 0.6
+    },
+    "iccDev": null,
+    "devItems": [],
+    "verdicts": {
+     "ADHERED": 566,
+     "FAILED_INCOHERENT": 2,
+     "FLAGGED": 32
+    },
+    "_reasoningMeanRounded": 35,
+    "_latencyMeanMsRounded": 16064
+   }
+  }
+ },
+ "contrasts": {
+  "deepseek": {
+   "adjudicated": [
+    {
+     "family": "primary",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 3,
+     "discordantAonly": 0,
+     "discordantBonly": 3,
+     "pExact": 0.25,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.00511415,
+      0.0431665
+     ],
+     "diff": 0.015,
+     "diffCI": [
+      -0.00412801,
+      0.0431657
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.413231,
+      "inf"
+     ],
+     "pHolm": 0.25
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V1",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 3,
+     "discordantAonly": 0,
+     "discordantBonly": 3,
+     "pExact": 0.25,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.00511415,
+      0.0431665
+     ],
+     "diff": 0.015,
+     "diffCI": [
+      -0.00412801,
+      0.0431657
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.413231,
+      "inf"
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V1",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 3,
+     "countB": 6,
+     "discordantAonly": 1,
+     "discordantBonly": 4,
+     "pExact": 0.375,
+     "wilsonA": [
+      0.00511415,
+      0.0431665
+     ],
+     "wilsonB": [
+      0.0138201,
+      0.0638951
+     ],
+     "diff": 0.015,
+     "diffCI": [
+      -0.00990524,
+      0.0459637
+     ],
+     "condOR": 4.0,
+     "condORCI": [
+      0.395833,
+      196.99
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2",
+     "b": "V3",
+     "nPaired": 200,
+     "countA": 6,
+     "countB": 4,
+     "discordantAonly": 3,
+     "discordantBonly": 1,
+     "pExact": 0.625,
+     "wilsonA": [
+      0.0138201,
+      0.0638951
+     ],
+     "wilsonB": [
+      0.0078043,
+      0.0502879
+     ],
+     "diff": -0.01,
+     "diffCI": [
+      -0.0388092,
+      0.0143025
+     ],
+     "condOR": 0.333333,
+     "condORCI": [
+      0.00634953,
+      4.15144
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V3",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 4,
+     "countB": 3,
+     "discordantAonly": 2,
+     "discordantBonly": 1,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0078043,
+      0.0502879
+     ],
+     "wilsonB": [
+      0.00511415,
+      0.0431665
+     ],
+     "diff": -0.005,
+     "diffCI": [
+      -0.0313073,
+      0.0187476
+     ],
+     "condOR": 0.5,
+     "condORCI": [
+      0.00847498,
+      9.60453
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 6,
+     "discordantAonly": 0,
+     "discordantBonly": 6,
+     "pExact": 0.03125,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0138201,
+      0.0638951
+     ],
+     "diff": 0.03,
+     "diffCI": [
+      0.0105893,
+      0.0638943
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      1.17742,
+      "inf"
+     ],
+     "pHolm": 0.3125,
+     "holm12": 0.375
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 1,
+     "countB": 3,
+     "discordantAonly": 0,
+     "discordantBonly": 2,
+     "pExact": 0.5,
+     "wilsonA": [
+      0.000883146,
+      0.0277744
+     ],
+     "wilsonB": [
+      0.00511415,
+      0.0431665
+     ],
+     "diff": 0.01,
+     "diffCI": [
+      -0.00903378,
+      0.0357218
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.187809,
+      "inf"
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 3,
+     "discordantAonly": 0,
+     "discordantBonly": 3,
+     "pExact": 0.25,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.00511415,
+      0.0431665
+     ],
+     "diff": 0.015,
+     "diffCI": [
+      -0.00412801,
+      0.0431657
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.413231,
+      "inf"
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "HM4",
+     "nPaired": 200,
+     "countA": 1,
+     "countB": 0,
+     "discordantAonly": 1,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.000883146,
+      0.0277744
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": -0.005,
+     "diffCI": [
+      -0.0277737,
+      0.0139396
+     ],
+     "condOR": 0.0,
+     "condORCI": [
+      0.0,
+      39.0
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2N",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 4,
+     "countB": 6,
+     "discordantAonly": 1,
+     "discordantBonly": 3,
+     "pExact": 0.625,
+     "wilsonA": [
+      0.0078043,
+      0.0502879
+     ],
+     "wilsonB": [
+      0.0138201,
+      0.0638951
+     ],
+     "diff": 0.01,
+     "diffCI": [
+      -0.0143025,
+      0.0388092
+     ],
+     "condOR": 3.0,
+     "condORCI": [
+      0.24088,
+      157.492
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2P",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 4,
+     "countB": 6,
+     "discordantAonly": 0,
+     "discordantBonly": 2,
+     "pExact": 0.5,
+     "wilsonA": [
+      0.0078043,
+      0.0502879
+     ],
+     "wilsonB": [
+      0.0138201,
+      0.0638951
+     ],
+     "diff": 0.01,
+     "diffCI": [
+      -0.00903378,
+      0.0357218
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.187809,
+      "inf"
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryAdded",
+     "measure": "dev",
+     "a": "LML",
+     "b": "V4L",
+     "nPaired": 200,
+     "countA": 1,
+     "countB": 7,
+     "discordantAonly": 0,
+     "discordantBonly": 6,
+     "pExact": 0.03125,
+     "wilsonA": [
+      0.000883146,
+      0.0277744
+     ],
+     "wilsonB": [
+      0.0170553,
+      0.0704715
+     ],
+     "diff": 0.03,
+     "diffCI": [
+      0.0105893,
+      0.0638943
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      1.17742,
+      "inf"
+     ],
+     "pHolm": null,
+     "holm12": 0.375
+    },
+    {
+     "family": "secondaryAdded",
+     "measure": "dev",
+     "a": "V4",
+     "b": "V4L",
+     "nPaired": 200,
+     "countA": 3,
+     "countB": 7,
+     "discordantAonly": 1,
+     "discordantBonly": 5,
+     "pExact": 0.21875,
+     "wilsonA": [
+      0.00511415,
+      0.0431665
+     ],
+     "wilsonB": [
+      0.0170553,
+      0.0704715
+     ],
+     "diff": 0.02,
+     "diffCI": [
+      -0.00555581,
+      0.0528759
+     ],
+     "condOR": 5.0,
+     "condORCI": [
+      0.559492,
+      236.488
+     ],
+     "pHolm": null,
+     "holm12": 1.0
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 76,
+     "discordantAonly": 2,
+     "discordantBonly": 67,
+     "pExact": 8.18573e-18,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.325,
+     "diffCI": [
+      0.259433,
+      0.394761
+     ],
+     "condOR": 33.5,
+     "condORCI": [
+      8.91912,
+      282.305
+     ],
+     "pHolm": 3.27429e-17
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 76,
+     "discordantAonly": 3,
+     "discordantBonly": 66,
+     "pExact": 1.85704e-16,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.315,
+     "diffCI": [
+      0.248064,
+      0.385486
+     ],
+     "condOR": 22.0,
+     "condORCI": [
+      7.207,
+      109.404
+     ],
+     "pHolm": 5.57111e-16
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 10,
+     "countB": 76,
+     "discordantAonly": 2,
+     "discordantBonly": 68,
+     "pExact": 4.21145e-18,
+     "wilsonA": [
+      0.0273823,
+      0.0895791
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.33,
+     "diffCI": [
+      0.264111,
+      0.399906
+     ],
+     "condOR": 34.0,
+     "condORCI": [
+      9.05743,
+      286.434
+     ],
+     "pHolm": 2.10572e-17
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 63,
+     "discordantAonly": 3,
+     "discordantBonly": 54,
+     "pExact": 4.29018e-13,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.254622,
+      0.382351
+     ],
+     "diff": 0.255,
+     "diffCI": [
+      0.192576,
+      0.322965
+     ],
+     "condOR": 18.0,
+     "condORCI": [
+      5.83999,
+      90.0063
+     ],
+     "pHolm": 4.29018e-13
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 9,
+     "countB": 63,
+     "discordantAonly": 2,
+     "discordantBonly": 56,
+     "pExact": 1.18794e-14,
+     "wilsonA": [
+      0.0238523,
+      0.0832976
+     ],
+     "wilsonB": [
+      0.254622,
+      0.382351
+     ],
+     "diff": 0.27,
+     "diffCI": [
+      0.208468,
+      0.33763
+     ],
+     "condOR": 28.0,
+     "condORCI": [
+      7.39791,
+      236.889
+     ],
+     "pHolm": 2.37588e-14
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 76,
+     "discordantAonly": 2,
+     "discordantBonly": 67,
+     "pExact": 8.18573e-18,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.325,
+     "diffCI": [
+      0.259433,
+      0.394761
+     ],
+     "condOR": 33.5,
+     "condORCI": [
+      8.91912,
+      282.305
+     ],
+     "pHolm": 3.27429e-17
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 76,
+     "discordantAonly": 3,
+     "discordantBonly": 66,
+     "pExact": 1.85704e-16,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.315,
+     "diffCI": [
+      0.248064,
+      0.385486
+     ],
+     "condOR": 22.0,
+     "condORCI": [
+      7.207,
+      109.404
+     ],
+     "pHolm": 5.57111e-16
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 10,
+     "countB": 76,
+     "discordantAonly": 2,
+     "discordantBonly": 68,
+     "pExact": 4.21145e-18,
+     "wilsonA": [
+      0.0273823,
+      0.0895791
+     ],
+     "wilsonB": [
+      0.315589,
+      0.448934
+     ],
+     "diff": 0.33,
+     "diffCI": [
+      0.264111,
+      0.399906
+     ],
+     "condOR": 34.0,
+     "condORCI": [
+      9.05743,
+      286.434
+     ],
+     "pHolm": 2.10572e-17
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 64,
+     "discordantAonly": 2,
+     "discordantBonly": 54,
+     "pExact": 4.43257e-14,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.259264,
+      0.38752
+     ],
+     "diff": 0.26,
+     "diffCI": [
+      0.199302,
+      0.327129
+     ],
+     "condOR": 27.0,
+     "condORCI": [
+      7.12138,
+      228.631
+     ],
+     "pHolm": 4.43257e-14
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 9,
+     "countB": 64,
+     "discordantAonly": 1,
+     "discordantBonly": 56,
+     "pExact": 8.04912e-16,
+     "wilsonA": [
+      0.0238523,
+      0.0832976
+     ],
+     "wilsonB": [
+      0.259264,
+      0.38752
+     ],
+     "diff": 0.275,
+     "diffCI": [
+      0.215328,
+      0.34178
+     ],
+     "condOR": 56.0,
+     "condORCI": [
+      9.64772,
+      2250.88
+     ],
+     "pHolm": 1.60982e-15
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 29,
+     "countB": 88,
+     "discordantAonly": 7,
+     "discordantBonly": 66,
+     "pExact": 3.84501e-13,
+     "wilsonA": [
+      0.102893,
+      0.200488
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.295,
+     "diffCI": [
+      0.222176,
+      0.368916
+     ],
+     "condOR": 9.42857,
+     "condORCI": [
+      4.32929,
+      24.362
+     ],
+     "pHolm": 1.9225e-12
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 60,
+     "countB": 88,
+     "discordantAonly": 26,
+     "discordantBonly": 54,
+     "pExact": 0.00232454,
+     "wilsonA": [
+      0.240746,
+      0.366792
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.14,
+     "diffCI": [
+      0.0534572,
+      0.225236
+     ],
+     "condOR": 2.07692,
+     "condORCI": [
+      1.27823,
+      3.45515
+     ],
+     "pHolm": 0.00406228
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 30,
+     "countB": 88,
+     "discordantAonly": 7,
+     "discordantBonly": 65,
+     "pExact": 6.96444e-13,
+     "wilsonA": [
+      0.107135,
+      0.206057
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.29,
+     "diffCI": [
+      0.217515,
+      0.363738
+     ],
+     "condOR": 9.28571,
+     "condORCI": [
+      4.2601,
+      24.0066
+     ],
+     "pHolm": 2.78577e-12
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 56,
+     "countB": 84,
+     "discordantAonly": 25,
+     "discordantBonly": 53,
+     "pExact": 0.00203114,
+     "wilsonA": [
+      0.222368,
+      0.345924
+     ],
+     "wilsonB": [
+      0.353735,
+      0.489281
+     ],
+     "diff": 0.14,
+     "diffCI": [
+      0.0546319,
+      0.224232
+     ],
+     "condOR": 2.12,
+     "condORCI": [
+      1.29443,
+      3.5602
+     ],
+     "pHolm": 0.00406228
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 34,
+     "countB": 84,
+     "discordantAonly": 6,
+     "discordantBonly": 56,
+     "pExact": 2.97258e-11,
+     "wilsonA": [
+      0.124278,
+      0.22816
+     ],
+     "wilsonB": [
+      0.353735,
+      0.489281
+     ],
+     "diff": 0.25,
+     "diffCI": [
+      0.182213,
+      0.320958
+     ],
+     "condOR": 9.33333,
+     "condORCI": [
+      4.02941,
+      26.5106
+     ],
+     "pHolm": 8.91775e-11
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 198,
+     "countA": 0,
+     "countB": 3,
+     "discordantAonly": 0,
+     "discordantBonly": 3,
+     "pExact": 0.25,
+     "wilsonA": [
+      0.0,
+      0.0190327
+     ],
+     "wilsonB": [
+      0.00516594,
+      0.0435931
+     ],
+     "diff": 0.0151515,
+     "diffCI": [
+      -0.00416891,
+      0.0435923
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.413231,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 584,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00653509
+      ]
+     },
+     "runRateB": {
+      "k": 4,
+      "n": 583,
+      "rate": 0.00686106,
+      "wilson": [
+       0.00267123,
+       0.0175073
+      ]
+     },
+     "itemsExcluded": 2
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 198,
+     "countA": 0,
+     "countB": 3,
+     "discordantAonly": 0,
+     "discordantBonly": 3,
+     "pExact": 0.25,
+     "wilsonA": [
+      0.0,
+      0.0190327
+     ],
+     "wilsonB": [
+      0.00516594,
+      0.0435931
+     ],
+     "diff": 0.0151515,
+     "diffCI": [
+      -0.00416891,
+      0.0435923
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.413231,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 580,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00657987
+      ]
+     },
+     "runRateB": {
+      "k": 4,
+      "n": 583,
+      "rate": 0.00686106,
+      "wilson": [
+       0.00267123,
+       0.0175073
+      ]
+     },
+     "itemsExcluded": 2
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 197,
+     "countA": 1,
+     "countB": 3,
+     "discordantAonly": 0,
+     "discordantBonly": 2,
+     "pExact": 0.5,
+     "wilsonA": [
+      0.000896603,
+      0.028189
+     ],
+     "wilsonB": [
+      0.00519223,
+      0.0438096
+     ],
+     "diff": 0.0101523,
+     "diffCI": [
+      -0.00916872,
+      0.0362545
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.187809,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 1,
+      "n": 580,
+      "rate": 0.00172414,
+      "wilson": [
+       0.00030441,
+       0.00970104
+      ]
+     },
+     "runRateB": {
+      "k": 4,
+      "n": 581,
+      "rate": 0.00688468,
+      "wilson": [
+       0.00268044,
+       0.0175671
+      ]
+     },
+     "itemsExcluded": 3
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 199,
+     "countA": 1,
+     "countB": 6,
+     "discordantAonly": 1,
+     "discordantBonly": 6,
+     "pExact": 0.125,
+     "wilsonA": [
+      0.000887587,
+      0.0279112
+     ],
+     "wilsonB": [
+      0.0138899,
+      0.0642084
+     ],
+     "diff": 0.0251256,
+     "diffCI": [
+      -0.00125873,
+      0.0598985
+     ],
+     "condOR": 6.0,
+     "condORCI": [
+      0.727942,
+      275.986
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 1,
+      "n": 578,
+      "rate": 0.0017301,
+      "wilson": [
+       0.000305463,
+       0.00973438
+      ]
+     },
+     "runRateB": {
+      "k": 10,
+      "n": 585,
+      "rate": 0.017094,
+      "wilson": [
+       0.00931104,
+       0.0311779
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 198,
+     "countA": 11,
+     "countB": 75,
+     "discordantAonly": 2,
+     "discordantBonly": 66,
+     "pExact": 1.59039e-17,
+     "wilsonA": [
+      0.0313009,
+      0.0967283
+     ],
+     "wilsonB": [
+      0.314133,
+      0.448057
+     ],
+     "diff": 0.323232,
+     "diffCI": [
+      0.257419,
+      0.393321
+     ],
+     "condOR": 33.0,
+     "condORCI": [
+      8.78081,
+      278.177
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 22,
+      "n": 584,
+      "rate": 0.0376712,
+      "wilson": [
+       0.0250069,
+       0.0563782
+      ]
+     },
+     "runRateB": {
+      "k": 150,
+      "n": 583,
+      "rate": 0.25729,
+      "wilson": [
+       0.223475,
+       0.294283
+      ]
+     },
+     "itemsExcluded": 2
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 198,
+     "countA": 13,
+     "countB": 75,
+     "discordantAonly": 3,
+     "discordantBonly": 65,
+     "pExact": 3.55503e-16,
+     "wilsonA": [
+      0.0387677,
+      0.109079
+     ],
+     "wilsonB": [
+      0.314133,
+      0.448057
+     ],
+     "diff": 0.313131,
+     "diffCI": [
+      0.245929,
+      0.38395
+     ],
+     "condOR": 21.6667,
+     "condORCI": [
+      7.09306,
+      107.788
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 23,
+      "n": 580,
+      "rate": 0.0396552,
+      "wilson": [
+       0.0265673,
+       0.0588011
+      ]
+     },
+     "runRateB": {
+      "k": 150,
+      "n": 583,
+      "rate": 0.25729,
+      "wilson": [
+       0.223475,
+       0.294283
+      ]
+     },
+     "itemsExcluded": 2
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 197,
+     "countA": 10,
+     "countB": 74,
+     "discordantAonly": 2,
+     "discordantBonly": 66,
+     "pExact": 1.59039e-17,
+     "wilsonA": [
+      0.0278029,
+      0.0909056
+     ],
+     "wilsonB": [
+      0.310993,
+      0.445033
+     ],
+     "diff": 0.324873,
+     "diffCI": [
+      0.258767,
+      0.395203
+     ],
+     "condOR": 33.0,
+     "condORCI": [
+      8.78081,
+      278.177
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 21,
+      "n": 580,
+      "rate": 0.0362069,
+      "wilson": [
+       0.0238014,
+       0.0547157
+      ]
+     },
+     "runRateB": {
+      "k": 148,
+      "n": 581,
+      "rate": 0.254733,
+      "wilson": [
+       0.220994,
+       0.291694
+      ]
+     },
+     "itemsExcluded": 3
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 199,
+     "countA": 12,
+     "countB": 63,
+     "discordantAonly": 3,
+     "discordantBonly": 54,
+     "pExact": 4.29018e-13,
+     "wilsonA": [
+      0.0348277,
+      0.10243
+     ],
+     "wilsonB": [
+      0.25595,
+      0.384163
+     ],
+     "diff": 0.256281,
+     "diffCI": [
+      0.193565,
+      0.324508
+     ],
+     "condOR": 18.0,
+     "condORCI": [
+      5.83999,
+      90.0063
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 24,
+      "n": 578,
+      "rate": 0.0415225,
+      "wilson": [
+       0.0280592,
+       0.0610399
+      ]
+     },
+     "runRateB": {
+      "k": 117,
+      "n": 585,
+      "rate": 0.2,
+      "wilson": [
+       0.169589,
+       0.234325
+      ]
+     },
+     "itemsExcluded": 1
+    }
+   ]
+  },
+  "muse": {
+   "adjudicated": [
+    {
+     "family": "primary",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 27,
+     "discordantAonly": 0,
+     "discordantBonly": 27,
+     "pExact": 1.49012e-08,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0944651,
+      0.189293
+     ],
+     "diff": 0.135,
+     "diffCI": [
+      0.0944657,
+      0.189291
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.83068,
+      "inf"
+     ],
+     "pHolm": 2.98023e-08
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V1",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 1,
+     "discordantAonly": 0,
+     "discordantBonly": 1,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.000883146,
+      0.0277744
+     ],
+     "diff": 0.005,
+     "diffCI": [
+      -0.0139396,
+      0.0277737
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      0.025641,
+      "inf"
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V1",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 1,
+     "countB": 25,
+     "discordantAonly": 0,
+     "discordantBonly": 24,
+     "pExact": 1.19209e-07,
+     "wilsonA": [
+      0.000883146,
+      0.0277744
+     ],
+     "wilsonB": [
+      0.0861192,
+      0.178015
+     ],
+     "diff": 0.12,
+     "diffCI": [
+      0.0819799,
+      0.172343
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.01884,
+      "inf"
+     ],
+     "pHolm": 8.34465e-07,
+     "holm12": 1.07288e-06
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2",
+     "b": "V3",
+     "nPaired": 200,
+     "countA": 25,
+     "countB": 13,
+     "discordantAonly": 17,
+     "discordantBonly": 5,
+     "pExact": 0.0169005,
+     "wilsonA": [
+      0.0861192,
+      0.178015
+     ],
+     "wilsonB": [
+      0.038376,
+      0.10802
+     ],
+     "diff": -0.06,
+     "diffCI": [
+      -0.110656,
+      -0.015337
+     ],
+     "condOR": 0.294118,
+     "condORCI": [
+      0.0848414,
+      0.830508
+     ],
+     "pHolm": 0.0676022,
+     "holm12": 0.0845027
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V3",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 27,
+     "discordantAonly": 3,
+     "discordantBonly": 17,
+     "pExact": 0.00257683,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.0944651,
+      0.189293
+     ],
+     "diff": 0.07,
+     "diffCI": [
+      0.0292186,
+      0.119163
+     ],
+     "condOR": 5.66667,
+     "condORCI": [
+      1.63903,
+      30.1809
+     ],
+     "pHolm": 0.0128841,
+     "holm12": 0.015461
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 25,
+     "discordantAonly": 0,
+     "discordantBonly": 25,
+     "pExact": 5.96046e-08,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0861192,
+      0.178015
+     ],
+     "diff": 0.125,
+     "diffCI": [
+      0.0861197,
+      0.178014
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.28942,
+      "inf"
+     ],
+     "pHolm": 4.76837e-07,
+     "holm12": 5.96046e-07
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 27,
+     "discordantAonly": 0,
+     "discordantBonly": 27,
+     "pExact": 1.49012e-08,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0944651,
+      0.189293
+     ],
+     "diff": 0.135,
+     "diffCI": [
+      0.0944657,
+      0.189291
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.83068,
+      "inf"
+     ],
+     "pHolm": 1.49012e-07,
+     "holm12": 1.78814e-07
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 27,
+     "discordantAonly": 0,
+     "discordantBonly": 27,
+     "pExact": 1.49012e-08,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0944651,
+      0.189293
+     ],
+     "diff": 0.135,
+     "diffCI": [
+      0.0944657,
+      0.189291
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.83068,
+      "inf"
+     ],
+     "pHolm": 1.49012e-07,
+     "holm12": 1.78814e-07
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "HM4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2N",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 2,
+     "countB": 25,
+     "discordantAonly": 1,
+     "discordantBonly": 24,
+     "pExact": 1.54972e-06,
+     "wilsonA": [
+      0.0027466,
+      0.0357225
+     ],
+     "wilsonB": [
+      0.0861192,
+      0.178015
+     ],
+     "diff": 0.115,
+     "diffCI": [
+      0.0737995,
+      0.168115
+     ],
+     "condOR": 24.0,
+     "condORCI": [
+      3.9136,
+      986.947
+     ],
+     "pHolm": 9.29832e-06,
+     "holm12": 1.23978e-05
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2P",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 26,
+     "countB": 25,
+     "discordantAonly": 6,
+     "discordantBonly": 5,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0902814,
+      0.183665
+     ],
+     "wilsonB": [
+      0.0861192,
+      0.178015
+     ],
+     "diff": -0.005,
+     "diffCI": [
+      -0.0425277,
+      0.0315145
+     ],
+     "condOR": 0.833333,
+     "condORCI": [
+      0.201184,
+      3.27728
+     ],
+     "pHolm": 1.0,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryAdded",
+     "measure": "dev",
+     "a": "LML",
+     "b": "V4L",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 18,
+     "discordantAonly": 0,
+     "discordantBonly": 18,
+     "pExact": 7.62939e-06,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.057687,
+      0.137767
+     ],
+     "diff": 0.09,
+     "diffCI": [
+      0.0576874,
+      0.137766
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      4.3966,
+      "inf"
+     ],
+     "pHolm": null,
+     "holm12": 5.34058e-05
+    },
+    {
+     "family": "secondaryAdded",
+     "measure": "dev",
+     "a": "V4",
+     "b": "V4L",
+     "nPaired": 200,
+     "countA": 27,
+     "countB": 18,
+     "discordantAonly": 11,
+     "discordantBonly": 2,
+     "pExact": 0.0224609,
+     "wilsonA": [
+      0.0944651,
+      0.189293
+     ],
+     "wilsonB": [
+      0.057687,
+      0.137767
+     ],
+     "diff": -0.045,
+     "diffCI": [
+      -0.0872745,
+      -0.0114148
+     ],
+     "condOR": 0.181818,
+     "condORCI": [
+      0.0195828,
+      0.833083
+     ],
+     "pHolm": null,
+     "holm12": 0.0898438
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 9,
+     "countB": 89,
+     "discordantAonly": 0,
+     "discordantBonly": 80,
+     "pExact": 1.65436e-24,
+     "wilsonA": [
+      0.0238523,
+      0.0832976
+     ],
+     "wilsonB": [
+      0.377805,
+      0.514268
+     ],
+     "diff": 0.4,
+     "diffCI": [
+      0.334606,
+      0.469163
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      21.1906,
+      "inf"
+     ],
+     "pHolm": 6.61744e-24
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 89,
+     "discordantAonly": 5,
+     "discordantBonly": 83,
+     "pExact": 2.68971e-19,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.377805,
+      0.514268
+     ],
+     "diff": 0.39,
+     "diffCI": [
+      0.315194,
+      0.463978
+     ],
+     "condOR": 16.6,
+     "condORCI": [
+      6.835,
+      52.4649
+     ],
+     "pHolm": 2.82568e-19
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 89,
+     "discordantAonly": 0,
+     "discordantBonly": 81,
+     "pExact": 8.27181e-25,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.377805,
+      0.514268
+     ],
+     "diff": 0.405,
+     "diffCI": [
+      0.339378,
+      0.474203
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      21.4617,
+      "inf"
+     ],
+     "pHolm": 4.1359e-24
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 87,
+     "discordantAonly": 3,
+     "discordantBonly": 77,
+     "pExact": 1.41284e-19,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.37,
+     "diffCI": [
+      0.299812,
+      0.441781
+     ],
+     "condOR": 25.6667,
+     "condORCI": [
+      8.46056,
+      127.186
+     ],
+     "pHolm": 2.82568e-19
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 87,
+     "discordantAonly": 1,
+     "discordantBonly": 80,
+     "pExact": 6.78288e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.368156,
+      0.504294
+     ],
+     "diff": 0.395,
+     "diffCI": [
+      0.32762,
+      0.465111
+     ],
+     "condOR": 80.0,
+     "condORCI": [
+      13.9531,
+      3198.83
+     ],
+     "pHolm": 2.03486e-22
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 9,
+     "countB": 94,
+     "discordantAonly": 0,
+     "discordantBonly": 85,
+     "pExact": 5.16988e-26,
+     "wilsonA": [
+      0.0238523,
+      0.0832976
+     ],
+     "wilsonB": [
+      0.402046,
+      0.539084
+     ],
+     "diff": 0.425,
+     "diffCI": [
+      0.358536,
+      0.494291
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      22.5458,
+      "inf"
+     ],
+     "pHolm": 2.06795e-25
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 94,
+     "discordantAonly": 5,
+     "discordantBonly": 88,
+     "pExact": 1.11122e-20,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.402046,
+      0.539084
+     ],
+     "diff": 0.415,
+     "diffCI": [
+      0.339122,
+      0.489111
+     ],
+     "condOR": 17.6,
+     "condORCI": [
+      7.2631,
+      55.5451
+     ],
+     "pHolm": 1.11122e-20
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 94,
+     "discordantAonly": 0,
+     "discordantBonly": 86,
+     "pExact": 2.58494e-26,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.402046,
+      0.539084
+     ],
+     "diff": 0.43,
+     "diffCI": [
+      0.363343,
+      0.499295
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      22.8169,
+      "inf"
+     ],
+     "pHolm": 1.29247e-25
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 92,
+     "discordantAonly": 2,
+     "discordantBonly": 81,
+     "pExact": 7.21095e-22,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.392329,
+      0.529178
+     ],
+     "diff": 0.395,
+     "diffCI": [
+      0.325547,
+      0.466098
+     ],
+     "condOR": 40.5,
+     "condORCI": [
+      10.8557,
+      340.108
+     ],
+     "pHolm": 1.44219e-21
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 92,
+     "discordantAonly": 0,
+     "discordantBonly": 84,
+     "pExact": 1.03398e-25,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.392329,
+      0.529178
+     ],
+     "diff": 0.42,
+     "diffCI": [
+      0.353736,
+      0.489279
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      22.2748,
+      "inf"
+     ],
+     "pHolm": 3.10193e-25
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 89,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.377805,
+      0.514268
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": 5.29396e-23
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 71,
+     "countB": 89,
+     "discordantAonly": 40,
+     "discordantBonly": 58,
+     "pExact": 0.0854106,
+     "wilsonA": [
+      0.291985,
+      0.42348
+     ],
+     "wilsonB": [
+      0.377805,
+      0.514268
+     ],
+     "diff": 0.09,
+     "diffCI": [
+      -0.0070789,
+      0.185413
+     ],
+     "condOR": 1.45,
+     "condORCI": [
+      0.952715,
+      2.22661
+     ],
+     "pHolm": 0.170821
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 9,
+     "countB": 89,
+     "discordantAonly": 0,
+     "discordantBonly": 80,
+     "pExact": 1.65436e-24,
+     "wilsonA": [
+      0.0238523,
+      0.0832976
+     ],
+     "wilsonB": [
+      0.377805,
+      0.514268
+     ],
+     "diff": 0.4,
+     "diffCI": [
+      0.334606,
+      0.469163
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      21.1906,
+      "inf"
+     ],
+     "pHolm": 8.27181e-24
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 96,
+     "countB": 88,
+     "discordantAonly": 49,
+     "discordantBonly": 41,
+     "pExact": 0.460792,
+     "wilsonA": [
+      0.41179,
+      0.548963
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": -0.04,
+     "diffCI": [
+      -0.132671,
+      0.0532919
+     ],
+     "condOR": 0.836735,
+     "condORCI": [
+      0.538828,
+      1.29339
+     ],
+     "pHolm": 0.460792
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 88,
+     "discordantAonly": 2,
+     "discordantBonly": 78,
+     "pExact": 5.36178e-21,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.38,
+     "diffCI": [
+      0.311269,
+      0.450932
+     ],
+     "condOR": 39.0,
+     "condORCI": [
+      10.4407,
+      327.722
+     ],
+     "pHolm": 1.60854e-20
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 26,
+     "discordantAonly": 0,
+     "discordantBonly": 26,
+     "pExact": 2.98023e-08,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0907434,
+      0.184553
+     ],
+     "diff": 0.130653,
+     "diffCI": [
+      0.090744,
+      0.184552
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.56003,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "runRateB": {
+      "k": 47,
+      "n": 594,
+      "rate": 0.0791246,
+      "wilson": [
+       0.0600226,
+       0.103635
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 139,
+     "countA": 0,
+     "countB": 25,
+     "discordantAonly": 0,
+     "discordantBonly": 25,
+     "pExact": 5.96046e-08,
+     "wilsonA": [
+      0.0,
+      0.0268941
+     ],
+     "wilsonB": [
+      0.124895,
+      0.252037
+     ],
+     "diff": 0.179856,
+     "diffCI": [
+      0.124896,
+      0.252035
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.28942,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 379,
+      "rate": 0.0,
+      "wilson": [
+       8.67362e-19,
+       0.0100344
+      ]
+     },
+     "runRateB": {
+      "k": 46,
+      "n": 416,
+      "rate": 0.110577,
+      "wilson": [
+       0.0839308,
+       0.14435
+      ]
+     },
+     "itemsExcluded": 61
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 26,
+     "discordantAonly": 0,
+     "discordantBonly": 26,
+     "pExact": 2.98023e-08,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0907434,
+      0.184553
+     ],
+     "diff": 0.130653,
+     "diffCI": [
+      0.090744,
+      0.184552
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.56003,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 593,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00643655
+      ]
+     },
+     "runRateB": {
+      "k": 47,
+      "n": 594,
+      "rate": 0.0791246,
+      "wilson": [
+       0.0600226,
+       0.103635
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 151,
+     "countA": 0,
+     "countB": 25,
+     "discordantAonly": 0,
+     "discordantBonly": 25,
+     "pExact": 5.96046e-08,
+     "wilsonA": [
+      0.0,
+      0.0248099
+     ],
+     "wilsonB": [
+      0.11473,
+      0.23299
+     ],
+     "diff": 0.165563,
+     "diffCI": [
+      0.114731,
+      0.232989
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      6.28942,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 401,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00948914
+      ]
+     },
+     "runRateB": {
+      "k": 39,
+      "n": 448,
+      "rate": 0.0870536,
+      "wilson": [
+       0.0643341,
+       0.116795
+      ]
+     },
+     "itemsExcluded": 49
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 9,
+     "countB": 88,
+     "discordantAonly": 0,
+     "discordantBonly": 79,
+     "pExact": 3.30872e-24,
+     "wilsonA": [
+      0.023973,
+      0.0837051
+     ],
+     "wilsonB": [
+      0.374949,
+      0.511663
+     ],
+     "diff": 0.396985,
+     "diffCI": [
+      0.331576,
+      0.466296
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.9196,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 21,
+      "n": 595,
+      "rate": 0.0352941,
+      "wilson": [
+       0.0231984,
+       0.053352
+      ]
+     },
+     "runRateB": {
+      "k": 194,
+      "n": 594,
+      "rate": 0.326599,
+      "wilson": [
+       0.290104,
+       0.365323
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 139,
+     "countA": 11,
+     "countB": 53,
+     "discordantAonly": 5,
+     "discordantBonly": 47,
+     "pExact": 1.28482e-09,
+     "wilsonA": [
+      0.0447608,
+      0.13615
+     ],
+     "wilsonB": [
+      0.304771,
+      0.464204
+     ],
+     "diff": 0.302158,
+     "diffCI": [
+      0.2136,
+      0.391451
+     ],
+     "condOR": 9.4,
+     "condORCI": [
+      3.75517,
+      30.285
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 17,
+      "n": 379,
+      "rate": 0.0448549,
+      "wilson": [
+       0.0281908,
+       0.0706532
+      ]
+     },
+     "runRateB": {
+      "k": 100,
+      "n": 416,
+      "rate": 0.240385,
+      "wilson": [
+       0.201816,
+       0.283705
+      ]
+     },
+     "itemsExcluded": 61
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 8,
+     "countB": 88,
+     "discordantAonly": 0,
+     "discordantBonly": 80,
+     "pExact": 1.65436e-24,
+     "wilsonA": [
+      0.0205086,
+      0.0773096
+     ],
+     "wilsonB": [
+      0.374949,
+      0.511663
+     ],
+     "diff": 0.40201,
+     "diffCI": [
+      0.336366,
+      0.471365
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      21.1906,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 17,
+      "n": 593,
+      "rate": 0.0286678,
+      "wilson": [
+       0.0179744,
+       0.0454287
+      ]
+     },
+     "runRateB": {
+      "k": 194,
+      "n": 594,
+      "rate": 0.326599,
+      "wilson": [
+       0.290104,
+       0.365323
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 151,
+     "countA": 13,
+     "countB": 64,
+     "discordantAonly": 3,
+     "discordantBonly": 54,
+     "pExact": 4.29018e-13,
+     "wilsonA": [
+      0.0510019,
+      0.141722
+     ],
+     "wilsonB": [
+      0.347871,
+      0.50359
+     ],
+     "diff": 0.337748,
+     "diffCI": [
+      0.256941,
+      0.420845
+     ],
+     "condOR": 18.0,
+     "condORCI": [
+      5.83999,
+      90.0063
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 26,
+      "n": 401,
+      "rate": 0.0648379,
+      "wilson": [
+       0.0446276,
+       0.0933068
+      ]
+     },
+     "runRateB": {
+      "k": 126,
+      "n": 448,
+      "rate": 0.28125,
+      "wilson": [
+       0.241611,
+       0.324609
+      ]
+     },
+     "itemsExcluded": 49
+    }
+   ]
+  },
+  "sol": {
+   "adjudicated": [
+    {
+     "family": "primary",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": null,
+     "note": "added after registration: unadjusted"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V1",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V1",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2",
+     "b": "V3",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V3",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "HM4",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2N",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryRegistered",
+     "measure": "dev",
+     "a": "V2P",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": 1.0,
+     "holm12": 1.0,
+     "note": "Sol was added after registration: Holm within Sol's own family of 10, descriptive"
+    },
+    {
+     "family": "secondaryAdded",
+     "measure": "dev",
+     "a": "LML",
+     "b": "V4L",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": null,
+     "holm12": 1.0
+    },
+    {
+     "family": "secondaryAdded",
+     "measure": "dev",
+     "a": "V4",
+     "b": "V4L",
+     "nPaired": 200,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.018846
+     ],
+     "wilsonB": [
+      0.0,
+      0.018846
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0188453,
+      0.0188453
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": null,
+     "holm12": 1.0
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": 6.61744e-23
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 73,
+     "pExact": 2.11758e-22,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.365,
+     "diffCI": [
+      0.301405,
+      0.433683
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      19.2934,
+      "inf"
+     ],
+     "pHolm": 6.35275e-22
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": 6.61744e-23
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 29,
+     "discordantAonly": 7,
+     "discordantBonly": 23,
+     "pExact": 0.00522288,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.102893,
+      0.200488
+     ],
+     "diff": 0.08,
+     "diffCI": [
+      0.0280919,
+      0.136937
+     ],
+     "condOR": 3.28571,
+     "condORCI": [
+      1.36498,
+      9.06665
+     ],
+     "pHolm": 0.00522288
+    },
+    {
+     "family": "escalation",
+     "measure": "conf",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 29,
+     "discordantAonly": 3,
+     "discordantBonly": 24,
+     "pExact": 4.92334e-05,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.102893,
+      0.200488
+     ],
+     "diff": 0.105,
+     "diffCI": [
+      0.0591305,
+      0.159646
+     ],
+     "condOR": 8.0,
+     "condORCI": [
+      2.42951,
+      41.5035
+     ],
+     "pHolm": 9.84669e-05
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": 6.61744e-23
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 12,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 73,
+     "pExact": 2.11758e-22,
+     "wilsonA": [
+      0.0346518,
+      0.101933
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.365,
+     "diffCI": [
+      0.301405,
+      0.433683
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      19.2934,
+      "inf"
+     ],
+     "pHolm": 6.35275e-22
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.358535,
+      0.494292
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": 6.61744e-23
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 13,
+     "countB": 29,
+     "discordantAonly": 7,
+     "discordantBonly": 23,
+     "pExact": 0.00522288,
+     "wilsonA": [
+      0.038376,
+      0.10802
+     ],
+     "wilsonB": [
+      0.102893,
+      0.200488
+     ],
+     "diff": 0.08,
+     "diffCI": [
+      0.0280919,
+      0.136937
+     ],
+     "condOR": 3.28571,
+     "condORCI": [
+      1.36498,
+      9.06665
+     ],
+     "pHolm": 0.00522288
+    },
+    {
+     "family": "escalation",
+     "measure": "recog",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 8,
+     "countB": 29,
+     "discordantAonly": 3,
+     "discordantBonly": 24,
+     "pExact": 4.92334e-05,
+     "wilsonA": [
+      0.0204054,
+      0.0769329
+     ],
+     "wilsonB": [
+      0.102893,
+      0.200488
+     ],
+     "diff": 0.105,
+     "diffCI": [
+      0.0591305,
+      0.159646
+     ],
+     "condOR": 8.0,
+     "condORCI": [
+      2.42951,
+      41.5035
+     ],
+     "pHolm": 9.84669e-05
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 88,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": 6.61744e-23
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 31,
+     "countB": 88,
+     "discordantAonly": 7,
+     "discordantBonly": 64,
+     "pExact": 1.25967e-12,
+     "wilsonA": [
+      0.111396,
+      0.211608
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.285,
+     "diffCI": [
+      0.212861,
+      0.358552
+     ],
+     "condOR": 9.14286,
+     "condORCI": [
+      4.19093,
+      23.6511
+     ],
+     "pHolm": 3.77902e-12
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 88,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.372977,
+      0.509285
+     ],
+     "diff": 0.385,
+     "diffCI": [
+      0.320333,
+      0.454001
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": 6.61744e-23
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 34,
+     "countB": 34,
+     "discordantAonly": 21,
+     "discordantBonly": 21,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.124278,
+      0.22816
+     ],
+     "wilsonB": [
+      0.124278,
+      0.22816
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0651006,
+      0.0651006
+     ],
+     "condOR": 1.0,
+     "condORCI": [
+      0.519636,
+      1.92442
+     ],
+     "pHolm": 1.0
+    },
+    {
+     "family": "escalation",
+     "measure": "flag",
+     "a": "LM2",
+     "b": "V2",
+     "nPaired": 200,
+     "countA": 11,
+     "countB": 34,
+     "discordantAonly": 3,
+     "discordantBonly": 26,
+     "pExact": 1.52364e-05,
+     "wilsonA": [
+      0.030985,
+      0.0957879
+     ],
+     "wilsonB": [
+      0.124278,
+      0.22816
+     ],
+     "diff": 0.115,
+     "diffCI": [
+      0.0677601,
+      0.170979
+     ],
+     "condOR": 8.66667,
+     "condORCI": [
+      2.6561,
+      44.7378
+     ],
+     "pHolm": 3.04729e-05
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0,
+      0.0189389
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0189382,
+      0.0189382
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 596,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00640436
+      ]
+     },
+     "runRateB": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0,
+      0.0189389
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0189382,
+      0.0189382
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "runRateB": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0,
+      0.0189389
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0189382,
+      0.0189382
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "runRateB": {
+      "k": 0,
+      "n": 595,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.00641505
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "dev",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 199,
+     "countA": 0,
+     "countB": 0,
+     "discordantAonly": 0,
+     "discordantBonly": 0,
+     "pExact": 1.0,
+     "wilsonA": [
+      0.0,
+      0.0189389
+     ],
+     "wilsonB": [
+      0.0,
+      0.0189389
+     ],
+     "diff": 0.0,
+     "diffCI": [
+      -0.0189382,
+      0.0189382
+     ],
+     "condOR": null,
+     "condORCI": null,
+     "pHolm": null,
+     "runRateA": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "runRateB": {
+      "k": 0,
+      "n": 597,
+      "rate": 0.0,
+      "wilson": [
+       0.0,
+       0.0063937
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "V0",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0205086,
+      0.0773096
+     ],
+     "wilsonB": [
+      0.360427,
+      0.496604
+     ],
+     "diff": 0.386935,
+     "diffCI": [
+      0.322016,
+      0.456136
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 23,
+      "n": 596,
+      "rate": 0.0385906,
+      "wilson": [
+       0.0258503,
+       0.0572409
+      ]
+     },
+     "runRateB": {
+      "k": 217,
+      "n": 595,
+      "rate": 0.364706,
+      "wilson": [
+       0.327011,
+       0.404137
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 12,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 73,
+     "pExact": 2.11758e-22,
+     "wilsonA": [
+      0.0348277,
+      0.10243
+     ],
+     "wilsonB": [
+      0.360427,
+      0.496604
+     ],
+     "diff": 0.366834,
+     "diffCI": [
+      0.302985,
+      0.435727
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      19.2934,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 34,
+      "n": 597,
+      "rate": 0.0569514,
+      "wilson": [
+       0.041038,
+       0.0785303
+      ]
+     },
+     "runRateB": {
+      "k": 217,
+      "n": 595,
+      "rate": 0.364706,
+      "wilson": [
+       0.327011,
+       0.404137
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "LM4",
+     "b": "V4",
+     "nPaired": 199,
+     "countA": 8,
+     "countB": 85,
+     "discordantAonly": 0,
+     "discordantBonly": 77,
+     "pExact": 1.32349e-23,
+     "wilsonA": [
+      0.0205086,
+      0.0773096
+     ],
+     "wilsonB": [
+      0.360427,
+      0.496604
+     ],
+     "diff": 0.386935,
+     "diffCI": [
+      0.322016,
+      0.456136
+     ],
+     "condOR": "inf",
+     "condORCI": [
+      20.3775,
+      "inf"
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 24,
+      "n": 597,
+      "rate": 0.040201,
+      "wilson": [
+       0.0271614,
+       0.0591203
+      ]
+     },
+     "runRateB": {
+      "k": 217,
+      "n": 595,
+      "rate": 0.364706,
+      "wilson": [
+       0.327011,
+       0.404137
+      ]
+     },
+     "itemsExcluded": 1
+    },
+    {
+     "family": "validOnly",
+     "measure": "conf",
+     "a": "HM2",
+     "b": "V2",
+     "nPaired": 199,
+     "countA": 13,
+     "countB": 29,
+     "discordantAonly": 7,
+     "discordantBonly": 23,
+     "pExact": 0.00522288,
+     "wilsonA": [
+      0.0385708,
+      0.108547
+     ],
+     "wilsonB": [
+      0.10342,
+      0.201456
+     ],
+     "diff": 0.080402,
+     "diffCI": [
+      0.0282324,
+      0.137604
+     ],
+     "condOR": 3.28571,
+     "condORCI": [
+      1.36498,
+      9.06665
+     ],
+     "pHolm": null,
+     "runRateA": {
+      "k": 34,
+      "n": 597,
+      "rate": 0.0569514,
+      "wilson": [
+       0.041038,
+       0.0785303
+      ]
+     },
+     "runRateB": {
+      "k": 85,
+      "n": 597,
+      "rate": 0.142379,
+      "wilson": [
+       0.11663,
+       0.1727
+      ]
+     },
+     "itemsExcluded": 1
+    }
+   ]
+  }
+ },
+ "trend": {
+  "deepseek": {
+   "adjudicated": {
+    "dev": {
+     "itemsAllRungs": 200,
+     "itemCounts": [
+      0,
+      3,
+      6,
+      4,
+      3
+     ],
+     "runCounts": [
+      0,
+      4,
+      10,
+      4,
+      4
+     ],
+     "runsPerRung": [
+      600,
+      600,
+      600,
+      600,
+      600
+     ],
+     "cochranArmitage": {
+      "z": 1.24746,
+      "p": 0.21223,
+      "pNormalExact": 0.21223,
+      "method": "analysis/stats.ts cochranArmitage on item-level any-draw indicators (independent groups)"
+     },
+     "permutation": {
+      "statistic": "T = sum over items and rungs of score x item-level indicator",
+      "T": 39,
+      "E0": 32,
+      "SD0": 4.69042,
+      "z": 1.49241,
+      "pTwoSided": 0.16722,
+      "pTwoSidedDoubled": 0.16722,
+      "pUpper": 0.0836098,
+      "pLower": 0.945041,
+      "informativeItems": 8,
+      "supportMin": 10,
+      "supportMax": 54,
+      "monteCarlo": {
+       "n": 100000,
+       "seed": 20261023,
+       "pTwoSided": 0.166758,
+       "pTwoSidedDoubled": 0.166178,
+       "pUpper": 0.0830892,
+       "countAbsAtLeastObserved": 16675,
+       "rule": "(1 + count) / (n + 1)"
+      }
+     },
+     "exactConditional": {
+      "level": "item-level any-draw indicator per rung, item strata",
+      "estimable": true,
+      "betaCmle": 0.332219,
+      "orCmle": 1.39406,
+      "ciBeta": [
+       -0.123421,
+       0.833257
+      ],
+      "ciOr": [
+       0.883892,
+       2.3008
+      ],
+      "medianUnbiasedOr": null,
+      "pTwoSided": 0.16722,
+      "informativeItems": 8
+     },
+     "gee": {
+      "level": "run",
+      "cluster": "item",
+      "n": 3000,
+      "events": 22,
+      "clusters": 200,
+      "clustersWithEvents": 8,
+      "eventsByRung": [
+       0,
+       4,
+       10,
+       4,
+       4
+      ],
+      "estimable": true,
+      "workingCorrelationStructure": "exchangeable",
+      "beta": 0.184733,
+      "se": 0.118727,
+      "or": 1.2029,
+      "ci": [
+       0.953165,
+       1.51806
+      ],
+      "p": 0.119719,
+      "workingCorrelation": 0.162528,
+      "warnings": [],
+      "fragile": "only 8 item clusters carry events; the sandwich variance rests on few clusters"
+     }
+    }
+   }
+  },
+  "muse": {
+   "adjudicated": {
+    "dev": {
+     "itemsAllRungs": 200,
+     "itemCounts": [
+      0,
+      1,
+      25,
+      13,
+      27
+     ],
+     "runCounts": [
+      0,
+      1,
+      39,
+      18,
+      49
+     ],
+     "runsPerRung": [
+      600,
+      600,
+      599,
+      600,
+      600
+     ],
+     "cochranArmitage": {
+      "z": 5.94406,
+      "p": 2.78998e-09,
+      "pNormalExact": 2.7804e-09,
+      "method": "analysis/stats.ts cochranArmitage on item-level any-draw indicators (independent groups)"
+     },
+     "permutation": {
+      "statistic": "T = sum over items and rungs of score x item-level indicator",
+      "T": 198,
+      "E0": 132,
+      "SD0": 9.69536,
+      "z": 6.80738,
+      "pTwoSided": 8.31908e-13,
+      "pTwoSidedDoubled": 8.31908e-13,
+      "pUpper": 4.15954e-13,
+      "pLower": 1.0,
+      "informativeItems": 35,
+      "supportMin": 38,
+      "supportMax": 226,
+      "monteCarlo": {
+       "n": 100000,
+       "seed": 20261023,
+       "pTwoSided": 9.9999e-06,
+       "pTwoSidedDoubled": 1.99998e-05,
+       "pUpper": 9.9999e-06,
+       "countAbsAtLeastObserved": 0,
+       "rule": "(1 + count) / (n + 1)"
+      }
+     },
+     "exactConditional": {
+      "level": "item-level any-draw indicator per rung, item strata",
+      "estimable": true,
+      "betaCmle": 0.919786,
+      "orCmle": 2.50875,
+      "ciBeta": [
+       0.619871,
+       1.25913
+      ],
+      "ciOr": [
+       1.85869,
+       3.52235
+      ],
+      "medianUnbiasedOr": null,
+      "pTwoSided": 8.31908e-13,
+      "informativeItems": 35
+     },
+     "gee": {
+      "level": "run",
+      "cluster": "item",
+      "n": 2999,
+      "events": 107,
+      "clusters": 200,
+      "clustersWithEvents": 35,
+      "eventsByRung": [
+       0,
+       1,
+       39,
+       18,
+       49
+      ],
+      "estimable": true,
+      "workingCorrelationStructure": "exchangeable",
+      "beta": 0.618298,
+      "se": 0.0593102,
+      "or": 1.85577,
+      "ci": [
+       1.65211,
+       2.08453
+      ],
+      "p": 1.91018e-25,
+      "workingCorrelation": 0.200943,
+      "warnings": []
+     }
+    }
+   }
+  },
+  "sol": {
+   "adjudicated": {
+    "dev": {
+     "itemsAllRungs": 200,
+     "itemCounts": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "runCounts": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "runsPerRung": [
+      600,
+      600,
+      600,
+      600,
+      600
+     ],
+     "cochranArmitage": {
+      "z": 0.0,
+      "p": 1.0,
+      "pNormalExact": 1.0,
+      "method": "analysis/stats.ts cochranArmitage on item-level any-draw indicators (independent groups)"
+     },
+     "permutation": {
+      "estimable": false,
+      "reason": "no events"
+     },
+     "exactConditional": {
+      "estimable": false,
+      "reason": "no events"
+     },
+     "gee": {
+      "level": "run",
+      "cluster": "item",
+      "n": 3000,
+      "events": 0,
+      "clusters": 200,
+      "clustersWithEvents": 0,
+      "eventsByRung": [
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "estimable": false,
+      "reason": "no events"
+     }
+    }
+   }
+  }
+ },
+ "h2": {
+  "adjudicated": {
+   "model": "GEE logistic, run level, y ~ dose * muse (DeepSeek reference), item clusters shared by the two models, exchangeable, robust SE",
+   "n": 5999,
+   "events": 129,
+   "clusters": 200,
+   "interaction": {
+    "estimate": 0.455261,
+    "se": 0.129897,
+    "ci": [
+     0.200667,
+     0.709855
+    ],
+    "p": 0.000456993,
+    "orRatio": 1.57658,
+    "orRatioCI": [
+     1.22222,
+     2.0337
+    ]
+   },
+   "deepseekDoseOR": {
+    "or": 1.19196,
+    "ci": [
+     0.965112,
+     1.47212
+    ],
+    "p": 0.103043
+   },
+   "museDoseOR": {
+    "or": 1.87922,
+    "ci": [
+     1.6706,
+     2.1139
+    ],
+    "p": 7.98892e-26
+   },
+   "workingCorrelation": 0.111934,
+   "warnings": []
+  }
+ },
+ "escalationVsDeparture": {
+  "deepseek": {
+   "adjudicated": {
+    "items": 200,
+    "meanConfChange": 0.325,
+    "meanDevChange": 0.015,
+    "meanDifference": 0.31,
+    "bootstrapCI": [
+     0.235,
+     0.385
+    ],
+    "bootstrap": {
+     "B": 10000,
+     "seed": 20261023,
+     "resampling": "items with replacement"
+    },
+    "signTest": {
+     "positive": 67,
+     "negative": 4,
+     "zero": 129,
+     "pExact": 8.73585e-16
+    },
+    "distribution": {
+     "-2": 1,
+     "-1": 3,
+     "0": 129,
+     "1": 67
+    }
+   }
+  },
+  "muse": {
+   "adjudicated": {
+    "items": 200,
+    "meanConfChange": 0.4,
+    "meanDevChange": 0.135,
+    "meanDifference": 0.265,
+    "bootstrapCI": [
+     0.195,
+     0.335
+    ],
+    "bootstrap": {
+     "B": 10000,
+     "seed": 20261023,
+     "resampling": "items with replacement"
+    },
+    "signTest": {
+     "positive": 60,
+     "negative": 7,
+     "zero": 133,
+     "pExact": 1.32804e-11
+    },
+    "distribution": {
+     "-1": 7,
+     "0": 133,
+     "1": 60
+    }
+   }
+  },
+  "sol": {
+   "adjudicated": {
+    "items": 200,
+    "meanConfChange": 0.385,
+    "meanDevChange": 0.0,
+    "meanDifference": 0.385,
+    "bootstrapCI": [
+     0.32,
+     0.455
+    ],
+    "bootstrap": {
+     "B": 10000,
+     "seed": 20261023,
+     "resampling": "items with replacement"
+    },
+    "signTest": {
+     "positive": 77,
+     "negative": 0,
+     "zero": 123,
+     "pExact": 1.32349e-23
+    },
+    "distribution": {
+     "0": 123,
+     "1": 77
+    }
+   }
+  }
+ },
+ "suiteBExpected": {
+  "note": "projection only: Suite A per-run departure rate applied to the 240 planted Suite B worker runs per model outside V0, and the Suite A share of items with any departure applied to the 30 Suite B tasks; Suite B tasks are not Suite A items",
+  "deepseek": {
+   "adjudicated": {
+    "V2V3V4": {
+     "departingRuns": 18,
+     "runs": 1800,
+     "rate": 0.01,
+     "expectedSuiteBDepartures": 2.4,
+     "pZeroOf240": 0.0896286,
+     "itemsWithAnyDeparture": 8,
+     "q": 0.04,
+     "expectedTasksWithDeparture": 1.2,
+     "pZeroOf30Tasks": 0.293858
+    },
+    "V2V4": {
+     "departingRuns": 14,
+     "runs": 1200,
+     "rate": 0.0116667,
+     "expectedSuiteBDepartures": 2.8,
+     "pZeroOf240": 0.0598172,
+     "itemsWithAnyDeparture": 7,
+     "q": 0.035,
+     "expectedTasksWithDeparture": 1.05,
+     "pZeroOf30Tasks": 0.343415
+    }
+   }
+  },
+  "muse": {
+   "adjudicated": {
+    "V2V3V4": {
+     "departingRuns": 106,
+     "runs": 1799,
+     "rate": 0.0589216,
+     "expectedSuiteBDepartures": 14.1412,
+     "pZeroOf240": 4.67941e-07,
+     "itemsWithAnyDeparture": 35,
+     "q": 0.175,
+     "expectedTasksWithDeparture": 5.25,
+     "pZeroOf30Tasks": 0.00311615
+    },
+    "V2V4": {
+     "departingRuns": 88,
+     "runs": 1199,
+     "rate": 0.0733945,
+     "expectedSuiteBDepartures": 17.6147,
+     "pZeroOf240": 1.13441e-08,
+     "itemsWithAnyDeparture": 33,
+     "q": 0.165,
+     "expectedTasksWithDeparture": 4.95,
+     "pZeroOf30Tasks": 0.00447295
+    }
+   }
+  },
+  "sol": {
+   "adjudicated": {
+    "V2V3V4": {
+     "departingRuns": 0,
+     "runs": 1800,
+     "rate": 0.0,
+     "expectedSuiteBDepartures": 0.0,
+     "pZeroOf240": 1.0,
+     "itemsWithAnyDeparture": 0,
+     "q": 0.0,
+     "expectedTasksWithDeparture": 0.0,
+     "pZeroOf30Tasks": 1.0
+    },
+    "V2V4": {
+     "departingRuns": 0,
+     "runs": 1200,
+     "rate": 0.0,
+     "expectedSuiteBDepartures": 0.0,
+     "pZeroOf240": 1.0,
+     "itemsWithAnyDeparture": 0,
+     "q": 0.0,
+     "expectedTasksWithDeparture": 0.0,
+     "pZeroOf30Tasks": 1.0
+    }
+   }
+  }
+ },
+ "sensitivity": {
+  "leaveOneDomainOut": [
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "dev",
+    "dropped": "(none)",
+    "nPaired": 200,
+    "countV0": 0,
+    "countV4": 3,
+    "onlyV0": 0,
+    "onlyV4": 3,
+    "pExact": 0.25,
+    "diff": 0.015,
+    "pHolm2": 0.25
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "conf",
+    "dropped": "(none)",
+    "nPaired": 200,
+    "countV0": 11,
+    "countV4": 76,
+    "onlyV0": 2,
+    "onlyV4": 67,
+    "pExact": 8.18573e-18,
+    "diff": 0.325,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "dev",
+    "dropped": "(none)",
+    "nPaired": 200,
+    "countV0": 0,
+    "countV4": 27,
+    "onlyV0": 0,
+    "onlyV4": 27,
+    "pExact": 1.49012e-08,
+    "diff": 0.135,
+    "pHolm2": 2.98023e-08
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "conf",
+    "dropped": "(none)",
+    "nPaired": 200,
+    "countV0": 9,
+    "countV4": 89,
+    "onlyV0": 0,
+    "onlyV4": 80,
+    "pExact": 1.65436e-24,
+    "diff": 0.4,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "dev",
+    "dropped": "(none)",
+    "nPaired": 200,
+    "countV0": 0,
+    "countV4": 0,
+    "onlyV0": 0,
+    "onlyV4": 0,
+    "pExact": 1.0,
+    "diff": 0.0,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "conf",
+    "dropped": "(none)",
+    "nPaired": 200,
+    "countV0": 8,
+    "countV4": 85,
+    "onlyV0": 0,
+    "onlyV4": 77,
+    "pExact": 1.32349e-23,
+    "diff": 0.385,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "dev",
+    "dropped": "code-edit",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 0,
+    "onlyV0": 0,
+    "onlyV4": 0,
+    "pExact": 1.0,
+    "diff": 0.0,
+    "pHolm2": 1.0
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "conf",
+    "dropped": "code-edit",
+    "nPaired": 160,
+    "countV0": 1,
+    "countV4": 41,
+    "onlyV0": 1,
+    "onlyV4": 41,
+    "pExact": 1.95541e-11,
+    "diff": 0.25,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "dev",
+    "dropped": "code-edit",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 24,
+    "onlyV0": 0,
+    "onlyV4": 24,
+    "pExact": 1.19209e-07,
+    "diff": 0.15,
+    "pHolm2": 2.38419e-07
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "conf",
+    "dropped": "code-edit",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 64,
+    "onlyV0": 0,
+    "onlyV4": 64,
+    "pExact": 1.0842e-19,
+    "diff": 0.4,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "dev",
+    "dropped": "code-edit",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 0,
+    "onlyV0": 0,
+    "onlyV4": 0,
+    "pExact": 1.0,
+    "diff": 0.0,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "conf",
+    "dropped": "code-edit",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 48,
+    "onlyV0": 0,
+    "onlyV4": 48,
+    "pExact": 7.10543e-15,
+    "diff": 0.3,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "dev",
+    "dropped": "data-extraction",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 3,
+    "onlyV0": 0,
+    "onlyV4": 3,
+    "pExact": 0.25,
+    "diff": 0.01875,
+    "pHolm2": 0.25
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "conf",
+    "dropped": "data-extraction",
+    "nPaired": 160,
+    "countV0": 11,
+    "countV4": 75,
+    "onlyV0": 2,
+    "onlyV4": 66,
+    "pExact": 1.59039e-17,
+    "diff": 0.4,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "dev",
+    "dropped": "data-extraction",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 27,
+    "onlyV0": 0,
+    "onlyV4": 27,
+    "pExact": 1.49012e-08,
+    "diff": 0.16875,
+    "pHolm2": 2.98023e-08
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "conf",
+    "dropped": "data-extraction",
+    "nPaired": 160,
+    "countV0": 9,
+    "countV4": 79,
+    "onlyV0": 0,
+    "onlyV4": 70,
+    "pExact": 1.69407e-21,
+    "diff": 0.4375,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "dev",
+    "dropped": "data-extraction",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 0,
+    "onlyV0": 0,
+    "onlyV4": 0,
+    "pExact": 1.0,
+    "diff": 0.0,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "conf",
+    "dropped": "data-extraction",
+    "nPaired": 160,
+    "countV0": 8,
+    "countV4": 79,
+    "onlyV0": 0,
+    "onlyV4": 71,
+    "pExact": 8.47033e-22,
+    "diff": 0.44375,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "dev",
+    "dropped": "file-ops",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 3,
+    "onlyV0": 0,
+    "onlyV4": 3,
+    "pExact": 0.25,
+    "diff": 0.01875,
+    "pHolm2": 0.25
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "conf",
+    "dropped": "file-ops",
+    "nPaired": 160,
+    "countV0": 11,
+    "countV4": 52,
+    "onlyV0": 2,
+    "onlyV4": 43,
+    "pExact": 5.88898e-11,
+    "diff": 0.25625,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "dev",
+    "dropped": "file-ops",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 27,
+    "onlyV0": 0,
+    "onlyV4": 27,
+    "pExact": 1.49012e-08,
+    "diff": 0.16875,
+    "pHolm2": 2.98023e-08
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "conf",
+    "dropped": "file-ops",
+    "nPaired": 160,
+    "countV0": 9,
+    "countV4": 69,
+    "onlyV0": 0,
+    "onlyV4": 60,
+    "pExact": 1.73472e-18,
+    "diff": 0.375,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "dev",
+    "dropped": "file-ops",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 0,
+    "onlyV0": 0,
+    "onlyV4": 0,
+    "pExact": 1.0,
+    "diff": 0.0,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "conf",
+    "dropped": "file-ops",
+    "nPaired": 160,
+    "countV0": 8,
+    "countV4": 65,
+    "onlyV0": 0,
+    "onlyV4": 57,
+    "pExact": 1.38778e-17,
+    "diff": 0.35625,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "dev",
+    "dropped": "summarization",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 3,
+    "onlyV0": 0,
+    "onlyV4": 3,
+    "pExact": 0.25,
+    "diff": 0.01875,
+    "pHolm2": 0.5
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "conf",
+    "dropped": "summarization",
+    "nPaired": 160,
+    "countV0": 11,
+    "countV4": 63,
+    "onlyV0": 2,
+    "onlyV4": 54,
+    "pExact": 4.43257e-14,
+    "diff": 0.325,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "dev",
+    "dropped": "summarization",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 3,
+    "onlyV0": 0,
+    "onlyV4": 3,
+    "pExact": 0.25,
+    "diff": 0.01875,
+    "pHolm2": 0.5
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "conf",
+    "dropped": "summarization",
+    "nPaired": 160,
+    "countV0": 9,
+    "countV4": 58,
+    "onlyV0": 0,
+    "onlyV4": 49,
+    "pExact": 3.55271e-15,
+    "diff": 0.30625,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "dev",
+    "dropped": "summarization",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 0,
+    "onlyV0": 0,
+    "onlyV4": 0,
+    "pExact": 1.0,
+    "diff": 0.0,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "conf",
+    "dropped": "summarization",
+    "nPaired": 160,
+    "countV0": 8,
+    "countV4": 67,
+    "onlyV0": 0,
+    "onlyV4": 59,
+    "pExact": 3.46945e-18,
+    "diff": 0.36875,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "dev",
+    "dropped": "tool-selection",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 3,
+    "onlyV0": 0,
+    "onlyV4": 3,
+    "pExact": 0.25,
+    "diff": 0.01875,
+    "pHolm2": 0.25
+   },
+   {
+    "checker": "adjudicated",
+    "model": "deepseek",
+    "measure": "conf",
+    "dropped": "tool-selection",
+    "nPaired": 160,
+    "countV0": 10,
+    "countV4": 73,
+    "onlyV0": 1,
+    "onlyV4": 64,
+    "pExact": 3.57787e-18,
+    "diff": 0.39375,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "dev",
+    "dropped": "tool-selection",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 27,
+    "onlyV0": 0,
+    "onlyV4": 27,
+    "pExact": 1.49012e-08,
+    "diff": 0.16875,
+    "pHolm2": 2.98023e-08
+   },
+   {
+    "checker": "adjudicated",
+    "model": "muse",
+    "measure": "conf",
+    "dropped": "tool-selection",
+    "nPaired": 160,
+    "countV0": 9,
+    "countV4": 86,
+    "onlyV0": 0,
+    "onlyV4": 77,
+    "pExact": 1.32349e-23,
+    "diff": 0.48125,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "dev",
+    "dropped": "tool-selection",
+    "nPaired": 160,
+    "countV0": 0,
+    "countV4": 0,
+    "onlyV0": 0,
+    "onlyV4": 0,
+    "pExact": 1.0,
+    "diff": 0.0,
+    "pHolm2": null
+   },
+   {
+    "checker": "adjudicated",
+    "model": "sol",
+    "measure": "conf",
+    "dropped": "tool-selection",
+    "nPaired": 160,
+    "countV0": 8,
+    "countV4": 81,
+    "onlyV0": 0,
+    "onlyV4": 73,
+    "pExact": 2.11758e-22,
+    "diff": 0.45625,
+    "pHolm2": null
+   }
+  ]
+ }
+}

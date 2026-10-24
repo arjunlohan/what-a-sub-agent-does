@@ -1,0 +1,160 @@
+% Literature additions for the Discover AI revision, selected and verified 2026-10-23 against the primary record
+% (arXiv, PMLR, ACL Anthology, Crossref, DataCite, proceedings and publisher pages). Author names follow the printed
+% byline of the version cited.
+%
+% Final picks, in rank order: ruan2026aorchestra, liu2026operationalreframing, arora2025safeagents,
+% yang2026concurrencycontrol, bavaresco2025llms, du2025context, shi2023large, khatua2026cooperbenchcoding,
+% ye2025justice, shen2026organizationsmore.
+% Verified reserves, not used in the proposed text: hong2024metagpt, thakur2025judging, rauba2026principalagent.
+%
+% Metadata fixes relative to paper/refs.bib (and literature/refs.bib):
+%   ruan2026aorchestra   arXiv-only entry; now ICML 2026, PMLR 306.
+%   shi2023large         arXiv-only entry; now ICML 2023, PMLR 202.
+%   du2025context        arXiv-only entry; now Findings of EMNLP 2025, with DOI.
+%   hong2024metagpt      misc entry with a note; now an ICLR 2024 proceedings entry; byline "Jonathan Chen"
+%                        (arXiv v7 lists "Jiaqi Chen").
+%   shen2026organizationsmore  "Lawrence T. Wagner III" parses with "III" as the surname (the Springer style
+%                        prints "III, L.T.W."); written here in suffix form "Wagner, III, Lawrence T.".
+%   literature/refs.bib only: semicolon author separators (liu2026operationalreframing, khatua2026cooperbenchcoding,
+%                        shen2026organizationsmore and 141 other entries); paper/refs.bib already uses "and".
+%
+% Merge notes:
+% 1. Copy the entries only. This header contains no at-sign, and no comment sits between entries, because
+%    paper/springer/build.sh splits the bibliography on at-signs and asserts that each arXiv-only entry ends
+%    with a closing brace; a comment between entries breaks that assertion.
+% 2. Every key except yang2026concurrencycontrol, bavaresco2025llms, ye2025justice and thakur2025judging already
+%    exists in paper/refs.bib. Replace those entries; appending them makes BibTeX stop on a repeated key.
+% 3. build.sh appends doi = {10.48550/arXiv.<id>} to every arXiv-only entry, so the doi lines below duplicate it
+%    and BibTeX warns "I'm ignoring <key>'s extra "doi" field". Drop the doi line on merge, or make build.sh
+%    skip entries that already carry a doi.
+% 4. With the pdflatex class option, sn-jnl does not load breakurl, so the style prints a url field through a
+%    \textsf fallback that fails on underscores. The two ICLR entries therefore carry no url (the proceedings
+%    URLs contain "paper_files"; they are listed in the .md file). PMLR entries carry no publisher field, because
+%    the style prints "PMLR, ???" when a publisher has no address.
+% 5. "Mihaela {van der Schaar}" is braced because the style otherwise drops the particle and prints "Schaar, M.".
+
+@inproceedings{ruan2026aorchestra,
+  title = {{AOrchestra: Automating Sub-Agent Creation for Agentic Orchestration}},
+  author = {Jianhao Ruan and Zhihao Xu and Yiran Peng and Fashen Ren and Zhaoyang Yu and Xinbing Liang and Jinyu Xiang and Yongru Chen and Bang Liu and Chenglin Wu and Yuyu Luo and Jiayi Zhang},
+  year = {2026},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  series = {Proceedings of Machine Learning Research},
+  volume = {306},
+  pages = {106017--106040},
+  url = {https://proceedings.mlr.press/v306/ruan26e.html}
+}
+
+@misc{liu2026operationalreframing,
+  title = {{Operational Reframing and Approval-Framed Delegation in Multi-Agent LLM Safety}},
+  author = {Lifei Liu and Haoran Yu and Xiaochong Jiang and Su Wang and Pin Qian and Yihang Chen},
+  year = {2026},
+  eprint = {2607.07097},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2607.07097},
+  doi = {10.48550/arXiv.2607.07097}
+}
+
+@misc{arora2025safeagents,
+  title = {{Exposing Weak Links in Multi-Agent Systems under Adversarial Prompting}},
+  author = {Nirmit Arora and Sathvik Joel and Ishan Kavathekar and Palak and Rohan Gandhi and Yash Pandya and Tanuja Ganu and Aditya Kanade and Akshay Nambi},
+  year = {2025},
+  eprint = {2511.10949},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2511.10949},
+  doi = {10.48550/arXiv.2511.10949}
+}
+
+@inproceedings{yang2026concurrencycontrol,
+  title = {{Position: Multi-Agent Systems Should Prioritize Concurrency Control}},
+  author = {Xin Yang and Letian Li and Zimo Ji and Terry Jingchen Zhang and Wenyuan Jiang},
+  year = {2026},
+  booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+  series = {Proceedings of Machine Learning Research},
+  volume = {306},
+  pages = {172725--172740},
+  url = {https://proceedings.mlr.press/v306/yang26dy.html}
+}
+
+@inproceedings{bavaresco2025llms,
+  title = {{LLMs instead of Human Judges? A Large Scale Empirical Study across 20 NLP Evaluation Tasks}},
+  author = {Anna Bavaresco and Raffaella Bernardi and Leonardo Bertolazzi and Desmond Elliott and Raquel Fernández and Albert Gatt and Esam Ghaleb and Mario Giulianelli and Michael Hanna and Alexander Koller and André F. T. Martins and Philipp Mondorf and Vera Neplenbroek and Sandro Pezzelle and Barbara Plank and David Schlangen and Alessandro Suglia and Aditya K Surikuchi and Ece Takmaz and Alberto Testoni},
+  year = {2025},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  pages = {238--255},
+  doi = {10.18653/v1/2025.acl-short.20}
+}
+
+@inproceedings{du2025context,
+  title = {{Context Length Alone Hurts LLM Performance Despite Perfect Retrieval}},
+  author = {Yufeng Du and Minyang Tian and Srikanth Ronanki and Subendhu Rongali and Sravan Bodapati and Aram Galstyan and Azton Wells and Roy Schwartz and Eliu A Huerta and Hao Peng},
+  year = {2025},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2025},
+  pages = {23281--23298},
+  doi = {10.18653/v1/2025.findings-emnlp.1264}
+}
+
+@inproceedings{shi2023large,
+  title = {{Large Language Models Can Be Easily Distracted by Irrelevant Context}},
+  author = {Freda Shi and Xinyun Chen and Kanishka Misra and Nathan Scales and David Dohan and Ed Chi and Nathanael Schärli and Denny Zhou},
+  year = {2023},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  series = {Proceedings of Machine Learning Research},
+  volume = {202},
+  pages = {31210--31227},
+  url = {https://proceedings.mlr.press/v202/shi23a.html}
+}
+
+@misc{khatua2026cooperbenchcoding,
+  title = {{CooperBench: Why Coding Agents Cannot be Your Teammates Yet}},
+  author = {Arpandeep Khatua and Hao Zhu and Peter Tran and Arya Prabhudesai and Frederic Sadrieh and Johann K. Lieberwirth and Xinkai Yu and Yicheng Fu and Michael J. Ryan and Jiaxin Pei and Diyi Yang},
+  year = {2026},
+  eprint = {2601.13295},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2601.13295},
+  doi = {10.48550/arXiv.2601.13295}
+}
+
+@inproceedings{ye2025justice,
+  title = {{Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge}},
+  author = {Jiayi Ye and Yanbo Wang and Yue Huang and Dongping Chen and Qihui Zhang and Nuno Moniz and Tian Gao and Werner Geyer and Chao Huang and Pin-Yu Chen and Nitesh V. Chawla and Xiangliang Zhang},
+  year = {2025},
+  booktitle = {The Thirteenth International Conference on Learning Representations (ICLR 2025)},
+  pages = {102351--102390}
+}
+
+@misc{shen2026organizationsmore,
+  title = {{AI Organizations are More Effective but Less Aligned than Individual Agents}},
+  author = {Judy Hanwen Shen and Daniel Zhu and Siddarth Srinivasan and Henry Sleight and Wagner, III, Lawrence T. and Morgan Jane Matthews and Erik Jones and Jascha Sohl-Dickstein},
+  year = {2026},
+  eprint = {2604.10290},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2604.10290},
+  doi = {10.48550/arXiv.2604.10290}
+}
+
+@inproceedings{hong2024metagpt,
+  title = {{MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework}},
+  author = {Sirui Hong and Mingchen Zhuge and Jonathan Chen and Xiawu Zheng and Yuheng Cheng and Ceyao Zhang and Jinlin Wang and Zili Wang and Steven Ka Shing Yau and Zijuan Lin and Liyang Zhou and Chenyu Ran and Lingfeng Xiao and Chenglin Wu and Jürgen Schmidhuber},
+  year = {2024},
+  booktitle = {The Twelfth International Conference on Learning Representations (ICLR 2024)},
+  pages = {23247--23275}
+}
+
+@inproceedings{thakur2025judging,
+  title = {{Judging the Judges: Evaluating Alignment and Vulnerabilities in LLMs-as-Judges}},
+  author = {Aman Singh Thakur and Kartik Choudhary and Venkat Srinik Ramayapally and Sankaran Vaidyanathan and Dieuwke Hupkes},
+  year = {2025},
+  booktitle = {Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM\textsuperscript{2})},
+  pages = {404--430},
+  url = {https://aclanthology.org/2025.gem-1.33/}
+}
+
+@misc{rauba2026principalagent,
+  title = {{Multi-Agent Systems Should be Treated as Principal-Agent Problems}},
+  author = {Paulius Rauba and Simonas Cepenas and Mihaela {van der Schaar}},
+  year = {2026},
+  eprint = {2601.23211},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2601.23211},
+  doi = {10.48550/arXiv.2601.23211}
+}
