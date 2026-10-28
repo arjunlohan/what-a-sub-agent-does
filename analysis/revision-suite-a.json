@@ -18348,7 +18348,8 @@
        "countV4": 0,
        "onlyV0": 0,
        "onlyV4": 0,
-       "pExact": 1.0
+       "pExact": 1.0,
+       "pHolm2": 1.0
       },
       {
        "template": "CE-rename",
@@ -18385,7 +18386,8 @@
        "countV4": 0,
        "onlyV0": 0,
        "onlyV4": 0,
-       "pExact": 1.0
+       "pExact": 1.0,
+       "pHolm2": 1.0
       },
       {
        "template": "CE-rename",
@@ -18433,7 +18435,8 @@
        "countV4": 6,
        "onlyV0": 0,
        "onlyV4": 6,
-       "pExact": 0.03125
+       "pExact": 0.03125,
+       "pHolm2": 0.0625
       },
       {
        "template": "CE-rename",
@@ -18457,7 +18460,8 @@
        "countV4": 6,
        "onlyV0": 0,
        "onlyV4": 6,
-       "pExact": 0.03125
+       "pExact": 0.03125,
+       "pHolm2": 0.0625
       },
       {
        "template": "SU1",
@@ -18502,7 +18506,8 @@
        "countV4": 5,
        "onlyV0": 0,
        "onlyV4": 5,
-       "pExact": 0.0625
+       "pExact": 0.0625,
+       "pHolm2": 0.125
       },
       {
        "template": "CE-rename",
@@ -18526,7 +18531,8 @@
        "countV4": 5,
        "onlyV0": 0,
        "onlyV4": 5,
-       "pExact": 0.0625
+       "pExact": 0.0625,
+       "pHolm2": 0.125
       },
       {
        "template": "SU1",

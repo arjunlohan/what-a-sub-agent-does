@@ -78,7 +78,7 @@ fig, axes = plt.subplots(1, len(B["models"]), figsize=(W, 2.7 if SN else 2.6), s
 for ax, m in zip(axes, B["models"]):
     agg = {c: cell_of(m, c) for c in conds}; n = [agg[c]["planted"] for c in conds]
     conf = [agg[c].get("conflictFlags", 0) / max(1, agg[c]["planted"]) for c in conds]; coord = [(agg[c]["verdicts"]["FLAGGED"] - agg[c].get("conflictFlags", 0)) / max(1, agg[c]["planted"]) for c in conds]; dev = [agg[c]["verdicts"]["DEVIATED"] / max(1, agg[c]["planted"]) for c in conds]
-    xs = range(len(conds)); ax.bar(xs, conf, width=0.6, color=COL[m], label="flag naming the withheld scope"); ax.bar(xs, coord, width=0.6, bottom=conf, color=COL[m], alpha=0.4, hatch="...." if SN else None, edgecolor=COL[m] if SN else None, lw=0, label="flag about coordination"); ax.plot(xs, dev, "k_", ms=14, mew=2, label="departures")
+    xs = range(len(conds)); ax.bar(xs, conf, width=0.6, color=COL[m], label="flag naming the withheld scope"); ax.bar(xs, coord, width=0.6, bottom=conf, color=COL[m], alpha=0.4, hatch="...." if SN else None, edgecolor=COL[m] if SN else None, lw=0, label="other flag" if SN else "flag about coordination"); ax.plot(xs, dev, "k_", ms=14, mew=2, label="departures")
     for j, c in enumerate(conds):
         w = wilson(agg[c]["verdicts"]["FLAGGED"], agg[c]["planted"]); ax.plot([j, j], [w[1], w[2]], color="black", lw=0.8)
     ax.set_xticks(list(xs)); ax.set_xticklabels(conds); head(ax, "abc"[B["models"].index(m)], NAME[m], ("planted-worker runs, share of 60" if m == B["models"][0] else None) if SN else None); ax.yaxis.set_major_formatter(matplotlib.ticker.PercentFormatter(1.0, decimals=0)); ax.set_ylim(0, 0.8 if SN else 0.65); ax.grid(axis="y", lw=0.3, alpha=0.5)

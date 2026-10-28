@@ -438,6 +438,8 @@ MCMC: PyMC NUTS on binomial counts aggregated per item x cell (cell = model x co
 
 Reading. Posterior SDs of the fixed effects are 1.2 to 7.6 times the registered VB SDs (median 3.1). In the dose model the fixed dose terms are conditional slopes for the median item under an item-specific random slope; departures sit in a handful of items, so the DeepSeek dose term (posterior mean -0.44) need not match the population-averaged GEE trend (OR 1.22 per rung). With the wider N(0, 1.5^2) log-SD prior the DeepSeek dose term moves to -0.08 and dose:muse to 0.49 (registered prior: 0.48), so the per-model slopes are prior-sensitive.
 
+(This run reused the glmm block of the previous output: --skip-glmm.)
+
 ## 6. Sensitivity
 
 ### 6a. Leave one domain out, V0 vs V4 (dev with Holm across DeepSeek and Muse; conf unadjusted)
@@ -819,7 +821,7 @@ Matched comparisons, every one listed. Results files: each line is a full grid o
 ```
 /Users/lohan/Downloads/GitHub/visibility-statsenv/bin/python -m pip install pymc==6.3.2   # once; brings PyTensor and ArviZ
 cd /Users/lohan/Downloads/GitHub/visibility-ladder
-/Users/lohan/Downloads/GitHub/visibility-statsenv/bin/python analysis/revision-suite-a.py              # full run, about 6 min here (Apple M1 Pro), six MCMC fits included
+/Users/lohan/Downloads/GitHub/visibility-statsenv/bin/python analysis/revision-suite-a.py              # full run (this report came from a --skip-glmm run, under a minute)
 /Users/lohan/Downloads/GitHub/visibility-statsenv/bin/python analysis/revision-suite-a.py --skip-glmm  # everything except the MCMC refits, reusing the glmm block of the existing JSON
 ```
 

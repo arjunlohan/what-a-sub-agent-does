@@ -978,6 +978,9 @@ def build_sensitivity(arms, items, tmpl, checkers=CHECKERS, lodo_only=False):
                         rec["leaveOut"].append({"template": t, "templateItems": sum(1 for i in items if tmpl[i] == t), "departingItemsAtV4": per[t], "measure": meas,
                                                 "nPaired": q["nPaired"], "countV0": q["countA"], "countV4": q["countB"], "onlyV0": q["discordantAonly"],
                                                 "onlyV4": q["discordantBonly"], "pExact": q["pExact"]})
+                        if meas == "dev" and m in PRESPEC:  # Holm across the two pre-specified models, as for the domains
+                            ps = [q["pExact"] if mm == m else contrast(arms[(mm, ck)], "loto", "dev", "V0", "V4", keep=keep)["pExact"] for mm in PRESPEC]
+                            rec["leaveOut"][-1]["pHolm2"] = holm(ps)[PRESPEC.index(m)]
                 rec["allTemplatesPrimaryMaxP"] = max(contrast(arm, "loto", "dev", "V0", "V4", keep={i for i in items if tmpl[i] != t})["pExact"] for t in per)
             else:
                 rec["note"] = "no departing item at V4"

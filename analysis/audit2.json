@@ -3384,6 +3384,14 @@
    }
   ]
  },
+ "humanOtherErrors": {
+  "falseFailures": 11,
+  "falseFailuresDefectiveItem": 8,
+  "falseFailuresWordLimitDepartures": 3,
+  "missedAdherence": 16,
+  "missedAdherenceAsu28": 11,
+  "missedAdherenceDefectiveItem": 5
+ },
  "census": {
   "flagged": {
    "deepseek": {

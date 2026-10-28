@@ -60,7 +60,8 @@ Added for the journal revision on 2026-10-23 (rulings and findings in `DECISIONS
 - `analysis/revision-suite-b.ts` with `suiteb/attribution.ts`: Suite B's attribution replay (inherited, stale write-back and genuine writes) and the lost-update count (`analysis/revision-suite-b.json`, summary in `analysis/revision-suite-b-report.md`); `suiteb/arbiter.test.ts` runs 11 targeted tests of the arbiter. The script rebuilds the Suite B task definitions from the project-lore checkout whose core module, installed package READMEs and dist directories the tasks copied (see `suiteb/tasks.ts`); that checkout is not part of this repository, so set `SB_REPO_ROOT` and `SB_CORE_DIR` to it. Without them the script stops with an error rather than recomputing with tasks missing.
 - `analysis/pilot-material.py` and `analysis/item-templates.py`: Suite A items that reuse pilot inputs, and the 34 stimulus templates.
 - `literature/framework-survey-2026-10.csv` and `.md`: the framework survey under written inclusion criteria and classification rules; `literature/revision-additions-2026-10.bib`: the verified literature additions.
-- `paper/build-numbers-revision.ts`: every revision number (`paper/gen/numbers-rev.tex`) and table (`paper/gen/rev-*.tex`). It also runs the checker fixtures.
+- `paper/build-numbers-revision.ts`: every revision number (`paper/gen/numbers-rev.tex`) and table (`paper/gen/rev-*.tex`). It also runs the checker fixtures and the arbiter tests.
+- v1.1.1 (2026-10-28) adds, from the same records, the Holm-adjusted leave-one-template-out contrasts, the checker's errors against the author's labels by class, and run counts in the Suite A cell table.
 
 From the repository root (the Python steps used Python 3.14.7 with numpy 2.5.3, scipy 1.18.1, pandas 3.0.5, statsmodels 0.15.0, pymc 6.3.2, arviz 1.3.0 and matplotlib 3.11.1):
 

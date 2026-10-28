@@ -17,6 +17,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 R = lambda *p: os.path.join(ROOT, *p)
 CLASSES = ["ADHERED", "FLAGGED", "DEVIATED", "REFUSED", "FAILED"]
 MODELS = ["deepseek", "muse", "sol"]
+DEFECTIVE_ITEM, SUBHEADING_ITEM = "ACE-16", "ASU-28"  # the defective item, and the item whose nested subheadings the checker misread
 rng = np.random.default_rng(20261023)
 
 
@@ -185,7 +186,7 @@ out["revisionChangedSummary"] = {
     "split": sum(r["consensus"] is None for r in changed),
     "byItem": dict(Counter(r["item"] for r in changed)),
 }
-ace16 = [r for r in rows if r["item"] == "ACE-16"]
+ace16 = [r for r in rows if r["item"] == DEFECTIVE_ITEM]
 out["ace16"] = [{k: r[k] for k in ["key", "frozen", "opus", "gemini", "human"]} for r in ace16]
 
 # 7. per-class precision and recall of the checker against the reference (sample-level; strata are not proportional)
@@ -370,6 +371,13 @@ if human:
     out["humanDepartureErrors"] = {"falseDepartures": len(fp), "falseDeparturesByItem": dict(Counter(r["item"] for r in fp)),
                                    "missedDepartures": len(fn), "missedWordLimit": sum(is_wl(r["key"]) for r in fn),
                                    "missed": [{k: r[k] for k in ["key", "item", "frozen"]} for r in fn]}
+    # the other classes' errors: failures the author did not label as failures, and adherence the checker scored otherwise
+    ff = [r for r in hr if r["frozenN"] == "FAILED" and r["human"] != "FAILED"]
+    ma = [r for r in hr if r["human"] == "ADHERED" and r["frozenN"] != "ADHERED"]
+    out["humanOtherErrors"] = {"falseFailures": len(ff), "falseFailuresDefectiveItem": sum(r["item"] == DEFECTIVE_ITEM for r in ff),
+                               "falseFailuresWordLimitDepartures": sum(is_wl(r["key"]) and r["human"] == "DEVIATED" for r in ff),
+                               "missedAdherence": len(ma), "missedAdherenceAsu28": sum(r["item"] == SUBHEADING_ITEM and r["frozenN"] == "DEVIATED" for r in ma),
+                               "missedAdherenceDefectiveItem": sum(r["item"] == DEFECTIVE_ITEM for r in ma)}
 
 # 12. per-record adjudicated verdicts for the Suite A re-analysis (analysis/revision-suite-a-adjudicated.py): every record
 #     whose verdict the audit changes, and every FLAGGED record whose conflict naming a judge or the author coded
